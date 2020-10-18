@@ -12,14 +12,167 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b75f7a0c33779d49a57118271c18cbb, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 25cf0d40b1b0dd44a8ca2028623ea20c
+    GuidInternal: 
+    m_lastTime: -8585985427472114391
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 05822ba9bdfa594d9466461aed89e0e8
+    GuidInternal: 
+    m_lastTime: -8585985427472184211
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus
+  - PhysicalPath: Master-Mixer Hierarchy\McSpookyJam2020.wwu
+    PathAndIcons:
+    - ElementName: McSpookyJam2020
+      ObjectType: 12
+    ParentPath: McSpookyJam2020
+    guid: e7ddc8c09233d144954dd621a44ef18c
+    GuidInternal: 
+    m_lastTime: -8585985415453589083
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 6b2b28d0bc9c954eaab9c4fc1b9a5f8a
+    GuidInternal: 
+    m_lastTime: -8585985427472134337
+    List: []
+  - PhysicalPath: SoundBanks\McSpookyJam2020.wwu
+    PathAndIcons:
+    - ElementName: McSpookyJam2020
+      ObjectType: 12
+    ParentPath: McSpookyJam2020
+    guid: 2f9925712de4034f9e27c1a8c5e056c6
+    GuidInternal: 
+    m_lastTime: -8585985414649188903
+    List:
+    - name: McSpookyJam2020
+      guid: 6f1e9856c38f934ca82141bdddce26a0
+      id: 4190601618
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: McSpookyJam2020
+        ObjectType: 7
+      Path: McSpookyJam2020\McSpookyJam2020
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 1b4e00244ba2a24097d9495a78791aa7
+    GuidInternal: 
+    m_lastTime: -8585985427472194177
+    List: []
+  - PhysicalPath: Events\McSpookyJam2020.wwu
+    PathAndIcons:
+    - ElementName: McSpookyJam2020
+      ObjectType: 12
+    ParentPath: McSpookyJam2020
+    guid: 8a512b1a5243214c9bfc30890d9ea72b
+    GuidInternal: 
+    m_lastTime: -8585985415193205421
+    List: []
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 527045e059658c44aec41612696c1101
+    GuidInternal: 
+    m_lastTime: -8585985427472194177
+    List: []
+  - PhysicalPath: Game Parameters\McSpookyJam2020.wwu
+    PathAndIcons:
+    - ElementName: McSpookyJam2020
+      ObjectType: 12
+    ParentPath: McSpookyJam2020
+    guid: 1a01f52acc75544ab9b94a875440e9ee
+    GuidInternal: 
+    m_lastTime: -8585985415006494987
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: bca2e78f0b68d64a961d6b99821a0ae8
+    GuidInternal: 
+    m_lastTime: -8585985427472124371
+    List: []
+  - PhysicalPath: States\McSpookyJam2020.wwu
+    PathAndIcons:
+    - ElementName: McSpookyJam2020
+      ObjectType: 12
+    ParentPath: McSpookyJam2020
+    guid: 112c707a369e00498ee66009db69176b
+    GuidInternal: 
+    m_lastTime: -8585985415039907401
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 4d43be117803794da4b4dfef6406a26a
+    GuidInternal: 
+    m_lastTime: -8585985427472114391
+    List: []
+  - PhysicalPath: Switches\McSpookyJam2020.wwu
+    PathAndIcons:
+    - ElementName: McSpookyJam2020
+      ObjectType: 12
+    ParentPath: McSpookyJam2020
+    guid: 518f1b422d866f41ba528d7bcdea3ac6
+    GuidInternal: 
+    m_lastTime: -8585985415073957892
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 3596e4f91f5f394f80f489d4eb0b8054
+    GuidInternal: 
+    m_lastTime: -8585985427472114391
+    List: []
+  - PhysicalPath: Triggers\McSpookyJam2020.wwu
+    PathAndIcons:
+    - ElementName: McSpookyJam2020
+      ObjectType: 12
+    ParentPath: McSpookyJam2020
+    guid: 5e929fe203aec348a2d5403d5958d0e8
+    GuidInternal: 
+    m_lastTime: -8585985414976269733
+    List: []
   ExpandedItems: []
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
