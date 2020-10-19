@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E29F925E-AE03-48C3-A2D5-403D5958D0E8}" SchemaVersion="97">
+	<Triggers>
+		<WorkUnit Name="McSpookyJam2020" ID="{E29F925E-AE03-48C3-A2D5-403D5958D0E8}" PersistMode="Standalone"/>
+	</Triggers>
+</WwiseDocument>
