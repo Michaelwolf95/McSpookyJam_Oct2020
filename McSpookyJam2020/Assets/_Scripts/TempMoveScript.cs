@@ -10,6 +10,7 @@ public class TempMoveScript : MonoBehaviour
     [SerializeField] float _speed = 5;
     Vector3 _forwardDirection, _sideDirection, _moveSpeed;
     float _sideInput, _forwardInput;
+    bool _inputMove = false;
 
     void Awake()
     {
@@ -29,7 +30,9 @@ public class TempMoveScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        _playerRb.MovePosition(transform.position + (new Vector3(_moveSpeed.x, _playerRb.velocity.y, _moveSpeed.z) * _speed * Time.deltaTime));
+        if(_inputMove)
+            //_playerRb.MovePosition(transform.position + (new Vector3(_moveSpeed.x, _playerRb.velocity.y, _moveSpeed.z) * _speed * Time.deltaTime));
+            _playerRb.velocity = new Vector3(_moveSpeed.x, 0, _moveSpeed.z) * _speed; // Only functional when grounded, if not grounded - will cause issues unless gravity and downward force is manually applied
     }
 
     void UpdateMove()
@@ -37,15 +40,16 @@ public class TempMoveScript : MonoBehaviour
         _sideInput = Input.GetAxis("Horizontal");
         _forwardInput = Input.GetAxis("Vertical");
 
-        if(_sideInput != 0 || _forwardInput != 0)
+        if (_sideInput != 0 || _forwardInput != 0)
         {
             var forwardMove = _forwardInput * _forwardDirection;
             var sideMove = _sideInput * _sideDirection;
             _moveSpeed = forwardMove + sideMove;
-
-            //_playerRb.velocity = new Vector3(_moveSpeed.x, _playerRb.velocity.y, _moveSpeed.z) * _speed;
+            _inputMove = true;
             //_playerRb.AddForce(new Vector3(_moveSpeed.x, _playerRb.velocity.y, _moveSpeed.z) * _speed);
         }
+        else
+            _inputMove = false;
     }
 
     void UpdateDirection()
