@@ -66,3 +66,11 @@ crashlytics-build.properties
 * .wsettings
 * .validationcache
 * .wem
+
+# Jetbrains Rider .idea files
+**/.idea
+**/Plugins/Editor/
+
+# Probuilder
+**/com.unity.probuilder/Settings.json
+**/Plugins/Editor/
