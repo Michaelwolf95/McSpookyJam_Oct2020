@@ -417,7 +417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 5655966316438936302}
-  activationRange: 5
+  activationRange: 3
   interactRange: 1
   interactionLayerMask:
     serializedVersion: 2
