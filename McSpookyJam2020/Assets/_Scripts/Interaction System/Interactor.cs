@@ -13,8 +13,9 @@ public class Interactor : MonoBehaviour
 
     [SerializeField] private LayerMask interactionLayerMask;
     
-    private InteractableBase currentTarget = null;
-    private bool isInteracting = false;
+    private InteractableBase currentPointerTarget = null;        // Currently being looked at.
+    private InteractableBase currentInteractionTarget = null;    // Actively interacting with
+    private bool isInteracting => currentInteractionTarget != null;
     
     private void Awake()
     {
@@ -25,13 +26,19 @@ public class Interactor : MonoBehaviour
     {
         if (isInteracting == false)
         {
-            if (currentTarget != null)
+            if (currentPointerTarget != null)
             {
-                // Listen for interaction key input.
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    currentTarget.OnBeginInteraction();
+                    BeginInteraction(currentPointerTarget);
                 }
+            }
+        }
+        else
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                QuitInteraction();
             }
         }
         
@@ -43,6 +50,8 @@ public class Interactor : MonoBehaviour
         {
             return;
         }
+
+        //RaycastHit[] hits = Physics.SphereCastAll(mainCamera.transform.position, activationRange, Vector3.up, 0f, interactionLayerMask, )
         
         //Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         Ray ray = new Ray(mainCamera.transform.position, mainCamera.transform.forward);
@@ -66,24 +75,93 @@ public class Interactor : MonoBehaviour
 
             if (raycastResultTarget != null)
             {
-                if (currentTarget != null && currentTarget != raycastResultTarget)
+                if (currentPointerTarget != null && currentPointerTarget != raycastResultTarget)
                 {
-                    currentTarget.OnNoLongerTarget();
+                    ClearPointerTarget();
                 }
 
-                currentTarget = raycastResultTarget;
-                currentTarget.OnBecomeTarget();
+                SetPointerTarget(raycastResultTarget);
+            }
+        }
+        else
+        {
+            if (currentPointerTarget != null)
+            {
+                ClearPointerTarget();
             }
         }
     }
 
     public void BeginInteraction(InteractableBase interactable)
     {
+        if (isInteracting)
+        {
+            QuitInteraction();
+        }
         
+        if (currentPointerTarget == interactable)
+        {
+            ClearPointerTarget();
+        }
+        
+        currentInteractionTarget = interactable;
+        currentInteractionTarget.OnBeginInteraction();
     }
     
-    public void CompleteInteraction(InteractableBase interactable)
+    public void QuitInteraction()
     {
-        
+        if (isInteracting)
+        {
+            currentInteractionTarget.OnFinishInteraction();
+            currentInteractionTarget = null;
+        }
+    }
+    
+    
+    private void SetPointerTarget(InteractableBase interactable)
+    {
+        currentPointerTarget = interactable;
+        currentPointerTarget.OnBecomePointerTarget();
+    }
+    
+    private void ClearPointerTarget()
+    {
+        if (currentPointerTarget != null)
+        {
+            currentPointerTarget.OnNoLongerPointerTarget();
+            if (IsInteractableWithinActivationRange(currentPointerTarget))
+            {
+                currentPointerTarget.OnExitActivationRange();
+            }
+            currentPointerTarget = null;
+        }
+    }
+
+    public bool IsInteractableWithinActivationRange(InteractableBase interactable)
+    {
+        return Vector3.Distance(interactable.transform.position, mainCamera.transform.position) <= activationRange;
+    }
+
+    public void ProcessInteractableActivationRange(InteractableBase interactable)
+    {
+        if (IsInteractableWithinActivationRange(interactable))
+        {
+            if (interactable.isActivated == false)
+            {
+                interactable.OnEnterActivationRange();
+            }
+        }
+        else
+        {
+            if (interactable.isActivated)
+            {
+                interactable.OnExitActivationRange();
+                
+                if (interactable == currentPointerTarget)
+                {
+                    ClearPointerTarget();
+                }
+            }
+        }
     }
 }
