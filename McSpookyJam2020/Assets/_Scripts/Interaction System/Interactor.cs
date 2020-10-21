@@ -11,7 +11,7 @@ public class Interactor : MonoBehaviour
     [SerializeField] private float activationRange = 2f;
     [SerializeField] private float interactRange = 1f;
 
-    [SerializeField] private LayerMask interactionLayerMask;
+    [SerializeField] private LayerMask interactionLayerMask = new LayerMask();
     
     private InteractableBase currentPointerTarget = null;        // Currently being looked at.
     private InteractableBase currentInteractionTarget = null;    // Actively interacting with
@@ -34,14 +34,6 @@ public class Interactor : MonoBehaviour
                 }
             }
         }
-        else
-        {
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                QuitInteraction();
-            }
-        }
-        
     }
 
     public void FixedUpdate()
