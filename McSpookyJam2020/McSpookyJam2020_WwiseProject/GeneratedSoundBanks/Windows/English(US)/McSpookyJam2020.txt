@@ -1,0 +1,37 @@
+Event	ID	Name			Wwise Object Path	Notes
+	98439365	Play_Player_Footsteps			\McSpookyJam2020\Player\Play_Player_Footsteps	
+	435770000	Stop_AMB			\McSpookyJam2020\AMB\Stop_AMB	
+	643450781	Play_UI_Start			\McSpookyJam2020\UI\Play_UI_Start	
+	754369548	Play_Stinger			\McSpookyJam2020\Spooks\Play_Stinger	
+	1986548623	Play_UI_Exit			\McSpookyJam2020\UI\Play_UI_Exit	
+	2216405837	Play_Pickup_Note			\McSpookyJam2020\Interactables\Play_Pickup_Note	
+	2837384057	Stop_Music			\McSpookyJam2020\Music\Stop_Music	
+	2932040671	Play_Music			\McSpookyJam2020\Music\Play_Music	
+	2957503395	Play_Ghost_Jolt			\McSpookyJam2020\Spooks\Play_Ghost_Jolt	
+	2959533290	Play_AMB			\McSpookyJam2020\AMB\Play_AMB	
+	3768549418	Play_Pickup_Key			\McSpookyJam2020\Interactables\Play_Pickup_Key	
+	3781480055	Play_Ghost_Footsteps			\McSpookyJam2020\Spooks\Play_Ghost_Footsteps	
+	3933447040	Play_Lights_Out			\McSpookyJam2020\Spooks\Play_Lights_Out	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2385628198	Footsteps			\McSpookyJam2020\Footsteps	
+
+Switch	ID	Name	Switch Group			Notes
+	340271938	Walking	Footsteps			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	82196260	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Pickups\SFX_Pickup_Note\Wwise Silence	
+	210670801	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\UI\SFX_UI_Exit\Wwise Silence	
+	727665376	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\UI\SFX_UI_Start\Wwise Silence	
+	747678343	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\Spooks\SFX_Ghost_Jolt\Wwise Silence	
+	764598772	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\Spooks\SFX_Stingers\SFX_Stinger\Wwise Silence	
+	801897813	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Pickups\SFX_Pickup_Keys\Wwise Silence	
+	1019720133	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\Spooks\SFX_Lights_Out\Wwise Silence	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	64765254	SFX_Creaky_Footstep_Light_04	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\Voices\English(US)\drive-download-20201022T004029Z-001\SFX_Creaky_Footstep_Light_04_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Player\Player_Footsteps\Player_Footsteps\SFX_Creaky_Footstep_Light_04		80704
+	92910499	SFX_Creaky_Footstep_Light_03	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\Voices\English(US)\drive-download-20201022T004029Z-001\SFX_Creaky_Footstep_Light_03_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Player\Player_Footsteps\Player_Footsteps\SFX_Creaky_Footstep_Light_03		101824
+	595022946	SFX_Creaky_Footstep_Light_02	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\Voices\English(US)\drive-download-20201022T004029Z-001\SFX_Creaky_Footstep_Light_02_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Player\Player_Footsteps\Player_Footsteps\SFX_Creaky_Footstep_Light_02		100200
+	782188998	SFX_Creaky_Footstep_Light_01	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\Voices\English(US)\drive-download-20201022T004029Z-001\SFX_Creaky_Footstep_Light_01_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Player\Player_Footsteps\Player_Footsteps\SFX_Creaky_Footstep_Light_01		106764
+	828843038	SFX_Creaky_Footstep_Light_05	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\Voices\English(US)\drive-download-20201022T004029Z-001\SFX_Creaky_Footstep_Light_05_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Player\Player_Footsteps\Player_Footsteps\SFX_Creaky_Footstep_Light_05		126984
+
