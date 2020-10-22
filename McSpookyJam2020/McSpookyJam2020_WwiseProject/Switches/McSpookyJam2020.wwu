@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{421B8F51-862D-416F-BA52-8D7BCDEA3AC6}" SchemaVersion="97">
 	<Switches>
-		<WorkUnit Name="McSpookyJam2020" ID="{421B8F51-862D-416F-BA52-8D7BCDEA3AC6}" PersistMode="Standalone"/>
+		<WorkUnit Name="McSpookyJam2020" ID="{421B8F51-862D-416F-BA52-8D7BCDEA3AC6}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Footsteps" ID="{91286FA6-79C2-4F51-A896-712AAA1E7AA2}">
+					<ChildrenList>
+						<Switch Name="Walking" ID="{8E231F5C-915B-4C82-8791-31A745B60E68}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>
