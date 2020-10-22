@@ -66,9 +66,10 @@ using System.Collections.Generic;
 
 [RequireComponent(typeof(CapsuleCollider)),RequireComponent(typeof(Rigidbody)),AddComponentMenu("First Person AIO")]
 
-public class FirstPersonAIO : MonoBehaviour {
-
-
+public class FirstPersonAIO : MonoBehaviour
+{
+    public static FirstPersonAIO instance = null;
+    
     #region Variables
 
     #region Input Settings
@@ -245,7 +246,10 @@ public class FirstPersonAIO : MonoBehaviour {
 
     #endregion
 
-    private void Awake(){
+    private void Awake()
+    {
+        instance = this;
+        
         #region Look Settings - Awake
         originalRotation = transform.localRotation.eulerAngles;
 
@@ -373,7 +377,7 @@ public class FirstPersonAIO : MonoBehaviour {
             else if(Input.GetKeyDown(_crouchModifiers.crouchKey)){isCrouching = !isCrouching || _crouchModifiers.crouchOverride;}
             }
 
-        if(Input.GetButtonDown("Cancel")){ControllerPause();}
+        //if(Input.GetButtonDown("Cancel")){ControllerPause();}
         #endregion
 
         #region Movement Settings - Update
@@ -744,7 +748,15 @@ public class FirstPersonAIO : MonoBehaviour {
             Cursor.visible = controllerPauseState;
         }
     }
-
+    
+    public void SetControllerPause(bool argPauseSate)
+    {
+        controllerPauseState = argPauseSate;
+        if(lockAndHideCursor){
+            Cursor.lockState = controllerPauseState? CursorLockMode.None : CursorLockMode.Locked;
+            Cursor.visible = controllerPauseState;
+        }
+    }
 
 
     float SlopeCheck(){

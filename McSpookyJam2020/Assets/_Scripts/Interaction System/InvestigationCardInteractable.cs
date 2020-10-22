@@ -28,7 +28,7 @@ public class InvestigationCardInteractable : InteractableBase
 
     protected override void PerformInteraction()
     {
-        // ToDo: Block player movement.
+        FirstPersonAIO.instance.SetControllerPause(true);
         
         if (flowchart != null)
         {
@@ -45,6 +45,7 @@ public class InvestigationCardInteractable : InteractableBase
         base.OnFinishInteraction();
         
         // ToDo: Free player movement.
+        FirstPersonAIO.instance.SetControllerPause(false);
         
         if (flowchart != null)
         {

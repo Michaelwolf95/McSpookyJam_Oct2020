@@ -269,15 +269,15 @@ MonoBehaviour:
   sprintKey: 304
   sprintSpeed: 8
   jumpPower: 5
-  canJump: 1
+  canJump: 0
   canHoldJump: 0
-  useStamina: 1
+  useStamina: 0
   staminaDepletionSpeed: 2
   staminaLevel: 50
   speed: 0
   staminaInternal: 0
   _crouchModifiers:
-    useCrouch: 1
+    useCrouch: 0
     toggleCrouch: 0
     crouchKey: 306
     crouchWalkSpeedMultiplier: 0.5
