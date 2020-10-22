@@ -893,26 +893,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 956126459, guid: fd6557fb088d3d646a456437aefc04fb, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5347735323022475834, guid: fd6557fb088d3d646a456437aefc04fb,
-        type: 3}
-      propertyPath: layerMask.m_Bits
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5634449000992531528, guid: fd6557fb088d3d646a456437aefc04fb,
         type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5634449000992531528, guid: fd6557fb088d3d646a456437aefc04fb,
-        type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000,
-        type: 0}
     - target: {fileID: 5636372508463168866, guid: fd6557fb088d3d646a456437aefc04fb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -968,19 +953,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8702911778682006786, guid: fd6557fb088d3d646a456437aefc04fb,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd6557fb088d3d646a456437aefc04fb, type: 3}
---- !u!1 &385414198 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8141053062929758846, guid: bb64e8f3da86ee646bdc0926f09bc6fd,
-    type: 3}
-  m_PrefabInstance: {fileID: 8141053063297257032}
-  m_PrefabAsset: {fileID: 0}
 --- !u!43 &428949219
 Mesh:
   m_ObjectHideFlags: 0
@@ -4355,12 +4329,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!212 &1577548259 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 8141053063868135339, guid: bb64e8f3da86ee646bdc0926f09bc6fd,
-    type: 3}
-  m_PrefabInstance: {fileID: 8141053063297257032}
-  m_PrefabAsset: {fileID: 0}
 --- !u!43 &1623993934
 Mesh:
   m_ObjectHideFlags: 0
@@ -6719,31 +6687,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8141053062342249906, guid: bb64e8f3da86ee646bdc0926f09bc6fd,
-        type: 3}
-      propertyPath: fearedStateParams.acceleration
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 8141053062342249906, guid: bb64e8f3da86ee646bdc0926f09bc6fd,
-        type: 3}
-      propertyPath: fearedStateParams.speed
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8141053062342249906, guid: bb64e8f3da86ee646bdc0926f09bc6fd,
-        type: 3}
-      propertyPath: fearedStateParams.angularSpeed
-      value: 360
-      objectReference: {fileID: 0}
-    - target: {fileID: 8141053062342249906, guid: bb64e8f3da86ee646bdc0926f09bc6fd,
-        type: 3}
-      propertyPath: spriteRenderer
-      value: 
-      objectReference: {fileID: 1577548259}
-    - target: {fileID: 8141053062342249906, guid: bb64e8f3da86ee646bdc0926f09bc6fd,
-        type: 3}
-      propertyPath: visualRoot
-      value: 
-      objectReference: {fileID: 385414198}
     - target: {fileID: 8141053062342249919, guid: bb64e8f3da86ee646bdc0926f09bc6fd,
         type: 3}
       propertyPath: m_Name
