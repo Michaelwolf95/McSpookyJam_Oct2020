@@ -342,7 +342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activatedReticle: {fileID: 6501540093135983735}
-  pointerTargetReticle: {fileID: 6501540094163260310}
+  pointerTargetReticle: {fileID: 4505959380107433456}
   flowchart: {fileID: 2913761869932072007}
   exitOnEscapeInput: 1
 --- !u!135 &6501540094120603064
@@ -439,9 +439,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3011592221751313171}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &6501540094163260310 stripped
+--- !u!1 &4505959380107433456 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 8354546124935041157, guid: 3be365ddfd146d743bfd9261c670d56f,
+  m_CorrespondingSourceObject: {fileID: 1676237387454584547, guid: 3be365ddfd146d743bfd9261c670d56f,
     type: 3}
   m_PrefabInstance: {fileID: 3011592221751313171}
   m_PrefabAsset: {fileID: 0}
