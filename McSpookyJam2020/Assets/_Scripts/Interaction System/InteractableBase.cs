@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class InteractableBase : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class InteractableBase : MonoBehaviour
 
     public bool isActivated { get; protected set; }
     public bool isInteracting { get; protected set; }
+    
+    public UnityEvent OnInteractStart = new UnityEvent();
+    public UnityEvent OnInteractEnd = new UnityEvent();
 
     private void Awake()
     {
@@ -64,20 +68,21 @@ public class InteractableBase : MonoBehaviour
     {
         //Debug.Log("OnBeginInteraction");
         isInteracting = true;
-        
+        OnInteractStart.Invoke();
         PerformInteraction();
     }
     
     protected virtual void PerformInteraction()
     {
         //Debug.Log("PerformInteraction");
-        // ToDo: Do this after a delay?
+
         Interactor.instance.QuitInteraction();
     }
     
     public virtual void OnFinishInteraction()
     {
         isInteracting = false;
+        OnInteractEnd.Invoke();
         //Debug.Log("OnFinishInteraction");
     }
 }
