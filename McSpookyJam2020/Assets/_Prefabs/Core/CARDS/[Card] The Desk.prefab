@@ -183,8 +183,7 @@ MonoBehaviour:
   InteractStartAudio:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 7b1c0fc5f35bbc44ebf744ddd74508cf,
-      type: 2}
+    WwiseObjectReference: {fileID: 0}
   InteractEndAudio:
     idInternal: 0
     valueGuidInternal: 

@@ -402,6 +402,16 @@ MonoBehaviour:
   deskClosed: {fileID: 7498205138601299130}
   deskOpenedKey: {fileID: 6750635447302921736}
   deskOpenedNoKey: {fileID: 8340938131521855019}
+  PickupKey:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4aeae1fba337ad147a2ef891bcfe2bfb,
+      type: 2}
+  DrawerOpen:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7b1c0fc5f35bbc44ebf744ddd74508cf,
+      type: 2}
 --- !u!1 &5229615214728727689
 GameObject:
   m_ObjectHideFlags: 0

@@ -46,7 +46,7 @@
 				</Property>
 				<Property Name="Game Profiler\Voice Monitor\LastBus" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="General\LatestLanguage" Type="int32" Value="684519430"/>
-				<Property Name="General\LatestPlatform" Type="string" Value="Mac"/>
+				<Property Name="General\LatestPlatform" Type="string" Value="Windows"/>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="8a5g6wz20Eqn/s7yNGp26w=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="bx6YVsOPk0yoIUG93c4moA=="/>
@@ -81,8 +81,8 @@
 				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_20_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="Rc7KQ5U08EKk1KOKwtjH/3OcxY4URR9EjfsEM8RGafO77+xlxTf0RJdWH3U9LGmw6qIOkA+VxkWzSPxBiWX8XNKKyZbp7rVGnzDEZd6GHveqzWsrCPpLTaU5ACen1Ido"/>
-				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="G04AJEuiokCX2UlaeHkap7MFt5E0pXNIus3fXd/rwjhbZiy1reavSqyVoXes8NpEilErGlJDIUyb/DCJDZ6nK9Dmwot/4eNNlBzPMlC0MpNr+X3F9ZDsTphvufyKe20X"/>
+				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="Rc7KQ5U08EKk1KOKwtjH/3OcxY4URR9EjfsEM8RGafO77+xlxTf0RJdWH3U9LGmw6qIOkA+VxkWzSPxBiWX8XFx0gIBPo3lGkPvMOeu5xHHSismW6e61Rp8wxGXehh73gnkeY1dM0kuyo2AIdlxk1rDTZTiNid9Loqc7L3vrdARJyrrTifcgTaSXxzCtNXHOqs1rKwj6S02lOQAnp9SHaA=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="i8VrExZ/ikCxjr1Cp6+gvRtOACRLoqJAl9lJWnh5GqezBbeRNKVzSLrN313f68I4W2Ysta3mr0qslaF3rPDaRIpRKxpSQyFMm/wwiQ2epyvQ5sKLf+HjTZQczzJQtDKTa/l9xfWQ7E6Yb7n8inttFw=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value="UY8bQi2Gb0G6Uo17zeo6xi6ko1PC7g5MgwpP+hlOEF0="/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value="L5klcS3kA0+eJ8GoxeBWxg=="/>
@@ -120,6 +120,7 @@
 						<Value Platform="Mac"></Value>
 					</ValueList>
 				</Property>
+				<Property Name="Soundcaster\PreviousSession" Type="string" Value="{28FE2F90-6638-42F9-8060-71F76F425168}"/>
 			</PropertyList>
 		</UserProjectSettings>
 	</UserProjectSettingsInfo>

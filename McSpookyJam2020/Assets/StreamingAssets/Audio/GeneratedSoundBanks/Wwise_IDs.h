@@ -41,6 +41,22 @@ namespace AK
         static const AkUniqueID STOP_MUSIC = 2837384057U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace TIME
+        {
+            static const AkUniqueID GROUP = 2654366170U;
+
+            namespace STATE
+            {
+                static const AkUniqueID DAY = 311764537U;
+                static const AkUniqueID NIGHT = 1011622525U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace TIME
+
+    } // namespace STATES
+
     namespace SWITCHES
     {
         namespace FOOTSTEPS

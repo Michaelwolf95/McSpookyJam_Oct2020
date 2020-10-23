@@ -233,8 +233,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: McSpookyJam2020\AMB\Play_AMB
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: Infinity
+      minDuration: 206.76266
     - name: Play_Drawer_Close
       guid: 1053ab86e6aead4e98ae383b319ad27e
       id: 2315829540
@@ -715,8 +715,39 @@ MonoBehaviour:
     ParentPath: McSpookyJam2020
     guid: 112c707a369e00498ee66009db69176b
     GuidInternal: 
-    m_lastTime: -8585985415039907401
-    List: []
+    m_lastTime: -8585981650850168565
+    List:
+    - name: Time
+      guid: 52091c26a4b16a40801bd51771a3a040
+      id: 2654366170
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Time
+        ObjectType: 9
+      Path: McSpookyJam2020\Time
+      values:
+      - name: Day
+        guid: e0873811b291f54e86049cb124568b20
+        id: 311764537
+        PathAndIcons:
+        - ElementName: Day
+          ObjectType: 8
+      - name: Night
+        guid: b30776f313a3924494f12a4198829578
+        id: 1011622525
+        PathAndIcons:
+        - ElementName: Night
+          ObjectType: 8
+      - name: None
+        guid: 1203b94d9259e445841b71ffdd3dd7f7
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -734,7 +765,7 @@ MonoBehaviour:
     ParentPath: McSpookyJam2020
     guid: 518f1b422d866f41ba528d7bcdea3ac6
     GuidInternal: 
-    m_lastTime: -8585981751340211449
+    m_lastTime: -8585981668128763252
     List:
     - name: Footsteps
       guid: a66f2891c279514fa896712aaa1e7aa2
@@ -765,11 +796,11 @@ MonoBehaviour:
         ObjectType: 11
       Path: McSpookyJam2020\Time
       values:
-      - name: Evening
+      - name: Day
         guid: 417abf5cc93f0d41b023e4e2c35dc2fe
-        id: 2905060079
+        id: 311764537
         PathAndIcons:
-        - ElementName: Evening
+        - ElementName: Day
           ObjectType: 10
       - name: Night
         guid: a462073be806db4d9e04b0dbb1b3e478
@@ -803,5 +834,8 @@ MonoBehaviour:
   - /McSpookyJam2020_WwiseProject
   - /McSpookyJam2020_WwiseProject/Events
   - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020
+  - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020/AMB
+  - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020/Interactables
+  - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020/Interactables/Doors
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

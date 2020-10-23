@@ -11,28 +11,37 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1201458697">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2677575725">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4190601618" Language="English(US)" Hash="1918683031">
+		<SoundBank Id="4190601618" Language="English(US)" Hash="1136687263">
 			<ObjectPath>\SoundBanks\McSpookyJam2020\McSpookyJam2020</ObjectPath>
 			<ShortName>McSpookyJam2020</ShortName>
 			<Path>English(US)\McSpookyJam2020.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2959533290" Name="Play_AMB" ObjectPath="\Events\McSpookyJam2020\AMB\Play_AMB" DurationType="Infinite">
+				<Event Id="2959533290" Name="Play_AMB" ObjectPath="\Events\McSpookyJam2020\AMB\Play_AMB" DurationType="Mixed" DurationMin="206.762665" DurationMax="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="850473134" Language="SFX">
 							<ShortName>SX_MCJ2020_AMB_BED_NIGHT_01.wav</ShortName>
 							<Path>SFX\SX_MCJ2020_AMB_BED_NIGHT_01_D79FB2B7.wem</Path>
 						</File>
+						<File Id="988327657" Language="SFX">
+							<ShortName>SX_MCJ2020_AMB_BED_DAY_TIME (1).wav</ShortName>
+							<Path>SFX\SX_MCJ2020_AMB_BED_DAY_TIME (1)_10C4C929.wem</Path>
+						</File>
 					</IncludedMemoryFiles>
-					<DefaultSwitchValue>{3B0762A4-06E8-4DDB-9E04-B0DBB1B3E478}</DefaultSwitchValue>
+					<DefaultSwitchValue>{5CBF7A41-3FC9-410D-B023-E4E2C35DC2FE}</DefaultSwitchValue>
 					<SwitchContainers>
 						<SwitchContainer SwitchValue="{3B0762A4-06E8-4DDB-9E04-B0DBB1B3E478}">
 							<Media>
 								<File Id="850473134"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{5CBF7A41-3FC9-410D-B023-E4E2C35DC2FE}">
+							<Media>
+								<File Id="988327657"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -228,7 +237,7 @@
 				<SwitchGroup Id="2654366170" Name="Time" ObjectPath="\Switches\McSpookyJam2020\Time">
 					<Switches>
 						<Switch Id="1011622525" Name="Night" ObjectPath="\Switches\McSpookyJam2020\Time\Night"/>
-						<Switch Id="2905060079" Name="Evening" ObjectPath="\Switches\McSpookyJam2020\Time\Evening"/>
+						<Switch Id="311764537" Name="Day" ObjectPath="\Switches\McSpookyJam2020\Time\Day"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
