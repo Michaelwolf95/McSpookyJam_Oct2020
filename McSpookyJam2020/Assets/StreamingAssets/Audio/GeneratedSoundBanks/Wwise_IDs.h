@@ -59,7 +59,7 @@ namespace AK
 
             namespace SWITCH
             {
-                static const AkUniqueID EVENING = 2905060079U;
+                static const AkUniqueID DAY = 311764537U;
                 static const AkUniqueID NIGHT = 1011622525U;
             } // namespace SWITCH
         } // namespace TIME

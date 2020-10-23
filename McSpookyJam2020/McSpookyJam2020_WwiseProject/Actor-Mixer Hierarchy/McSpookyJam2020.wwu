@@ -199,12 +199,25 @@
 					</ReferenceList>
 					<ChildrenList>
 						<SwitchContainer Name="AMB_Loops" ID="{2B6BCDAA-FA08-4D4B-A539-0027A7D48768}" ShortID="919626959">
+							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
 								</Reference>
 								<Reference Name="DefaultSwitchOrState">
-									<ObjectRef Name="Evening" ID="{5CBF7A41-3FC9-410D-B023-E4E2C35DC2FE}" WorkUnitID="{421B8F51-862D-416F-BA52-8D7BCDEA3AC6}"/>
+									<ObjectRef Name="Day" ID="{5CBF7A41-3FC9-410D-B023-E4E2C35DC2FE}" WorkUnitID="{421B8F51-862D-416F-BA52-8D7BCDEA3AC6}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
@@ -214,7 +227,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Evening" ID="{618FC82D-154C-4BC7-AE15-9FE5FA2E6F6B}" ShortID="415883618">
+								<Sound Name="SX_MCJ2020_AMB_BED_NIGHT_01" ID="{D5840AE4-A101-4F75-B57C-B019E6D507C9}" ShortID="493557319">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 									</PropertyList>
@@ -227,18 +240,19 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<SourcePlugin Name="Wwise Silence" ID="{EE621D8E-1698-4B4E-AD13-A49C4B035FF3}" ShortID="563994273" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+										<AudioFileSource Name="SX_MCJ2020_AMB_BED_NIGHT_01" ID="{60FC1F1B-6AE7-423B-8C96-8A540DBBE6A5}">
 											<Language>SFX</Language>
-										</SourcePlugin>
+											<AudioFile>SX_MCJ2020_AMB_BED_NIGHT_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="850473134"/>
+											</MediaIDList>
+										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Wwise Silence" ID="{EE621D8E-1698-4B4E-AD13-A49C4B035FF3}" Platform="Linked"/>
+										<ActiveSource Name="SX_MCJ2020_AMB_BED_NIGHT_01" ID="{60FC1F1B-6AE7-423B-8C96-8A540DBBE6A5}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Night" ID="{E774B8FE-66D8-4376-B136-71F9671EFFC4}" ShortID="864094600">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
+								<Sound Name="SX_MCJ2020_AMB_BED_DAY_TIME (1)" ID="{CBEDA160-882B-4F80-8867-0946FB2AFA18}" ShortID="264826034">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
@@ -248,35 +262,39 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<SourcePlugin Name="Wwise Silence" ID="{AF9A97A4-CB4D-42B9-81F0-B8F5AED1453C}" ShortID="198827555" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+										<AudioFileSource Name="SX_MCJ2020_AMB_BED_DAY_TIME (1)" ID="{15962B07-BDD9-40BF-9BED-B5B455B8835C}">
 											<Language>SFX</Language>
-										</SourcePlugin>
+											<AudioFile>SX_MCJ2020_AMB_BED_DAY_TIME (1).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="988327657"/>
+											</MediaIDList>
+										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Wwise Silence" ID="{AF9A97A4-CB4D-42B9-81F0-B8F5AED1453C}" Platform="Linked"/>
+										<ActiveSource Name="SX_MCJ2020_AMB_BED_DAY_TIME (1)" ID="{15962B07-BDD9-40BF-9BED-B5B455B8835C}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
-										<ItemRef Name="Evening" ID="{618FC82D-154C-4BC7-AE15-9FE5FA2E6F6B}"/>
+										<ItemRef Name="SX_MCJ2020_AMB_BED_DAY_TIME (1)" ID="{CBEDA160-882B-4F80-8867-0946FB2AFA18}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="Night" ID="{E774B8FE-66D8-4376-B136-71F9671EFFC4}"/>
+										<ItemRef Name="SX_MCJ2020_AMB_BED_NIGHT_01" ID="{D5840AE4-A101-4F75-B57C-B019E6D507C9}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
-										<SwitchRef Name="Evening" ID="{5CBF7A41-3FC9-410D-B023-E4E2C35DC2FE}"/>
+										<SwitchRef Name="Day" ID="{5CBF7A41-3FC9-410D-B023-E4E2C35DC2FE}"/>
 										<ItemList>
-											<ItemRef Name="Evening" ID="{618FC82D-154C-4BC7-AE15-9FE5FA2E6F6B}"/>
+											<ItemRef Name="SX_MCJ2020_AMB_BED_DAY_TIME (1)" ID="{CBEDA160-882B-4F80-8867-0946FB2AFA18}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
 										<SwitchRef Name="Night" ID="{3B0762A4-06E8-4DDB-9E04-B0DBB1B3E478}"/>
 										<ItemList>
-											<ItemRef Name="Night" ID="{E774B8FE-66D8-4376-B136-71F9671EFFC4}"/>
+											<ItemRef Name="SX_MCJ2020_AMB_BED_NIGHT_01" ID="{D5840AE4-A101-4F75-B57C-B019E6D507C9}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>

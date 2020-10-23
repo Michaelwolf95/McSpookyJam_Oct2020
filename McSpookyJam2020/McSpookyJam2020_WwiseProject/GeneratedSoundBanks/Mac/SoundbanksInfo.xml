@@ -16,14 +16,26 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4190601618" Language="English(US)" Hash="2269251018">
+		<SoundBank Id="4190601618" Language="English(US)" Hash="1918683031">
 			<ObjectPath>\SoundBanks\McSpookyJam2020\McSpookyJam2020</ObjectPath>
 			<ShortName>McSpookyJam2020</ShortName>
 			<Path>English(US)\McSpookyJam2020.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2959533290" Name="Play_AMB" ObjectPath="\Events\McSpookyJam2020\AMB\Play_AMB" DurationType="Infinite">
-					<DefaultSwitchValue>{5CBF7A41-3FC9-410D-B023-E4E2C35DC2FE}</DefaultSwitchValue>
-					<SwitchContainers/>
+					<IncludedMemoryFiles>
+						<File Id="850473134" Language="SFX">
+							<ShortName>SX_MCJ2020_AMB_BED_NIGHT_01.wav</ShortName>
+							<Path>SFX\SX_MCJ2020_AMB_BED_NIGHT_01_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{3B0762A4-06E8-4DDB-9E04-B0DBB1B3E478}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{3B0762A4-06E8-4DDB-9E04-B0DBB1B3E478}">
+							<Media>
+								<File Id="850473134"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="2315829540" Name="Play_Drawer_Close" ObjectPath="\Events\McSpookyJam2020\Interactables\Doors\Play_Drawer_Close" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.782375" DurationMax="0.782375">
 					<IncludedMemoryFiles>
