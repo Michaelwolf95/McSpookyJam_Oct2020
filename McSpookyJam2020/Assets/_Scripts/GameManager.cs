@@ -24,6 +24,18 @@ public class GameManager : SceneSingleton<GameManager>
         
         // ToDo: Ambiance start
     }
+
+    public void OnEnterInvestigationCardScreen()
+    {
+        // Lock player movement
+        FirstPersonAIO.instance.SetControllerPause(true);
+    }
+    
+    public void OnExitInvestigationCardScreen()
+    {
+        // Free player movement.
+        FirstPersonAIO.instance.SetControllerPause(false);
+    }
     
     public void TransitionToNight()
     {

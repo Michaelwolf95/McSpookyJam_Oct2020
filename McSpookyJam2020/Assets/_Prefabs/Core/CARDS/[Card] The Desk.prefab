@@ -180,7 +180,8 @@ MonoBehaviour:
   OnInteractEnd:
     m_PersistentCalls:
       m_Calls: []
-  flowchart: {fileID: 0}
+  flowchartPrefab: {fileID: 5229615216019433152, guid: b17bdf79c6171a34fbd16eb0c9c19487,
+    type: 3}
   exitOnEscapeInput: 1
 --- !u!65 &3962068881435371009
 BoxCollider:

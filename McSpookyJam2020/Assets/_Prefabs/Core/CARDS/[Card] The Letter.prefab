@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7490358578250116425}
   - component: {fileID: 1139835525732891889}
   m_Layer: 8
-  m_Name: InvestigationCard_Simple
+  m_Name: Interactable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53,7 +53,8 @@ MonoBehaviour:
   OnInteractEnd:
     m_PersistentCalls:
       m_Calls: []
-  flowchart: {fileID: 0}
+  flowchartPrefab: {fileID: 8786675518878862360, guid: c39811bdc32fd3f4587a7a322e7cc8a2,
+    type: 3}
   exitOnEscapeInput: 1
 --- !u!135 &1139835525732891889
 SphereCollider:

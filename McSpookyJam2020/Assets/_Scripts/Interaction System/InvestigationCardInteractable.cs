@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Fungus;
 using UnityEngine;
@@ -7,11 +8,18 @@ public class InvestigationCardInteractable : InteractableBase
 {
     [Space(5)]
     [SerializeField] 
-    private Flowchart flowchart = null;
+    private Flowchart flowchartPrefab = null;
 
     [SerializeField] 
     private bool exitOnEscapeInput = true;
-    
+
+    private Flowchart flowchartInstance = null;
+
+    private void Start()
+    {
+        flowchartInstance = InvestigationCardCanvas.instance.InstantiateCard(flowchartPrefab);
+    }
+
     protected override void Update()
     {
         base.Update();
@@ -28,12 +36,11 @@ public class InvestigationCardInteractable : InteractableBase
 
     protected override void PerformInteraction()
     {
-        FirstPersonAIO.instance.SetControllerPause(true);
-        
-        if (flowchart != null)
+        if (flowchartInstance != null)
         {
-            //flowchart.gameObject.SetActive(true);
-            flowchart.ExecuteBlock("START");
+            GameManager.instance.OnEnterInvestigationCardScreen();
+            
+            flowchartInstance.ExecuteBlock("START");
         }
         else
         {
@@ -45,13 +52,11 @@ public class InvestigationCardInteractable : InteractableBase
     {
         base.OnFinishInteraction();
         
-        // ToDo: Free player movement.
-        FirstPersonAIO.instance.SetControllerPause(false);
+        GameManager.instance.OnExitInvestigationCardScreen();
         
-        if (flowchart != null)
+        if (flowchartInstance != null)
         {
-            flowchart.ExecuteBlock("QUIT");
-            //flowchart.gameObject.SetActive(false);
+            flowchartInstance.ExecuteBlock("QUIT");
         }
     }
 }
