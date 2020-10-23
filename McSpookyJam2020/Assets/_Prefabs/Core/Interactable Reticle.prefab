@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8312248387903943971}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Investigate Reticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5796729212533936411}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Hand Reticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,7 +78,7 @@ GameObject:
   - component: {fileID: 7803269017916824902}
   - component: {fileID: 2404175381193560035}
   - component: {fileID: 5694259571710439970}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Instruction Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -251,7 +251,7 @@ GameObject:
   m_Component:
   - component: {fileID: 148763477646246932}
   - component: {fileID: 2465996227810471671}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -334,7 +334,7 @@ GameObject:
   - component: {fileID: 7865547414518398144}
   - component: {fileID: 2223905581744109710}
   - component: {fileID: 2924327198976020409}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Input Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -507,7 +507,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8354546124085910224}
   - component: {fileID: 8354546124085910231}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -588,7 +588,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8354546124552991224}
   - component: {fileID: 8354546124552991231}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -671,7 +671,7 @@ GameObject:
   - component: {fileID: 8354546124806694045}
   - component: {fileID: 8354546124806694046}
   - component: {fileID: 8354546124806694047}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Instruction Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -843,7 +843,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8354546124935041156}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Look Reticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -879,7 +879,7 @@ GameObject:
   - component: {fileID: 8354546125011447482}
   - component: {fileID: 8354546125011447483}
   - component: {fileID: 8354546125011447460}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Input Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1052,7 +1052,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8354546125084861874}
   - component: {fileID: 8354546125084861873}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Interactable Reticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1098,7 +1098,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8354546125289920379}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Activated Reticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1130,7 +1130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1495558583132237521}
   - component: {fileID: 3826089080864721456}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1213,7 +1213,7 @@ GameObject:
   - component: {fileID: 8890222017108391839}
   - component: {fileID: 8219808414021159474}
   - component: {fileID: 5127712073008429891}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Input Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1388,7 +1388,7 @@ GameObject:
   - component: {fileID: 5713905839569568647}
   - component: {fileID: 7107489339969075024}
   - component: {fileID: 6348300992335388065}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Instruction Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}

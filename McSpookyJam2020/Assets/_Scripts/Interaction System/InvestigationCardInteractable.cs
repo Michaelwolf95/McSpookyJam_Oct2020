@@ -32,6 +32,7 @@ public class InvestigationCardInteractable : InteractableBase
         
         if (flowchart != null)
         {
+            //flowchart.gameObject.SetActive(true);
             flowchart.ExecuteBlock("START");
         }
         else
@@ -50,6 +51,7 @@ public class InvestigationCardInteractable : InteractableBase
         if (flowchart != null)
         {
             flowchart.ExecuteBlock("QUIT");
+            //flowchart.gameObject.SetActive(false);
         }
     }
 }

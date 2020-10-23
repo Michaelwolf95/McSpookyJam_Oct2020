@@ -62,7 +62,7 @@ Camera:
   m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 1024
   m_RenderingPath: 3
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -122,6 +122,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 1
+  isEnabled: 0
 --- !u!108 &956126460
 Light:
   m_ObjectHideFlags: 0

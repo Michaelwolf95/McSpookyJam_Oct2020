@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class DayNightController : MonoBehaviour
 {
-    [SerializeField] GameObject _dayLighting;
-    [SerializeField] GameObject _nightLighting;
-    [SerializeField] Material _daySkybox;
-    [SerializeField] Material _nightSkybox;
+    [SerializeField] GameObject _dayLighting = null;
+    [SerializeField] GameObject _nightLighting = null;
+    [SerializeField] Material _daySkybox = null;
+    [SerializeField] Material _nightSkybox = null;
 
     [ContextMenu("DAY")]
     public void MakeDay()
