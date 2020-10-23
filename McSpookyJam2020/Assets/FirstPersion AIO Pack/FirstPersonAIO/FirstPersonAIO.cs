@@ -59,6 +59,8 @@ using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 
+
+
 #if UNITY_EDITOR
     using UnityEditor;
     using System.Net;
@@ -69,7 +71,9 @@ using System.Collections.Generic;
 public class FirstPersonAIO : MonoBehaviour
 {
     public static FirstPersonAIO instance = null;
-    
+
+    public AK.Wwise.Event Foosteps;
+
     #region Variables
 
     #region Input Settings
@@ -628,14 +632,14 @@ public class FirstPersonAIO : MonoBehaviour
                     {
                         if(!previousGrounded)
                         {
-                            if(dynamicFootstep.currentClipSet.Any()) { audioSource.PlayOneShot(dynamicFootstep.currentClipSet[Random.Range(0, dynamicFootstep.currentClipSet.Count)],Volume/10); }
+                            if(dynamicFootstep.currentClipSet.Any()) { Foosteps.Post(gameObject); }
                             nextStepTime = headbobCycle + 0.5f;
                         } else
                         {
                             if(headbobCycle > nextStepTime)
                             {
                                 nextStepTime = headbobCycle + 0.5f;
-                                if(dynamicFootstep.currentClipSet.Any()){ audioSource.PlayOneShot(dynamicFootstep.currentClipSet[Random.Range(0, dynamicFootstep.currentClipSet.Count)],Volume/10); }
+                                if(dynamicFootstep.currentClipSet.Any()){ Foosteps.Post(gameObject); }
                             }
                         }
                         previousGrounded = true;
@@ -643,7 +647,7 @@ public class FirstPersonAIO : MonoBehaviour
                     {
                         if(previousGrounded)
                         {
-                            if(dynamicFootstep.currentClipSet.Any()){ audioSource.PlayOneShot(dynamicFootstep.currentClipSet[Random.Range(0, dynamicFootstep.currentClipSet.Count)],Volume/10); }
+                            if(dynamicFootstep.currentClipSet.Any()){ Foosteps.Post(gameObject); }
                         }
                         previousGrounded = false;
                     }
@@ -654,7 +658,7 @@ public class FirstPersonAIO : MonoBehaviour
                     {
                         if(!previousGrounded)
                         {
-                            if(landSound){ audioSource.PlayOneShot(landSound,Volume/10); }
+                            if(landSound){ Foosteps.Post(gameObject); }
                             nextStepTime = headbobCycle + 0.5f;
                         } else
                         {
@@ -662,7 +666,7 @@ public class FirstPersonAIO : MonoBehaviour
                             {
                                 nextStepTime = headbobCycle + 0.5f;
                                 int n = Random.Range(0, footStepSounds.Count);
-                                if(footStepSounds.Any()){ audioSource.PlayOneShot(footStepSounds[n],Volume/10); }
+                                if(footStepSounds.Any()){ Foosteps.Post(gameObject); }
                                 footStepSounds[n] = footStepSounds[0];
                             }
                         }
@@ -671,7 +675,7 @@ public class FirstPersonAIO : MonoBehaviour
                     {
                         if(previousGrounded)
                         {
-                            if(jumpSound){ audioSource.PlayOneShot(jumpSound,Volume/10); }
+                            if(jumpSound){ Foosteps.Post(gameObject); }
                         }
                         previousGrounded = false;
                     }
@@ -683,7 +687,7 @@ public class FirstPersonAIO : MonoBehaviour
                 {
                     if(!previousGrounded)
                     {
-                        if(landSound) { audioSource.PlayOneShot(landSound,Volume/10); }
+                        if(landSound) { Foosteps.Post(gameObject); }
                         nextStepTime = headbobCycle + 0.5f;
                     } else
                     {
@@ -691,7 +695,7 @@ public class FirstPersonAIO : MonoBehaviour
                         {
                             nextStepTime = headbobCycle + 0.5f;
                             int n = Random.Range(0, footStepSounds.Count);
-                            if(footStepSounds.Any() && footStepSounds[n] != null){ audioSource.PlayOneShot(footStepSounds[n],Volume/10);}
+                            if(footStepSounds.Any() && footStepSounds[n] != null){ Foosteps.Post(gameObject); }
                             
                         }
                     }
@@ -700,7 +704,7 @@ public class FirstPersonAIO : MonoBehaviour
                 {
                     if(previousGrounded)
                     {
-                        if(jumpSound) { audioSource.PlayOneShot(jumpSound,Volume/10); }
+                        if(jumpSound) { Foosteps.Post(gameObject); }
                     }
                     previousGrounded = false;
                 }

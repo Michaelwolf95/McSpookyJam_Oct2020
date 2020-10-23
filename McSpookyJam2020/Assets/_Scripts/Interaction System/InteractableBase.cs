@@ -17,6 +17,9 @@ public class InteractableBase : MonoBehaviour
     public UnityEvent OnInteractStart = new UnityEvent();
     public UnityEvent OnInteractEnd = new UnityEvent();
 
+    public AK.Wwise.Event InteractStartAudio;
+    public AK.Wwise.Event InteractEndAudio;
+
     private void Awake()
     {
         activatedReticle.SetActive(false);
@@ -69,9 +72,9 @@ public class InteractableBase : MonoBehaviour
         //Debug.Log("OnBeginInteraction");
         isInteracting = true;
         OnInteractStart.Invoke();
+        InteractStartAudio.Post(gameObject);
         PerformInteraction();
-    }
-    
+}
     protected virtual void PerformInteraction()
     {
         //Debug.Log("PerformInteraction");
@@ -82,6 +85,7 @@ public class InteractableBase : MonoBehaviour
     public virtual void OnFinishInteraction()
     {
         isInteracting = false;
+        InteractEndAudio.Post(gameObject);
         OnInteractEnd.Invoke();
         //Debug.Log("OnFinishInteraction");
     }
