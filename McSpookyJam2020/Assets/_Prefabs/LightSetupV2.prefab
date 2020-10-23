@@ -4102,8 +4102,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dayLighting: {fileID: 8721253227477554253}
   _nightLighting: {fileID: 8721253227218955938}
-  _daySkyBox: {fileID: 0}
-  _nightSkyBox: {fileID: 0}
+  _daySkybox: {fileID: 2100000, guid: eff5d86c23ba32a46b347a66bf358917, type: 2}
+  _nightSkybox: {fileID: 2100000, guid: 421c0eb58d4469c45a98565576465a0e, type: 2}
 --- !u!1 &6941264539179515048
 GameObject:
   m_ObjectHideFlags: 0
