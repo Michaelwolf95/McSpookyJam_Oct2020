@@ -15,4 +15,5 @@ MonoBehaviour:
   objectName: Day
   id: 311764537
   guid: 5CBF7A41-3FC9-410D-B023-E4E2C35DC2FE
-  WwiseSwitchGroupReference: {fileID: 0}
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 011f00a7d659b8c4996e94f68d7dd475,
+    type: 2}

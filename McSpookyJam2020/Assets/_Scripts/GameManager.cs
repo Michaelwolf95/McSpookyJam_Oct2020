@@ -14,6 +14,7 @@ public class GameManager : SceneSingleton<GameManager>
     public AK.Wwise.Event PlayAMB;
     public AK.Wwise.Event StopMusic;
     public AK.Wwise.Event PlayMusic;
+    public AK.Wwise.Event GameStart;
 
 
     private void Start()
@@ -25,6 +26,7 @@ public class GameManager : SceneSingleton<GameManager>
     {
         dayNightController.MakeDay();
         monsterController.gameObject.SetActive(false);
+        GameStart.Post(gameObject);
         PlayAMB.Post(gameObject);
         PlayMusic.Post(gameObject);
         Day.SetValue(gameObject);

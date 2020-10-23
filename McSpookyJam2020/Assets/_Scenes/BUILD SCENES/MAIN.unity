@@ -3356,24 +3356,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dayNightController: {fileID: 1758385544}
   monsterController: {fileID: 123598979}
-  DeathSound:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  StopAMB:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  StopMusic:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  Time:
+  Day:
     idInternal: 0
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: dece4eae4772dbd49bebddb4b90036ec,
+      type: 2}
+  Night:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 79ec622501aebb14c853eff2fddbd3c4,
+      type: 2}
+  DeathSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5b0eb492e730f0243851230b73940d3b,
+      type: 2}
+  StopAMB:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 97a4ce143078408458090e14fbe09d08,
+      type: 2}
+  PlayAMB:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4d3c3056d67e8d44a8337d43f75dd41f,
+      type: 2}
+  StopMusic:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4a92a4ce895bcc94f86852ad946bd18d,
+      type: 2}
+  PlayMusic:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6df3f821ce419d948a72156b31cb77ac,
+      type: 2}
+  GameStart:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: be2958ff5a99f7f4f8bae61a5ac33381,
+      type: 2}
 --- !u!114 &1109488259
 MonoBehaviour:
   m_ObjectHideFlags: 0
