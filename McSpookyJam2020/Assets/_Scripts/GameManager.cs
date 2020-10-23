@@ -15,7 +15,8 @@ public class GameManager : SceneSingleton<GameManager>
     public AK.Wwise.Event StopMusic;
     public AK.Wwise.Event PlayMusic;
     public AK.Wwise.Event GameStart;
-
+    
+    public bool isNight { get; private set; }
 
     private void Start()
     {
@@ -47,23 +48,22 @@ public class GameManager : SceneSingleton<GameManager>
 
     public void TransitionToNight()
     {
-        dayNightController.MakeNight();
-        monsterController.gameObject.SetActive(true); // Goes right in front of the door
-        Night.SetValue(gameObject);
-        StopAMB.Post(gameObject);
-        PlayAMB.Post(gameObject);
+        if (isNight == false)
+        {
+            isNight = true;
+            dayNightController.MakeNight();
+            monsterController.gameObject.SetActive(true); // Goes right in front of the door
+            Night.SetValue(gameObject);
+            StopAMB.Post(gameObject);
+            PlayAMB.Post(gameObject);
+        }
     }
-        
-    // ToDo: Ambiance swap
 
-
-    
-    
     public void OnPlayerDeath()
     {
-    DeathSound.Post(gameObject);
-    StopAMB.Post(gameObject);
-    StopMusic.Post(gameObject);
-    Debug.Log("PLAYER FUCKING DIED");
+        DeathSound.Post(gameObject);
+        StopAMB.Post(gameObject);
+        StopMusic.Post(gameObject);
+        Debug.Log("PLAYER FUCKING DIED");
     }
 }

@@ -12,27 +12,17 @@ public class DeskCardController : MonoBehaviour
 
     private void OnEnable()
     {
-        if (InventoryManager.instance.hasBasementKey)
-        {
-            deskClosed.SetActive(false);
-            deskOpenedKey.SetActive(false);
-            deskOpenedNoKey.SetActive(true);
-        }
-        else
-        {
-            deskClosed.SetActive(true);
-            deskOpenedKey.SetActive(false);
-            deskOpenedNoKey.SetActive(false);
-        }
+        deskClosed.SetActive(true);
+        deskOpenedKey.SetActive(false);
+        deskOpenedNoKey.SetActive(false);
     }
 
     public void OpenDesk()
     {
         deskClosed.SetActive(false);
-        deskOpenedKey.SetActive(true);
-        deskOpenedNoKey.SetActive(false);
+        deskOpenedKey.SetActive(InventoryManager.instance.hasBasementKey == false);
+        deskOpenedNoKey.SetActive(InventoryManager.instance.hasBasementKey);
         DrawerOpen.Post(gameObject);
-        // ToDo: Open Desk Sound.
     }
     
     public void GetKey()
@@ -42,7 +32,6 @@ public class DeskCardController : MonoBehaviour
         deskOpenedNoKey.SetActive(true);
         PickupKey.Post(gameObject);
         InventoryManager.instance.GetBasementKey();
-        // ToDo: Get Key Sound.
         
     }
     

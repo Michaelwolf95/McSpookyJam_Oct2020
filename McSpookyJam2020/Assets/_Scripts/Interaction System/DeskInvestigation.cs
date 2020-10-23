@@ -11,8 +11,11 @@
         public override void OnFinishInteraction()
         {
             base.OnFinishInteraction();
-            
-            GameManager.instance.TransitionToNight();
+
+            if (InventoryManager.instance.hasBasementKey && GameManager.instance.isNight == false)
+            {
+                GameManager.instance.TransitionToNight();
+            }
         }
     }
 }
