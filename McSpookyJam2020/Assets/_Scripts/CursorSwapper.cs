@@ -11,7 +11,7 @@ using UnityEditor;
 public class CursorSwapper : EventTrigger
 {
     public Texture2D cursor;
-
+    
     public override void OnPointerEnter(PointerEventData eventData)
     {
         base.OnPointerEnter(eventData);

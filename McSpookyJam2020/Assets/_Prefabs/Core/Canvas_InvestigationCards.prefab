@@ -232,57 +232,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3748139449008593722}
     m_Modifications:
-    - target: {fileID: 1281036352578925827, guid: b17bdf79c6171a34fbd16eb0c9c19487,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2378857473022481507, guid: b17bdf79c6171a34fbd16eb0c9c19487,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5229615214728727688, guid: b17bdf79c6171a34fbd16eb0c9c19487,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5229615214728727691, guid: b17bdf79c6171a34fbd16eb0c9c19487,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: fb737f3dec1ef074f9fb96c25c221324,
-        type: 3}
-    - target: {fileID: 5229615214728727691, guid: b17bdf79c6171a34fbd16eb0c9c19487,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.5660378
-      objectReference: {fileID: 0}
-    - target: {fileID: 5229615214728727691, guid: b17bdf79c6171a34fbd16eb0c9c19487,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.5165421
-      objectReference: {fileID: 0}
-    - target: {fileID: 5229615214728727691, guid: b17bdf79c6171a34fbd16eb0c9c19487,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.41918835
-      objectReference: {fileID: 0}
-    - target: {fileID: 5229615215148617471, guid: b17bdf79c6171a34fbd16eb0c9c19487,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5229615215735248189, guid: b17bdf79c6171a34fbd16eb0c9c19487,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5229615216019433152, guid: b17bdf79c6171a34fbd16eb0c9c19487,
-        type: 3}
-      propertyPath: selectedBlocks.Array.size
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5229615216019433204, guid: b17bdf79c6171a34fbd16eb0c9c19487,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -392,21 +341,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '[Card UI] The Desk'
-      objectReference: {fileID: 0}
-    - target: {fileID: 5229615216019433205, guid: b17bdf79c6171a34fbd16eb0c9c19487,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5229615216019433214, guid: b17bdf79c6171a34fbd16eb0c9c19487,
-        type: 3}
-      propertyPath: itemId
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6553186191995744872, guid: b17bdf79c6171a34fbd16eb0c9c19487,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b17bdf79c6171a34fbd16eb0c9c19487, type: 3}
