@@ -14,6 +14,7 @@ public class Flashlight : SceneSingleton<Flashlight>
     private LayerMask layerMask = new LayerMask();
     private List<LightReactor> currentCollisions = null;
 
+    [SerializeField] 
     private bool isEnabled = false;
     
     protected override void Awake()
@@ -31,7 +32,7 @@ public class Flashlight : SceneSingleton<Flashlight>
     public void Toggle(bool argEnabled)
     {
         isEnabled = argEnabled;
-        spotLight.enabled = false;
+        spotLight.enabled = isEnabled;
     }
 
     private void FixedUpdate()
