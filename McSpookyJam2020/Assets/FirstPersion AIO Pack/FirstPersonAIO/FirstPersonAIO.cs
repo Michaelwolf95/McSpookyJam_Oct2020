@@ -967,6 +967,7 @@ public class FirstPersonAIO : MonoBehaviour
                 Debug.LogWarning("Scale needs to be (1,1,1)! \n Please scale controller via Capsule collider height/raduis.");
             }
 
+            //FirstPersonAIO targetController = target as FirstPersonAIO;
             EditorGUILayout.PropertyField(serializedObject.FindProperty("groundFloorMaterial"));
             EditorGUILayout.PropertyField(serializedObject.FindProperty("groundFloorFootSteps"));
             EditorGUILayout.PropertyField(serializedObject.FindProperty("upstairsMaterial"));
