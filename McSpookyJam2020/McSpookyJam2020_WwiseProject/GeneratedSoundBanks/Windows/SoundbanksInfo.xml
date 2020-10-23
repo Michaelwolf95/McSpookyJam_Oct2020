@@ -16,18 +16,139 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4190601618" Language="English(US)" Hash="2449390713">
+		<SoundBank Id="4190601618" Language="English(US)" Hash="2269251018">
 			<ObjectPath>\SoundBanks\McSpookyJam2020\McSpookyJam2020</ObjectPath>
 			<ShortName>McSpookyJam2020</ShortName>
 			<Path>English(US)\McSpookyJam2020.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2959533290" Name="Play_AMB" ObjectPath="\Events\McSpookyJam2020\AMB\Play_AMB" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3781480055" Name="Play_Ghost_Footsteps" ObjectPath="\Events\McSpookyJam2020\Spooks\Play_Ghost_Footsteps" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2957503395" Name="Play_Ghost_Jolt" ObjectPath="\Events\McSpookyJam2020\Spooks\Play_Ghost_Jolt" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
-				<Event Id="3933447040" Name="Play_Lights_Out" ObjectPath="\Events\McSpookyJam2020\Spooks\Play_Lights_Out" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
+				<Event Id="2959533290" Name="Play_AMB" ObjectPath="\Events\McSpookyJam2020\AMB\Play_AMB" DurationType="Infinite">
+					<DefaultSwitchValue>{5CBF7A41-3FC9-410D-B023-E4E2C35DC2FE}</DefaultSwitchValue>
+					<SwitchContainers/>
+				</Event>
+				<Event Id="2315829540" Name="Play_Drawer_Close" ObjectPath="\Events\McSpookyJam2020\Interactables\Doors\Play_Drawer_Close" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.782375" DurationMax="0.782375">
+					<IncludedMemoryFiles>
+						<File Id="527450663" Language="SFX">
+							<ShortName>SFX_Drawer_Close.wav</ShortName>
+							<Path>SFX\SFX_Drawer_Close_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1958703520" Name="Play_Drawer_Open" ObjectPath="\Events\McSpookyJam2020\Interactables\Doors\Play_Drawer_Open" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.813646" DurationMax="0.813646">
+					<IncludedMemoryFiles>
+						<File Id="1062360790" Language="SFX">
+							<ShortName>SFX_Drawer_Open.wav</ShortName>
+							<Path>SFX\SFX_Drawer_Open_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3471928368" Name="Play_Flashlight_On" ObjectPath="\Events\McSpookyJam2020\Interactables\Lights\Flashlight\Play_Flashlight_On" DurationType="OneShot" DurationMin="0.181000" DurationMax="0.181000">
+					<IncludedMemoryFiles>
+						<File Id="124252642" Language="SFX">
+							<ShortName>SFX_Flashlight_On (1).wav</ShortName>
+							<Path>SFX\SFX_Flashlight_On (1)_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2790351818" Name="Play_Game_End" ObjectPath="\Events\McSpookyJam2020\SFXs\Endings\Play_Game_End" DurationType="OneShot" DurationMin="3.603083" DurationMax="3.603083">
+					<IncludedMemoryFiles>
+						<File Id="454786560" Language="SFX">
+							<ShortName>SFX_Game_End.wav</ShortName>
+							<Path>SFX\SFX_Game_End_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2901631795" Name="Play_Game_Start_Candle" ObjectPath="\Events\McSpookyJam2020\SFXs\Endings\Play_Game_Start_Candle" DurationType="OneShot" DurationMin="2.676875" DurationMax="2.676875">
+					<IncludedMemoryFiles>
+						<File Id="197720328" Language="SFX">
+							<ShortName>SFX_Game_Start_Candle.wav</ShortName>
+							<Path>SFX\SFX_Game_Start_Candle_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2892862498" Name="Play_Game_Start_Candle_Trem" ObjectPath="\Events\McSpookyJam2020\SFXs\Endings\Play_Game_Start_Candle_Trem" DurationType="OneShot" DurationMin="2.676875" DurationMax="2.676875">
+					<IncludedMemoryFiles>
+						<File Id="730490238" Language="SFX">
+							<ShortName>SFX_Game_Start_Candle_Trem.wav</ShortName>
+							<Path>SFX\SFX_Game_Start_Candle_Trem_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3727723795" Name="Play_Game_Start_Light_Switch" ObjectPath="\Events\McSpookyJam2020\SFXs\Endings\Play_Game_Start_Light_Switch" DurationType="OneShot" DurationMin="2.676875" DurationMax="2.676875">
+					<IncludedMemoryFiles>
+						<File Id="921245797" Language="SFX">
+							<ShortName>SFX_Game_Start_Light_Switch.wav</ShortName>
+							<Path>SFX\SFX_Game_Start_Light_Switch_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3781480055" Name="Play_Ghost_Footsteps" ObjectPath="\Events\McSpookyJam2020\SFXs\Spooks\Play_Ghost_Footsteps" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2957503395" Name="Play_Ghost_Jolt" ObjectPath="\Events\McSpookyJam2020\SFXs\Spooks\Play_Ghost_Jolt" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
+				<Event Id="314077991" Name="Play_Light_Switch_Off" ObjectPath="\Events\McSpookyJam2020\Interactables\Lights\Light_Switch\Play_Light_Switch_Off" DurationType="OneShot" DurationMin="0.109312" DurationMax="0.109312">
+					<IncludedMemoryFiles>
+						<File Id="18940520" Language="SFX">
+							<ShortName>SFX_Light_Switch_Off.wav</ShortName>
+							<Path>SFX\SFX_Light_Switch_Off_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="82250835" Name="Play_Light_Switch_On" ObjectPath="\Events\McSpookyJam2020\Interactables\Lights\Light_Switch\Play_Light_Switch_On" DurationType="OneShot" DurationMin="0.082271" DurationMax="0.082271">
+					<IncludedMemoryFiles>
+						<File Id="749257360" Language="SFX">
+							<ShortName>SFX_Light_Switch_On.wav</ShortName>
+							<Path>SFX\SFX_Light_Switch_On_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3933447040" Name="Play_Lights_Out" ObjectPath="\Events\McSpookyJam2020\SFXs\Spooks\Play_Lights_Out" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
+				<Event Id="2167123887" Name="Play_Metal_Door_Close" ObjectPath="\Events\McSpookyJam2020\Interactables\Doors\Play_Metal_Door_Close" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.731292" DurationMax="1.731292">
+					<IncludedMemoryFiles>
+						<File Id="901584945" Language="SFX">
+							<ShortName>SFX_Metal_Door_Close.wav</ShortName>
+							<Path>SFX\SFX_Metal_Door_Close_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2617923177" Name="Play_Metal_Door_Open" ObjectPath="\Events\McSpookyJam2020\Interactables\Doors\Play_Metal_Door_Open" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="2.799062" DurationMax="2.799062">
+					<IncludedMemoryFiles>
+						<File Id="111880704" Language="SFX">
+							<ShortName>SFX_Metal_Door_Open.wav</ShortName>
+							<Path>SFX\SFX_Metal_Door_Open_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\McSpookyJam2020\Music\Play_Music" DurationType="Infinite"/>
-				<Event Id="3768549418" Name="Play_Pickup_Key" ObjectPath="\Events\McSpookyJam2020\Interactables\Play_Pickup_Key" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
-				<Event Id="2216405837" Name="Play_Pickup_Note" ObjectPath="\Events\McSpookyJam2020\Interactables\Play_Pickup_Note" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
+				<Event Id="3768549418" Name="Play_Pickup_Key" ObjectPath="\Events\McSpookyJam2020\Interactables\Pickups\Play_Pickup_Key" DurationType="OneShot" DurationMin="0.228188" DurationMax="0.228188">
+					<IncludedMemoryFiles>
+						<File Id="43030366" Language="SFX">
+							<ShortName>SFX_Pickup_Key.wav</ShortName>
+							<Path>SFX\SFX_Pickup_Key_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2216405837" Name="Play_Pickup_Note" ObjectPath="\Events\McSpookyJam2020\Interactables\Pickups\Play_Pickup_Note" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.585500" DurationMax="0.888062">
+					<IncludedMemoryFiles>
+						<File Id="47420332" Language="SFX">
+							<ShortName>SFX_Pickup_Note_01.wav</ShortName>
+							<Path>SFX\SFX_Pickup_Note_01_10C4C929.wem</Path>
+						</File>
+						<File Id="112985724" Language="SFX">
+							<ShortName>SFX_Pickup_Note_03.wav</ShortName>
+							<Path>SFX\SFX_Pickup_Note_03_10C4C929.wem</Path>
+						</File>
+						<File Id="727336084" Language="SFX">
+							<ShortName>SFX_Pickup_Note_05.wav</ShortName>
+							<Path>SFX\SFX_Pickup_Note_05_10C4C929.wem</Path>
+						</File>
+						<File Id="1032202223" Language="SFX">
+							<ShortName>SFX_Pickup_Note_02.wav</ShortName>
+							<Path>SFX\SFX_Pickup_Note_02_10C4C929.wem</Path>
+						</File>
+						<File Id="1064103587" Language="SFX">
+							<ShortName>SFX_Pickup_Note_04.wav</ShortName>
+							<Path>SFX\SFX_Pickup_Note_04_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="98439365" Name="Play_Player_Footsteps" ObjectPath="\Events\McSpookyJam2020\Player\Play_Player_Footsteps" DurationType="OneShot" DurationMin="0.420000" DurationMax="0.661042">
 					<IncludedMemoryFiles>
 						<File Id="64765254" Language="English(US)">
@@ -64,9 +185,25 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="754369548" Name="Play_Stinger" ObjectPath="\Events\McSpookyJam2020\Spooks\Play_Stinger" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
+				<Event Id="754369548" Name="Play_Stinger" ObjectPath="\Events\McSpookyJam2020\SFXs\Spooks\Play_Stinger" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
 				<Event Id="1986548623" Name="Play_UI_Exit" ObjectPath="\Events\McSpookyJam2020\UI\Play_UI_Exit" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
 				<Event Id="643450781" Name="Play_UI_Start" ObjectPath="\Events\McSpookyJam2020\UI\Play_UI_Start" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
+				<Event Id="801816073" Name="Play_Wood_Door_Close" ObjectPath="\Events\McSpookyJam2020\Interactables\Doors\Play_Wood_Door_Close" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.860000" DurationMax="0.860000">
+					<IncludedMemoryFiles>
+						<File Id="263069633" Language="SFX">
+							<ShortName>SFX_Wood_Door_Close.wav</ShortName>
+							<Path>SFX\SFX_Wood_Door_Close_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="781714651" Name="Play_Wood_Door_Open" ObjectPath="\Events\McSpookyJam2020\Interactables\Doors\Play_Wood_Door_Open" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="2.400000" DurationMax="2.400000">
+					<IncludedMemoryFiles>
+						<File Id="990572818" Language="SFX">
+							<ShortName>SFX_Wood_Door_Open.wav</ShortName>
+							<Path>SFX\SFX_Wood_Door_Open_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="435770000" Name="Stop_AMB" ObjectPath="\Events\McSpookyJam2020\AMB\Stop_AMB" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\McSpookyJam2020\Music\Stop_Music" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
@@ -74,6 +211,12 @@
 				<SwitchGroup Id="2385628198" Name="Footsteps" ObjectPath="\Switches\McSpookyJam2020\Footsteps">
 					<Switches>
 						<Switch Id="340271938" Name="Walking" ObjectPath="\Switches\McSpookyJam2020\Footsteps\Walking"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="2654366170" Name="Time" ObjectPath="\Switches\McSpookyJam2020\Time">
+					<Switches>
+						<Switch Id="1011622525" Name="Night" ObjectPath="\Switches\McSpookyJam2020\Time\Night"/>
+						<Switch Id="2905060079" Name="Evening" ObjectPath="\Switches\McSpookyJam2020\Time\Evening"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>

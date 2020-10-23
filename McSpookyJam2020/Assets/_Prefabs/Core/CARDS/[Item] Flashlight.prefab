@@ -148,6 +148,15 @@ MonoBehaviour:
   OnInteractEnd:
     m_PersistentCalls:
       m_Calls: []
+  InteractStartAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f1812bf849893954cb765c22e68511d2,
+      type: 2}
+  InteractEndAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1001 &5437091532288574841
 PrefabInstance:
   m_ObjectHideFlags: 0

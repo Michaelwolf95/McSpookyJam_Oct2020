@@ -53,6 +53,16 @@ MonoBehaviour:
   OnInteractEnd:
     m_PersistentCalls:
       m_Calls: []
+  InteractStartAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 101256962c0e60c40a63b3d22ef61ea6,
+      type: 2}
+  InteractEndAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 101256962c0e60c40a63b3d22ef61ea6,
+      type: 2}
   flowchartPrefab: {fileID: 8786675518878862360, guid: c39811bdc32fd3f4587a7a322e7cc8a2,
     type: 3}
   exitOnEscapeInput: 1
