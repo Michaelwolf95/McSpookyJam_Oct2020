@@ -98,19 +98,40 @@ namespace MichaelWolfGames
                 onDoneCallback();
         }
         
-        
-        public static void DoTween(this MonoBehaviour invokedOn, float duration,Action<float> tweenAction,  Action onDoneCallback = null)
+        public static void StartTimer(this MonoBehaviour invokedOn, float duration, Action onDoneCallback = null)
         {
-            invokedOn.StartCoroutine(CoDoTween(duration, tweenAction, onDoneCallback));
+            invokedOn.StartCoroutine(CoDoTimer(duration, onDoneCallback));
+        }
+        
+        private static IEnumerator CoDoTimer(float duration, Action onDoneCallback = null)
+        {
+            yield return new WaitForSeconds(duration);
+            
+            if (onDoneCallback != null)
+                onDoneCallback();
+        }
+        
+        public static void DoTween(this MonoBehaviour invokedOn, Action<float> tweenAction, Action onDoneCallback = null, float duration = 0f, EaseType easeType = EaseType.linear)
+        {
+            invokedOn.StartCoroutine(CoDoTween( tweenAction, onDoneCallback, duration, easeType));
         }
 
-        private static IEnumerator CoDoTween( float duration, Action<float> tweenAction, Action onDoneCallback = null)
+        private static IEnumerator CoDoTween(Action<float> tweenAction, Action onDoneCallback = null, float duration = 0f, EaseType easeType = EaseType.linear)
         {
+            TweenEasing.EasingFunction easeFunc = TweenEasing.GetEasingFunction(easeType);
             float timer = 0f;
             while (timer < duration)
             {
                 timer += Time.deltaTime;
-                tweenAction(timer / duration);
+                switch (easeType)
+                {
+                    case EaseType.punch:
+                        tweenAction(TweenEasing.punch(1f, timer / duration));
+                        break;
+                    default:
+                        tweenAction(easeFunc(0,1, timer / duration));
+                        break;
+                }
                 yield return null;
             }
             
