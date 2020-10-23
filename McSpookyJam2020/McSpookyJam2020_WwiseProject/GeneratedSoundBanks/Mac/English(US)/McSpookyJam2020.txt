@@ -32,12 +32,11 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 
 Switch	ID	Name	Switch Group			Notes
 	340271938	Walking	Footsteps			
+	311764537	Day	Time			
 	1011622525	Night	Time			
-	2905060079	Evening	Time			
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	452917873	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\UI\SFX_UI_Start\Wwise Silence	
-	563994273	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\AMB\AMB_Loops\Evening\Wwise Silence	
 	747678343	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\SFXs\Spooks\SFX_Ghost_Jolt\Wwise Silence	
 	764598772	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\SFXs\Spooks\SFX_Stingers\SFX_Stinger\Wwise Silence	
 	915949771	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\UI\SFX_UI_Exit\Wwise Silence	
@@ -65,6 +64,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	850473134	SX_MCJ2020_AMB_BED_NIGHT_01	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Mac\SFX\SX_MCJ2020_AMB_BED_NIGHT_01_D79FB2B7.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\AMB\AMB_Loops\SX_MCJ2020_AMB_BED_NIGHT_01		671028
 	901584945	SFX_Metal_Door_Close	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Mac\SFX\SFX_Metal_Door_Close_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Doors\Basement\SFX_Metal_Door_Close		332472
 	921245797	SFX_Game_Start_Light_Switch	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Mac\SFX\SFX_Game_Start_Light_Switch_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\SFXs\Game_Endings\SFX_Game_Start_Light_Switch		514024
+	988327657	SX_MCJ2020_AMB_BED_DAY_TIME (1)	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Mac\SFX\SX_MCJ2020_AMB_BED_DAY_TIME (1)_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\AMB\AMB_Loops\SX_MCJ2020_AMB_BED_DAY_TIME (1)		39698496
 	990572818	SFX_Wood_Door_Open	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Mac\SFX\SFX_Wood_Door_Open_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Doors\Door\SFX_Wood_Door_Open		460864
 	1032202223	SFX_Pickup_Note_02	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Mac\SFX\SFX_Pickup_Note_02_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Pickups\SFX_Pickup_Note\SFX_Pickup_Note_02		145596
 	1062360790	SFX_Drawer_Open	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Mac\SFX\SFX_Drawer_Open_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Doors\Drawer\SFX_Drawer_Open		156284

@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{6EEC6EC4-DFBF-4185-9E3F-913FFFC6DF22}" SchemaVersion="97">
 	<SoundcasterSessions>
-		<WorkUnit Name="McSpookyJam2020" ID="{6EEC6EC4-DFBF-4185-9E3F-913FFFC6DF22}" PersistMode="Standalone"/>
+		<WorkUnit Name="McSpookyJam2020" ID="{6EEC6EC4-DFBF-4185-9E3F-913FFFC6DF22}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="AMB_Test" ID="{28FE2F90-6638-42F9-8060-71F76F425168}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_AMB" ID="{187BC0C9-4FB5-4C23-9674-9B4DD8FD9A6C}" WorkUnitID="{1A2B518A-4352-4C21-9BFC-30890D9EA72B}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Night" ID="{F37607B3-A313-4492-94F1-2A4198829578}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Night" ID="{3B0762A4-06E8-4DDB-9E04-B0DBB1B3E478}"/>
+						<CurrentSwitchRef Name="Walking" ID="{8E231F5C-915B-4C82-8791-31A745B60E68}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

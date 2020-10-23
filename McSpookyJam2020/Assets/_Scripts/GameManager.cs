@@ -50,6 +50,8 @@ public class GameManager : SceneSingleton<GameManager>
         dayNightController.MakeNight();
         monsterController.gameObject.SetActive(true); // Goes right in front of the door
         Night.SetValue(gameObject);
+        StopAMB.Post(gameObject);
+        PlayAMB.Post(gameObject);
     }
         
     // ToDo: Ambiance swap
