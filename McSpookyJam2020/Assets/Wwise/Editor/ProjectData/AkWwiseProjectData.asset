@@ -67,7 +67,7 @@ MonoBehaviour:
     ParentPath: McSpookyJam2020
     guid: 2f9925712de4034f9e27c1a8c5e056c6
     GuidInternal: 
-    m_lastTime: -8585985414649188903
+    m_lastTime: -8585982787711898957
     List:
     - name: McSpookyJam2020
       guid: 6f1e9856c38f934ca82141bdddce26a0
@@ -86,7 +86,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 1b4e00244ba2a24097d9495a78791aa7
     GuidInternal: 
-    m_lastTime: -8585985427472194177
+    m_lastTime: -8585981739174360941
     List: []
   - PhysicalPath: Events\McSpookyJam2020.wwu
     PathAndIcons:
@@ -95,8 +95,590 @@ MonoBehaviour:
     ParentPath: McSpookyJam2020
     guid: 8a512b1a5243214c9bfc30890d9ea72b
     GuidInternal: 
-    m_lastTime: -8585985415193205421
-    List: []
+    m_lastTime: -8585981739174390860
+    List:
+    - name: AMB
+      guid: d0e6c28b7fe1e34d941ccf3250b43293
+      id: 1117531639
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      Path: McSpookyJam2020\AMB
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Doors
+      guid: 8bc56b13167f8a40b18ebd42a7afa0bd
+      id: 2150196036
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Interactables
+        ObjectType: 4
+      - ElementName: Doors
+        ObjectType: 4
+      Path: McSpookyJam2020\Interactables\Doors
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Endings
+      guid: f0819c73f176144db37b0c4ae77ea153
+      id: 1252722655
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: SFXs
+        ObjectType: 4
+      - ElementName: Endings
+        ObjectType: 4
+      Path: McSpookyJam2020\SFXs\Endings
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Flashlight
+      guid: 5073d27f47e390459ccf952d87488ae2
+      id: 1167979795
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Interactables
+        ObjectType: 4
+      - ElementName: Lights
+        ObjectType: 4
+      - ElementName: Flashlight
+        ObjectType: 4
+      Path: McSpookyJam2020\Interactables\Lights\Flashlight
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Interactables
+      guid: b305b79134a57348bacddf5ddfebc238
+      id: 181270742
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Interactables
+        ObjectType: 4
+      Path: McSpookyJam2020\Interactables
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Light_Switch
+      guid: 382d9daa71748e47b0a3c742a5d503b9
+      id: 790135102
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Interactables
+        ObjectType: 4
+      - ElementName: Lights
+        ObjectType: 4
+      - ElementName: Light_Switch
+        ObjectType: 4
+      Path: McSpookyJam2020\Interactables\Lights\Light_Switch
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Lights
+      guid: 6bf97dc5f590ec4e986fb9fc8a7b6d17
+      id: 3192784746
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Interactables
+        ObjectType: 4
+      - ElementName: Lights
+        ObjectType: 4
+      Path: McSpookyJam2020\Interactables\Lights
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music
+      guid: 711d2f5f6f6e8e46b875f29cfa2acdbd
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      Path: McSpookyJam2020\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Pickups
+      guid: 5b662cb5ade6af4aac95a177acf0da44
+      id: 488853820
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Interactables
+        ObjectType: 4
+      - ElementName: Pickups
+        ObjectType: 4
+      Path: McSpookyJam2020\Interactables\Pickups
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_AMB
+      guid: c9c07b18b54f234c96749b4dd8fd9a6c
+      id: 2959533290
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: Play_AMB
+        ObjectType: 3
+      Path: McSpookyJam2020\AMB\Play_AMB
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Drawer_Close
+      guid: 1053ab86e6aead4e98ae383b319ad27e
+      id: 2315829540
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Interactables
+        ObjectType: 4
+      - ElementName: Doors
+        ObjectType: 4
+      - ElementName: Play_Drawer_Close
+        ObjectType: 3
+      Path: McSpookyJam2020\Interactables\Doors\Play_Drawer_Close
+      maxAttenuation: 100
+      maxDuration: 0.782375
+      minDuration: 0.782375
+    - name: Play_Drawer_Open
+      guid: 1c20860cdb16a54d82ce88e0b444128f
+      id: 1958703520
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Interactables
+        ObjectType: 4
+      - ElementName: Doors
+        ObjectType: 4
+      - ElementName: Play_Drawer_Open
+        ObjectType: 3
+      Path: McSpookyJam2020\Interactables\Doors\Play_Drawer_Open
+      maxAttenuation: 100
+      maxDuration: 0.813646
+      minDuration: 0.813646
+    - name: Play_Flashlight_On
+      guid: 4dc543c04de86f42b73f0105d551333f
+      id: 3471928368
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Interactables
+        ObjectType: 4
+      - ElementName: Lights
+        ObjectType: 4
+      - ElementName: Flashlight
+        ObjectType: 4
+      - ElementName: Play_Flashlight_On
+        ObjectType: 3
+      Path: McSpookyJam2020\Interactables\Lights\Flashlight\Play_Flashlight_On
+      maxAttenuation: 0
+      maxDuration: 0.181
+      minDuration: 0.181
+    - name: Play_Game_End
+      guid: e76575b7f00c8446aa2d3d666543c263
+      id: 2790351818
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: SFXs
+        ObjectType: 4
+      - ElementName: Endings
+        ObjectType: 4
+      - ElementName: Play_Game_End
+        ObjectType: 3
+      Path: McSpookyJam2020\SFXs\Endings\Play_Game_End
+      maxAttenuation: 0
+      maxDuration: 3.603083
+      minDuration: 3.603083
+    - name: Play_Game_Start_Candle
+      guid: 6850e5ad2e3b6a44b9e865c4f4ff5c22
+      id: 2901631795
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: SFXs
+        ObjectType: 4
+      - ElementName: Endings
+        ObjectType: 4
+      - ElementName: Play_Game_Start_Candle
+        ObjectType: 3
+      Path: McSpookyJam2020\SFXs\Endings\Play_Game_Start_Candle
+      maxAttenuation: 0
+      maxDuration: 2.676875
+      minDuration: 2.676875
+    - name: Play_Game_Start_Candle_Trem
+      guid: 2f50edadf6db2e43b014a3e21627e972
+      id: 2892862498
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: SFXs
+        ObjectType: 4
+      - ElementName: Endings
+        ObjectType: 4
+      - ElementName: Play_Game_Start_Candle_Trem
+        ObjectType: 3
+      Path: McSpookyJam2020\SFXs\Endings\Play_Game_Start_Candle_Trem
+      maxAttenuation: 0
+      maxDuration: 2.676875
+      minDuration: 2.676875
+    - name: Play_Game_Start_Light_Switch
+      guid: 5dced4c977654e4bbc6e4c7edb01f33c
+      id: 3727723795
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: SFXs
+        ObjectType: 4
+      - ElementName: Endings
+        ObjectType: 4
+      - ElementName: Play_Game_Start_Light_Switch
+        ObjectType: 3
+      Path: McSpookyJam2020\SFXs\Endings\Play_Game_Start_Light_Switch
+      maxAttenuation: 0
+      maxDuration: 2.676875
+      minDuration: 2.676875
+    - name: Play_Ghost_Footsteps
+      guid: 2931a3dc0e7330488dee7bcbdf6c6075
+      id: 3781480055
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: SFXs
+        ObjectType: 4
+      - ElementName: Spooks
+        ObjectType: 4
+      - ElementName: Play_Ghost_Footsteps
+        ObjectType: 3
+      Path: McSpookyJam2020\SFXs\Spooks\Play_Ghost_Footsteps
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Ghost_Jolt
+      guid: 1f09464624943745886e9df507188de6
+      id: 2957503395
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: SFXs
+        ObjectType: 4
+      - ElementName: Spooks
+        ObjectType: 4
+      - ElementName: Play_Ghost_Jolt
+        ObjectType: 3
+      Path: McSpookyJam2020\SFXs\Spooks\Play_Ghost_Jolt
+      maxAttenuation: 0
+      maxDuration: 1
+      minDuration: 1
+    - name: Play_Light_Switch_Off
+      guid: b02c595da0672b449abe1ca21c43b241
+      id: 314077991
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Interactables
+        ObjectType: 4
+      - ElementName: Lights
+        ObjectType: 4
+      - ElementName: Light_Switch
+        ObjectType: 4
+      - ElementName: Play_Light_Switch_Off
+        ObjectType: 3
+      Path: McSpookyJam2020\Interactables\Lights\Light_Switch\Play_Light_Switch_Off
+      maxAttenuation: 0
+      maxDuration: 0.109312
+      minDuration: 0.109312
+    - name: Play_Light_Switch_On
+      guid: 3b6e0885fc08f049ba2f91a73ef8e11b
+      id: 82250835
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Interactables
+        ObjectType: 4
+      - ElementName: Lights
+        ObjectType: 4
+      - ElementName: Light_Switch
+        ObjectType: 4
+      - ElementName: Play_Light_Switch_On
+        ObjectType: 3
+      Path: McSpookyJam2020\Interactables\Lights\Light_Switch\Play_Light_Switch_On
+      maxAttenuation: 0
+      maxDuration: 0.082271
+      minDuration: 0.082271
+    - name: Play_Lights_Out
+      guid: df9783f3a962a34483d070619037f0c0
+      id: 3933447040
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: SFXs
+        ObjectType: 4
+      - ElementName: Spooks
+        ObjectType: 4
+      - ElementName: Play_Lights_Out
+        ObjectType: 3
+      Path: McSpookyJam2020\SFXs\Spooks\Play_Lights_Out
+      maxAttenuation: 0
+      maxDuration: 1
+      minDuration: 1
+    - name: Play_Metal_Door_Close
+      guid: c856246e502bfb4aa43a034604fdde98
+      id: 2167123887
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Interactables
+        ObjectType: 4
+      - ElementName: Doors
+        ObjectType: 4
+      - ElementName: Play_Metal_Door_Close
+        ObjectType: 3
+      Path: McSpookyJam2020\Interactables\Doors\Play_Metal_Door_Close
+      maxAttenuation: 100
+      maxDuration: 1.731292
+      minDuration: 1.731292
+    - name: Play_Metal_Door_Open
+      guid: 18d624389be10e4e8629382c9c563358
+      id: 2617923177
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Interactables
+        ObjectType: 4
+      - ElementName: Doors
+        ObjectType: 4
+      - ElementName: Play_Metal_Door_Open
+        ObjectType: 3
+      Path: McSpookyJam2020\Interactables\Doors\Play_Metal_Door_Open
+      maxAttenuation: 100
+      maxDuration: 2.799062
+      minDuration: 2.799062
+    - name: Play_Music
+      guid: eb3c8ac4db52ae419be4b01fe574cf05
+      id: 2932040671
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Play_Music
+        ObjectType: 3
+      Path: McSpookyJam2020\Music\Play_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Pickup_Key
+      guid: 03de141cbc8caa4d8f4d8d4a512e9d5a
+      id: 3768549418
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Interactables
+        ObjectType: 4
+      - ElementName: Pickups
+        ObjectType: 4
+      - ElementName: Play_Pickup_Key
+        ObjectType: 3
+      Path: McSpookyJam2020\Interactables\Pickups\Play_Pickup_Key
+      maxAttenuation: 0
+      maxDuration: 0.228188
+      minDuration: 0.228188
+    - name: Play_Pickup_Note
+      guid: ebb8db2ec8785342a56afa5f3dba1186
+      id: 2216405837
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Interactables
+        ObjectType: 4
+      - ElementName: Pickups
+        ObjectType: 4
+      - ElementName: Play_Pickup_Note
+        ObjectType: 3
+      Path: McSpookyJam2020\Interactables\Pickups\Play_Pickup_Note
+      maxAttenuation: 100
+      maxDuration: 0.888062
+      minDuration: 0.5855
+    - name: Play_Player_Footsteps
+      guid: c2eae5d3146d7f43811b29ff59ee19ed
+      id: 98439365
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Play_Player_Footsteps
+        ObjectType: 3
+      Path: McSpookyJam2020\Player\Play_Player_Footsteps
+      maxAttenuation: 0
+      maxDuration: 0.661042
+      minDuration: 0.42
+    - name: Play_Stinger
+      guid: ec8a84b56a132e42994b6e7bf6607dab
+      id: 754369548
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: SFXs
+        ObjectType: 4
+      - ElementName: Spooks
+        ObjectType: 4
+      - ElementName: Play_Stinger
+        ObjectType: 3
+      Path: McSpookyJam2020\SFXs\Spooks\Play_Stinger
+      maxAttenuation: 0
+      maxDuration: 1
+      minDuration: 1
+    - name: Play_UI_Exit
+      guid: d07becd0f9c6954082a7a1df4a3d3863
+      id: 1986548623
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_UI_Exit
+        ObjectType: 3
+      Path: McSpookyJam2020\UI\Play_UI_Exit
+      maxAttenuation: 0
+      maxDuration: 1
+      minDuration: 1
+    - name: Play_UI_Start
+      guid: 75cd7226beaad34797e12f7aa4d91de5
+      id: 643450781
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_UI_Start
+        ObjectType: 3
+      Path: McSpookyJam2020\UI\Play_UI_Start
+      maxAttenuation: 0
+      maxDuration: 1
+      minDuration: 1
+    - name: Play_Wood_Door_Close
+      guid: e0d8a1fca2e84046a98346f41274f6ba
+      id: 801816073
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Interactables
+        ObjectType: 4
+      - ElementName: Doors
+        ObjectType: 4
+      - ElementName: Play_Wood_Door_Close
+        ObjectType: 3
+      Path: McSpookyJam2020\Interactables\Doors\Play_Wood_Door_Close
+      maxAttenuation: 100
+      maxDuration: 0.86
+      minDuration: 0.86
+    - name: Play_Wood_Door_Open
+      guid: ba2ca90bbfdc68408ab2b85e0c4e09c4
+      id: 781714651
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Interactables
+        ObjectType: 4
+      - ElementName: Doors
+        ObjectType: 4
+      - ElementName: Play_Wood_Door_Open
+        ObjectType: 3
+      Path: McSpookyJam2020\Interactables\Doors\Play_Wood_Door_Open
+      maxAttenuation: 100
+      maxDuration: 2.4
+      minDuration: 2.4
+    - name: Player
+      guid: 8aa58d62fffac546a33fcdca7577f8e0
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      Path: McSpookyJam2020\Player
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFXs
+      guid: 7af97ec5cb41474eb7c6252d1f52831b
+      id: 602065129
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: SFXs
+        ObjectType: 4
+      Path: McSpookyJam2020\SFXs
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Spooks
+      guid: ff3153a4c1c9434fbf9303b92e5d3585
+      id: 1769061640
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: SFXs
+        ObjectType: 4
+      - ElementName: Spooks
+        ObjectType: 4
+      Path: McSpookyJam2020\SFXs\Spooks
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_AMB
+      guid: 2676355a79e10b429406794f365def66
+      id: 435770000
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: Stop_AMB
+        ObjectType: 3
+      Path: McSpookyJam2020\AMB\Stop_AMB
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Music
+      guid: 67c740f73f4bc745b75091e36b6c6647
+      id: 2837384057
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Stop_Music
+        ObjectType: 3
+      Path: McSpookyJam2020\Music\Stop_Music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: UI
+      guid: 02d8fdab8014e049b142e473c625d1cf
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      Path: McSpookyJam2020\UI
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -152,8 +734,52 @@ MonoBehaviour:
     ParentPath: McSpookyJam2020
     guid: 518f1b422d866f41ba528d7bcdea3ac6
     GuidInternal: 
-    m_lastTime: -8585985415073957892
-    List: []
+    m_lastTime: -8585981751340211449
+    List:
+    - name: Footsteps
+      guid: a66f2891c279514fa896712aaa1e7aa2
+      id: 2385628198
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Footsteps
+        ObjectType: 11
+      Path: McSpookyJam2020\Footsteps
+      values:
+      - name: Walking
+        guid: 5c1f238e5b91824c879131a745b60e68
+        id: 340271938
+        PathAndIcons:
+        - ElementName: Walking
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Time
+      guid: 2ea4a353c2ee0e4c830a4ffa194e105d
+      id: 2654366170
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Time
+        ObjectType: 11
+      Path: McSpookyJam2020\Time
+      values:
+      - name: Evening
+        guid: 417abf5cc93f0d41b023e4e2c35dc2fe
+        id: 2905060079
+        PathAndIcons:
+        - ElementName: Evening
+          ObjectType: 10
+      - name: Night
+        guid: a462073be806db4d9e04b0dbb1b3e478
+        id: 1011622525
+        PathAndIcons:
+        - ElementName: Night
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -173,6 +799,9 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585985414976269733
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /McSpookyJam2020_WwiseProject
+  - /McSpookyJam2020_WwiseProject/Events
+  - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

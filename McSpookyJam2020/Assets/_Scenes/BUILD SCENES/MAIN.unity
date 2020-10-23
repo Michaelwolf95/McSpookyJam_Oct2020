@@ -1139,7 +1139,7 @@ PrefabInstance:
     - target: {fileID: 5636372508463168866, guid: fd6557fb088d3d646a456437aefc04fb,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.58
+      value: -1.048
       objectReference: {fileID: 0}
     - target: {fileID: 5636372508463168866, guid: fd6557fb088d3d646a456437aefc04fb,
         type: 3}
@@ -2342,7 +2342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1257764001}
+  selectedFlowchart: {fileID: 0}
 --- !u!4 &813754147
 Transform:
   m_ObjectHideFlags: 1
@@ -3163,6 +3163,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1109488257}
   - component: {fileID: 1109488258}
+  - component: {fileID: 1109488259}
   m_Layer: 0
   m_Name: GAME MANAGER
   m_TagString: Untagged
@@ -3199,6 +3200,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dayNightController: {fileID: 1758385544}
   monsterController: {fileID: 123598979}
+  DeathSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  StopAMB:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  StopMusic:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  Time:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+--- !u!114 &1109488259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109488256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b00fa4148ab9ce40a833ef90c9a5671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: ae8d9d44
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 35e8555534426a9408fdacd14de3034f,
+      type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!43 &1152899258
 Mesh:
   m_ObjectHideFlags: 0
@@ -3541,18 +3585,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1257764001 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3748139448741126100, guid: 14590521b2420404c82a4e321315aefa,
-    type: 3}
-  m_PrefabInstance: {fileID: 3748139447487572853}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1292759982
 GameObject:
   m_ObjectHideFlags: 0
@@ -5599,6 +5631,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5377287468351429226, guid: 14590521b2420404c82a4e321315aefa,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.a
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14590521b2420404c82a4e321315aefa, type: 3}
 --- !u!224 &3748139447487572854 stripped
@@ -5782,7 +5819,7 @@ PrefabInstance:
         type: 3}
       propertyPath: flowchart
       value: 
-      objectReference: {fileID: 1257764001}
+      objectReference: {fileID: 0}
     - target: {fileID: 4936260002485817806, guid: d6e9da193eb662e4fa1aca77a38871f2,
         type: 3}
       propertyPath: _targetGameObject.gameObjectVal
@@ -5856,7 +5893,12 @@ PrefabInstance:
     - target: {fileID: 4936260003690229552, guid: d6e9da193eb662e4fa1aca77a38871f2,
         type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842757570365562743, guid: d6e9da193eb662e4fa1aca77a38871f2,
+        type: 3}
+      propertyPath: flowchart
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7849453823572705684, guid: d6e9da193eb662e4fa1aca77a38871f2,
         type: 3}

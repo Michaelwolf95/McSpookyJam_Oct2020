@@ -7,5 +7,12 @@
             base.PerformInteraction();
             
         }
+
+        public override void OnFinishInteraction()
+        {
+            base.OnFinishInteraction();
+            
+            GameManager.instance.TransitionToNight();
+        }
     }
 }

@@ -8,6 +8,12 @@
 						<Switch Name="Walking" ID="{8E231F5C-915B-4C82-8791-31A745B60E68}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Time" ID="{53A3A42E-EEC2-4C0E-830A-4FFA194E105D}">
+					<ChildrenList>
+						<Switch Name="Night" ID="{3B0762A4-06E8-4DDB-9E04-B0DBB1B3E478}"/>
+						<Switch Name="Evening" ID="{5CBF7A41-3FC9-410D-B023-E4E2C35DC2FE}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>
