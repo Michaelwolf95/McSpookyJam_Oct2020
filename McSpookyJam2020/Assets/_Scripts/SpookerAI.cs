@@ -219,13 +219,13 @@ public class SpookerAI : LightReactor
 //        NavMesh.SamplePosition(transform.position + awayFromPlayer * 100f, out hit, 500f, 1 << NavMesh.GetNavMeshLayerFromName("Default"));
 //        agent.SetDestination(hit.position);
 
-        this.DoTween(1f,(lerp) =>
+        this.DoTween((lerp) =>
         {
             spriteRenderer.color = Color.Lerp(defaultColor, Color.clear, lerp);
         },  () =>
         {
             ChangeState(SpookerState.Hiding);
-        });
+        }, 1f);
         
 
         // ToDo: Stop for a moment first?

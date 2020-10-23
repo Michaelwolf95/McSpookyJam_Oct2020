@@ -31,7 +31,7 @@ public class DeskCardController : MonoBehaviour
         deskOpenedKey.SetActive(false);
         deskOpenedNoKey.SetActive(true);
         PickupKey.Post(gameObject);
-        InventoryManager.instance.GetBasementKey();
+        InventoryManager.instance.CollectBasementKey();
         
     }
     
