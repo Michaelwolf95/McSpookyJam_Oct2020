@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using MichaelWolfGames;
 using UnityEngine;
 
-public class Flashlight : MonoBehaviour
+public class Flashlight : SceneSingleton<Flashlight>
 {
     //public float maxRange = 5f;
     [SerializeField]
@@ -13,20 +13,30 @@ public class Flashlight : MonoBehaviour
     [SerializeField] 
     private LayerMask layerMask = new LayerMask();
     private List<LightReactor> currentCollisions = null;
-    
 
-    private void Awake()
+    private bool isEnabled = false;
+    
+    protected override void Awake()
     {
+        base.Awake();
         currentCollisions = new List<LightReactor>();
         if (spotLight == null)
         {
             spotLight = GetComponent<Light>();
         }
+        
+        Toggle(isEnabled);
+    }
+
+    public void Toggle(bool argEnabled)
+    {
+        isEnabled = argEnabled;
+        spotLight.enabled = false;
     }
 
     private void FixedUpdate()
     {
-        if (spotLight == null)
+        if (spotLight == null || isEnabled == false)
         {
             return;
         }
