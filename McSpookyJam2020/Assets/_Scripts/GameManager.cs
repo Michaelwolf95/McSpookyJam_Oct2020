@@ -21,12 +21,16 @@ public class GameManager : SceneSingleton<GameManager>
     {
         dayNightController.MakeDay();
         monsterController.gameObject.SetActive(false);
+        
+        // ToDo: Ambiance start
     }
     
     public void TransitionToNight()
     {
-        dayNightController.MakeDay();
+        dayNightController.MakeNight();
         monsterController.gameObject.SetActive(true); // Goes right in front of the door
+        
+        // ToDo: Ambiance swap
     }
     
     
