@@ -371,6 +371,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf1a5ad4f9ffb154ca7813fdad11017a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  groundFloorMaterial: {fileID: 0}
+  groundFloorFootSteps:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d34ecee06d842784e941f022218c46a3,
+      type: 2}
+  upstairsMaterial: {fileID: 0}
+  upstairsFootSteps:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  basementMaterial: {fileID: 0}
+  basementFootSteps:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  stairsFloorMaterial: {fileID: 0}
+  stairsFootSteps:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   controllerPauseState: 0
   enableCameraMovement: 1
   mouseInputInversion: 0
@@ -446,7 +467,8 @@ MonoBehaviour:
     dirtAndGravelPhysMat: []
     rockAndConcretePhysMat: []
     mudPhysMat: []
-    customPhysMat: []
+    customPhysMat:
+    - {fileID: 13400000, guid: 74ea77593c490f246aee1763419a03f3, type: 2}
     woodMat: []
     metalAndGlassMat: []
     grassMat: []
@@ -540,8 +562,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 5655966316438936302}
-  activationRange: 3
-  interactRange: 1
+  activationRange: 3.5
+  interactRange: 2
   interactionLayerMask:
     serializedVersion: 2
     m_Bits: 256

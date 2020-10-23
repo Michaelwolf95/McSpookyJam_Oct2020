@@ -1118,14 +1118,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2057209225, guid: fd6557fb088d3d646a456437aefc04fb, type: 3}
-      propertyPath: interactRange
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2057209225, guid: fd6557fb088d3d646a456437aefc04fb, type: 3}
-      propertyPath: activationRange
-      value: 3.5
-      objectReference: {fileID: 0}
     - target: {fileID: 5634449000992531528, guid: fd6557fb088d3d646a456437aefc04fb,
         type: 3}
       propertyPath: m_Name
@@ -2126,7 +2118,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-83190
+  m_Name: pb_Mesh-298198
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5666,6 +5658,12 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 782819209}
+    - target: {fileID: 4414546830665532038, guid: 613f8534f4f04694290818262db25d1b,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 74ea77593c490f246aee1763419a03f3,
+        type: 2}
     - target: {fileID: 4414546830687234841, guid: 613f8534f4f04694290818262db25d1b,
         type: 3}
       propertyPath: m_Mesh
