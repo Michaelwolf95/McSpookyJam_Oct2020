@@ -23,7 +23,7 @@ public class SpookerAI : LightReactor
     
     private Transform target;
 
-    private static float MIN_FLOOR_HEIGHT = 1f;
+    //private static float MIN_FLOOR_HEIGHT = 1f;
 
     private static float MIN_FEAR_TIME = 5f;
     private static float MAX_FEAR_TIME = 15f;
