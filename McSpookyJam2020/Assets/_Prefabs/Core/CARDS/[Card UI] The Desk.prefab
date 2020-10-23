@@ -665,7 +665,6 @@ GameObject:
   - component: {fileID: 5229615216019433214}
   - component: {fileID: 5229615216019433215}
   - component: {fileID: 5229615216019433212}
-  - component: {fileID: 5229615216019433213}
   - component: {fileID: 5229615216019433210}
   - component: {fileID: 5229615216019433211}
   - component: {fileID: 5229615216019433208}
@@ -712,7 +711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -3, y: 0}
+  scrollPos: {x: -12, y: -130}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -766,7 +765,6 @@ MonoBehaviour:
   - {fileID: 5229615216019433214}
   - {fileID: 5229615216019433215}
   - {fileID: 5229615216019433212}
-  - {fileID: 5229615216019433213}
   suppressAllAutoSelections: 0
 --- !u!114 &5229615216019433214
 MonoBehaviour:
@@ -829,27 +827,6 @@ MonoBehaviour:
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
   fadeTexture: {fileID: 0}
   fadeTweenType: 4
---- !u!114 &5229615216019433213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5229615216019433205}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 4
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 0}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
 --- !u!114 &5229615216019433210
 MonoBehaviour:
   m_ObjectHideFlags: 0

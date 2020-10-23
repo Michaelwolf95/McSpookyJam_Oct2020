@@ -240,7 +240,8 @@ namespace Fungus
 #if UNITY_2018_1_OR_NEWER
                 if(tmpro != null)
                 {
-                    return tmpro.textInfo.characterInfo[tmpro.maxVisibleCharacters].character;
+                    //Debug.Log(string.Format("maxCharacters: {0}, {1}", tmpro.textInfo.characterInfo.Length, tmpro.maxVisibleCharacters));
+                    return tmpro.textInfo.characterInfo[tmpro.maxVisibleCharacters - 1].character;
                 }
 #endif
                 return (char)0;

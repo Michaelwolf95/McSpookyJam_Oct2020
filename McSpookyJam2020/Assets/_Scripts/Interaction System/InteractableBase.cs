@@ -6,6 +6,8 @@ using UnityEngine.Events;
 
 public class InteractableBase : MonoBehaviour
 {
+    [SerializeField] 
+    private Transform reticleRoot;
     [SerializeField]
     private GameObject activatedReticle = null;
     [SerializeField]
@@ -19,6 +21,7 @@ public class InteractableBase : MonoBehaviour
 
     public AK.Wwise.Event InteractStartAudio;
     public AK.Wwise.Event InteractEndAudio;
+    
 
     private void Awake()
     {
@@ -37,6 +40,11 @@ public class InteractableBase : MonoBehaviour
     public virtual bool IsInteractable()
     {
         return true;
+    }
+
+    public virtual Transform GetRangeTarget()
+    {
+        return (reticleRoot != null) ? reticleRoot : this.transform;
     }
     
     public virtual void OnEnterActivationRange()

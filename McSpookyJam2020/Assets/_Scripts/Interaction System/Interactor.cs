@@ -47,14 +47,18 @@ public class Interactor : MonoBehaviour
         
         //Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         Ray ray = new Ray(mainCamera.transform.position, mainCamera.transform.forward);
-        RaycastHit[] hits = Physics.RaycastAll(ray, interactRange, interactionLayerMask);
+        RaycastHit[] hits = Physics.RaycastAll(ray, interactRange, interactionLayerMask, QueryTriggerInteraction.Collide);
         if (hits.Length > 0)
         {
             InteractableBase raycastResultTarget = null;
             float nearestDist = float.MaxValue;
             for (int i = 0; i < hits.Length; i++)
             {
-                InteractableBase raycastInteractable = hits[i].transform.GetComponent<InteractableBase>();
+                InteractableBase raycastInteractable = hits[i].collider.GetComponent<InteractableBase>();
+                if (raycastInteractable == null)
+                {
+                    raycastInteractable = hits[i].rigidbody.GetComponent<InteractableBase>();
+                }
                 if (raycastInteractable != null && raycastInteractable.IsInteractable())
                 {
                     if (hits[i].distance < nearestDist)
@@ -131,7 +135,7 @@ public class Interactor : MonoBehaviour
 
     public bool IsInteractableWithinActivationRange(InteractableBase interactable)
     {
-        return Vector3.Distance(interactable.transform.position, mainCamera.transform.position) <= activationRange;
+        return Vector3.Distance(interactable.GetRangeTarget().position, mainCamera.transform.position) <= activationRange;
     }
 
     public void ProcessInteractableActivationRange(InteractableBase interactable)
