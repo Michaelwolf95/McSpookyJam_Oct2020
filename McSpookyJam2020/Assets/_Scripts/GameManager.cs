@@ -7,6 +7,11 @@ public class GameManager : SceneSingleton<GameManager>
     public DayNightController dayNightController = null;
     public SpookerAI monsterController;
 
+    public AK.Wwise.Event DeathSound;
+    public AK.Wwise.Event StopAMB;
+    public AK.Wwise.Event StopMusic;
+    public AK.Wwise.Switch Time;
+
     private void Start()
     {
         OnGameStart();
@@ -27,6 +32,7 @@ public class GameManager : SceneSingleton<GameManager>
     
     public void OnPlayerDeath()
     {
+        DeathSound.Post(gameObject);
         Debug.Log("PLAYER FUCKING DIED");
     }
 }
