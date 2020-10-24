@@ -10,7 +10,7 @@ using UnityEditor;
 public class InteractableBase : MonoBehaviour
 {
     [SerializeField] 
-    private Transform reticleRoot;
+    private Transform reticleRoot = null;
     [SerializeField]
     private GameObject activatedReticle = null;
     [SerializeField]

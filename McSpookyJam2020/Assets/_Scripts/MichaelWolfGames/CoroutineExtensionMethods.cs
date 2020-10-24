@@ -81,10 +81,10 @@ namespace MichaelWolfGames
             onDoneCallback();
         }
 
-        public static void DoWhile(this MonoBehaviour invokedOn, Action doAction, Func<bool> getWhileValue,
+        public static Coroutine DoWhile(this MonoBehaviour invokedOn, Action doAction, Func<bool> getWhileValue,
             Action onDoneCallback = null)
         {
-            invokedOn.StartCoroutine(CoDoWhile(doAction, getWhileValue, onDoneCallback));
+            return invokedOn.StartCoroutine(CoDoWhile(doAction, getWhileValue, onDoneCallback));
         }
 
         private static IEnumerator CoDoWhile(Action doAction, Func<bool> getWhileValue, Action onDoneCallback = null)
@@ -98,9 +98,9 @@ namespace MichaelWolfGames
                 onDoneCallback();
         }
         
-        public static void StartTimer(this MonoBehaviour invokedOn, float duration, Action onDoneCallback = null)
+        public static Coroutine StartTimer(this MonoBehaviour invokedOn, float duration, Action onDoneCallback = null)
         {
-            invokedOn.StartCoroutine(CoDoTimer(duration, onDoneCallback));
+            return invokedOn.StartCoroutine(CoDoTimer(duration, onDoneCallback));
         }
         
         private static IEnumerator CoDoTimer(float duration, Action onDoneCallback = null)
@@ -111,18 +111,18 @@ namespace MichaelWolfGames
                 onDoneCallback();
         }
         
-        public static void DoTween(this MonoBehaviour invokedOn, Action<float> tweenAction, Action onDoneCallback = null, float duration = 0f, EaseType easeType = EaseType.linear)
+        public static Coroutine DoTween(this MonoBehaviour invokedOn, Action<float> tweenAction, Action onDoneCallback = null, float duration = 0f, EaseType easeType = EaseType.linear, bool useUnscaledTime = false)
         {
-            invokedOn.StartCoroutine(CoDoTween( tweenAction, onDoneCallback, duration, easeType));
+            return invokedOn.StartCoroutine(CoDoTween( tweenAction, onDoneCallback, duration, easeType, useUnscaledTime));
         }
 
-        private static IEnumerator CoDoTween(Action<float> tweenAction, Action onDoneCallback = null, float duration = 0f, EaseType easeType = EaseType.linear)
+        private static IEnumerator CoDoTween(Action<float> tweenAction, Action onDoneCallback = null, float duration = 0f, EaseType easeType = EaseType.linear, bool useUnscaledTime = false)
         {
             TweenEasing.EasingFunction easeFunc = TweenEasing.GetEasingFunction(easeType);
             float timer = 0f;
             while (timer < duration)
             {
-                timer += Time.deltaTime;
+                timer += (useUnscaledTime)? Time.unscaledTime :Time.deltaTime;
                 switch (easeType)
                 {
                     case EaseType.punch:
