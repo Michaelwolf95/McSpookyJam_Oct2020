@@ -111,13 +111,25 @@ namespace MichaelWolfGames
                 onDoneCallback();
         }
         
-        public static Coroutine DoTween(this MonoBehaviour invokedOn, Action<float> tweenAction, Action onDoneCallback = null, float duration = 0f, EaseType easeType = EaseType.linear, bool useUnscaledTime = false)
+        public static Coroutine DoTween(this MonoBehaviour invokedOn, Action<float> tweenAction, Action onCompleteCallback = null, float duration = 0f, float delay = 0f, EaseType easeType = EaseType.linear, bool useUnscaledTime = false)
         {
-            return invokedOn.StartCoroutine(CoDoTween( tweenAction, onDoneCallback, duration, easeType, useUnscaledTime));
+            return invokedOn.StartCoroutine(CoDoTween( tweenAction, onCompleteCallback, duration, delay, easeType, useUnscaledTime));
         }
 
-        private static IEnumerator CoDoTween(Action<float> tweenAction, Action onDoneCallback = null, float duration = 0f, EaseType easeType = EaseType.linear, bool useUnscaledTime = false)
+        public static IEnumerator CoDoTween(Action<float> tweenAction, Action onCompleteCallback = null, float duration = 0f, float delay = 0f, EaseType easeType = EaseType.linear, bool useUnscaledTime = false)
         {
+            if (delay > 0f)
+            {
+                if (useUnscaledTime)
+                {
+                    yield return new WaitForSecondsRealtime(delay);
+                }
+                else
+                {
+                    yield return new WaitForSeconds(delay);
+                }
+            }
+            
             TweenEasing.EasingFunction easeFunc = TweenEasing.GetEasingFunction(easeType);
             float timer = 0f;
             while (timer < duration)
@@ -135,8 +147,8 @@ namespace MichaelWolfGames
                 yield return null;
             }
             
-            if (onDoneCallback != null)
-                onDoneCallback();
+            if (onCompleteCallback != null)
+                onCompleteCallback();
         }
     }
 }

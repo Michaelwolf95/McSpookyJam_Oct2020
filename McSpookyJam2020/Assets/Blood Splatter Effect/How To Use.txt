@@ -1,0 +1,12 @@
+1. Select Window/Blood Splatter Effect/Create
+
+2. Assign all of your blood splatter sprites to the "Blood Splatter Sprites" array
+
+3. Set a duration - this is how long(in seconds) the effect will last on screen
+
+4. Call BloodSplatterEffect.instance.BloodSplatter(); in your scripts whenever you want a blood splatter effect.
+
+5. Have Fun!
+
+For support, contact:
+ian.izzy94@gmail.com
