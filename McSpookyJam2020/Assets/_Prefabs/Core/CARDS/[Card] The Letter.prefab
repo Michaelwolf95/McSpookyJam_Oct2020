@@ -67,7 +67,7 @@ MonoBehaviour:
   visibleAngleRange: {x: 360, y: 360}
   flowchartPrefab: {fileID: 8786675518878862360, guid: c39811bdc32fd3f4587a7a322e7cc8a2,
     type: 3}
-  exitOnEscapeInput: 1
+  exitOnEscapeInput: 0
 --- !u!135 &1139835525732891889
 SphereCollider:
   m_ObjectHideFlags: 0
