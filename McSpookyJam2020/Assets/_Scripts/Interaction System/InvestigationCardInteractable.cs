@@ -11,7 +11,7 @@ public class InvestigationCardInteractable : InteractableBase
     private Flowchart flowchartPrefab = null;
 
     [SerializeField] 
-    private bool exitOnEscapeInput = true;
+    private bool exitOnEscapeInput = false;
 
     private Flowchart flowchartInstance = null;
 
