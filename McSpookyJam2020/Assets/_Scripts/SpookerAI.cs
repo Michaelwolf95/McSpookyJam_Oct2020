@@ -12,11 +12,12 @@ public class SpookerAI : LightReactor
     [SerializeField] private SpriteRenderer spriteRenderer = null;
     [SerializeField] private GameObject visualRoot = null;
     [Space(5)]
-    [SerializeField] private float killDistance = 1f;
+    [SerializeField] private float attackStartDistance = 1.6f;
+    [SerializeField] private float attackStopDistance = 1.8f;
+    [SerializeField] private float attackDuration = 2f;
     [SerializeField] private float unHideMinDistance = 8f;
 
     [Space(5)] 
-    [SerializeField] private float attackDuration = 1f;
 
     [Space(5)] 
     [SerializeField] private AgentStateParams disabledStateParams = new AgentStateParams();
@@ -93,7 +94,7 @@ public class SpookerAI : LightReactor
             case SpookerState.Following:
             {
                 agent.SetDestination(target.position);
-                if (Vector3.Distance(this.transform.position, target.position) <= killDistance)
+                if (Vector3.Distance(this.transform.position, target.position) <= attackStartDistance)
                 {
                     //Debug.Log("KILLED PLAYER");
                     ChangeState(SpookerState.Attacking);
@@ -103,7 +104,7 @@ public class SpookerAI : LightReactor
             case SpookerState.Attacking:
             {
                 agent.SetDestination(target.position);
-                if (Vector3.Distance(this.transform.position, target.position) > killDistance)
+                if (Vector3.Distance(this.transform.position, target.position) > attackStopDistance)
                 {
                     ChangeState(SpookerState.Following);
                 }
@@ -123,7 +124,7 @@ public class SpookerAI : LightReactor
             {
                 if (readyToUnHide && (toTargetVector.magnitude > unHideMinDistance))
                 {
-                    onFeared.Post(gameObject);
+                    onEmergeFromHiding.Post(gameObject);
                     ChangeState(SpookerState.Following);
                     return;
                 }
@@ -262,6 +263,7 @@ public class SpookerAI : LightReactor
 
     private void CancelAttack()
     {
+        Debug.Log("Cancel Attack");
         GameManager.instance.CancelAttackEffect();
         
         onCancelAttack.Post(gameObject);
