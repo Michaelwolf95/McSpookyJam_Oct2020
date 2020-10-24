@@ -122,8 +122,9 @@ MonoBehaviour:
   agent: {fileID: 8141053062342249905}
   spriteRenderer: {fileID: 8141053063868135339}
   visualRoot: {fileID: 8141053062929758846}
-  killDistance: 1
+  killDistance: 1.6
   unHideMinDistance: 8
+  attackDuration: 1.6
   disabledStateParams:
     speed: 0
     angularSpeed: 0
@@ -140,6 +141,28 @@ MonoBehaviour:
     speed: 15
     angularSpeed: 360
     acceleration: 20
+  onFeared:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 838d92bf03472414cae775129df38799,
+      type: 2}
+  onEmergeFromHiding:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  onStartAttack:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d1603ed9bfcb80947950dba6ef89f274,
+      type: 2}
+  onCompleteAttack:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  onCancelAttack:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!195 &8141053062342249905
 NavMeshAgent:
   m_ObjectHideFlags: 0

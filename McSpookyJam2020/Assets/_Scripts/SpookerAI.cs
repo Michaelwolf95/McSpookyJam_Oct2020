@@ -16,13 +16,21 @@ public class SpookerAI : LightReactor
     [SerializeField] private float unHideMinDistance = 8f;
 
     [Space(5)] 
-    [SerializeField] private float killTime = 1f;
+    [SerializeField] private float attackDuration = 1f;
 
     [Space(5)] 
     [SerializeField] private AgentStateParams disabledStateParams = new AgentStateParams();
     [SerializeField] private AgentStateParams wanderingStateParams = new AgentStateParams();
     [SerializeField] private AgentStateParams followingStateParams = new AgentStateParams();
     [SerializeField] private AgentStateParams fearedStateParams = new AgentStateParams();
+
+    [Space(5)] 
+    [SerializeField] private AK.Wwise.Event onFeared = null;
+    [SerializeField] private AK.Wwise.Event onEmergeFromHiding = null;
+    [SerializeField] private AK.Wwise.Event onStartAttack = null;
+    [SerializeField] private AK.Wwise.Event onCompleteAttack = null;
+    [SerializeField] private AK.Wwise.Event onCancelAttack = null; // ToDo: Maybe a unique one for canceling due to fear, vs distance?
+    // ToDo: Can wwise do something with the monster's state?
     
     private Transform target;
 
@@ -85,17 +93,20 @@ public class SpookerAI : LightReactor
             case SpookerState.Following:
             {
                 agent.SetDestination(target.position);
-
                 if (Vector3.Distance(this.transform.position, target.position) <= killDistance)
                 {
-                    Debug.Log("KILLED PLAYER");
-                    //currentState = SpookerState.Disabled;
+                    //Debug.Log("KILLED PLAYER");
+                    ChangeState(SpookerState.Attacking);
                 }
                 break;
             }
             case SpookerState.Attacking:
             {
                 agent.SetDestination(target.position);
+                if (Vector3.Distance(this.transform.position, target.position) > killDistance)
+                {
+                    ChangeState(SpookerState.Following);
+                }
                 break;
             }
             case SpookerState.Feared:
@@ -121,6 +132,11 @@ public class SpookerAI : LightReactor
             default:
                 break;
         }
+    }
+
+    public void Disable()
+    {
+        ChangeState(SpookerState.Disabled);
     }
 
     private void RunAway()
@@ -171,6 +187,9 @@ public class SpookerAI : LightReactor
                 break;
             case SpookerState.Following:
                 break;
+            case SpookerState.Attacking:
+                CancelAttack();
+                break;
             case SpookerState.Feared:
                 break;
             case SpookerState.Hiding:
@@ -196,7 +215,15 @@ public class SpookerAI : LightReactor
             case SpookerState.Following:
                 AssignAgentStateParams(followingStateParams);
                 break;
+            case SpookerState.Attacking:
+                AssignAgentStateParams(followingStateParams);
+                
+                StartAttack();
+                
+                break;
             case SpookerState.Feared:
+                agent.velocity = Vector3.zero;
+                agent.isStopped = true;
                 AssignAgentStateParams(fearedStateParams);
                 break;
             case SpookerState.Hiding:
@@ -216,7 +243,30 @@ public class SpookerAI : LightReactor
         agent.acceleration = stateParams.acceleration;
         agent.angularSpeed = stateParams.angularSpeed;
     }
-    
+
+
+    private void StartAttack()
+    {
+        onStartAttack.Post(gameObject);
+        GameManager.instance.StartAttackEffect(attackDuration, () =>
+        {
+            onCompleteAttack.Post(gameObject);
+        }, (() =>
+        {
+            CancelAttack();
+        }));
+    }
+
+    private void CancelAttack()
+    {
+        GameManager.instance.CancelAttackEffect();
+        
+        onCancelAttack.Post(gameObject);
+        
+        ChangeState(SpookerState.Following);
+    }
+
+
     public override void OnEnterLight()
     {
         base.OnEnterLight();

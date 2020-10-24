@@ -4,12 +4,16 @@ using Fungus;
 using MichaelWolfGames;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
+using Random = UnityEngine.Random;
 
 public class GameManager : SceneSingleton<GameManager>
 {
     public DayNightController dayNightController = null;
     public SpookerAI monsterController;
 
+    public CanvasGroup fadeCanvas = null;
+    
+    [Space(5)]
     public AK.Wwise.Switch Day;
     public AK.Wwise.Switch Night;
     public AK.Wwise.Event DeathSound;
@@ -69,11 +73,13 @@ public class GameManager : SceneSingleton<GameManager>
         StopMusic.Post(gameObject);
         Debug.Log("PLAYER FUCKING DIED");
         
+        FirstPersonAIO.instance.SetControllerPause(true);
+        monsterController.Disable();
         
         this.DoTween((lerp =>
         {
             
-        } ));
+        }));
         
     }
 
@@ -93,21 +99,36 @@ public class GameManager : SceneSingleton<GameManager>
     private Coroutine attackEffectCoroutine = null;
     private Action onAttackEffectCancelled = null;
     
+    private Coroutine recoverEffectCoroutine = null;
     
     public void StartAttackEffect(float duration, Action onComplete = null, Action onCancelled = null)
     {
         if (attackEffectCoroutine != null)
         {
-            Debug.Log("Starting attack effect while it's running!!!");
+            //Debug.Log("Starting attack effect while it's running!!!");
             return;
         }
 
+        if (recoverEffectCoroutine != null)
+        {
+            StopCoroutine(recoverEffectCoroutine);
+            recoverEffectCoroutine = null;
+        }
+
         onAttackEffectCancelled = onCancelled;
+        
+        Debug.Log("Attack Started.");
         StartCoroutine(CoAttackEffect(duration, onComplete));
     }
     
     public void CancelAttackEffect()
     {
+        if (recoverEffectCoroutine != null)
+        {
+            //Debug.Log("Cancelling Attack while in recover state???");
+            return;
+        }
+        
         if (attackEffectCoroutine == null)
         {
             //Debug.Log("Starting attack effect while it's running!!!");
@@ -121,23 +142,21 @@ public class GameManager : SceneSingleton<GameManager>
         if (onAttackEffectCancelled != null)
             onAttackEffectCancelled();
         
-        attackEffectCoroutine = null;
-        onAttackEffectCancelled = null;
+        CleanupAttackEffect();
+
+        PostProcessVolume ppVolume = Camera.main.GetComponentInChildren<PostProcessVolume>();
+        PostProcessProfile profile = ppVolume.profile;
+        profile.GetSetting<Vignette>().intensity.value = 0f;
+        
+        // START RECOVER
+        recoverEffectCoroutine = StartCoroutine(CoRecoverEffect(0.5f));
+        
     }
     
     private IEnumerator CoAttackEffect(float duration, Action onDoneCallback = null)
     {
-        
-        CameraManager cameraManager = FungusManager.Instance.CameraManager;
-        cameraManager.ScreenFadeTexture = CameraManager.CreateColorTexture(Color.black, 32, 32);
-        
-//        cameraManager.Fade(targetAlpha, duration, delegate { 
-//            if (waitUntilFinished)
-//            {
-//                Continue();
-//            }
-//        }, fadeTweenType);
-        
+        fadeCanvas.gameObject.SetActive(true);
+        float startAlpha = fadeCanvas.alpha;
         
         PostProcessVolume ppVolume = Camera.main.GetComponentInChildren<PostProcessVolume>();
         PostProcessProfile profile = ppVolume.profile;
@@ -145,20 +164,50 @@ public class GameManager : SceneSingleton<GameManager>
         while (timer < duration)
         {
             timer += Time.deltaTime;
-            profile.GetSetting<Vignette>().intensity.value = Mathf.Lerp(0f, 1f, timer / duration);
-//            VignetteModel.Settings vign = profile.vignette.settings;
-//            vign.intensity = vignIntensity;
-//            profile.vignette.settings = vign;
+            float lerp = timer / duration;
+            profile.GetSetting<Vignette>().intensity.value = Mathf.Lerp(0f, 1f, lerp);
+
+            fadeCanvas.alpha = Mathf.Lerp(startAlpha, 1f, lerp);
+            
+            float magnitude = Mathf.Lerp(0.1f, 0.2f, lerp);
+            Camera.main.transform.localPosition = new Vector3(Random.Range(-1f, 1f) * magnitude, Random.Range(-1f, 1f) * magnitude, 0f);
+
             yield return null;
         }
-        
-        attackEffectCoroutine = null;
-        onAttackEffectCancelled = null;
+
+        CleanupAttackEffect();
         
         if (onDoneCallback != null)
             onDoneCallback();
         
         OnPlayerDeath();
+    }
+
+    private void CleanupAttackEffect()
+    {
+        Camera.main.transform.localPosition = Vector3.zero;
+        attackEffectCoroutine = null;
+        onAttackEffectCancelled = null;
+    }
+    
+    private IEnumerator CoRecoverEffect(float duration, Action onDoneCallback = null)
+    {
+        fadeCanvas.gameObject.SetActive(true);
+        float startAlpha = fadeCanvas.alpha;
+        
+        PostProcessVolume ppVolume = Camera.main.GetComponentInChildren<PostProcessVolume>();
+        PostProcessProfile profile = ppVolume.profile;
+        float timer = 0f;
+        while (timer < duration)
+        {
+            timer += Time.deltaTime;
+            float lerp = timer / duration;
+            //profile.GetSetting<Vignette>().intensity.value = Mathf.Lerp(0f, 1f, lerp);
+            fadeCanvas.alpha = Mathf.Lerp(startAlpha, 0f, lerp);
+            yield return null;
+        }
+
+        recoverEffectCoroutine = null;
     }
     
 }
