@@ -140,6 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 339e62422dd69cf48b84fea3273bbbef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reticleRoot: {fileID: 4072699502913708235}
   activatedReticle: {fileID: 4072699503665074717}
   pointerTargetReticle: {fileID: 7542294007508061812}
   OnInteractStart:
@@ -157,6 +158,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+  visibleAngleRange: {x: 360, y: 360}
 --- !u!1001 &5437091532288574841
 PrefabInstance:
   m_ObjectHideFlags: 0

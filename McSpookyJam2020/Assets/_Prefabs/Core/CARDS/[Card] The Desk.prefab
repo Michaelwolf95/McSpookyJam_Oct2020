@@ -172,6 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72a320ffadcc4b23af38e1089cc39895, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reticleRoot: {fileID: 4931927152227113106}
   activatedReticle: {fileID: 4931927151886789188}
   pointerTargetReticle: {fileID: 2360950493974424515}
   OnInteractStart:
@@ -189,6 +190,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 28abd3c7c68e574448faa6015d83b60d,
       type: 2}
+  visibleAngleRange: {x: 360, y: 360}
   flowchartPrefab: {fileID: 5229615216019433152, guid: b17bdf79c6171a34fbd16eb0c9c19487,
     type: 3}
   exitOnEscapeInput: 1
