@@ -164,12 +164,12 @@ public class GameManager : SceneSingleton<GameManager>
         while (timer < duration)
         {
             timer += Time.deltaTime;
-            float lerp = timer / duration;
+            float lerp = TweenEasing.easeInQuad(0f, 1f,timer / duration);
             profile.GetSetting<Vignette>().intensity.value = Mathf.Lerp(0f, 1f, lerp);
 
             fadeCanvas.alpha = Mathf.Lerp(startAlpha, 1f, lerp);
             
-            float magnitude = Mathf.Lerp(0.1f, 0.2f, lerp);
+            float magnitude = Mathf.Lerp(0.01f, 0.1f, lerp);
             Camera.main.transform.localPosition = new Vector3(Random.Range(-1f, 1f) * magnitude, Random.Range(-1f, 1f) * magnitude, 0f);
 
             yield return null;

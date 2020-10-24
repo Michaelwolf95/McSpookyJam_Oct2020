@@ -123,6 +123,7 @@ public class SpookerAI : LightReactor
             {
                 if (readyToUnHide && (toTargetVector.magnitude > unHideMinDistance))
                 {
+                    onFeared.Post(gameObject);
                     ChangeState(SpookerState.Following);
                     return;
                 }
@@ -225,6 +226,8 @@ public class SpookerAI : LightReactor
                 agent.velocity = Vector3.zero;
                 agent.isStopped = true;
                 AssignAgentStateParams(fearedStateParams);
+
+                onFeared.Post(gameObject);
                 break;
             case SpookerState.Hiding:
                 // Become invisible.
