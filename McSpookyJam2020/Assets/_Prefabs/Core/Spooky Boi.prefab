@@ -144,7 +144,7 @@ MonoBehaviour:
   onFeared:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 838d92bf03472414cae775129df38799,
+    WwiseObjectReference: {fileID: 11400000, guid: 1e65a4eff52460b4487197fd21d3bb39,
       type: 2}
   onEmergeFromHiding:
     idInternal: 0
@@ -153,7 +153,7 @@ MonoBehaviour:
   onStartAttack:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: d1603ed9bfcb80947950dba6ef89f274,
+    WwiseObjectReference: {fileID: 11400000, guid: 1e65a4eff52460b4487197fd21d3bb39,
       type: 2}
   onCompleteAttack:
     idInternal: 0

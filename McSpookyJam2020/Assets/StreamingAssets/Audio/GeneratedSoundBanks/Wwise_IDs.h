@@ -28,6 +28,7 @@ namespace AK
         static const AkUniqueID PLAY_LIGHTS_OUT = 3933447040U;
         static const AkUniqueID PLAY_METAL_DOOR_CLOSE = 2167123887U;
         static const AkUniqueID PLAY_METAL_DOOR_OPEN = 2617923177U;
+        static const AkUniqueID PLAY_MONSTER_HISS = 2620845016U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_PICKUP_KEY = 3768549418U;
         static const AkUniqueID PLAY_PICKUP_NOTE = 2216405837U;

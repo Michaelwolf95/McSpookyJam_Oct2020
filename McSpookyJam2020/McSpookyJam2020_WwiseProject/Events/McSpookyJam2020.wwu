@@ -347,6 +347,21 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Monster" ID="{5E8DFD89-A596-478D-9A3F-804EB427ECB5}" ShortID="925935902">
+					<ChildrenList>
+						<Event Name="Play_Monster_Hiss" ID="{72FF288E-2AE0-4AAB-A06B-8162F5C67218}">
+							<ChildrenList>
+								<Action Name="" ID="{62512898-413B-4612-8384-E2E739DDBC3E}" ShortID="733534381">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Monster_Hiss" ID="{1FB63447-A8CB-4646-8912-27ADC07788A3}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
