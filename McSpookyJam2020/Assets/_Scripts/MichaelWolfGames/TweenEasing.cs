@@ -319,89 +319,50 @@ namespace MichaelWolfGames
 	
         public static EasingFunction GetEasingFunction(EaseType easeType)
         {
-		switch (easeType){
-		case EaseType.easeInQuad:
-			return easeInQuad;
-		case EaseType.easeOutQuad:
-			return easeOutQuad;
-		case EaseType.easeInOutQuad:
-			return easeInOutQuad;
-		case EaseType.easeInCubic:
-			return easeInCubic;
-		case EaseType.easeOutCubic:
-			return easeOutCubic;
-		case EaseType.easeInOutCubic:
-			return easeInOutCubic;
-		case EaseType.easeInQuart:
-			return easeInQuart;
-		case EaseType.easeOutQuart:
-			return easeOutQuart;
-		case EaseType.easeInOutQuart:
-			return easeInOutQuart;
-		case EaseType.easeInQuint:
-			return easeInQuint;
-		case EaseType.easeOutQuint:
-			return easeOutQuint;
-		case EaseType.easeInOutQuint:
-			return easeInOutQuint;
-		case EaseType.easeInSine:
-			return easeInSine;
-		case EaseType.easeOutSine:
-			return easeOutSine;
-		case EaseType.easeInOutSine:
-			return easeInOutSine;
-		case EaseType.easeInExpo:
-			return easeInExpo;
-		case EaseType.easeOutExpo:
-			return easeOutExpo;
-		case EaseType.easeInOutExpo:
-			return easeInOutExpo;
-		case EaseType.easeInCirc:
-			return easeInCirc;
-		case EaseType.easeOutCirc:
-			return easeOutCirc;
-		case EaseType.easeInOutCirc:
-			return easeInOutCirc;
-		case EaseType.linear:
-			return linear;
-		case EaseType.spring:
-			return spring;
-		/* GFX47 MOD START */
-		/*case EaseType.bounce:
-			return bounce;
-			break;*/
-		case EaseType.easeInBounce:
-			return easeInBounce;
-		case EaseType.easeOutBounce:
-			return easeOutBounce;
-			break;
-		case EaseType.easeInOutBounce:
-			return easeInOutBounce;
-		/* GFX47 MOD END */
-		case EaseType.easeInBack:
-			return easeInBack;
-		case EaseType.easeOutBack:
-			return easeOutBack;
-		case EaseType.easeInOutBack:
-			return easeInOutBack;
-		/* GFX47 MOD START */
-		/*case EaseType.elastic:
-			return elastic;
-			break;*/
-		case EaseType.easeInElastic:
-			return easeInElastic;
-		case EaseType.easeOutElastic:
-			return easeOutElastic;
-		case EaseType.easeInOutElastic:
-			return easeInOutElastic;
-		/* GFX47 MOD END */
-		
-//		case EaseType.punch:
-//			return punch;
-		default:
-			return null;
+			switch (easeType)
+			{
+				case EaseType.easeInQuad:		return easeInQuad;
+				case EaseType.easeOutQuad: 		return easeOutQuad;
+				case EaseType.easeInOutQuad: 	return easeInOutQuad;
+				case EaseType.easeInCubic: 		return easeInCubic;
+				case EaseType.easeOutCubic: 	return easeOutCubic;
+				case EaseType.easeInOutCubic: 	return easeInOutCubic;
+				case EaseType.easeInQuart: 		return easeInQuart;
+				case EaseType.easeOutQuart: 	return easeOutQuart;
+				case EaseType.easeInOutQuart: 	return easeInOutQuart;
+				case EaseType.easeInQuint: 		return easeInQuint;
+				case EaseType.easeOutQuint: 	return easeOutQuint;
+				case EaseType.easeInOutQuint: 	return easeInOutQuint;
+				case EaseType.easeInSine: 		return easeInSine;
+				case EaseType.easeOutSine: 		return easeOutSine;
+				case EaseType.easeInOutSine: 	return easeInOutSine;
+				case EaseType.easeInExpo: 		return easeInExpo;
+				case EaseType.easeOutExpo: 		return easeOutExpo;
+				case EaseType.easeInOutExpo: 	return easeInOutExpo;
+				case EaseType.easeInCirc: 		return easeInCirc;
+				case EaseType.easeOutCirc: 		return easeOutCirc;
+				case EaseType.easeInOutCirc: 	return easeInOutCirc;
+				case EaseType.linear: 			return linear;
+				case EaseType.spring: 			return spring;
+				/* GFX47 MOD START */
+				/*case EaseType.bounce:			return bounce;*/
+				case EaseType.easeInBounce: 	return easeInBounce;
+				case EaseType.easeOutBounce: 	return easeOutBounce;
+				case EaseType.easeInOutBounce: 	return easeInOutBounce;
+				/* GFX47 MOD END */
+				case EaseType.easeInBack: 		return easeInBack;
+				case EaseType.easeOutBack: 		return easeOutBack;
+				case EaseType.easeInOutBack: 	return easeInOutBack;
+				/* GFX47 MOD START */
+				/*case EaseType.elastic:		return elastic;*/
+				case EaseType.easeInElastic: 	return easeInElastic;
+				case EaseType.easeOutElastic: 	return easeOutElastic;
+				case EaseType.easeInOutElastic: return easeInOutElastic;
+				/* GFX47 MOD END */
+				/*case EaseType.punch:			return punch;*/
+				default: 						return null;
+			}
 		}
-	}
     }
     
     /// <summary>

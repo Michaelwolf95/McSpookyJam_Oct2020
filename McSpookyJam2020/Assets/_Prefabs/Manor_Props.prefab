@@ -1374,19 +1374,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4402085892979876, guid: 73183991b54197e4bb1b055be34ffc6a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.6306758
+      value: -0.91506755
       objectReference: {fileID: 0}
     - target: {fileID: 4402085892979876, guid: 73183991b54197e4bb1b055be34ffc6a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4402085892979876, guid: 73183991b54197e4bb1b055be34ffc6a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7760464
+      value: 0.40330064
       objectReference: {fileID: 0}
     - target: {fileID: 4402085892979876, guid: 73183991b54197e4bb1b055be34ffc6a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -78.2
+      value: -132.431
+      objectReference: {fileID: 0}
+    - target: {fileID: 4402085892979876, guid: 73183991b54197e4bb1b055be34ffc6a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4797691545720838, guid: 73183991b54197e4bb1b055be34ffc6a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1398,7 +1402,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4797691545720838, guid: 73183991b54197e4bb1b055be34ffc6a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.573
+      value: -4.48
       objectReference: {fileID: 0}
     - target: {fileID: 4797691545720838, guid: 73183991b54197e4bb1b055be34ffc6a, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1440,7 +1444,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1.6
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4797691545720838, guid: 73183991b54197e4bb1b055be34ffc6a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.6
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 64665383591986498, guid: 73183991b54197e4bb1b055be34ffc6a, type: 3}
+    - {fileID: 64724496892038126, guid: 73183991b54197e4bb1b055be34ffc6a, type: 3}
+    - {fileID: 64259849286652526, guid: 73183991b54197e4bb1b055be34ffc6a, type: 3}
+    - {fileID: 64802298418927494, guid: 73183991b54197e4bb1b055be34ffc6a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 73183991b54197e4bb1b055be34ffc6a, type: 3}
 --- !u!4 &7293668576903771469 stripped
 Transform:

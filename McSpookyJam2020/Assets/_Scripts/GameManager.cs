@@ -65,5 +65,12 @@ public class GameManager : SceneSingleton<GameManager>
         StopAMB.Post(gameObject);
         StopMusic.Post(gameObject);
         Debug.Log("PLAYER FUCKING DIED");
+        
+        
+        this.DoTween((lerp =>
+        {
+            
+        } ));
+        
     }
 }

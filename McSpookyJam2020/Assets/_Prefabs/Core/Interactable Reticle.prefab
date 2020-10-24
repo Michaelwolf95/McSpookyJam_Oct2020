@@ -30,7 +30,7 @@ Transform:
   - {fileID: 148763477646246932}
   - {fileID: 1987148413501816423}
   - {fileID: 6075229349259511770}
-  m_Father: {fileID: 8354546125084861874}
+  m_Father: {fileID: 705994860908615076}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2585050249438104333
@@ -63,7 +63,7 @@ Transform:
   - {fileID: 1495558583132237521}
   - {fileID: 3089475091035417247}
   - {fileID: 3969838088489970775}
-  m_Father: {fileID: 8354546125084861874}
+  m_Father: {fileID: 705994860908615076}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4754190178639670415
@@ -497,6 +497,53 @@ MonoBehaviour:
   m_maskType: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+--- !u!1 &6296412234224210821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 705994860908615076}
+  - component: {fileID: 6791421159914662735}
+  m_Layer: 10
+  m_Name: Billboard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &705994860908615076
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6296412234224210821}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8354546125289920379}
+  - {fileID: 8354546124935041156}
+  - {fileID: 8312248387903943971}
+  - {fileID: 5796729212533936411}
+  m_Father: {fileID: 8354546125084861874}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6791421159914662735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6296412234224210821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6d6ad18ae398254381ab22502cd43f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8354546124085910225
 GameObject:
   m_ObjectHideFlags: 0
@@ -864,7 +911,7 @@ Transform:
   - {fileID: 8354546124085910224}
   - {fileID: 8354546124806694040}
   - {fileID: 8354546125011447461}
-  m_Father: {fileID: 8354546125084861874}
+  m_Father: {fileID: 705994860908615076}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8354546125011447462
@@ -1051,11 +1098,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8354546125084861874}
-  - component: {fileID: 8354546125084861873}
   m_Layer: 10
   m_Name: Interactable Reticle
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1070,25 +1116,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 8354546125289920379}
-  - {fileID: 8354546124935041156}
-  - {fileID: 8312248387903943971}
-  - {fileID: 5796729212533936411}
+  - {fileID: 705994860908615076}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8354546125084861873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8354546125084861875}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6d6ad18ae398254381ab22502cd43f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8354546125289920356
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,7 +1148,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8354546124552991224}
-  m_Father: {fileID: 8354546125084861874}
+  m_Father: {fileID: 705994860908615076}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8662867284886798476

@@ -17,6 +17,11 @@ public class Interactor : MonoBehaviour
     private InteractableBase currentInteractionTarget = null;    // Actively interacting with
     private bool isInteracting => currentInteractionTarget != null;
     
+    private Transform viewOrigin => mainCamera.transform;
+    
+    public Action onBeginInteractionEvent = delegate {  };
+    public Action onFinishInteractionEvent = delegate {  };
+    
     private void Awake()
     {
         instance = this;
@@ -46,18 +51,22 @@ public class Interactor : MonoBehaviour
         //RaycastHit[] hits = Physics.SphereCastAll(mainCamera.transform.position, activationRange, Vector3.up, 0f, interactionLayerMask, )
         
         //Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
-        Ray ray = new Ray(mainCamera.transform.position, mainCamera.transform.forward);
-        RaycastHit[] hits = Physics.RaycastAll(ray, interactRange, interactionLayerMask);
+        Ray ray = new Ray(viewOrigin.position, viewOrigin.forward);
+        RaycastHit[] hits = Physics.RaycastAll(ray, interactRange, interactionLayerMask, QueryTriggerInteraction.Collide);
         if (hits.Length > 0)
         {
             InteractableBase raycastResultTarget = null;
             float nearestDist = float.MaxValue;
             for (int i = 0; i < hits.Length; i++)
             {
-                InteractableBase raycastInteractable = hits[i].transform.GetComponent<InteractableBase>();
+                InteractableBase raycastInteractable = hits[i].collider.GetComponent<InteractableBase>();
+                if (raycastInteractable == null)
+                {
+                    raycastInteractable = hits[i].rigidbody.GetComponent<InteractableBase>();
+                }
                 if (raycastInteractable != null && raycastInteractable.IsInteractable())
                 {
-                    if (hits[i].distance < nearestDist)
+                    if (hits[i].distance < nearestDist && IsInteractableWithinViewAngle(raycastInteractable))
                     {
                         raycastResultTarget = raycastInteractable;
                         nearestDist = hits[i].distance;
@@ -98,6 +107,8 @@ public class Interactor : MonoBehaviour
         
         currentInteractionTarget = interactable;
         currentInteractionTarget.OnBeginInteraction();
+        
+        onBeginInteractionEvent();
     }
     
     public void QuitInteraction()
@@ -106,6 +117,8 @@ public class Interactor : MonoBehaviour
         {
             currentInteractionTarget.OnFinishInteraction();
             currentInteractionTarget = null;
+
+            onFinishInteractionEvent();
         }
     }
     
@@ -131,7 +144,38 @@ public class Interactor : MonoBehaviour
 
     public bool IsInteractableWithinActivationRange(InteractableBase interactable)
     {
-        return Vector3.Distance(interactable.transform.position, mainCamera.transform.position) <= activationRange;
+        if (IsInteractableWithinViewAngle(interactable) == false)
+        {
+            return false;
+        }
+        return Vector3.Distance(interactable.GetLookTarget().position, viewOrigin.position) <= activationRange;
+    }
+
+    public bool IsInteractableWithinViewAngle(InteractableBase interactable)
+    {
+        if (interactable.visibleAngleRange.x >= 360f && interactable.visibleAngleRange.y >= 360f)
+        {
+            return true;
+        }
+
+        Transform lookTarget = interactable.GetLookTarget();
+        Vector3 toInteractor = viewOrigin.position - lookTarget.position;
+        
+        // Y-angle range check.
+        Vector3 projPlaneY = Vector3.ProjectOnPlane(toInteractor, lookTarget.up);
+        float yAngle = Vector3.Angle(lookTarget.forward, projPlaneY);
+        if (yAngle > interactable.visibleAngleRange.y / 2f)
+        {
+            return false;
+        }
+        // X-angle range check.
+        Vector3 projPlaneX = Vector3.ProjectOnPlane(toInteractor, lookTarget.right);
+        float xAngle = Vector3.Angle(lookTarget.forward, projPlaneX);
+        if (xAngle > interactable.visibleAngleRange.x / 2f)
+        {
+            return false;
+        }
+        return true;
     }
 
     public void ProcessInteractableActivationRange(InteractableBase interactable)
