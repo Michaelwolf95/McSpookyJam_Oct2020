@@ -225,8 +225,9 @@ public class SpookerAI : LightReactor
                 break;
             case SpookerState.Feared:
                 agent.velocity = Vector3.zero;
-                agent.isStopped = true;
+                //agent. = true;
                 AssignAgentStateParams(fearedStateParams);
+                //agent.isStopped = false;
 
                 onFeared.Post(gameObject);
                 break;
@@ -257,7 +258,8 @@ public class SpookerAI : LightReactor
             onCompleteAttack.Post(gameObject);
         }, (() =>
         {
-            CancelAttack();
+            //CancelAttack();
+            ChangeState(SpookerState.Following);
         }));
     }
 
@@ -268,8 +270,18 @@ public class SpookerAI : LightReactor
         
         onCancelAttack.Post(gameObject);
         
-        ChangeState(SpookerState.Following);
+        //ChangeState(SpookerState.Following);
     }
+//    
+//    private void HandleAttackCanceled()
+//    {
+//        Debug.Log("Cancel Attack");
+//        GameManager.instance.CancelAttackEffect();
+//        
+//        onCancelAttack.Post(gameObject);
+//        
+//        ChangeState(SpookerState.Following);
+//    }
 
 
     public override void OnEnterLight()

@@ -118,7 +118,7 @@ public class GameManager : SceneSingleton<GameManager>
         onAttackEffectCancelled = onCancelled;
         
         Debug.Log("Attack Started.");
-        StartCoroutine(CoAttackEffect(duration, onComplete));
+        attackEffectCoroutine = StartCoroutine(CoAttackEffect(duration, onComplete));
     }
     
     public void CancelAttackEffect()
@@ -138,15 +138,10 @@ public class GameManager : SceneSingleton<GameManager>
         Debug.Log("Attack Cancelled.");
         
         StopCoroutine(attackEffectCoroutine);
+        CleanupAttackEffect();
 
         if (onAttackEffectCancelled != null)
             onAttackEffectCancelled();
-        
-        CleanupAttackEffect();
-
-        PostProcessVolume ppVolume = Camera.main.GetComponentInChildren<PostProcessVolume>();
-        PostProcessProfile profile = ppVolume.profile;
-        profile.GetSetting<Vignette>().intensity.value = 0f;
         
         // START RECOVER
         recoverEffectCoroutine = StartCoroutine(CoRecoverEffect(0.5f));
@@ -171,7 +166,8 @@ public class GameManager : SceneSingleton<GameManager>
             
             float magnitude = Mathf.Lerp(0.01f, 0.1f, lerp);
             Camera.main.transform.localPosition = new Vector3(Random.Range(-1f, 1f) * magnitude, Random.Range(-1f, 1f) * magnitude, 0f);
-
+            
+            //Debug.Log(lerp);
             yield return null;
         }
 
@@ -188,6 +184,10 @@ public class GameManager : SceneSingleton<GameManager>
         Camera.main.transform.localPosition = Vector3.zero;
         attackEffectCoroutine = null;
         onAttackEffectCancelled = null;
+        
+        PostProcessVolume ppVolume = Camera.main.GetComponentInChildren<PostProcessVolume>();
+        PostProcessProfile profile = ppVolume.profile;
+        profile.GetSetting<Vignette>().intensity.value = 0f;
     }
     
     private IEnumerator CoRecoverEffect(float duration, Action onDoneCallback = null)
@@ -195,8 +195,8 @@ public class GameManager : SceneSingleton<GameManager>
         fadeCanvas.gameObject.SetActive(true);
         float startAlpha = fadeCanvas.alpha;
         
-        PostProcessVolume ppVolume = Camera.main.GetComponentInChildren<PostProcessVolume>();
-        PostProcessProfile profile = ppVolume.profile;
+        //PostProcessVolume ppVolume = Camera.main.GetComponentInChildren<PostProcessVolume>();
+        //PostProcessProfile profile = ppVolume.profile;
         float timer = 0f;
         while (timer < duration)
         {

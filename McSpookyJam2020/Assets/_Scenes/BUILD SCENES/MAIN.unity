@@ -2344,6 +2344,53 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &683716718
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 683716719}
+  - component: {fileID: 683716720}
+  m_Layer: 0
+  m_Name: NavBlocker_Study
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &683716719
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683716718}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.51, y: 0.89, z: -7.43}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1240348120}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!208 &683716720
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683716718}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 3, y: 2, z: 2.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 2, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &728534352
 GameObject:
   m_ObjectHideFlags: 0
@@ -3909,6 +3956,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1240348120 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4936260003106660969, guid: d6e9da193eb662e4fa1aca77a38871f2,
+    type: 3}
+  m_PrefabInstance: {fileID: 4936260002827668945}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1272550953 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2795057282176695554, guid: cb44c56f82922284f92f4ce2875c6607,
@@ -6533,12 +6586,12 @@ PrefabInstance:
     - target: {fileID: 8141053062342249904, guid: bb64e8f3da86ee646bdc0926f09bc6fd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4
+      value: 7.47
       objectReference: {fileID: 0}
     - target: {fileID: 8141053062342249904, guid: bb64e8f3da86ee646bdc0926f09bc6fd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.78
+      value: 3.82
       objectReference: {fileID: 0}
     - target: {fileID: 8141053062342249904, guid: bb64e8f3da86ee646bdc0926f09bc6fd,
         type: 3}
@@ -6589,6 +6642,21 @@ PrefabInstance:
         type: 3}
       propertyPath: attackDuration
       value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8141053062342249906, guid: bb64e8f3da86ee646bdc0926f09bc6fd,
+        type: 3}
+      propertyPath: wanderingStateParams.angularSpeed
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8141053062342249906, guid: bb64e8f3da86ee646bdc0926f09bc6fd,
+        type: 3}
+      propertyPath: followingStateParams.angularSpeed
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8141053062342249906, guid: bb64e8f3da86ee646bdc0926f09bc6fd,
+        type: 3}
+      propertyPath: fearedStateParams.angularSpeed
+      value: 999
       objectReference: {fileID: 0}
     - target: {fileID: 8141053062342249919, guid: bb64e8f3da86ee646bdc0926f09bc6fd,
         type: 3}

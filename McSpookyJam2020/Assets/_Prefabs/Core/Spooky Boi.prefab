@@ -122,24 +122,25 @@ MonoBehaviour:
   agent: {fileID: 8141053062342249905}
   spriteRenderer: {fileID: 8141053063868135339}
   visualRoot: {fileID: 8141053062929758846}
-  killDistance: 1.6
+  attackStartDistance: 1.6
+  attackStopDistance: 1.8
+  attackDuration: 2.5
   unHideMinDistance: 8
-  attackDuration: 1.6
   disabledStateParams:
     speed: 0
     angularSpeed: 0
     acceleration: 0
   wanderingStateParams:
     speed: 1
-    angularSpeed: 90
+    angularSpeed: 999
     acceleration: 3
   followingStateParams:
     speed: 1.5
-    angularSpeed: 90
+    angularSpeed: 999
     acceleration: 3
   fearedStateParams:
     speed: 15
-    angularSpeed: 360
+    angularSpeed: 999
     acceleration: 20
   onFeared:
     idInternal: 0
