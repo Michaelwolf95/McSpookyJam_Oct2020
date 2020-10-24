@@ -1,4 +1,4 @@
-﻿namespace MichaelWolfGames.Interaction_System
+﻿namespace MichaelWolfGames.InteractionSystem
 {
     public class DeskInvestigation : InvestigationCardInteractable
     {

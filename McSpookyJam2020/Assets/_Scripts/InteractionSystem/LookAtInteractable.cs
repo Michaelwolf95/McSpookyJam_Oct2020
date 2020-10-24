@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace MichaelWolfGames.Interaction_System
+namespace MichaelWolfGames.InteractionSystem
 {
     public class LookAtInteractable : InteractableBase
     {
