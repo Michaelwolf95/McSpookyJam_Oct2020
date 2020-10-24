@@ -59,6 +59,7 @@ public class PauseMenuManager : MonoBehaviour
         }
         else // Go to main menu
         {
+            Time.timeScale = 1;
             _pauseMenuPanel.SetActive(false);
             SceneManager.LoadScene("MAINMENU");
         }
