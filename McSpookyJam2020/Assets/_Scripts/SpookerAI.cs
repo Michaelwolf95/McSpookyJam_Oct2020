@@ -16,6 +16,9 @@ public class SpookerAI : LightReactor
     [SerializeField] private float unHideMinDistance = 8f;
 
     [Space(5)] 
+    [SerializeField] private float killTime = 1f;
+
+    [Space(5)] 
     [SerializeField] private AgentStateParams disabledStateParams = new AgentStateParams();
     [SerializeField] private AgentStateParams wanderingStateParams = new AgentStateParams();
     [SerializeField] private AgentStateParams followingStateParams = new AgentStateParams();
@@ -29,6 +32,7 @@ public class SpookerAI : LightReactor
     private static float MAX_FEAR_TIME = 15f;
 
     private bool readyToUnHide = false;
+    
 
     [System.Serializable]
     public struct AgentStateParams
@@ -43,6 +47,7 @@ public class SpookerAI : LightReactor
         Disabled,
         Wandering,
         Following,
+        Attacking,
         Feared,
         Hiding
     }
@@ -88,14 +93,9 @@ public class SpookerAI : LightReactor
                 }
                 break;
             }
-            case SpookerState.Hiding:
+            case SpookerState.Attacking:
             {
-                if (readyToUnHide && (toTargetVector.magnitude > unHideMinDistance))
-                {
-                    ChangeState(SpookerState.Following);
-                    return;
-                }
-                RunAway();
+                agent.SetDestination(target.position);
                 break;
             }
             case SpookerState.Feared:
@@ -108,7 +108,16 @@ public class SpookerAI : LightReactor
                 RunAway();
                 break;
             }
-            
+            case SpookerState.Hiding:
+            {
+                if (readyToUnHide && (toTargetVector.magnitude > unHideMinDistance))
+                {
+                    ChangeState(SpookerState.Following);
+                    return;
+                }
+                RunAway();
+                break;
+            }
             default:
                 break;
         }

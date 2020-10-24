@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections;
+using Fungus;
 using MichaelWolfGames;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
 public class GameManager : SceneSingleton<GameManager>
 {
@@ -73,4 +76,89 @@ public class GameManager : SceneSingleton<GameManager>
         } ));
         
     }
+
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            StartAttackEffect(1f);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            CancelAttackEffect();
+        }
+    }
+
+    private Coroutine attackEffectCoroutine = null;
+    private Action onAttackEffectCancelled = null;
+    
+    
+    public void StartAttackEffect(float duration, Action onComplete = null, Action onCancelled = null)
+    {
+        if (attackEffectCoroutine != null)
+        {
+            Debug.Log("Starting attack effect while it's running!!!");
+            return;
+        }
+
+        onAttackEffectCancelled = onCancelled;
+        StartCoroutine(CoAttackEffect(duration, onComplete));
+    }
+    
+    public void CancelAttackEffect()
+    {
+        if (attackEffectCoroutine == null)
+        {
+            //Debug.Log("Starting attack effect while it's running!!!");
+            return;
+        }
+
+        Debug.Log("Attack Cancelled.");
+        
+        StopCoroutine(attackEffectCoroutine);
+
+        if (onAttackEffectCancelled != null)
+            onAttackEffectCancelled();
+        
+        attackEffectCoroutine = null;
+        onAttackEffectCancelled = null;
+    }
+    
+    private IEnumerator CoAttackEffect(float duration, Action onDoneCallback = null)
+    {
+        
+        CameraManager cameraManager = FungusManager.Instance.CameraManager;
+        cameraManager.ScreenFadeTexture = CameraManager.CreateColorTexture(Color.black, 32, 32);
+        
+//        cameraManager.Fade(targetAlpha, duration, delegate { 
+//            if (waitUntilFinished)
+//            {
+//                Continue();
+//            }
+//        }, fadeTweenType);
+        
+        
+        PostProcessVolume ppVolume = Camera.main.GetComponentInChildren<PostProcessVolume>();
+        PostProcessProfile profile = ppVolume.profile;
+        float timer = 0f;
+        while (timer < duration)
+        {
+            timer += Time.deltaTime;
+            profile.GetSetting<Vignette>().intensity.value = Mathf.Lerp(0f, 1f, timer / duration);
+//            VignetteModel.Settings vign = profile.vignette.settings;
+//            vign.intensity = vignIntensity;
+//            profile.vignette.settings = vign;
+            yield return null;
+        }
+        
+        attackEffectCoroutine = null;
+        onAttackEffectCancelled = null;
+        
+        if (onDoneCallback != null)
+            onDoneCallback();
+        
+        OnPlayerDeath();
+    }
+    
 }
