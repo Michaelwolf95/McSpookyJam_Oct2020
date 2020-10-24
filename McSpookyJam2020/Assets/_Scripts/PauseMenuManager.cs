@@ -40,10 +40,12 @@ public class PauseMenuManager : MonoBehaviour
 
     IEnumerator PauseButtonPress(RectTransform button, int buttonNumberPressed)
     {
+        /* Get tween to work correctly with unscaled time
         this.DoTween(lerp =>
         {
             button.localScale = Vector3.LerpUnclamped(_startScale, _endScale, lerp);
-        }, null, _animationDuration, EaseType.easeInOutCirc);
+        }, null, _animationDuration, EaseType.spring, true);
+        */
 
         yield return new WaitForSecondsRealtime(1f);
 
