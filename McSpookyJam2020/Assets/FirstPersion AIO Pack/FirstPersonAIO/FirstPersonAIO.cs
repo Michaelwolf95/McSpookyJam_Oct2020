@@ -929,6 +929,17 @@ public class FirstPersonAIO : MonoBehaviour
 
         static Texture2D adTex1;
         bool loadedAds = false;
+        
+        
+        SerializedProperty groundFloorMaterialProp;
+        SerializedProperty groundFloorFootStepsProp;
+        SerializedProperty upstairsMaterialProp;
+        SerializedProperty upstairsFootStepsProp;
+        SerializedProperty basementMaterialProp;
+        SerializedProperty basementFootStepsProp;
+        SerializedProperty stairsFloorMaterialProp;
+        SerializedProperty stairsFootStepsProp;
+        
 
         string versionNum = "20.6.13cu";
         void OnEnable(){
@@ -965,6 +976,16 @@ public class FirstPersonAIO : MonoBehaviour
             customFS = SerT.FindProperty("dynamicFootstep.customClipSet");
             customMat = SerT.FindProperty("dynamicFootstep.customMat");
             customPhysMat = SerT.FindProperty("dynamicFootstep.customPhysMat");
+            
+            groundFloorMaterialProp = serializedObject.FindProperty("groundFloorMaterial");
+            groundFloorFootStepsProp = serializedObject.FindProperty("groundFloorFootSteps");
+            upstairsMaterialProp = serializedObject.FindProperty("upstairsMaterial");
+            upstairsFootStepsProp = serializedObject.FindProperty("upstairsFootSteps");
+            basementMaterialProp = serializedObject.FindProperty("basementMaterial");
+            basementFootStepsProp = serializedObject.FindProperty("basementFootSteps");
+            stairsFloorMaterialProp = serializedObject.FindProperty("stairsFloorMaterial");
+            stairsFootStepsProp = serializedObject.FindProperty("stairsFootSteps");
+            
 
         }   
         public override void OnInspectorGUI(){
@@ -974,14 +995,14 @@ public class FirstPersonAIO : MonoBehaviour
             }
 
             //FirstPersonAIO targetController = target as FirstPersonAIO;
-            EditorGUILayout.PropertyField(serializedObject.FindProperty("groundFloorMaterial"));
-            EditorGUILayout.PropertyField(serializedObject.FindProperty("groundFloorFootSteps"));
-            EditorGUILayout.PropertyField(serializedObject.FindProperty("upstairsMaterial"));
-            EditorGUILayout.PropertyField(serializedObject.FindProperty("upstairsFootSteps"));
-            EditorGUILayout.PropertyField(serializedObject.FindProperty("basementMaterial"));
-            EditorGUILayout.PropertyField(serializedObject.FindProperty("basementFootSteps"));
-            EditorGUILayout.PropertyField(serializedObject.FindProperty("stairsFloorMaterial"));
-            EditorGUILayout.PropertyField(serializedObject.FindProperty("stairsFootSteps"));
+            EditorGUILayout.PropertyField(groundFloorMaterialProp);
+            EditorGUILayout.PropertyField(groundFloorFootStepsProp);
+            EditorGUILayout.PropertyField(upstairsMaterialProp);
+            EditorGUILayout.PropertyField(upstairsFootStepsProp);
+            EditorGUILayout.PropertyField(basementMaterialProp);
+            EditorGUILayout.PropertyField(basementFootStepsProp);
+            EditorGUILayout.PropertyField(stairsFloorMaterialProp);
+            EditorGUILayout.PropertyField(stairsFootStepsProp);
 
             SerT.Update();
             EditorGUILayout.Space();
