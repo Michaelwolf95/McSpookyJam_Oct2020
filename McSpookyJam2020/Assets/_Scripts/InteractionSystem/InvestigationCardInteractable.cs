@@ -13,7 +13,7 @@ public class InvestigationCardInteractable : InteractableBase
     [SerializeField] 
     private bool exitOnEscapeInput = false;
 
-    private Flowchart flowchartInstance = null;
+    protected Flowchart flowchartInstance = null;
 
     protected override void Start()
     {
