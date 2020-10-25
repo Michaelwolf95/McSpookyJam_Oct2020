@@ -11,7 +11,7 @@
 	<StreamedFiles>
 		<File Id="621486811" Language="SFX">
 			<ShortName>SFX_Demon_Circle_Loop_01.wav</ShortName>
-			<Path>SFX\SFX_Demon_Circle_Loop_01_BB41A573.wem</Path>
+			<Path>SFX\SFX_Demon_Circle_Loop_01_A472F907.wem</Path>
 		</File>
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
@@ -21,7 +21,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4190601618" Language="SFX" Hash="4192202464">
+		<SoundBank Id="4190601618" Language="SFX" Hash="861286062">
 			<ObjectPath>\SoundBanks\McSpookyJam2020\McSpookyJam2020</ObjectPath>
 			<ShortName>McSpookyJam2020</ShortName>
 			<Path>McSpookyJam2020.bnk</Path>
@@ -55,7 +55,7 @@
 					<IncludedMemoryFiles>
 						<File Id="954993177" Language="SFX">
 							<ShortName>SFX_Candle_Loop.wav</ShortName>
-							<Path>SFX\SFX_Candle_Loop_7C2BEA6B.wem</Path>
+							<Path>SFX\SFX_Candle_Loop_0426DE3A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -163,7 +163,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="864033359" Name="Play_Monster_Attack" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Attack" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="864033359" Name="Play_Monster_Attack" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Attack" DurationType="OneShot" DurationMin="1.750354" DurationMax="1.750354">
+					<IncludedMemoryFiles>
+						<File Id="873599575" Language="SFX">
+							<ShortName>SFX_Monster_Attack_Start_02.wav</ShortName>
+							<Path>SFX\SFX_Monster_Attack_Start_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1099225839" Name="Play_Monster_Attack_Complete" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Attack_Complete" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
 				<Event Id="3704879888" Name="Play_Monster_Footsteps" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Footsteps" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2620845016" Name="Play_Monster_Hiss" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Hiss" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="2.959896" DurationMax="2.959896">
@@ -255,7 +262,7 @@
 					<ReferencedStreamedFiles>
 						<File Id="621486811" Language="SFX">
 							<ShortName>SFX_Demon_Circle_Loop_01.wav</ShortName>
-							<Path>SFX\SFX_Demon_Circle_Loop_01_BB41A573.wem</Path>
+							<Path>SFX\SFX_Demon_Circle_Loop_01_A472F907.wem</Path>
 						</File>
 					</ReferencedStreamedFiles>
 				</Event>
