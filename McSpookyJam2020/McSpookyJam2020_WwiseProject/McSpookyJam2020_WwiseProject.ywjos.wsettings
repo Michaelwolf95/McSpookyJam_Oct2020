@@ -40,6 +40,7 @@
 				<Property Name="Event Action List\{F38397DF-62A9-44A3-83D0-70619037F0C0}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{F740C767-4B3F-45C7-B750-91E36B6C6647}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{FCA1D8E0-E8A2-4640-A983-46F41274F6BA}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{FE43368F-36B8-419E-83B4-5F145BB35F28}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>

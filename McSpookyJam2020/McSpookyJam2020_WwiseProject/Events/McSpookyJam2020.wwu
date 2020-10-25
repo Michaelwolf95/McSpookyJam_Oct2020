@@ -452,6 +452,7 @@
 							</ChildrenList>
 						</Event>
 						<Event Name="Play_Monster_Footsteps" ID="{983D953E-B3C8-4339-B17F-38B7F09CEF09}"/>
+						<Event Name="Play_Monster_Emerge" ID="{1159C354-BF7B-46F9-8D8A-0BA0778A79D5}"/>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
