@@ -11,11 +11,11 @@ public enum InteractReticleType
 
 public class InteractableReticle : MonoBehaviour
 {
-    [SerializeField] private GameObject activatedReticle;
+    [SerializeField] private GameObject activatedReticle = null;
     [Space(3)]
-    [SerializeField] private GameObject lookReticle;
-    [SerializeField] private GameObject investigateReticle;
-    [SerializeField] private GameObject handReticle;
+    [SerializeField] private GameObject lookReticle = null;
+    [SerializeField] private GameObject investigateReticle = null;
+    [SerializeField] private GameObject handReticle = null;
 
     private InteractReticleType currentInteractType = InteractReticleType.Look;
 
@@ -25,11 +25,6 @@ public class InteractableReticle : MonoBehaviour
         lookReticle.gameObject.SetActive(false);
         investigateReticle.gameObject.SetActive(false);
         handReticle.gameObject.SetActive(false);
-    }
-
-    public GameObject GetActivatedReticleGameObject()
-    {
-        return activatedReticle;
     }
 
     public GameObject GetInteractReticleGameObject(InteractReticleType argType)

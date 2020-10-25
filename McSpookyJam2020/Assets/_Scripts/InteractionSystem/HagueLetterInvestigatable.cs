@@ -8,4 +8,11 @@ public class HagueLetterInvestigatable : InvestigationCardInteractable
     {
         InventoryManager.instance.CollectHagueLetter(collectionIndex);
     }
+
+    public override void OnFinishInteraction()
+    {
+        base.OnFinishInteraction();
+        OnCollected();
+        
+    }
 }

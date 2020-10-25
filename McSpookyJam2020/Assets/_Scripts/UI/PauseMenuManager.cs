@@ -2,16 +2,18 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseMenuManager : MonoBehaviour
 {
-    [SerializeField] RectTransform _resumeButton;
-    [SerializeField] RectTransform _mainMenuButton;
-    [SerializeField] GameObject _pauseMenuPanel;
-    [SerializeField] Vector3 _startScale, _endScale;
-    [SerializeField] float _animationDuration;
+    [SerializeField] Button resumeButton;
+    [SerializeField] Button mainMenuButton;
+    [SerializeField] GameObject pauseMenuPanel;
     [SerializeField] KeyCode _pauseButton;
 
+    private bool cursorVisibleOnPause = false;
+    private CursorLockMode cursorLockModeOnPause = CursorLockMode.None;
+    
     private void Update()
     {
         if(Input.GetKey(_pauseButton))
@@ -22,47 +24,78 @@ public class PauseMenuManager : MonoBehaviour
 
     void PauseGame()
     {
-        _pauseMenuPanel.SetActive(true);
+        pauseMenuPanel.SetActive(true);
+        CacheCursorState();
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 0;
     }
 
+    private void CacheCursorState()
+    {
+        cursorVisibleOnPause = Cursor.visible;
+        cursorLockModeOnPause = Cursor.lockState;
+    }
+
+    private void ReturnCursorState()
+    {
+        Cursor.visible = cursorVisibleOnPause;
+        Cursor.lockState = cursorLockModeOnPause;
+    }
+
+    private void ToggleButtonsInteractive(bool argInteractable)
+    {
+        resumeButton.interactable = argInteractable;
+        mainMenuButton.interactable = argInteractable;
+    }
+
     public void ResumeGame()
     {
-        StartCoroutine(PauseButtonPress(_resumeButton, 0));
+        ToggleButtonsInteractive(false);
+        StartCoroutine(MenuTweenEffects.ScalePressEffect((RectTransform)resumeButton.transform, () =>
+        {
+            ToggleButtonsInteractive(true);
+            pauseMenuPanel.SetActive(false);
+            ReturnCursorState();
+            Time.timeScale = 1;
+        }, 1.25f, 1f, 0.5f, true));
     }
 
     public void ReturnToMainMenu()
     {
-        StartCoroutine(PauseButtonPress(_mainMenuButton, 1));
-    }
-
-    IEnumerator PauseButtonPress(RectTransform button, int buttonNumberPressed)
-    {
-        /* Get tween to work correctly with unscaled time
-        this.DoTween(lerp =>
-        {
-            button.localScale = Vector3.LerpUnclamped(_startScale, _endScale, lerp);
-        }, null, _animationDuration, EaseType.spring, true);
-        */
-
-        yield return new WaitForSecondsRealtime(1f);
-
-        // If resume is pressed
-        if (buttonNumberPressed == 0)
-        {
-            _pauseMenuPanel.SetActive(false);
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
-            Time.timeScale = 1;
-        }
-        else // Go to main menu
+        ToggleButtonsInteractive(false);
+        StartCoroutine(MenuTweenEffects.ScalePressEffect((RectTransform)mainMenuButton.transform, () =>
         {
             Time.timeScale = 1;
-            _pauseMenuPanel.SetActive(false);
-            SceneManager.LoadScene("MAINMENU");
-        }
-
+            SceneManager.LoadScene(GameManager.MAIN_MENU_SCENE_INDEX);
+        }, 1.25f, 1f, 0.5f, true));
+        //StartCoroutine(PauseButtonPress(mainMenuButton, 1));
     }
+
+//    IEnumerator PauseButtonPress(RectTransform button, int buttonNumberPressed)
+//    {
+//        /* Get tween to work correctly with unscaled time
+//        this.DoTween(lerp =>
+//        {
+//            button.localScale = Vector3.LerpUnclamped(_startScale, _endScale, lerp);
+//        }, null, _animationDuration, EaseType.spring, true);
+//        */
+//
+//        yield return new WaitForSecondsRealtime(1f);
+//
+//        // If resume is pressed
+//        if (buttonNumberPressed == 0)
+//        {
+//            pauseMenuPanel.SetActive(false);
+//            Cursor.visible = false;
+//            Cursor.lockState = CursorLockMode.Locked;
+//            Time.timeScale = 1;
+//        }
+//        else // Go to main menu
+//        {
+//            Time.timeScale = 1;
+//            pauseMenuPanel.SetActive(false);
+//            SceneManager.LoadScene("MAINMENU");
+//        }
+//    }
 }

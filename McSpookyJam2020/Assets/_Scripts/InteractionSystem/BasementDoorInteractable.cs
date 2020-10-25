@@ -80,10 +80,15 @@ public class BasementDoorInteractable : InvestigationCardInteractable
 
     public override void OnFinishInteraction()
     {
-        base.OnFinishInteraction();
-        
-        if (InventoryManager.instance.hasBasementKey)
+        if (InventoryManager.instance.hasBasementKey == false)
         {
+            isInteracting = false;
+            PlayFinishInteractionSound();
+            OnInteractEnd.Invoke();
+        }
+        else
+        {
+            base.OnFinishInteraction();
             OpenDoor();
         }
     }

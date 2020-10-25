@@ -8,9 +8,7 @@ public class FlashlightItem : InteractableBase
     {
         InventoryManager.instance.CollectFlashlight();
         this.gameObject.SetActive(false);
-        
-        // ToDo: Pickup SFX
-        
+
         Interactor.instance.QuitInteraction();
     }
 }

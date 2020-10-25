@@ -240,7 +240,8 @@ MonoBehaviour:
   InteractStartAudio:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: a508af4dae6107c4f875992ad974519c,
+      type: 2}
   InteractEndAudio:
     idInternal: 0
     valueGuidInternal: 
@@ -261,7 +262,8 @@ MonoBehaviour:
   lockedInteractStartAudio:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: cc041e97d2e773844b9fadce499f9cad,
+      type: 2}
   lockedInteractEndAudio:
     idInternal: 0
     valueGuidInternal: 
@@ -495,7 +497,7 @@ PrefabInstance:
     - target: {fileID: 8354546125084861874, guid: 3be365ddfd146d743bfd9261c670d56f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.432
+      value: -0.63
       objectReference: {fileID: 0}
     - target: {fileID: 8354546125084861874, guid: 3be365ddfd146d743bfd9261c670d56f,
         type: 3}
@@ -505,7 +507,7 @@ PrefabInstance:
     - target: {fileID: 8354546125084861874, guid: 3be365ddfd146d743bfd9261c670d56f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.15
+      value: -0.1875
       objectReference: {fileID: 0}
     - target: {fileID: 8354546125084861874, guid: 3be365ddfd146d743bfd9261c670d56f,
         type: 3}

@@ -17,6 +17,8 @@ public class GameManager : SceneSingleton<GameManager>
     public CanvasGroup attackEffectCanvasGroup = null;
 
     public GameOverMenu gameOverMenu = null;
+    
+    public event Action OnTransitionToNightEvent = delegate {  };
 
     [Header("Wwise Events")]
     public AK.Wwise.Switch Day;
@@ -83,6 +85,11 @@ public class GameManager : SceneSingleton<GameManager>
             Night.SetValue(gameObject);
             StopAMB.Post(gameObject);
             PlayAMB.Post(gameObject);
+
+            if (OnTransitionToNightEvent != null)
+            {
+                OnTransitionToNightEvent.Invoke();
+            }
         }
     }
 
