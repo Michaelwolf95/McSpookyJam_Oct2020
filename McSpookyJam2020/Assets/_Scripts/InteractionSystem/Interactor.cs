@@ -60,11 +60,11 @@ public class Interactor : MonoBehaviour
             for (int i = 0; i < hits.Length; i++)
             {
                 InteractableBase raycastInteractable = hits[i].collider.GetComponent<InteractableBase>();
-                if (raycastInteractable == null)
+                if (raycastInteractable == null && hits[i].rigidbody != null)
                 {
                     raycastInteractable = hits[i].rigidbody.GetComponent<InteractableBase>();
                 }
-                if (raycastInteractable != null && raycastInteractable.IsInteractable())
+                if (raycastInteractable != null && raycastInteractable.isInteractable)
                 {
                     if (hits[i].distance < nearestDist && IsInteractableWithinViewAngle(raycastInteractable))
                     {

@@ -86,9 +86,13 @@ public class GameManager : SceneSingleton<GameManager>
         }
     }
 
+    public void OnBasementDoorOpened()
+    {
+        
+    }
 
 
-    
+    // ToDo: Move these effects somewhere else.
 
     private Coroutine attackEffectCoroutine = null;
     private Action onAttackEffectCancelled = null;

@@ -9,42 +9,36 @@ using UnityEditor;
 
 public class InteractableBase : MonoBehaviour
 {
-    [SerializeField] 
-    private Transform reticleRoot = null;
     [SerializeField]
-    private GameObject activatedReticle = null;
+    protected InteractableReticle reticle;
     [SerializeField]
-    private GameObject pointerTargetReticle = null;
-
-    public bool isActivated { get; protected set; }
-    public bool isInteracting { get; protected set; }
-    
-    public UnityEvent OnInteractStart = new UnityEvent();
-    public UnityEvent OnInteractEnd = new UnityEvent();
-
-    public AK.Wwise.Event InteractStartAudio;
-    public AK.Wwise.Event InteractEndAudio;
-    
-//    [System.Serializable]
-//    public class ViewRange
-//    {
-//        public Vector2 xRange = new
-//    }
+    protected InteractReticleType interactReticleType = InteractReticleType.Look;
     
     public Vector2 visibleAngleRange = new Vector2(360f, 360f);
     
-    protected virtual void Awake()
-    {
-        activatedReticle.SetActive(false);
-        pointerTargetReticle.SetActive(false);
-    }
+    [Header("Wwise Events")]
+    public AK.Wwise.Event InteractStartAudio;
+    public AK.Wwise.Event InteractEndAudio;
+    
+    [Header("Unity Events")]
+    public UnityEvent OnInteractStart = new UnityEvent();
+    public UnityEvent OnInteractEnd = new UnityEvent();
+    
+    public bool isActivated { get; protected set; }
+    public bool isInteracting { get; protected set; }
+    
+    
+    public bool isInteractable { get; protected set; }
+    
     
     protected virtual void Start()
     {
+        SetInteractable(true);
+        reticle.SetInteractType(interactReticleType);
         if (Interactor.instance != null)
         {
-            Interactor.instance.onBeginInteractionEvent += HideReticles;
-            Interactor.instance.onFinishInteractionEvent += UnhideReticles;
+            Interactor.instance.onBeginInteractionEvent += HideReticle;
+            Interactor.instance.onFinishInteractionEvent += UnhideReticle;
         }
     }
 
@@ -52,11 +46,10 @@ public class InteractableBase : MonoBehaviour
     {
         if (Interactor.instance != null)
         {
-            Interactor.instance.onBeginInteractionEvent -= HideReticles;
-            Interactor.instance.onFinishInteractionEvent -= UnhideReticles;
+            Interactor.instance.onBeginInteractionEvent -= HideReticle;
+            Interactor.instance.onFinishInteractionEvent -= UnhideReticle;
         }
     }
-
 
     protected virtual void Update()
     {
@@ -65,76 +58,95 @@ public class InteractableBase : MonoBehaviour
             Interactor.instance.ProcessInteractableActivationRange(this);
         }
     }
-
-    public virtual bool IsInteractable()
+    
+    public void SetInteractable(bool argInteractable)
     {
-        return true;
+        if (argInteractable == isInteractable)
+        {
+            return;
+        }
+        isInteractable = argInteractable;
+
+        if (isInteractable == false)
+        {
+            HideReticle();
+        }
     }
+
 
     public virtual Transform GetLookTarget()
     {
-        return (reticleRoot != null) ? reticleRoot : this.transform;
+        return (reticle != null) ? reticle.transform : this.transform;
     }
     
     public virtual void OnEnterActivationRange()
     {
-        //Debug.Log("OnEnterActivationRange");
         isActivated = true;
-        activatedReticle.SetActive(true);
+        reticle.ToggleActivatedReticle(true);
     }
     
     public virtual void OnExitActivationRange()
     {
-        //Debug.Log("OnExitActivationRange");
         isActivated = false;
-        activatedReticle.SetActive(false);
+        reticle.ToggleActivatedReticle(false);
     }
     
     public virtual void OnBecomePointerTarget()
     {
-        //Debug.Log("OnBecomePointerTarget");
-        pointerTargetReticle.SetActive(true);
-        activatedReticle.SetActive(false);
+        reticle.ToggleInteractReticle(true);
+        reticle.ToggleActivatedReticle(false);
     }
     
     public virtual void OnNoLongerPointerTarget()
     {
-        //Debug.Log("OnNoLongerPointerTarget");
-        pointerTargetReticle.SetActive(false);
-        activatedReticle.SetActive(false);
+        reticle.ToggleInteractReticle(false);
+        reticle.ToggleActivatedReticle(false);
     }
     
     public virtual void OnBeginInteraction()
     {
-        //Debug.Log("OnBeginInteraction");
         isInteracting = true;
         OnInteractStart.Invoke();
-        InteractStartAudio.Post(gameObject);
+        PlayBeginInteractionSound();
         PerformInteraction();
-}
+    }
+    
     protected virtual void PerformInteraction()
     {
-        //Debug.Log("PerformInteraction");
-
         Interactor.instance.QuitInteraction();
     }
     
     public virtual void OnFinishInteraction()
     {
         isInteracting = false;
-        InteractEndAudio.Post(gameObject);
+        PlayFinishInteractionSound();
         OnInteractEnd.Invoke();
-        //Debug.Log("OnFinishInteraction");
     }
 
-    protected virtual void HideReticles()
+    protected virtual void HideReticle()
     {
-        reticleRoot.gameObject.SetActive(false);
+        if (isInteractable)
+        {
+            reticle.gameObject.SetActive(false);
+        }
     }
     
-    protected virtual void UnhideReticles()
+    protected virtual void UnhideReticle()
     {
-        reticleRoot.gameObject.SetActive(true);
+        if (isInteractable)
+        {
+            reticle.gameObject.SetActive(true);
+        }
+    }
+
+    protected virtual void PlayBeginInteractionSound()
+    {
+        InteractStartAudio.Post(gameObject);
+    }
+    
+    protected virtual void PlayFinishInteractionSound()
+    {
+        InteractEndAudio.Post(gameObject);
     }
 
 #if UNITY_EDITOR
@@ -146,7 +158,7 @@ public class InteractableBase : MonoBehaviour
         {
             Handles.color = new Color(0f, 1f, 0f, 0.35f);
             Handles.DrawSolidArc(lookTarget.position, lookTarget.up,
-                Quaternion.AngleAxis(-visibleAngleRange.y / 2f, Vector3.up) * (lookTarget.forward), 
+                Quaternion.AngleAxis(-visibleAngleRange.y / 2f, lookTarget.up) * (lookTarget.forward), 
                 visibleAngleRange.y, 0.2f);
         }
 
@@ -154,7 +166,7 @@ public class InteractableBase : MonoBehaviour
         {
             Handles.color  = new Color(1f, 0f, 0f, 0.35f);
             Handles.DrawSolidArc(lookTarget.position, lookTarget.right,
-                Quaternion.AngleAxis(-visibleAngleRange.x / 2f, Vector3.right) * (lookTarget.forward),
+                Quaternion.AngleAxis(-visibleAngleRange.x / 2f, lookTarget.right) * (lookTarget.forward),
                 visibleAngleRange.x, 0.2f);
         }
     }

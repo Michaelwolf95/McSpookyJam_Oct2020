@@ -15,8 +15,9 @@ public class InvestigationCardInteractable : InteractableBase
 
     private Flowchart flowchartInstance = null;
 
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
         flowchartInstance = InvestigationCardCanvas.instance.InstantiateCard(flowchartPrefab);
     }
 
