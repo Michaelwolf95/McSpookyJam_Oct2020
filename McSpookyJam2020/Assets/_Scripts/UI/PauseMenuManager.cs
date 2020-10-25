@@ -11,6 +11,9 @@ public class PauseMenuManager : MonoBehaviour
     [SerializeField] GameObject pauseMenuPanel;
     [SerializeField] KeyCode _pauseButton;
 
+    private bool cursorVisibleOnPause = false;
+    private CursorLockMode cursorLockModeOnPause = CursorLockMode.None;
+    
     private void Update()
     {
         if(Input.GetKey(_pauseButton))
@@ -22,9 +25,22 @@ public class PauseMenuManager : MonoBehaviour
     void PauseGame()
     {
         pauseMenuPanel.SetActive(true);
+        CacheCursorState();
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 0;
+    }
+
+    private void CacheCursorState()
+    {
+        cursorVisibleOnPause = Cursor.visible;
+        cursorLockModeOnPause = Cursor.lockState;
+    }
+
+    private void ReturnCursorState()
+    {
+        Cursor.visible = cursorVisibleOnPause;
+        Cursor.lockState = cursorLockModeOnPause;
     }
 
     private void ToggleButtonsInteractive(bool argInteractable)
@@ -40,8 +56,7 @@ public class PauseMenuManager : MonoBehaviour
         {
             ToggleButtonsInteractive(true);
             pauseMenuPanel.SetActive(false);
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
+            ReturnCursorState();
             Time.timeScale = 1;
         }, 1.25f, 1f, 0.5f, true));
     }
