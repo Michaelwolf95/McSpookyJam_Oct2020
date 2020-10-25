@@ -165,7 +165,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: QUIT
+          m_StringArgument: InvokeQuit
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &6218148862862082093
@@ -358,6 +358,8 @@ GameObject:
   - component: {fileID: 8786675518878862369}
   - component: {fileID: 8786675518878862382}
   - component: {fileID: 8786675518878862383}
+  - component: {fileID: 3871557813473496196}
+  - component: {fileID: 1519820688533910498}
   m_Layer: 5
   m_Name: '[Card UI] The Letter'
   m_TagString: Untagged
@@ -409,10 +411,8 @@ MonoBehaviour:
     y: 0
     width: 0
     height: 0
-  selectedBlocks:
-  - {fileID: 8786675518878862361}
-  selectedCommands:
-  - {fileID: 8786675518878862375}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 8786675518878862383}
   description: 
@@ -657,6 +657,47 @@ MonoBehaviour:
   scope: 0
   key: CardRoot
   value: {fileID: 1126342728394254100}
+--- !u!114 &3871557813473496196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8786675518878862381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 369
+    y: 378
+    width: 111
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 11
+  blockName: InvokeQuit
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1519820688533910498}
+  suppressAllAutoSelections: 0
+--- !u!114 &1519820688533910498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8786675518878862381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6787d9cff2c5a8c4682bca98415aa136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 12
+  indentLevel: 0
 --- !u!1 &8786675520102721105
 GameObject:
   m_ObjectHideFlags: 0
