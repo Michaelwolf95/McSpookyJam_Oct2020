@@ -8,12 +8,17 @@ using Random = UnityEngine.Random;
 
 public class GameManager : SceneSingleton<GameManager>
 {
+    public static int MAIN_MENU_SCENE_INDEX = 0;
+    public static int GAME_SCENE_INDEX = 1;
+    
     public DayNightController dayNightController = null;
     public SpookerAI monsterController;
 
-    public CanvasGroup fadeCanvas = null;
-    
-    [Space(5)]
+    public CanvasGroup attackEffectCanvasGroup = null;
+
+    public GameOverMenu gameOverMenu = null;
+
+    [Header("Wwise Events")]
     public AK.Wwise.Switch Day;
     public AK.Wwise.Switch Night;
     public AK.Wwise.Event DeathSound;
@@ -28,6 +33,21 @@ public class GameManager : SceneSingleton<GameManager>
     private void Start()
     {
         OnGameStart();
+    }
+    
+    private void Update()
+    {
+        // DEBUG BUTTONS
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            StartAttackEffect(1f);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            CancelAttackEffect();
+        }
+#endif
     }
 
     private void OnGameStart()
@@ -66,35 +86,9 @@ public class GameManager : SceneSingleton<GameManager>
         }
     }
 
-    public void OnPlayerDeath()
-    {
-        DeathSound.Post(gameObject);
-        StopAMB.Post(gameObject);
-        StopMusic.Post(gameObject);
-        Debug.Log("PLAYER FUCKING DIED");
-        
-        FirstPersonAIO.instance.SetControllerPause(true);
-        monsterController.Disable();
-        
-        this.DoTween((lerp =>
-        {
-            
-        }));
-        
-    }
 
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            StartAttackEffect(1f);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            CancelAttackEffect();
-        }
-    }
+    
 
     private Coroutine attackEffectCoroutine = null;
     private Action onAttackEffectCancelled = null;
@@ -150,8 +144,8 @@ public class GameManager : SceneSingleton<GameManager>
     
     private IEnumerator CoAttackEffect(float duration, Action onDoneCallback = null)
     {
-        fadeCanvas.gameObject.SetActive(true);
-        float startAlpha = fadeCanvas.alpha;
+        attackEffectCanvasGroup.gameObject.SetActive(true);
+        float startAlpha = attackEffectCanvasGroup.alpha;
         
         PostProcessVolume ppVolume = Camera.main.GetComponentInChildren<PostProcessVolume>();
         PostProcessProfile profile = ppVolume.profile;
@@ -162,7 +156,7 @@ public class GameManager : SceneSingleton<GameManager>
             float lerp = TweenEasing.easeInQuad(0f, 1f,timer / duration);
             profile.GetSetting<Vignette>().intensity.value = Mathf.Lerp(0f, 1f, lerp);
 
-            fadeCanvas.alpha = Mathf.Lerp(startAlpha, 1f, lerp);
+            attackEffectCanvasGroup.alpha = Mathf.Lerp(startAlpha, 1f, lerp);
             
             float magnitude = Mathf.Lerp(0.01f, 0.1f, lerp);
             Camera.main.transform.localPosition = new Vector3(Random.Range(-1f, 1f) * magnitude, Random.Range(-1f, 1f) * magnitude, 0f);
@@ -192,8 +186,8 @@ public class GameManager : SceneSingleton<GameManager>
     
     private IEnumerator CoRecoverEffect(float duration, Action onDoneCallback = null)
     {
-        fadeCanvas.gameObject.SetActive(true);
-        float startAlpha = fadeCanvas.alpha;
+        attackEffectCanvasGroup.gameObject.SetActive(true);
+        float startAlpha = attackEffectCanvasGroup.alpha;
         
         //PostProcessVolume ppVolume = Camera.main.GetComponentInChildren<PostProcessVolume>();
         //PostProcessProfile profile = ppVolume.profile;
@@ -203,11 +197,30 @@ public class GameManager : SceneSingleton<GameManager>
             timer += Time.deltaTime;
             float lerp = timer / duration;
             //profile.GetSetting<Vignette>().intensity.value = Mathf.Lerp(0f, 1f, lerp);
-            fadeCanvas.alpha = Mathf.Lerp(startAlpha, 0f, lerp);
+            attackEffectCanvasGroup.alpha = Mathf.Lerp(startAlpha, 0f, lerp);
             yield return null;
         }
 
         recoverEffectCoroutine = null;
     }
+    
+    
+    private void OnPlayerDeath()
+    {
+        DeathSound.Post(gameObject);
+        StopAMB.Post(gameObject);
+        StopMusic.Post(gameObject);
+        Debug.Log("PLAYER FUCKING DIED");
+        
+        FirstPersonAIO.instance.SetControllerPause(true);
+        monsterController.Disable();
+        
+        gameOverMenu.FadeInMenu();
+    }
+
+
+    #region Menu Button Functions
+
+    #endregion
     
 }

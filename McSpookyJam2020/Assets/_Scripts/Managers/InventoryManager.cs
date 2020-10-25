@@ -124,7 +124,7 @@ public class InventoryManager : SceneSingleton<InventoryManager>
         this.DoTween(lerp =>
         {
             target.localScale = Vector3.LerpUnclamped(startScale, endScale, lerp);
-        }, null, popDuration, EaseType.punch);
+        }, null, popDuration, 0f, EaseType.punch);
     }
     
 }
