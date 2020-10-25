@@ -17,6 +17,7 @@ public class GameManager : SceneSingleton<GameManager>
     public CanvasGroup attackEffectCanvasGroup = null;
 
     public GameOverMenu gameOverMenu = null;
+    public VictoryMenu victoryMenu = null;
     
     public event Action OnTransitionToNightEvent = delegate {  };
 
@@ -41,13 +42,30 @@ public class GameManager : SceneSingleton<GameManager>
     {
         // DEBUG BUTTONS
 #if UNITY_EDITOR
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.LeftBracket))
         {
             StartAttackEffect(1f);
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        else if (Input.GetKeyDown(KeyCode.RightBracket))
         {
             CancelAttackEffect();
+        }
+        
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            InventoryManager.instance.CollectFlashlight();
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            InventoryManager.instance.CollectBasementKey();
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            InventoryManager.instance.CollectRitualDagger();
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            InventoryManager.instance.CollectHagueLetter(1);
         }
 #endif
     }
@@ -98,7 +116,13 @@ public class GameManager : SceneSingleton<GameManager>
         
     }
 
-
+    public void OnRitualPerformed()
+    {
+        victoryMenu.FadeInMenu();
+    }
+    
+    
+    
     // ToDo: Move these effects somewhere else.
 
     private Coroutine attackEffectCoroutine = null;

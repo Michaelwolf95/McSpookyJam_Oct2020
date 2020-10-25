@@ -758,7 +758,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-6</Value>
+														<Value>-12</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -793,6 +793,11 @@
 													</ValueList>
 												</Property>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -1258,6 +1263,19 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="SFX_Game_End" ID="{BB526512-0B6A-48C3-B887-09B37FA45648}" ShortID="147464056">
+									<PropertyList>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
@@ -1417,7 +1435,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="SFX_Monster_Hiss_01" ID="{2054E717-26C9-4996-B01E-0C98B682B932}" ShortID="911790754">
+								<Sound Name="SFX_Monster_Hiss_02" ID="{F20EFBBE-A807-43B5-A12A-E5A83E8874A8}" ShortID="1017324918">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
@@ -1427,25 +1445,170 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="SFX_Monster_Hiss_01" ID="{074D5C48-CB12-4FCD-8733-8F664C957E47}">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.786068635844749"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="1.07159132420092"/>
-											</PropertyList>
+										<AudioFileSource Name="SFX_Monster_Hiss_02" ID="{3636B5A7-79E4-4599-A9EA-92BD3741D9F7}">
 											<Language>SFX</Language>
-											<AudioFile>SFX_Monster_Hiss_01.wav</AudioFile>
+											<AudioFile>SFX_Monster_Hiss_02.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="636009089"/>
+												<MediaID ID="774958717"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="SFX_Monster_Hiss_01" ID="{074D5C48-CB12-4FCD-8733-8F664C957E47}" Platform="Linked"/>
+										<ActiveSource Name="SFX_Monster_Hiss_02" ID="{3636B5A7-79E4-4599-A9EA-92BD3741D9F7}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Monster_Start_Attack" ID="{FD81BB9B-EAB9-437C-AC59-7C7744889D1C}" ShortID="320299126">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Monster_Footsteps" ID="{6967827C-C69D-4EF4-84CA-136478EE296E}" ShortID="162852851">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SFX_Monster_Footsteps_04" ID="{BD6A1B52-2285-4178-9831-8D6F37E3E534}" ShortID="465491108">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Monster_Footsteps_04" ID="{C6157A4B-6084-4FF5-B36D-62E51B1211C7}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Monster_Footsteps_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="734625085"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Monster_Footsteps_04" ID="{C6157A4B-6084-4FF5-B36D-62E51B1211C7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Monster_Footsteps_02" ID="{8C0E02A8-D8AE-4E88-B64B-50B381607998}" ShortID="785602720">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Monster_Footsteps_02" ID="{5AAF0ED0-58F4-4785-A9F5-70DA2F55D6F6}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Monster_Footsteps_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="551553071"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Monster_Footsteps_02" ID="{5AAF0ED0-58F4-4785-A9F5-70DA2F55D6F6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Monster_Footsteps_03" ID="{8F7D2239-68E0-4847-A4E2-8BACCC515F57}" ShortID="1063349282">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Monster_Footsteps_03" ID="{40AD5D7F-3B34-4279-BDB3-936980957F68}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Monster_Footsteps_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="124871761"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Monster_Footsteps_03" ID="{40AD5D7F-3B34-4279-BDB3-936980957F68}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Monster_Footsteps_01" ID="{61271630-EEF7-433E-8484-C3F535B897DB}" ShortID="922453120">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Monster_Footsteps_01" ID="{18D5E722-B6C4-460E-9E95-C1A850EC995F}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Monster_Footsteps_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="735217198"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Monster_Footsteps_01" ID="{18D5E722-B6C4-460E-9E95-C1A850EC995F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Monster_Footsteps_05" ID="{60ECBECE-9916-4868-811C-C2F3DA197300}" ShortID="1025879270">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Monster_Footsteps_05" ID="{055934A1-EE68-4D5F-9E25-9C741D89ACD8}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Monster_Footsteps_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="463893973"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Monster_Footsteps_05" ID="{055934A1-EE68-4D5F-9E25-9C741D89ACD8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="SFX_Monster_Attack_Complete" ID="{A6E5B7EC-3FDB-40B5-BDF6-EB3D7FAB6687}" ShortID="348462671">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Silence" ID="{B2DBB73F-82F7-4D41-8190-DAE038BEF109}" ShortID="75585889" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Silence" ID="{B2DBB73F-82F7-4D41-8190-DAE038BEF109}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

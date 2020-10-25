@@ -74,6 +74,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Plya_Monster_Emerge" ID="{FE43368F-36B8-419E-83B4-5F145BB35F28}"/>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI" ID="{ABFDD802-1480-49E0-B142-E473C625D1CF}" ShortID="209379588">
@@ -371,6 +372,43 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Monster_Attack" ID="{E59D42EA-C413-4B94-B1CA-8472CCD66D2A}">
+							<ChildrenList>
+								<Action Name="" ID="{72883DAA-0453-4FD4-BABA-EDF8C84A78A6}" ShortID="147743358">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Monster_Start_Attack" ID="{FD81BB9B-EAB9-437C-AC59-7C7744889D1C}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Monster_Attack" ID="{08B8B3F5-E798-48D0-A748-B6F4E676D10A}">
+							<ChildrenList>
+								<Action Name="" ID="{1E50738C-2809-44EC-B5F6-CDA3C8540B3F}" ShortID="99977874">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Monster_Start_Attack" ID="{FD81BB9B-EAB9-437C-AC59-7C7744889D1C}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Monster_Attack_Complete" ID="{D7096A78-11E8-44BB-A6AD-5EE37C2A18B0}">
+							<ChildrenList>
+								<Action Name="" ID="{062BBC09-434C-4DF4-AD74-A065A6689694}" ShortID="504442080">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Monster_Attack_Complete" ID="{A6E5B7EC-3FDB-40B5-BDF6-EB3D7FAB6687}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Monster_Footsteps" ID="{983D953E-B3C8-4339-B17F-38B7F09CEF09}"/>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

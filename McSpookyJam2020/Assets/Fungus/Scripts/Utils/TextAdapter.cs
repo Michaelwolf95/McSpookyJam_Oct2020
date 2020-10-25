@@ -241,7 +241,8 @@ namespace Fungus
                 if(tmpro != null)
                 {
                     //Debug.Log(string.Format("maxCharacters: {0}, {1}", tmpro.textInfo.characterInfo.Length, tmpro.maxVisibleCharacters));
-                    return tmpro.textInfo.characterInfo[tmpro.maxVisibleCharacters - 1].character;
+                    //return tmpro.textInfo.characterInfo[tmpro.maxVisibleCharacters].character;
+                    return tmpro.textInfo.characterInfo[Mathf.Clamp(tmpro.maxVisibleCharacters - 1, 0, tmpro.textInfo.characterInfo.Length - 1)].character;
                 }
 #endif
                 return (char)0;

@@ -1,0 +1,84 @@
+Event	ID	Name			Wwise Object Path	Notes
+	82250835	Play_Light_Switch_On			\McSpookyJam2020\Interactables\Lights\Light_Switch\Play_Light_Switch_On	
+	98439365	Play_Player_Footsteps			\McSpookyJam2020\Player\Play_Player_Footsteps	
+	281597619	Play_Locked_Door			\McSpookyJam2020\Interactables\Doors\Play_Locked_Door	
+	314077991	Play_Light_Switch_Off			\McSpookyJam2020\Interactables\Lights\Light_Switch\Play_Light_Switch_Off	
+	429973476	Plya_Monster_Emerge			\McSpookyJam2020\Music\Plya_Monster_Emerge	
+	435770000	Stop_AMB			\McSpookyJam2020\AMB\Stop_AMB	
+	643450781	Play_UI_Start			\McSpookyJam2020\UI\Play_UI_Start	
+	754369548	Play_Stinger			\McSpookyJam2020\SFXs\Spooks\Play_Stinger	
+	781714651	Play_Wood_Door_Open			\McSpookyJam2020\Interactables\Doors\Play_Wood_Door_Open	
+	801816073	Play_Wood_Door_Close			\McSpookyJam2020\Interactables\Doors\Play_Wood_Door_Close	
+	864033359	Play_Monster_Attack			\McSpookyJam2020\Monster\Play_Monster_Attack	
+	1099225839	Play_Monster_Attack_Complete			\McSpookyJam2020\Monster\Play_Monster_Attack_Complete	
+	1371679529	Stop_Monster_Attack			\McSpookyJam2020\Monster\Stop_Monster_Attack	
+	1958703520	Play_Drawer_Open			\McSpookyJam2020\Interactables\Doors\Play_Drawer_Open	
+	1986548623	Play_UI_Exit			\McSpookyJam2020\UI\Play_UI_Exit	
+	2167123887	Play_Metal_Door_Close			\McSpookyJam2020\Interactables\Doors\Play_Metal_Door_Close	
+	2216405837	Play_Pickup_Note			\McSpookyJam2020\Interactables\Pickups\Play_Pickup_Note	
+	2315829540	Play_Drawer_Close			\McSpookyJam2020\Interactables\Doors\Play_Drawer_Close	
+	2617923177	Play_Metal_Door_Open			\McSpookyJam2020\Interactables\Doors\Play_Metal_Door_Open	
+	2620845016	Play_Monster_Hiss			\McSpookyJam2020\Monster\Play_Monster_Hiss	
+	2790351818	Play_Game_End			\McSpookyJam2020\SFXs\Endings\Play_Game_End	
+	2837384057	Stop_Music			\McSpookyJam2020\Music\Stop_Music	
+	2892862498	Play_Game_Start_Candle_Trem			\McSpookyJam2020\SFXs\Endings\Play_Game_Start_Candle_Trem	
+	2901631795	Play_Game_Start_Candle			\McSpookyJam2020\SFXs\Endings\Play_Game_Start_Candle	
+	2932040671	Play_Music			\McSpookyJam2020\Music\Play_Music	
+	2957503395	Play_Ghost_Jolt			\McSpookyJam2020\SFXs\Spooks\Play_Ghost_Jolt	
+	2959533290	Play_AMB			\McSpookyJam2020\AMB\Play_AMB	
+	3471928368	Play_Flashlight_On			\McSpookyJam2020\Interactables\Lights\Flashlight\Play_Flashlight_On	
+	3704879888	Play_Monster_Footsteps			\McSpookyJam2020\Monster\Play_Monster_Footsteps	
+	3727723795	Play_Game_Start_Light_Switch			\McSpookyJam2020\SFXs\Endings\Play_Game_Start_Light_Switch	
+	3768549418	Play_Pickup_Key			\McSpookyJam2020\Interactables\Pickups\Play_Pickup_Key	
+	3781480055	Play_Ghost_Footsteps			\McSpookyJam2020\SFXs\Spooks\Play_Ghost_Footsteps	
+	3933447040	Play_Lights_Out			\McSpookyJam2020\SFXs\Spooks\Play_Lights_Out	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2385628198	Footsteps			\McSpookyJam2020\Footsteps	
+	2654366170	Time			\McSpookyJam2020\Time	
+
+Switch	ID	Name	Switch Group			Notes
+	340271938	Walking	Footsteps			
+	311764537	Day	Time			
+	1011622525	Night	Time			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	75585889	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\Monster\SFX_Monster_Attack_Complete\Wwise Silence	
+	452917873	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\UI\SFX_UI_Start\Wwise Silence	
+	747678343	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\SFXs\Spooks\SFX_Ghost_Jolt\Wwise Silence	
+	764598772	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\SFXs\Spooks\SFX_Stingers\SFX_Stinger\Wwise Silence	
+	915949771	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\UI\SFX_UI_Exit\Wwise Silence	
+	1019720133	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\SFXs\Spooks\SFX_Lights_Out\Wwise Silence	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	18940520	SFX_Light_Switch_Off	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Light_Switch_Off_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Lights\Light_Switch\SFX_Light_Switch_Off		21052
+	43030366	SFX_Pickup_Key	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Pickup_Key_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Pickups\SFX_Pickup_Key		43876
+	47420332	SFX_Pickup_Note_01	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Pickup_Note_01_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Pickups\SFX_Pickup_Note\SFX_Pickup_Note_01		170572
+	111880704	SFX_Metal_Door_Open	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Metal_Door_Open_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Doors\Basement\SFX_Metal_Door_Open		537484
+	112294917	SFX_Creaky_Footstep_Light_05	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Creaky_Footstep_Light_05_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Player\Player_Footsteps\Player_Footsteps\SFX_Creaky_Footstep_Light_05		126984
+	112985724	SFX_Pickup_Note_03	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Pickup_Note_03_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Pickups\SFX_Pickup_Note\SFX_Pickup_Note_03		112480
+	124252642	SFX_Flashlight_On	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Flashlight_On (1)_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Lights\Flashlight\SFX_Flashlight_On		34816
+	197720328	SFX_Game_Start_Candle	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Game_Start_Candle_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\SFXs\Game_Endings\SFX_Game_Start_Candle		514024
+	263069633	SFX_Wood_Door_Close	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Wood_Door_Close_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Doors\Door\SFX_Wood_Door_Close		165184
+	321291601	SFX_Creaky_Footstep_Light_04	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Creaky_Footstep_Light_04_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Player\Player_Footsteps\Player_Footsteps\SFX_Creaky_Footstep_Light_04		80704
+	454786560	SFX_Game_End	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Game_End_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\SFXs\Game_Endings\SFX_Game_End		691856
+	475776318	SFX_Creaky_Footstep_Light_01	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Creaky_Footstep_Light_01_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Player\Player_Footsteps\Player_Footsteps\SFX_Creaky_Footstep_Light_01		106764
+	527450663	SFX_Drawer_Close	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Drawer_Close_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Doors\Drawer\SFX_Drawer_Close		150280
+	528498600	SFX_Door_Knob_Locked_End_03	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Door_Knob_Locked_End_03_A900E52D.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Doors\Locked Door\Locked_Door\Locked_Door_End\SFX_Door_Knob_Locked_End_03		31682
+	592735717	SFX_Door_Knob_Locked_Start_02	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Door_Knob_Locked_Start_02_3B764F67.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Doors\Locked Door\Locked_Door\Locked_Door_Start\SFX_Door_Knob_Locked_Start_02		24478
+	714979815	SFX_Creaky_Footstep_Light_02	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Creaky_Footstep_Light_02_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Player\Player_Footsteps\Player_Footsteps\SFX_Creaky_Footstep_Light_02		100200
+	721069643	SFX_Door_Knob_Locked_End_02	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Door_Knob_Locked_End_02_89189D27.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Doors\Locked Door\Locked_Door\Locked_Door_End\SFX_Door_Knob_Locked_End_02		25868
+	727336084	SFX_Pickup_Note_05	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Pickup_Note_05_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Pickups\SFX_Pickup_Note\SFX_Pickup_Note_05		136472
+	730490238	SFX_Game_Start_Candle_Trem	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Game_Start_Candle_Trem_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\SFXs\Game_Endings\SFX_Game_Start_Candle_Trem		514024
+	749257360	SFX_Light_Switch_On	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Light_Switch_On_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Lights\Light_Switch\SFX_Light_Switch_On		15860
+	774958717	SFX_Monster_Hiss_02	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Monster_Hiss_02_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Monster\Monster_Hiss\SFX_Monster_Hiss_02		284214
+	850473134	SX_MCJ2020_AMB_BED_NIGHT_01	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SX_MCJ2020_AMB_BED_NIGHT_01_D79FB2B7.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\AMB\AMB_Loops\SX_MCJ2020_AMB_BED_NIGHT_01		671028
+	857015964	SFX_Door_Knob_Locked_Start_01	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Door_Knob_Locked_Start_01_D1F8106E.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Doors\Locked Door\Locked_Door\Locked_Door_Start\SFX_Door_Knob_Locked_Start_01		31236
+	901584945	SFX_Metal_Door_Close	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Metal_Door_Close_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Doors\Basement\SFX_Metal_Door_Close		332472
+	921245797	SFX_Game_Start_Light_Switch	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Game_Start_Light_Switch_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\SFXs\Game_Endings\SFX_Game_Start_Light_Switch		514024
+	988327657	SX_MCJ2020_AMB_BED_DAY_TIME (1)	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SX_MCJ2020_AMB_BED_DAY_TIME (1)_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\AMB\AMB_Loops\SX_MCJ2020_AMB_BED_DAY_TIME (1)		39698496
+	990572818	SFX_Wood_Door_Open	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Wood_Door_Open_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Doors\Door\SFX_Wood_Door_Open		460864
+	1032202223	SFX_Pickup_Note_02	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Pickup_Note_02_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Pickups\SFX_Pickup_Note\SFX_Pickup_Note_02		145596
+	1062360790	SFX_Drawer_Open	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Drawer_Open_92236C6B.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Doors\Drawer\SFX_Drawer_Open		57576
+	1064103587	SFX_Pickup_Note_04	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Pickup_Note_04_10C4C929.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Pickups\SFX_Pickup_Note\SFX_Pickup_Note_04		113448
+

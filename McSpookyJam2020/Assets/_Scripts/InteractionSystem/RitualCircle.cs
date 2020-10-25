@@ -23,10 +23,11 @@ public class RitualCircle : InvestigationCardInteractable
         SetOpenState(false);
     }
 
-    private void OpenDoor()
+    private void OnRitualPerformed()
     {
         SetOpenState(true);
-        GameManager.instance.OnBasementDoorOpened();
+        
+        GameManager.instance.OnRitualPerformed();
     }
 
     private void SetOpenState(bool argIsOpen)
@@ -85,8 +86,10 @@ public class RitualCircle : InvestigationCardInteractable
         }
         else
         {
-            base.OnFinishInteraction();
-            OpenDoor();
+            // NOTE: THIS NEVER FINISHES THE INTERACTION!
+            //base.OnFinishInteraction();
+            
+            OnRitualPerformed();
         }
     }
 

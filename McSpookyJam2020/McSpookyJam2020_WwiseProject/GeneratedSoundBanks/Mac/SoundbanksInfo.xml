@@ -16,10 +16,10 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4190601618" Language="English(US)" Hash="2073766061">
+		<SoundBank Id="4190601618" Language="SFX" Hash="4201709118">
 			<ObjectPath>\SoundBanks\McSpookyJam2020\McSpookyJam2020</ObjectPath>
 			<ShortName>McSpookyJam2020</ShortName>
-			<Path>English(US)\McSpookyJam2020.bnk</Path>
+			<Path>McSpookyJam2020.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2959533290" Name="Play_AMB" ObjectPath="\Events\McSpookyJam2020\AMB\Play_AMB" DurationType="Mixed" DurationMin="206.762665" DurationMax="Infinite">
 					<IncludedMemoryFiles>
@@ -157,11 +157,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2620845016" Name="Play_Monster_Hiss" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Hiss" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.071591" DurationMax="1.071591">
+				<Event Id="864033359" Name="Play_Monster_Attack" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Attack" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1099225839" Name="Play_Monster_Attack_Complete" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Attack_Complete" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
+				<Event Id="3704879888" Name="Play_Monster_Footsteps" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Footsteps" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2620845016" Name="Play_Monster_Hiss" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Hiss" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="2.959896" DurationMax="2.959896">
 					<IncludedMemoryFiles>
-						<File Id="636009089" Language="SFX">
-							<ShortName>SFX_Monster_Hiss_01.wav</ShortName>
-							<Path>SFX\SFX_Monster_Hiss_01_ECC07CBF.wem</Path>
+						<File Id="774958717" Language="SFX">
+							<ShortName>SFX_Monster_Hiss_02.wav</ShortName>
+							<Path>SFX\SFX_Monster_Hiss_02_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -198,38 +201,33 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="98439365" Name="Play_Player_Footsteps" ObjectPath="\Events\McSpookyJam2020\Player\Play_Player_Footsteps" DurationType="OneShot" DurationMin="0.420000" DurationMax="0.661042">
+				<Event Id="98439365" Name="Play_Player_Footsteps" ObjectPath="\Events\McSpookyJam2020\Player\Play_Player_Footsteps" DurationType="OneShot" DurationMin="0.419273" DurationMax="0.662188">
 					<IncludedMemoryFiles>
-						<File Id="64765254" Language="English(US)">
-							<ShortName>drive-download-20201022T004029Z-001\SFX_Creaky_Footstep_Light_04.wav</ShortName>
-							<Path>Voices\English(US)\drive-download-20201022T004029Z-001\SFX_Creaky_Footstep_Light_04_10C4C929.wem</Path>
+						<File Id="112294917" Language="SFX">
+							<ShortName>SFX_Creaky_Footstep_Light_05.wav</ShortName>
+							<Path>SFX\SFX_Creaky_Footstep_Light_05_10C4C929.wem</Path>
 						</File>
-						<File Id="92910499" Language="English(US)">
-							<ShortName>drive-download-20201022T004029Z-001\SFX_Creaky_Footstep_Light_03.wav</ShortName>
-							<Path>Voices\English(US)\drive-download-20201022T004029Z-001\SFX_Creaky_Footstep_Light_03_10C4C929.wem</Path>
+						<File Id="321291601" Language="SFX">
+							<ShortName>SFX_Creaky_Footstep_Light_04.wav</ShortName>
+							<Path>SFX\SFX_Creaky_Footstep_Light_04_10C4C929.wem</Path>
 						</File>
-						<File Id="595022946" Language="English(US)">
-							<ShortName>drive-download-20201022T004029Z-001\SFX_Creaky_Footstep_Light_02.wav</ShortName>
-							<Path>Voices\English(US)\drive-download-20201022T004029Z-001\SFX_Creaky_Footstep_Light_02_10C4C929.wem</Path>
+						<File Id="475776318" Language="SFX">
+							<ShortName>SFX_Creaky_Footstep_Light_01.wav</ShortName>
+							<Path>SFX\SFX_Creaky_Footstep_Light_01_10C4C929.wem</Path>
 						</File>
-						<File Id="782188998" Language="English(US)">
-							<ShortName>drive-download-20201022T004029Z-001\SFX_Creaky_Footstep_Light_01.wav</ShortName>
-							<Path>Voices\English(US)\drive-download-20201022T004029Z-001\SFX_Creaky_Footstep_Light_01_10C4C929.wem</Path>
-						</File>
-						<File Id="828843038" Language="English(US)">
-							<ShortName>drive-download-20201022T004029Z-001\SFX_Creaky_Footstep_Light_05.wav</ShortName>
-							<Path>Voices\English(US)\drive-download-20201022T004029Z-001\SFX_Creaky_Footstep_Light_05_10C4C929.wem</Path>
+						<File Id="714979815" Language="SFX">
+							<ShortName>SFX_Creaky_Footstep_Light_02.wav</ShortName>
+							<Path>SFX\SFX_Creaky_Footstep_Light_02_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{8E231F5C-915B-4C82-8791-31A745B60E68}</DefaultSwitchValue>
 					<SwitchContainers>
 						<SwitchContainer SwitchValue="{8E231F5C-915B-4C82-8791-31A745B60E68}">
 							<Media>
-								<File Id="782188998"/>
-								<File Id="595022946"/>
-								<File Id="828843038"/>
-								<File Id="64765254"/>
-								<File Id="92910499"/>
+								<File Id="475776318"/>
+								<File Id="714979815"/>
+								<File Id="321291601"/>
+								<File Id="112294917"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -253,7 +251,9 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="429973476" Name="Plya_Monster_Emerge" ObjectPath="\Events\McSpookyJam2020\Music\Plya_Monster_Emerge" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="435770000" Name="Stop_AMB" ObjectPath="\Events\McSpookyJam2020\AMB\Stop_AMB" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1371679529" Name="Stop_Monster_Attack" ObjectPath="\Events\McSpookyJam2020\Monster\Stop_Monster_Attack" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\McSpookyJam2020\Music\Stop_Music" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<SwitchGroups>
