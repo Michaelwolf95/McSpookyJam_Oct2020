@@ -54,7 +54,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8062471094271608296}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.82372856, y: 1.3125944, z: 0.1}
@@ -67,7 +67,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8062471094271608296}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.90094936, y: 0.6512861, z: 0.1}
@@ -124,7 +124,7 @@ MonoBehaviour:
   visualRoot: {fileID: 8141053062929758846}
   attackStartDistance: 1.6
   attackStopDistance: 1.8
-  attackDuration: 2.5
+  attackDuration: 1.5
   unHideMinDistance: 8
   disabledStateParams:
     speed: 0
