@@ -150,20 +150,23 @@ MonoBehaviour:
   onEmergeFromHiding:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 734053842df21b84b8ebfe3adc6ced5a,
+      type: 2}
   onStartAttack:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 1e65a4eff52460b4487197fd21d3bb39,
+    WwiseObjectReference: {fileID: 11400000, guid: c7c593be35ec05c429f9277324615f9e,
       type: 2}
   onCompleteAttack:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: b56f14af1fc3e4e43ba5910b6ca2b84e,
+      type: 2}
   onCancelAttack:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: cf3bd4dfecf4b1941b65aa0360a4459f,
+      type: 2}
 --- !u!195 &8141053062342249905
 NavMeshAgent:
   m_ObjectHideFlags: 0

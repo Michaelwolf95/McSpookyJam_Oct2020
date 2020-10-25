@@ -8,6 +8,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	754369548	Play_Stinger			\McSpookyJam2020\SFXs\Spooks\Play_Stinger	
 	781714651	Play_Wood_Door_Open			\McSpookyJam2020\Interactables\Doors\Play_Wood_Door_Open	
 	801816073	Play_Wood_Door_Close			\McSpookyJam2020\Interactables\Doors\Play_Wood_Door_Close	
+	864033359	Play_Monster_Attack			\McSpookyJam2020\Monster\Play_Monster_Attack	
+	1099225839	Play_Monster_Attack_Complete			\McSpookyJam2020\Monster\Play_Monster_Attack_Complete	
+	1371679529	Stop_Monster_Attack			\McSpookyJam2020\Monster\Stop_Monster_Attack	
 	1958703520	Play_Drawer_Open			\McSpookyJam2020\Interactables\Doors\Play_Drawer_Open	
 	1986548623	Play_UI_Exit			\McSpookyJam2020\UI\Play_UI_Exit	
 	2167123887	Play_Metal_Door_Close			\McSpookyJam2020\Interactables\Doors\Play_Metal_Door_Close	
@@ -38,6 +41,7 @@ Switch	ID	Name	Switch Group			Notes
 	1011622525	Night	Time			
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	75585889	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\Monster\SFX_Monster_Attack_Complete\Wwise Silence	
 	452917873	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\UI\SFX_UI_Start\Wwise Silence	
 	747678343	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\SFXs\Spooks\SFX_Ghost_Jolt\Wwise Silence	
 	764598772	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\SFXs\Spooks\SFX_Stingers\SFX_Stinger\Wwise Silence	

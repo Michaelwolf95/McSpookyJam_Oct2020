@@ -793,6 +793,11 @@
 													</ValueList>
 												</Property>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -1258,6 +1263,19 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="SFX_Game_End" ID="{BB526512-0B6A-48C3-B887-09B37FA45648}" ShortID="147464056">
+									<PropertyList>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
@@ -1446,6 +1464,44 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Monster_Start_Attack" ID="{FD81BB9B-EAB9-437C-AC59-7C7744889D1C}" ShortID="320299126">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Monster_Footsteps" ID="{6967827C-C69D-4EF4-84CA-136478EE296E}" ShortID="162852851">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+								</Reference>
+							</ReferenceList>
+						</RandomSequenceContainer>
+						<Sound Name="SFX_Monster_Attack_Complete" ID="{A6E5B7EC-3FDB-40B5-BDF6-EB3D7FAB6687}" ShortID="348462671">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Silence" ID="{B2DBB73F-82F7-4D41-8190-DAE038BEF109}" ShortID="75585889" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Silence" ID="{B2DBB73F-82F7-4D41-8190-DAE038BEF109}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
