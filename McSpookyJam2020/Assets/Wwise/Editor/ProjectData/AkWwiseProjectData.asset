@@ -86,7 +86,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 1b4e00244ba2a24097d9495a78791aa7
     GuidInternal: 
-    m_lastTime: -8585981739174360941
+    m_lastTime: -8585980018513805858
     List: []
   - PhysicalPath: Events\McSpookyJam2020.wwu
     PathAndIcons:
@@ -95,7 +95,7 @@ MonoBehaviour:
     ParentPath: McSpookyJam2020
     guid: 8a512b1a5243214c9bfc30890d9ea72b
     GuidInternal: 
-    m_lastTime: -8585981709092349434
+    m_lastTime: -8585980018513835766
     List:
     - name: AMB
       guid: d0e6c28b7fe1e34d941ccf3250b43293
@@ -192,6 +192,18 @@ MonoBehaviour:
       - ElementName: Lights
         ObjectType: 4
       Path: McSpookyJam2020\Interactables\Lights
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Monster
+      guid: 89fd8d5e96a58d479a3f804eb427ecb5
+      id: 2376328173
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Monster
+        ObjectType: 4
+      Path: McSpookyJam2020\Monster
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -433,6 +445,22 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1
       minDuration: 1
+    - name: Play_Locked_Door
+      guid: 1550ae9359e45d47a0440709dc753040
+      id: 281597619
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Interactables
+        ObjectType: 4
+      - ElementName: Doors
+        ObjectType: 4
+      - ElementName: Play_Locked_Door
+        ObjectType: 3
+      Path: McSpookyJam2020\Interactables\Doors\Play_Locked_Door
+      maxAttenuation: 0
+      maxDuration: 0.654054
+      minDuration: 0.5231
     - name: Play_Metal_Door_Close
       guid: c856246e502bfb4aa43a034604fdde98
       id: 2167123887
@@ -465,6 +493,20 @@ MonoBehaviour:
       maxAttenuation: 100
       maxDuration: 2.799062
       minDuration: 2.799062
+    - name: Play_Monster_Hiss
+      guid: 8e28ff72e02aab4aa06b8162f5c67218
+      id: 2620845016
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Monster
+        ObjectType: 4
+      - ElementName: Play_Monster_Hiss
+        ObjectType: 3
+      Path: McSpookyJam2020\Monster\Play_Monster_Hiss
+      maxAttenuation: 100
+      maxDuration: 2.058583
+      minDuration: 2.058583
     - name: Play_Music
       guid: eb3c8ac4db52ae419be4b01fe574cf05
       id: 2932040671
@@ -835,13 +877,11 @@ MonoBehaviour:
   - /McSpookyJam2020_WwiseProject/Events
   - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020
   - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020/Interactables
+  - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020/Interactables/Doors
   - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020/Interactables/Lights
   - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020/Interactables/Lights/Light_Switch
   - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020/Music
   - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020/Player
-  - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020/SFXs
-  - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020/SFXs/Endings
-  - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020/SFXs/Spooks
   - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020/UI
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

@@ -14,6 +14,58 @@
 					</ReferenceList>
 					<ChildrenList>
 						<SwitchContainer Name="Player_Footsteps" ID="{D3848CCB-085D-4E86-B6ED-375EC4908AC6}" ShortID="847527026">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{4D280DC7-5487-4F0A-9363-5CCD36ABCE3B}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="25"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{38563886-FE2D-435F-862D-7C3F5292E030}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="25"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{E61C5E45-0739-4259-85DD-030FFB0ADD19}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="3"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B0AFF142-EB73-48D1-B93C-BEF0DDD463FE}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="6"/>
+													<Property Name="Min" Type="Real64" Value="-6"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
@@ -42,10 +94,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="SFX_Creaky_Footstep_Light_01" ID="{D096B353-DB85-4E68-8F22-3334EEEB3843}" ShortID="407094878">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
+										<Sound Name="SFX_Creaky_Footstep_Light_01" ID="{E1151EF6-8AED-45E7-8461-D80E00A4E852}" ShortID="521679530">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
@@ -55,22 +104,19 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_Creaky_Footstep_Light_01" ID="{C8EAC00D-53BD-4D5C-BA51-B2555B2B362F}">
-													<Language>English(US)</Language>
-													<AudioFile>drive-download-20201022T004029Z-001\SFX_Creaky_Footstep_Light_01.wav</AudioFile>
+												<AudioFileSource Name="SFX_Creaky_Footstep_Light_01" ID="{C92E50AD-FDDB-4BB2-B212-1745123402F6}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_Creaky_Footstep_Light_01.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="782188998"/>
+														<MediaID ID="475776318"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="SFX_Creaky_Footstep_Light_01" ID="{C8EAC00D-53BD-4D5C-BA51-B2555B2B362F}" Platform="Linked"/>
+												<ActiveSource Name="SFX_Creaky_Footstep_Light_01" ID="{C92E50AD-FDDB-4BB2-B212-1745123402F6}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="SFX_Creaky_Footstep_Light_02" ID="{20627C68-2332-409A-BAD8-7E119FC47CCF}" ShortID="809329744">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
+										<Sound Name="SFX_Creaky_Footstep_Light_02" ID="{A8F1AD23-C579-4359-9BAA-4A94721B26BB}" ShortID="581375178">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
@@ -80,22 +126,19 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_Creaky_Footstep_Light_02" ID="{E6136795-D043-4A66-83B9-114CE8548B7A}">
-													<Language>English(US)</Language>
-													<AudioFile>drive-download-20201022T004029Z-001\SFX_Creaky_Footstep_Light_02.wav</AudioFile>
+												<AudioFileSource Name="SFX_Creaky_Footstep_Light_02" ID="{E5872BAE-AAB4-43B9-A3B3-B4A0B4D17BE5}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_Creaky_Footstep_Light_02.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="595022946"/>
+														<MediaID ID="714979815"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="SFX_Creaky_Footstep_Light_02" ID="{E6136795-D043-4A66-83B9-114CE8548B7A}" Platform="Linked"/>
+												<ActiveSource Name="SFX_Creaky_Footstep_Light_02" ID="{E5872BAE-AAB4-43B9-A3B3-B4A0B4D17BE5}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="SFX_Creaky_Footstep_Light_05" ID="{BB2BBAC0-ADF7-4A73-911E-BCBE09445B8B}" ShortID="318067541">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
+										<Sound Name="SFX_Creaky_Footstep_Light_04" ID="{FE9261AB-D9C4-4A0D-858A-BFDC689D9C54}" ShortID="384815172">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
@@ -105,22 +148,19 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_Creaky_Footstep_Light_05" ID="{82B6F232-00FD-41EE-BC06-60E579F855EE}">
-													<Language>English(US)</Language>
-													<AudioFile>drive-download-20201022T004029Z-001\SFX_Creaky_Footstep_Light_05.wav</AudioFile>
+												<AudioFileSource Name="SFX_Creaky_Footstep_Light_04" ID="{8BB983C6-C577-4AE1-99F1-B2A5A369765E}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_Creaky_Footstep_Light_04.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="828843038"/>
+														<MediaID ID="321291601"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="SFX_Creaky_Footstep_Light_05" ID="{82B6F232-00FD-41EE-BC06-60E579F855EE}" Platform="Linked"/>
+												<ActiveSource Name="SFX_Creaky_Footstep_Light_04" ID="{8BB983C6-C577-4AE1-99F1-B2A5A369765E}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="SFX_Creaky_Footstep_Light_04" ID="{D14000A1-D604-4379-9002-8C9F1F36E957}" ShortID="110184592">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
+										<Sound Name="SFX_Creaky_Footstep_Light_05" ID="{27309159-1E47-44BF-8A12-A8E4F65B2559}" ShortID="394310052">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
@@ -130,41 +170,16 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_Creaky_Footstep_Light_04" ID="{EB8D1974-C2D0-43FE-8305-338B06EBF73D}">
-													<Language>English(US)</Language>
-													<AudioFile>drive-download-20201022T004029Z-001\SFX_Creaky_Footstep_Light_04.wav</AudioFile>
+												<AudioFileSource Name="SFX_Creaky_Footstep_Light_05" ID="{C14F1CA4-A595-437F-A2D0-E23C30BF9012}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_Creaky_Footstep_Light_05.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="64765254"/>
+														<MediaID ID="112294917"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="SFX_Creaky_Footstep_Light_04" ID="{EB8D1974-C2D0-43FE-8305-338B06EBF73D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="SFX_Creaky_Footstep_Light_03" ID="{54A37C6D-AC91-44D8-9063-9108C7D0F08A}" ShortID="112637855">
-											<PropertyList>
-												<Property Name="IsVoice" Type="bool" Value="True"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="SFX_Creaky_Footstep_Light_03" ID="{A955F6E8-745A-4442-88AF-07EAE3DB3751}">
-													<Language>English(US)</Language>
-													<AudioFile>drive-download-20201022T004029Z-001\SFX_Creaky_Footstep_Light_03.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="92910499"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="SFX_Creaky_Footstep_Light_03" ID="{A955F6E8-745A-4442-88AF-07EAE3DB3751}" Platform="Linked"/>
+												<ActiveSource Name="SFX_Creaky_Footstep_Light_05" ID="{C14F1CA4-A595-437F-A2D0-E23C30BF9012}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -338,7 +353,6 @@
 								</Sound>
 								<RandomSequenceContainer Name="SFX_Pickup_Note" ID="{11F9ADEA-3482-417B-AEC7-373B3A806E9E}" ShortID="443579005">
 									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
 												<Value>2</Value>
@@ -353,53 +367,6 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Attenuation">
-											<Custom>
-												<Attenuation Name="Attenuation (Custom)" ID="{FA249CFA-DCEE-4212-A9D5-A7CF0B646B69}" ShortID="1335406">
-													<CurveUsageInfoList>
-														<VolumeDryUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																<Curve Name="VolumeDry" ID="{E1B51EB5-9DD5-413F-AD70-E33AB8EEFDAF}">
-																	<PropertyList>
-																		<Property Name="Flags" Type="int32" Value="3"/>
-																	</PropertyList>
-																	<PointList>
-																		<Point>
-																			<XPos>0</XPos>
-																			<YPos>0</YPos>
-																			<Flags>5</Flags>
-																		</Point>
-																		<Point>
-																			<XPos>100</XPos>
-																			<YPos>-200</YPos>
-																			<Flags>37</Flags>
-																		</Point>
-																	</PointList>
-																</Curve>
-															</CurveUsageInfo>
-														</VolumeDryUsage>
-														<VolumeWetGameUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-														</VolumeWetGameUsage>
-														<VolumeWetUserUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-														</VolumeWetUserUsage>
-														<LowPassFilterUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-														</LowPassFilterUsage>
-														<HighPassFilterUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-														</HighPassFilterUsage>
-														<SpreadUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-														</SpreadUsage>
-														<FocusUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-														</FocusUsage>
-													</CurveUsageInfoList>
-												</Attenuation>
-											</Custom>
-										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
 										</Reference>
@@ -528,7 +495,6 @@
 									<ChildrenList>
 										<Sound Name="SFX_Metal_Door_Close" ID="{F4220001-5B6F-4528-B30B-83218B8E4988}" ShortID="821228654">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
@@ -543,53 +509,6 @@
 												</Property>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Attenuation">
-													<Custom>
-														<Attenuation Name="Attenuation (Custom)" ID="{603F766C-038D-4B0F-98D5-14CE1DE2BB57}" ShortID="385595350">
-															<CurveUsageInfoList>
-																<VolumeDryUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																		<Curve Name="VolumeDry" ID="{043773C6-EB35-48AD-8A31-72638242C044}">
-																			<PropertyList>
-																				<Property Name="Flags" Type="int32" Value="3"/>
-																			</PropertyList>
-																			<PointList>
-																				<Point>
-																					<XPos>0</XPos>
-																					<YPos>0</YPos>
-																					<Flags>5</Flags>
-																				</Point>
-																				<Point>
-																					<XPos>100</XPos>
-																					<YPos>-200</YPos>
-																					<Flags>37</Flags>
-																				</Point>
-																			</PointList>
-																		</Curve>
-																	</CurveUsageInfo>
-																</VolumeDryUsage>
-																<VolumeWetGameUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-																</VolumeWetGameUsage>
-																<VolumeWetUserUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-																</VolumeWetUserUsage>
-																<LowPassFilterUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-																</LowPassFilterUsage>
-																<HighPassFilterUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-																</HighPassFilterUsage>
-																<SpreadUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-																</SpreadUsage>
-																<FocusUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-																</FocusUsage>
-															</CurveUsageInfoList>
-														</Attenuation>
-													</Custom>
-												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
 												</Reference>
@@ -612,7 +531,6 @@
 										</Sound>
 										<Sound Name="SFX_Metal_Door_Open" ID="{29943BBE-ED31-49DB-B8B8-7A40FBD7D8EF}" ShortID="1054599561">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
@@ -627,53 +545,6 @@
 												</Property>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Attenuation">
-													<Custom>
-														<Attenuation Name="Attenuation (Custom)" ID="{56F5C678-068B-4474-AC57-91346A74F8B3}" ShortID="789406116">
-															<CurveUsageInfoList>
-																<VolumeDryUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																		<Curve Name="VolumeDry" ID="{C1BF4BCE-13B9-4701-B712-2C569D24A185}">
-																			<PropertyList>
-																				<Property Name="Flags" Type="int32" Value="3"/>
-																			</PropertyList>
-																			<PointList>
-																				<Point>
-																					<XPos>0</XPos>
-																					<YPos>0</YPos>
-																					<Flags>5</Flags>
-																				</Point>
-																				<Point>
-																					<XPos>100</XPos>
-																					<YPos>-200</YPos>
-																					<Flags>37</Flags>
-																				</Point>
-																			</PointList>
-																		</Curve>
-																	</CurveUsageInfo>
-																</VolumeDryUsage>
-																<VolumeWetGameUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-																</VolumeWetGameUsage>
-																<VolumeWetUserUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-																</VolumeWetUserUsage>
-																<LowPassFilterUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-																</LowPassFilterUsage>
-																<HighPassFilterUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-																</HighPassFilterUsage>
-																<SpreadUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-																</SpreadUsage>
-																<FocusUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-																</FocusUsage>
-															</CurveUsageInfoList>
-														</Attenuation>
-													</Custom>
-												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
 												</Reference>
@@ -785,7 +656,6 @@
 										</Sound>
 										<Sound Name="SFX_Wood_Door_Open" ID="{5FD8F8F0-B2FE-4B20-B505-4C6D96CC3BD5}" ShortID="1005381053">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
@@ -873,7 +743,6 @@
 									<ChildrenList>
 										<Sound Name="SFX_Drawer_Close" ID="{6F58110E-8AAC-4118-ADBF-456C5219781F}" ShortID="197572847">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
@@ -887,55 +756,13 @@
 														<Value>True</Value>
 													</ValueList>
 												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Attenuation">
-													<Custom>
-														<Attenuation Name="Attenuation (Custom)" ID="{1D3328B7-9F36-4118-8BF6-6E285935BBC6}" ShortID="951008529">
-															<CurveUsageInfoList>
-																<VolumeDryUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																		<Curve Name="VolumeDry" ID="{A998A7F7-13D6-4EC5-BA9B-D3B9ABE1D8F6}">
-																			<PropertyList>
-																				<Property Name="Flags" Type="int32" Value="3"/>
-																			</PropertyList>
-																			<PointList>
-																				<Point>
-																					<XPos>0</XPos>
-																					<YPos>0</YPos>
-																					<Flags>5</Flags>
-																				</Point>
-																				<Point>
-																					<XPos>100</XPos>
-																					<YPos>-200</YPos>
-																					<Flags>37</Flags>
-																				</Point>
-																			</PointList>
-																		</Curve>
-																	</CurveUsageInfo>
-																</VolumeDryUsage>
-																<VolumeWetGameUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-																</VolumeWetGameUsage>
-																<VolumeWetUserUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-																</VolumeWetUserUsage>
-																<LowPassFilterUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-																</LowPassFilterUsage>
-																<HighPassFilterUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-																</HighPassFilterUsage>
-																<SpreadUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-																</SpreadUsage>
-																<FocusUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-																</FocusUsage>
-															</CurveUsageInfoList>
-														</Attenuation>
-													</Custom>
-												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
 												</Reference>
@@ -958,7 +785,6 @@
 										</Sound>
 										<Sound Name="SFX_Drawer_Open" ID="{1CBCD18B-AE08-436F-885D-D62D02E00F04}" ShortID="669713195">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
@@ -969,53 +795,6 @@
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Attenuation">
-													<Custom>
-														<Attenuation Name="Attenuation (Custom)" ID="{82FD3833-BBC4-4885-867E-76A204D58265}" ShortID="1017887186">
-															<CurveUsageInfoList>
-																<VolumeDryUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																		<Curve Name="VolumeDry" ID="{2F0C6BD8-3BB4-4C40-B0A5-4DC0F077EC20}">
-																			<PropertyList>
-																				<Property Name="Flags" Type="int32" Value="3"/>
-																			</PropertyList>
-																			<PointList>
-																				<Point>
-																					<XPos>0</XPos>
-																					<YPos>0</YPos>
-																					<Flags>5</Flags>
-																				</Point>
-																				<Point>
-																					<XPos>100</XPos>
-																					<YPos>-200</YPos>
-																					<Flags>37</Flags>
-																				</Point>
-																			</PointList>
-																		</Curve>
-																	</CurveUsageInfo>
-																</VolumeDryUsage>
-																<VolumeWetGameUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-																</VolumeWetGameUsage>
-																<VolumeWetUserUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-																</VolumeWetUserUsage>
-																<LowPassFilterUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-																</LowPassFilterUsage>
-																<HighPassFilterUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-																</HighPassFilterUsage>
-																<SpreadUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-																</SpreadUsage>
-																<FocusUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-																</FocusUsage>
-															</CurveUsageInfoList>
-														</Attenuation>
-													</Custom>
-												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
 												</Reference>
@@ -1025,6 +804,10 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="SFX_Drawer_Open" ID="{326965D8-D54F-49EC-8273-86F7EBBD0F2F}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.599088541666667"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>SFX_Drawer_Open.wav</AudioFile>
 													<MediaIDList>
@@ -1036,6 +819,175 @@
 												<ActiveSource Name="SFX_Drawer_Open" ID="{326965D8-D54F-49EC-8273-86F7EBBD0F2F}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Locked Door" ID="{0272FE68-87E8-4148-84CE-D229A13A64CA}" ShortID="735041264">
+									<ChildrenList>
+										<RandomSequenceContainer Name="Locked_Door" ID="{B5D0DA8B-3B0F-41DE-8BA4-2D625C614C05}" ShortID="137087694">
+											<PropertyList>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Locked_Door_Start" ID="{FC8FC452-97E0-4D19-A999-EDE70208B70C}" ShortID="511838507">
+													<PropertyList>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="SFX_Door_Knob_Locked_Start_01" ID="{01F2DC0D-2984-46E7-AFE3-7C9302A2389C}" ShortID="905120709">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_Door_Knob_Locked_Start_01" ID="{2205F45E-9596-4ED1-80D1-88072E83F6EB}">
+																	<PropertyList>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.324702428037794"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_Door_Knob_Locked_Start_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="857015964"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_Door_Knob_Locked_Start_01" ID="{2205F45E-9596-4ED1-80D1-88072E83F6EB}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="SFX_Door_Knob_Locked_Start_02" ID="{2043C77F-E93A-46D6-8BA9-14F66CB506B9}" ShortID="740663759">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_Door_Knob_Locked_Start_02" ID="{B6DFD13D-FF4F-473F-8F46-8A864544C8FF}">
+																	<PropertyList>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.254308833223467"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_Door_Knob_Locked_Start_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="592735717"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_Door_Knob_Locked_Start_02" ID="{B6DFD13D-FF4F-473F-8F46-8A864544C8FF}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Locked_Door_End" ID="{E0968947-1D41-476A-9F31-D15554E99C4B}" ShortID="429000901">
+													<PropertyList>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="SFX_Door_Knob_Locked_End_02" ID="{4DB81C22-33DA-4DFF-8545-E429D1FBB1BE}" ShortID="81677340">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_Door_Knob_Locked_End_02" ID="{CB994E42-6322-4A9C-B155-5012330E5E2F}">
+																	<PropertyList>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.268791652933421"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_Door_Knob_Locked_End_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="721069643"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_Door_Knob_Locked_End_02" ID="{CB994E42-6322-4A9C-B155-5012330E5E2F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="SFX_Door_Knob_Locked_End_03" ID="{2A61BE4D-C5F0-4B53-B2A2-25973B85D645}" ShortID="584717425">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_Door_Knob_Locked_End_03" ID="{2453C240-21CE-4EB0-891B-38A396468C69}">
+																	<PropertyList>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.329351131619424"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_Door_Knob_Locked_End_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="528498600"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_Door_Knob_Locked_End_03" ID="{2453C240-21CE-4EB0-891B-38A396468C69}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<Playlist>
+												<ItemRef Name="Locked_Door_Start" ID="{FC8FC452-97E0-4D19-A999-EDE70208B70C}"/>
+												<ItemRef Name="Locked_Door_End" ID="{E0968947-1D41-476A-9F31-D15554E99C4B}"/>
+											</Playlist>
+										</RandomSequenceContainer>
 									</ChildrenList>
 								</Folder>
 							</ChildrenList>
@@ -1476,6 +1428,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="SFX_Monster_Hiss_01" ID="{074D5C48-CB12-4FCD-8733-8F664C957E47}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.786068635844749"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.07159132420092"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_Monster_Hiss_01.wav</AudioFile>
 											<MediaIDList>
