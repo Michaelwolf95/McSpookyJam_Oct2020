@@ -1,15 +1,26 @@
-﻿using UnityEngine;
+﻿using MichaelWolfGames;
+using UnityEngine;
 
-public class RitualDaggerItem : InteractableBase
+public class RitualDaggerItem : InvestigationCardInteractable
 {
-    [SerializeField] private GameObject daggerObject;
-    
+    [SerializeField] private GameObject daggerObject = null;
+
     protected override void PerformInteraction()
     {
-        InventoryManager.instance.CollectRitualDagger();
+        base.PerformInteraction();
+        
         daggerObject.SetActive(false);
         this.SetInteractable(false);
-
-        Interactor.instance.QuitInteraction();
+        
+        this.StartTimer(1f, () =>
+        {
+            InventoryManager.instance.CollectRitualDagger();
+        });
     }
+
+    public override void OnFinishInteraction()
+    {
+        base.OnFinishInteraction();
+    }
+    
 }
