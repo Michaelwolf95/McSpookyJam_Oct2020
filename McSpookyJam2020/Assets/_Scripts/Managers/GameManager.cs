@@ -104,6 +104,7 @@ public class GameManager : SceneSingleton<GameManager>
     {
         // Lock player movement
         FirstPersonAIO.instance.SetControllerPause(true);
+        Flashlight.instance.Toggle(false);
         IsPlayerOnCardScreen = true;
     }
 
@@ -111,6 +112,7 @@ public class GameManager : SceneSingleton<GameManager>
     {
         // Free player movement.
         FirstPersonAIO.instance.SetControllerPause(false);
+        Flashlight.instance.Toggle(InventoryManager.instance.hasFlashlight);
         IsPlayerOnCardScreen = false;
     }
 
