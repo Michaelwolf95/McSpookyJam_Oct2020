@@ -55,6 +55,7 @@ GameObject:
   - component: {fileID: 5273633189182133184}
   - component: {fileID: 9115407573794053221}
   - component: {fileID: 6441442337384474799}
+  - component: {fileID: 2526860670598642320}
   m_Layer: 0
   m_Name: Stove
   m_TagString: Untagged
@@ -124,6 +125,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!136 &2526860670598642320
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4784060705350945146}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.605
+  m_Height: 2.1883674
+  m_Direction: 1
+  m_Center: {x: 0.005000113, y: 0.8527813, z: 1.0049977}
 --- !u!1 &6086305142223672697
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,6 +228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5448588628452002717}
   - component: {fileID: 3360941856448503469}
+  - component: {fileID: 3484624900124612535}
   m_Layer: 0
   m_Name: '[Item] The Stove & Dagger'
   m_TagString: Untagged
@@ -271,6 +287,22 @@ MonoBehaviour:
     type: 3}
   exitOnEscapeInput: 0
   daggerObject: {fileID: 6086305142223672697}
+--- !u!54 &3484624900124612535
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6734877720332322674}
+  serializedVersion: 2
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &3882164770822804937
 PrefabInstance:
   m_ObjectHideFlags: 0

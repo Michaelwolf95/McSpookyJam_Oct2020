@@ -26,6 +26,7 @@ public class GameOverMenu : MonoBehaviour
         buttonCanvasGroup.alpha = 0f;
         mainCanvasGroup.alpha = 0f;
         ToggleMenuInteractable(false);
+        GameManager.instance.IsPlayerInMenu = true;
         this.DoTween(lerp => { mainCanvasGroup.alpha = lerp; }, () =>
         {
             this.DoTween(lerp => { buttonCanvasGroup.alpha = lerp; }, (() =>
@@ -47,6 +48,7 @@ public class GameOverMenu : MonoBehaviour
         }, ()=>
         {
             ToggleMenuInteractable(true);
+            GameManager.instance.IsPlayerInMenu = false;
             if (onFadeComplete != null)
             {
                 onFadeComplete();
