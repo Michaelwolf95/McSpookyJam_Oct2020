@@ -18,7 +18,9 @@ public class InteractableReticle : MonoBehaviour
     [SerializeField] private GameObject handReticle = null;
 
     private InteractReticleType currentInteractType = InteractReticleType.Look;
-
+    
+    public bool disableActivatedReticle { get; set; }
+    
     private void Awake()
     {
         activatedReticle.gameObject.SetActive(false);
@@ -44,7 +46,7 @@ public class InteractableReticle : MonoBehaviour
     
     public void ToggleActivatedReticle(bool argEnable)
     {
-        activatedReticle.gameObject.SetActive(argEnable);
+        activatedReticle.gameObject.SetActive(argEnable && !disableActivatedReticle);
     }
     
     public void ToggleInteractReticle(bool argEnable)
