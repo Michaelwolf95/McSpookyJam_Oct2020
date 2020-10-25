@@ -26,6 +26,7 @@ namespace AK
         static const AkUniqueID PLAY_LIGHT_SWITCH_OFF = 314077991U;
         static const AkUniqueID PLAY_LIGHT_SWITCH_ON = 82250835U;
         static const AkUniqueID PLAY_LIGHTS_OUT = 3933447040U;
+        static const AkUniqueID PLAY_LOCKED_DOOR = 281597619U;
         static const AkUniqueID PLAY_METAL_DOOR_CLOSE = 2167123887U;
         static const AkUniqueID PLAY_METAL_DOOR_OPEN = 2617923177U;
         static const AkUniqueID PLAY_MONSTER_HISS = 2620845016U;

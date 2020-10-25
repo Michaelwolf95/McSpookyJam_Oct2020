@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4190601618" Language="English(US)" Hash="1136687263">
+		<SoundBank Id="4190601618" Language="English(US)" Hash="2073766061">
 			<ObjectPath>\SoundBanks\McSpookyJam2020\McSpookyJam2020</ObjectPath>
 			<ShortName>McSpookyJam2020</ShortName>
 			<Path>English(US)\McSpookyJam2020.bnk</Path>
@@ -46,7 +46,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2315829540" Name="Play_Drawer_Close" ObjectPath="\Events\McSpookyJam2020\Interactables\Doors\Play_Drawer_Close" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.782375" DurationMax="0.782375">
+				<Event Id="2315829540" Name="Play_Drawer_Close" ObjectPath="\Events\McSpookyJam2020\Interactables\Doors\Play_Drawer_Close" DurationType="OneShot" DurationMin="0.782375" DurationMax="0.782375">
 					<IncludedMemoryFiles>
 						<File Id="527450663" Language="SFX">
 							<ShortName>SFX_Drawer_Close.wav</ShortName>
@@ -54,11 +54,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1958703520" Name="Play_Drawer_Open" ObjectPath="\Events\McSpookyJam2020\Interactables\Doors\Play_Drawer_Open" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.813646" DurationMax="0.813646">
+				<Event Id="1958703520" Name="Play_Drawer_Open" ObjectPath="\Events\McSpookyJam2020\Interactables\Doors\Play_Drawer_Open" DurationType="OneShot" DurationMin="0.599089" DurationMax="0.599089">
 					<IncludedMemoryFiles>
 						<File Id="1062360790" Language="SFX">
 							<ShortName>SFX_Drawer_Open.wav</ShortName>
-							<Path>SFX\SFX_Drawer_Open_10C4C929.wem</Path>
+							<Path>SFX\SFX_Drawer_Open_92236C6B.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -121,7 +121,27 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="3933447040" Name="Play_Lights_Out" ObjectPath="\Events\McSpookyJam2020\SFXs\Spooks\Play_Lights_Out" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
-				<Event Id="2167123887" Name="Play_Metal_Door_Close" ObjectPath="\Events\McSpookyJam2020\Interactables\Doors\Play_Metal_Door_Close" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.731292" DurationMax="1.731292">
+				<Event Id="281597619" Name="Play_Locked_Door" ObjectPath="\Events\McSpookyJam2020\Interactables\Doors\Play_Locked_Door" DurationType="OneShot" DurationMin="0.523100" DurationMax="0.654054">
+					<IncludedMemoryFiles>
+						<File Id="528498600" Language="SFX">
+							<ShortName>SFX_Door_Knob_Locked_End_03.wav</ShortName>
+							<Path>SFX\SFX_Door_Knob_Locked_End_03_A900E52D.wem</Path>
+						</File>
+						<File Id="592735717" Language="SFX">
+							<ShortName>SFX_Door_Knob_Locked_Start_02.wav</ShortName>
+							<Path>SFX\SFX_Door_Knob_Locked_Start_02_3B764F67.wem</Path>
+						</File>
+						<File Id="721069643" Language="SFX">
+							<ShortName>SFX_Door_Knob_Locked_End_02.wav</ShortName>
+							<Path>SFX\SFX_Door_Knob_Locked_End_02_89189D27.wem</Path>
+						</File>
+						<File Id="857015964" Language="SFX">
+							<ShortName>SFX_Door_Knob_Locked_Start_01.wav</ShortName>
+							<Path>SFX\SFX_Door_Knob_Locked_Start_01_D1F8106E.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2167123887" Name="Play_Metal_Door_Close" ObjectPath="\Events\McSpookyJam2020\Interactables\Doors\Play_Metal_Door_Close" DurationType="OneShot" DurationMin="1.731292" DurationMax="1.731292">
 					<IncludedMemoryFiles>
 						<File Id="901584945" Language="SFX">
 							<ShortName>SFX_Metal_Door_Close.wav</ShortName>
@@ -129,11 +149,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2617923177" Name="Play_Metal_Door_Open" ObjectPath="\Events\McSpookyJam2020\Interactables\Doors\Play_Metal_Door_Open" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="2.799062" DurationMax="2.799062">
+				<Event Id="2617923177" Name="Play_Metal_Door_Open" ObjectPath="\Events\McSpookyJam2020\Interactables\Doors\Play_Metal_Door_Open" DurationType="OneShot" DurationMin="2.799062" DurationMax="2.799062">
 					<IncludedMemoryFiles>
 						<File Id="111880704" Language="SFX">
 							<ShortName>SFX_Metal_Door_Open.wav</ShortName>
 							<Path>SFX\SFX_Metal_Door_Open_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2620845016" Name="Play_Monster_Hiss" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Hiss" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.071591" DurationMax="1.071591">
+					<IncludedMemoryFiles>
+						<File Id="636009089" Language="SFX">
+							<ShortName>SFX_Monster_Hiss_01.wav</ShortName>
+							<Path>SFX\SFX_Monster_Hiss_01_ECC07CBF.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -146,7 +174,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2216405837" Name="Play_Pickup_Note" ObjectPath="\Events\McSpookyJam2020\Interactables\Pickups\Play_Pickup_Note" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.585500" DurationMax="0.888062">
+				<Event Id="2216405837" Name="Play_Pickup_Note" ObjectPath="\Events\McSpookyJam2020\Interactables\Pickups\Play_Pickup_Note" DurationType="OneShot" DurationMin="0.585500" DurationMax="0.888062">
 					<IncludedMemoryFiles>
 						<File Id="47420332" Language="SFX">
 							<ShortName>SFX_Pickup_Note_01.wav</ShortName>
