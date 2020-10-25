@@ -149,7 +149,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5836769262346810370}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -3.348, y: -1.155, z: -7.517}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0d1be2f764d4714a11d87fa2b096378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reticle: {fileID: 0}
+  reticle: {fileID: 1273744507364121460}
   interactReticleType: 1
   visibleAngleRange: {x: 360, y: 360}
   InteractStartAudio:
@@ -190,7 +190,8 @@ MonoBehaviour:
   OnInteractEnd:
     m_PersistentCalls:
       m_Calls: []
-  flowchartPrefab: {fileID: 0}
+  flowchartPrefab: {fileID: 8786675518878862360, guid: 6964833ca0a941e45a84309fc37a6118,
+    type: 3}
   exitOnEscapeInput: 0
 --- !u!54 &9026313893614335881
 Rigidbody:
@@ -362,3 +363,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5810997467848459668}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1273744507364121460 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4686541359359090400, guid: 3be365ddfd146d743bfd9261c670d56f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5810997467848459668}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca16afeb68054b9e9084314cfaff661c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
