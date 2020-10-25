@@ -6,8 +6,6 @@ public class FlashlightItem : InteractableBase
 {
     protected override void PerformInteraction()
     {
-        base.PerformInteraction();
-        
         InventoryManager.instance.CollectFlashlight();
         this.gameObject.SetActive(false);
         

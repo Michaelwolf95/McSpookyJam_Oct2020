@@ -47,10 +47,7 @@ public class Interactor : MonoBehaviour
         {
             return;
         }
-
-        //RaycastHit[] hits = Physics.SphereCastAll(mainCamera.transform.position, activationRange, Vector3.up, 0f, interactionLayerMask, )
         
-        //Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         Ray ray = new Ray(viewOrigin.position, viewOrigin.forward);
         RaycastHit[] hits = Physics.RaycastAll(ray, interactRange, interactionLayerMask, QueryTriggerInteraction.Collide);
         if (hits.Length > 0)
@@ -97,7 +94,8 @@ public class Interactor : MonoBehaviour
     {
         if (isInteracting)
         {
-            QuitInteraction();
+            //QuitInteraction();
+            return;
         }
         
         if (currentPointerTarget == interactable)
@@ -105,10 +103,11 @@ public class Interactor : MonoBehaviour
             ClearPointerTarget();
         }
         
+        // NOTE: This needs to be called before beginning the interaction, in case the interactable finishes interaction immediately. 
+        onBeginInteractionEvent();
+        
         currentInteractionTarget = interactable;
         currentInteractionTarget.OnBeginInteraction();
-        
-        onBeginInteractionEvent();
     }
     
     public void QuitInteraction()

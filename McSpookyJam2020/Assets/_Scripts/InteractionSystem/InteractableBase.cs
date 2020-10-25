@@ -61,10 +61,6 @@ public class InteractableBase : MonoBehaviour
     
     public void SetInteractable(bool argInteractable)
     {
-        if (argInteractable == isInteractable)
-        {
-            return;
-        }
         isInteractable = argInteractable;
 
         if (isInteractable == false)
