@@ -180,6 +180,8 @@ GameObject:
   - component: {fileID: 4125222800798236809}
   - component: {fileID: 5933273647227041115}
   - component: {fileID: 5393420277499612186}
+  - component: {fileID: 2459508260111951691}
+  - component: {fileID: 5559823748669017263}
   m_Layer: 0
   m_Name: '[Card] Ritual Circle'
   m_TagString: Untagged
@@ -268,6 +270,62 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2459508260111951691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4125222800798236814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc4e706cc78d5f041886e2d1febf796d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!114 &5559823748669017263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4125222800798236814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1196561d804e2604da76e4118285a046, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 81f9949dd82be474fbcd3a5c64f094b6,
+      type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+  MultiPositionType: 1
+  multiPositionTypeLabel: 0
+  LargeModePositions: []
+  multiPositionArray: []
 --- !u!1001 &983164175054198807
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -439,7 +497,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1596180408210846, guid: 899981d5c0e928546852bc80913687c7, type: 3}
       propertyPath: m_Name
-      value: Single_Candle_With_Flame (2)
+      value: w
       objectReference: {fileID: 0}
     - target: {fileID: 4754689864891234, guid: 899981d5c0e928546852bc80913687c7, type: 3}
       propertyPath: m_LocalPosition.x

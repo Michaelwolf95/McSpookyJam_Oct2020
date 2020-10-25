@@ -8,7 +8,12 @@
 		<ExternalSourcesOutputRoot>C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
-	<StreamedFiles/>
+	<StreamedFiles>
+		<File Id="621486811" Language="SFX">
+			<ShortName>SFX_Demon_Circle_Loop_01.wav</ShortName>
+			<Path>SFX\SFX_Demon_Circle_Loop_01_BB41A573.wem</Path>
+		</File>
+	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
 		<SoundBank Id="1355168291" Language="SFX" Hash="597364199">
@@ -16,7 +21,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4190601618" Language="SFX" Hash="4201709118">
+		<SoundBank Id="4190601618" Language="SFX" Hash="4192202464">
 			<ObjectPath>\SoundBanks\McSpookyJam2020\McSpookyJam2020</ObjectPath>
 			<ShortName>McSpookyJam2020</ShortName>
 			<Path>McSpookyJam2020.bnk</Path>
@@ -45,6 +50,14 @@
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
+				</Event>
+				<Event Id="3207346046" Name="Play_Candle_Emitter" ObjectPath="\Events\McSpookyJam2020\AMB\Play_Candle_Emitter" MaxAttenuation="13.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="954993177" Language="SFX">
+							<ShortName>SFX_Candle_Loop.wav</ShortName>
+							<Path>SFX\SFX_Candle_Loop_7C2BEA6B.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2315829540" Name="Play_Drawer_Close" ObjectPath="\Events\McSpookyJam2020\Interactables\Doors\Play_Drawer_Close" DurationType="OneShot" DurationMin="0.782375" DurationMax="0.782375">
 					<IncludedMemoryFiles>
@@ -86,14 +99,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2892862498" Name="Play_Game_Start_Candle_Trem" ObjectPath="\Events\McSpookyJam2020\SFXs\Endings\Play_Game_Start_Candle_Trem" DurationType="OneShot" DurationMin="2.676875" DurationMax="2.676875">
-					<IncludedMemoryFiles>
-						<File Id="730490238" Language="SFX">
-							<ShortName>SFX_Game_Start_Candle_Trem.wav</ShortName>
-							<Path>SFX\SFX_Game_Start_Candle_Trem_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
+				<Event Id="2892862498" Name="Play_Game_Start_Candle_Trem" ObjectPath="\Events\McSpookyJam2020\SFXs\Endings\Play_Game_Start_Candle_Trem" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3727723795" Name="Play_Game_Start_Light_Switch" ObjectPath="\Events\McSpookyJam2020\SFXs\Endings\Play_Game_Start_Light_Switch" DurationType="OneShot" DurationMin="2.676875" DurationMax="2.676875">
 					<IncludedMemoryFiles>
 						<File Id="921245797" Language="SFX">
@@ -201,7 +207,31 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="98439365" Name="Play_Player_Footsteps" ObjectPath="\Events\McSpookyJam2020\Player\Play_Player_Footsteps" DurationType="OneShot" DurationMin="0.419273" DurationMax="0.662188">
+				<Event Id="2793391981" Name="Play_Player_Footsteps_Gravel" ObjectPath="\Events\McSpookyJam2020\Player\Play_Player_Footsteps_Gravel" DurationType="OneShot" DurationMin="1.787067" DurationMax="1.973605">
+					<IncludedMemoryFiles>
+						<File Id="160417959" Language="SFX">
+							<ShortName>SFX_Player_Gravel_Footsteps_02.wav</ShortName>
+							<Path>SFX\SFX_Player_Gravel_Footsteps_02_10C4C929.wem</Path>
+						</File>
+						<File Id="858689308" Language="SFX">
+							<ShortName>SFX_Player_Gravel_Footsteps_04.wav</ShortName>
+							<Path>SFX\SFX_Player_Gravel_Footsteps_04_10C4C929.wem</Path>
+						</File>
+						<File Id="964453219" Language="SFX">
+							<ShortName>SFX_Player_Gravel_Footsteps_05.wav</ShortName>
+							<Path>SFX\SFX_Player_Gravel_Footsteps_05_10C4C929.wem</Path>
+						</File>
+						<File Id="986477594" Language="SFX">
+							<ShortName>SFX_Player_Gravel_Footsteps_01.wav</ShortName>
+							<Path>SFX\SFX_Player_Gravel_Footsteps_01_10C4C929.wem</Path>
+						</File>
+						<File Id="1047672898" Language="SFX">
+							<ShortName>SFX_Player_Gravel_Footsteps_03.wav</ShortName>
+							<Path>SFX\SFX_Player_Gravel_Footsteps_03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1323502295" Name="Play_Player_Footsteps_Wood" ObjectPath="\Events\McSpookyJam2020\Player\Play_Player_Footsteps_Wood" DurationType="OneShot" DurationMin="0.419273" DurationMax="0.662188">
 					<IncludedMemoryFiles>
 						<File Id="112294917" Language="SFX">
 							<ShortName>SFX_Creaky_Footstep_Light_05.wav</ShortName>
@@ -220,17 +250,14 @@
 							<Path>SFX\SFX_Creaky_Footstep_Light_02_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
-					<DefaultSwitchValue>{8E231F5C-915B-4C82-8791-31A745B60E68}</DefaultSwitchValue>
-					<SwitchContainers>
-						<SwitchContainer SwitchValue="{8E231F5C-915B-4C82-8791-31A745B60E68}">
-							<Media>
-								<File Id="475776318"/>
-								<File Id="714979815"/>
-								<File Id="321291601"/>
-								<File Id="112294917"/>
-							</Media>
-						</SwitchContainer>
-					</SwitchContainers>
+				</Event>
+				<Event Id="1733092070" Name="Play_Ritual_Circle" ObjectPath="\Events\McSpookyJam2020\AMB\Play_Ritual_Circle" MaxAttenuation="13.000000" DurationType="Infinite">
+					<ReferencedStreamedFiles>
+						<File Id="621486811" Language="SFX">
+							<ShortName>SFX_Demon_Circle_Loop_01.wav</ShortName>
+							<Path>SFX\SFX_Demon_Circle_Loop_01_BB41A573.wem</Path>
+						</File>
+					</ReferencedStreamedFiles>
 				</Event>
 				<Event Id="754369548" Name="Play_Stinger" ObjectPath="\Events\McSpookyJam2020\SFXs\Spooks\Play_Stinger" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
 				<Event Id="1986548623" Name="Play_UI_Exit" ObjectPath="\Events\McSpookyJam2020\UI\Play_UI_Exit" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
@@ -257,11 +284,6 @@
 				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\McSpookyJam2020\Music\Stop_Music" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<SwitchGroups>
-				<SwitchGroup Id="2385628198" Name="Footsteps" ObjectPath="\Switches\McSpookyJam2020\Footsteps">
-					<Switches>
-						<Switch Id="340271938" Name="Walking" ObjectPath="\Switches\McSpookyJam2020\Footsteps\Walking"/>
-					</Switches>
-				</SwitchGroup>
 				<SwitchGroup Id="2654366170" Name="Time" ObjectPath="\Switches\McSpookyJam2020\Time">
 					<Switches>
 						<Switch Id="1011622525" Name="Night" ObjectPath="\Switches\McSpookyJam2020\Time\Night"/>

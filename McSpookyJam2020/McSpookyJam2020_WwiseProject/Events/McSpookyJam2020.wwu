@@ -5,12 +5,23 @@
 			<ChildrenList>
 				<Folder Name="Player" ID="{628DA58A-FAFF-46C5-A33F-CDCA7577F8E0}" ShortID="678933238">
 					<ChildrenList>
-						<Event Name="Play_Player_Footsteps" ID="{D3E5EAC2-6D14-437F-811B-29FF59EE19ED}">
+						<Event Name="Play_Player_Footsteps_Wood" ID="{D3E5EAC2-6D14-437F-811B-29FF59EE19ED}">
 							<ChildrenList>
 								<Action Name="" ID="{6E641DD0-2CD0-4A1D-AF3F-465B3E03D44D}" ShortID="801356294">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Player_Footsteps" ID="{D3848CCB-085D-4E86-B6ED-375EC4908AC6}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+											<ObjectRef Name="Player_Footsteps_Wood" ID="{D3BACA49-F789-4D20-A497-C730AD3571CE}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Player_Footsteps_Gravel" ID="{636BD5D5-6936-4F4C-8618-0D0C2118BFAE}">
+							<ChildrenList>
+								<Action Name="" ID="{D5139482-9B22-4374-95E8-42D4A51880D9}" ShortID="667752883">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Footsteps_Gravel" ID="{5C860BA1-34BE-40DC-9764-419A35F17191}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -40,6 +51,28 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="AMB_Loops" ID="{2B6BCDAA-FA08-4D4B-A539-0027A7D48768}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Candle_Emitter" ID="{3D59ACC8-02B6-403D-B863-48EB063EB663}">
+							<ChildrenList>
+								<Action Name="" ID="{BE19BD60-DE5B-4A9D-98C0-748EAD42A323}" ShortID="40580480">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Candle_Loop" ID="{21F142A0-0F25-48B0-833C-9D191210D22B}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Ritual_Circle" ID="{C7013F2D-E74B-4BAF-867A-89B97C000439}">
+							<ChildrenList>
+								<Action Name="" ID="{0F0B7CDC-7FF4-455F-93A7-4625F64DE326}" ShortID="718081210">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Demon_Circle_Loop_01" ID="{1414DA0B-C296-43C7-8D96-E088AEAB9AEE}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
