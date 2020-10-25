@@ -136,7 +136,12 @@ public class SpookerAI : LightReactor
         }
     }
 
-    public void Disable()
+    private void OnDisable()
+    {
+        DisableController();
+    }
+
+    public void DisableController()
     {
         ChangeState(SpookerState.Disabled);
     }

@@ -145,7 +145,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   sayContent: ...
-  sayDelay: 1
+  sayDelay: 0.25
 --- !u!54 &3156312975734034499
 Rigidbody:
   m_ObjectHideFlags: 0

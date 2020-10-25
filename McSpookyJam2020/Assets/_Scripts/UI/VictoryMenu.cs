@@ -61,7 +61,13 @@ public class VictoryMenu : MonoBehaviour
     {
         StartCoroutine(MenuTweenEffects.ScalePressEffect((RectTransform)quitButton.transform, () =>
         {
-            FadeOutMenu((() => { SceneManager.LoadScene(GameManager.MAIN_MENU_SCENE_INDEX); }));
+            this.DoTween(lerp =>
+            {
+                buttonCanvasGroup.alpha = Mathf.Lerp(1f, 0f,lerp);
+            }, ()=>
+            {
+                SceneManager.LoadScene(GameManager.MAIN_MENU_SCENE_INDEX);
+            }, 1f);
         }));
     }
 }

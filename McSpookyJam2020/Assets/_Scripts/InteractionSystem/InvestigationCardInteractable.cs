@@ -13,12 +13,15 @@ public class InvestigationCardInteractable : InteractableBase
     [SerializeField] 
     private bool exitOnEscapeInput = false;
 
-    protected Flowchart flowchartInstance = null;
+    public Flowchart flowchartInstance {get; set;}
 
     protected override void Start()
     {
         base.Start();
-        flowchartInstance = InvestigationCardCanvas.instance.InstantiateCard(flowchartPrefab);
+        if (flowchartPrefab)
+        {
+            flowchartInstance = InvestigationCardCanvas.instance.InstantiateCard(flowchartPrefab);
+        }
     }
 
     protected override void Update()

@@ -60,6 +60,11 @@ public class GameManager : SceneSingleton<GameManager>
         {
             CancelAttackEffect();
         }
+
+        if (Input.GetKeyDown(KeyCode.BackQuote))
+        {
+            TransitionToNight();
+        }
         
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
@@ -76,6 +81,10 @@ public class GameManager : SceneSingleton<GameManager>
         else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             InventoryManager.instance.CollectHagueLetter(1);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            FindObjectOfType<BasementDoorInteractable>().OpenDoor();
         }
 #endif
     }
@@ -127,8 +136,13 @@ public class GameManager : SceneSingleton<GameManager>
     {
         
     }
-
-    public void OnRitualPerformed()
+    
+    public void OnRitualStarted()
+    {
+        monsterController.gameObject.SetActive(false);
+    }
+    
+    public void OnRitualFinished()
     {
         victoryMenu.FadeInMenu();
     }
@@ -260,7 +274,7 @@ public class GameManager : SceneSingleton<GameManager>
         Debug.Log("PLAYER FUCKING DIED");
         
         FirstPersonAIO.instance.SetControllerPause(true);
-        monsterController.Disable();
+        monsterController.DisableController();
         
         gameOverMenu.FadeInMenu();
     }
