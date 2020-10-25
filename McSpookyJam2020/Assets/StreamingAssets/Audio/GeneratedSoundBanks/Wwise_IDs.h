@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_AMB = 2959533290U;
+        static const AkUniqueID PLAY_CANDLE_EMITTER = 3207346046U;
         static const AkUniqueID PLAY_DRAWER_CLOSE = 2315829540U;
         static const AkUniqueID PLAY_DRAWER_OPEN = 1958703520U;
         static const AkUniqueID PLAY_FLASHLIGHT_ON = 3471928368U;
@@ -36,7 +37,9 @@ namespace AK
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_PICKUP_KEY = 3768549418U;
         static const AkUniqueID PLAY_PICKUP_NOTE = 2216405837U;
-        static const AkUniqueID PLAY_PLAYER_FOOTSTEPS = 98439365U;
+        static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_GRAVEL = 2793391981U;
+        static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_WOOD = 1323502295U;
+        static const AkUniqueID PLAY_RITUAL_CIRCLE = 1733092070U;
         static const AkUniqueID PLAY_STINGER = 754369548U;
         static const AkUniqueID PLAY_UI_EXIT = 1986548623U;
         static const AkUniqueID PLAY_UI_START = 643450781U;

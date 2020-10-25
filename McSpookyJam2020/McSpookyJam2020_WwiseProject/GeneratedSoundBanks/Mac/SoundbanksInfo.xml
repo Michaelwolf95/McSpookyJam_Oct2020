@@ -8,7 +8,12 @@
 		<ExternalSourcesOutputRoot>C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
-	<StreamedFiles/>
+	<StreamedFiles>
+		<File Id="621486811" Language="SFX">
+			<ShortName>SFX_Demon_Circle_Loop_01.wav</ShortName>
+			<Path>SFX\SFX_Demon_Circle_Loop_01_D79FB2B7.wem</Path>
+		</File>
+	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
 		<SoundBank Id="1355168291" Language="SFX" Hash="2677575725">
@@ -16,7 +21,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4190601618" Language="SFX" Hash="4201709118">
+		<SoundBank Id="4190601618" Language="SFX" Hash="549345033">
 			<ObjectPath>\SoundBanks\McSpookyJam2020\McSpookyJam2020</ObjectPath>
 			<ShortName>McSpookyJam2020</ShortName>
 			<Path>McSpookyJam2020.bnk</Path>
@@ -45,6 +50,14 @@
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
+				</Event>
+				<Event Id="3207346046" Name="Play_Candle_Emitter" ObjectPath="\Events\McSpookyJam2020\AMB\Play_Candle_Emitter" MaxAttenuation="100.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="954993177" Language="SFX">
+							<ShortName>SFX_Candle_Loop.wav</ShortName>
+							<Path>SFX\SFX_Candle_Loop_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2315829540" Name="Play_Drawer_Close" ObjectPath="\Events\McSpookyJam2020\Interactables\Doors\Play_Drawer_Close" DurationType="OneShot" DurationMin="0.782375" DurationMax="0.782375">
 					<IncludedMemoryFiles>
@@ -86,14 +99,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2892862498" Name="Play_Game_Start_Candle_Trem" ObjectPath="\Events\McSpookyJam2020\SFXs\Endings\Play_Game_Start_Candle_Trem" DurationType="OneShot" DurationMin="2.676875" DurationMax="2.676875">
-					<IncludedMemoryFiles>
-						<File Id="730490238" Language="SFX">
-							<ShortName>SFX_Game_Start_Candle_Trem.wav</ShortName>
-							<Path>SFX\SFX_Game_Start_Candle_Trem_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
+				<Event Id="2892862498" Name="Play_Game_Start_Candle_Trem" ObjectPath="\Events\McSpookyJam2020\SFXs\Endings\Play_Game_Start_Candle_Trem" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3727723795" Name="Play_Game_Start_Light_Switch" ObjectPath="\Events\McSpookyJam2020\SFXs\Endings\Play_Game_Start_Light_Switch" DurationType="OneShot" DurationMin="2.676875" DurationMax="2.676875">
 					<IncludedMemoryFiles>
 						<File Id="921245797" Language="SFX">
@@ -231,6 +237,14 @@
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
+				</Event>
+				<Event Id="1733092070" Name="Play_Ritual_Circle" ObjectPath="\Events\McSpookyJam2020\AMB\Play_Ritual_Circle" MaxAttenuation="100.000000" DurationType="Infinite">
+					<ReferencedStreamedFiles>
+						<File Id="621486811" Language="SFX">
+							<ShortName>SFX_Demon_Circle_Loop_01.wav</ShortName>
+							<Path>SFX\SFX_Demon_Circle_Loop_01_D79FB2B7.wem</Path>
+						</File>
+					</ReferencedStreamedFiles>
 				</Event>
 				<Event Id="754369548" Name="Play_Stinger" ObjectPath="\Events\McSpookyJam2020\SFXs\Spooks\Play_Stinger" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
 				<Event Id="1986548623" Name="Play_UI_Exit" ObjectPath="\Events\McSpookyJam2020\UI\Play_UI_Exit" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
