@@ -18,6 +18,9 @@ public class GameManager : SceneSingleton<GameManager>
 
     public GameOverMenu gameOverMenu = null;
     public VictoryMenu victoryMenu = null;
+
+    public bool IsPlayerOnCardScreen { get; private set; }
+    public bool IsPlayerInMenu { get; set; }
     
     public event Action OnTransitionToNightEvent = delegate {  };
 
@@ -42,6 +45,13 @@ public class GameManager : SceneSingleton<GameManager>
     {
         // DEBUG BUTTONS
 #if UNITY_EDITOR
+        if (Input.GetMouseButtonDown(0))
+        {
+            bool visible = IsPlayerInMenu || IsPlayerOnCardScreen;
+            Cursor.visible = visible;
+            Cursor.lockState = (visible) ? CursorLockMode.None : CursorLockMode.Locked;
+        }
+        
         if (Input.GetKeyDown(KeyCode.LeftBracket))
         {
             StartAttackEffect(1f);
@@ -85,12 +95,14 @@ public class GameManager : SceneSingleton<GameManager>
     {
         // Lock player movement
         FirstPersonAIO.instance.SetControllerPause(true);
+        IsPlayerOnCardScreen = true;
     }
 
     public void OnExitInvestigationCardScreen()
     {
         // Free player movement.
         FirstPersonAIO.instance.SetControllerPause(false);
+        IsPlayerOnCardScreen = false;
     }
 
     public void TransitionToNight()

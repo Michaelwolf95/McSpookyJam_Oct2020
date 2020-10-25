@@ -10,9 +10,6 @@ public class PauseMenuManager : MonoBehaviour
     [SerializeField] Button mainMenuButton;
     [SerializeField] GameObject pauseMenuPanel;
     [SerializeField] KeyCode _pauseButton;
-
-    private bool cursorVisibleOnPause = false;
-    private CursorLockMode cursorLockModeOnPause = CursorLockMode.None;
     
     private void Update()
     {
@@ -25,22 +22,18 @@ public class PauseMenuManager : MonoBehaviour
     void PauseGame()
     {
         pauseMenuPanel.SetActive(true);
-        CacheCursorState();
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 0;
-    }
 
-    private void CacheCursorState()
-    {
-        cursorVisibleOnPause = Cursor.visible;
-        cursorLockModeOnPause = Cursor.lockState;
+        GameManager.instance.IsPlayerInMenu = true;
     }
 
     private void ReturnCursorState()
     {
-        Cursor.visible = cursorVisibleOnPause;
-        Cursor.lockState = cursorLockModeOnPause;
+        bool visible = GameManager.instance.IsPlayerOnCardScreen;
+        Cursor.visible = visible;
+        Cursor.lockState = (visible) ? CursorLockMode.None : CursorLockMode.Locked;
     }
 
     private void ToggleButtonsInteractive(bool argInteractable)
@@ -57,8 +50,9 @@ public class PauseMenuManager : MonoBehaviour
             ToggleButtonsInteractive(true);
             pauseMenuPanel.SetActive(false);
             ReturnCursorState();
+            GameManager.instance.IsPlayerInMenu = false;
             Time.timeScale = 1;
-        }, 1.25f, 1f, 0.5f, true));
+        }, 1.25f, 1f, 0f, true));
     }
 
     public void ReturnToMainMenu()
@@ -68,7 +62,7 @@ public class PauseMenuManager : MonoBehaviour
         {
             Time.timeScale = 1;
             SceneManager.LoadScene(GameManager.MAIN_MENU_SCENE_INDEX);
-        }, 1.25f, 1f, 0.5f, true));
+        }, 1.25f, 1f, 0.25f, true));
         //StartCoroutine(PauseButtonPress(mainMenuButton, 1));
     }
 
