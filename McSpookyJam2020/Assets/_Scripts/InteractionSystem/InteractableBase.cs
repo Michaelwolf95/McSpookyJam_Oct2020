@@ -33,6 +33,7 @@ public class InteractableBase : MonoBehaviour
     
     protected virtual void Start()
     {
+        SetInteractable(true);
         reticle.SetInteractType(interactReticleType);
         if (Interactor.instance != null)
         {

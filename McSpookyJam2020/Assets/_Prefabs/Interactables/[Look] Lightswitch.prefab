@@ -128,9 +128,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reticle: {fileID: 6518657594885507263}
   interactReticleType: 0
-  reticleRoot: {fileID: 7534050954707432429}
-  activatedReticle: {fileID: 7534050956129747259}
-  pointerTargetReticle: {fileID: 7534050954557343450}
   visibleAngleRange: {x: 180, y: 180}
   InteractStartAudio:
     idInternal: 0
@@ -204,10 +201,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4719918485492971654}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.2, y: 0.32647592, z: 0.13525009}
+  m_Size: {x: 0.28286827, y: 0.37984568, z: 0.13525009}
   m_Center: {x: 0, y: 0.019252867, z: 0.015589237}
 --- !u!1 &7785637582801036808
 GameObject:
@@ -376,15 +373,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca16afeb68054b9e9084314cfaff661c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &7534050956129747259 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8354546125289920356, guid: 3be365ddfd146d743bfd9261c670d56f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1981333158771807839}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7534050954557343450 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8354546124935041157, guid: 3be365ddfd146d743bfd9261c670d56f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1981333158771807839}
-  m_PrefabAsset: {fileID: 0}
