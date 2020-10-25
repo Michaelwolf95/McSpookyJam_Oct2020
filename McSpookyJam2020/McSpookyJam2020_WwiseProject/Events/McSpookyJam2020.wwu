@@ -346,6 +346,16 @@
 							<ChildrenList>
 								<Event Name="Play_Game_End" ID="{B77565E7-0CF0-4684-AA2D-3D666543C263}">
 									<ChildrenList>
+										<Action Name="" ID="{7980A2E4-398D-4E43-82D4-82A6B2EF5D68}" ShortID="426935503">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Monster_Attack_Start_02" ID="{A5026008-996C-40B4-8603-EEE0CEA528B6}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 										<Action Name="" ID="{10837146-21D2-4EDC-9A9E-F3BE13ECC4BB}" ShortID="439155615">
 											<ReferenceList>
 												<Reference Name="Target">
@@ -410,7 +420,7 @@
 								<Action Name="" ID="{72883DAA-0453-4FD4-BABA-EDF8C84A78A6}" ShortID="147743358">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Monster_Start_Attack" ID="{FD81BB9B-EAB9-437C-AC59-7C7744889D1C}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+											<ObjectRef Name="SFX_Monster_Attack_Start_02" ID="{A5026008-996C-40B4-8603-EEE0CEA528B6}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -424,7 +434,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Monster_Start_Attack" ID="{FD81BB9B-EAB9-437C-AC59-7C7744889D1C}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+											<ObjectRef Name="SFX_Monster_Attack_Start_02" ID="{A5026008-996C-40B4-8603-EEE0CEA528B6}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -442,6 +452,7 @@
 							</ChildrenList>
 						</Event>
 						<Event Name="Play_Monster_Footsteps" ID="{983D953E-B3C8-4339-B17F-38B7F09CEF09}"/>
+						<Event Name="Play_Monster_Emerge" ID="{1159C354-BF7B-46F9-8D8A-0BA0778A79D5}"/>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

@@ -13,7 +13,7 @@ public class PauseMenuManager : MonoBehaviour
     
     private void Update()
     {
-        if(Input.GetKey(_pauseButton))
+        if(Input.GetKey(_pauseButton) && GameManager.instance.IsPlayerInMenu == false)
         {
             PauseGame();
         }

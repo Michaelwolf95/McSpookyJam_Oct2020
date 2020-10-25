@@ -95,7 +95,7 @@ MonoBehaviour:
     ParentPath: McSpookyJam2020
     guid: 8a512b1a5243214c9bfc30890d9ea72b
     GuidInternal: 
-    m_lastTime: -8585979948784740310
+    m_lastTime: -8585979893632891777
     List:
     - name: AMB
       guid: d0e6c28b7fe1e34d941ccf3250b43293
@@ -258,7 +258,7 @@ MonoBehaviour:
       - ElementName: Play_Candle_Emitter
         ObjectType: 3
       Path: McSpookyJam2020\AMB\Play_Candle_Emitter
-      maxAttenuation: 100
+      maxAttenuation: 13
       maxDuration: -1
       minDuration: -1
     - name: Play_Drawer_Close
@@ -357,8 +357,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: McSpookyJam2020\SFXs\Endings\Play_Game_Start_Candle_Trem
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 2.676875
+      minDuration: 2.676875
     - name: Play_Game_Start_Light_Switch
       guid: 5dced4c977654e4bbc6e4c7edb01f33c
       id: 3727723795
@@ -519,8 +519,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: McSpookyJam2020\Monster\Play_Monster_Attack
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 1.750354
+      minDuration: 1.750354
     - name: Play_Monster_Attack_Complete
       guid: 786a09d7e811bb44a6ad5ee37c2a18b0
       id: 1099225839
@@ -535,6 +535,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1
       minDuration: 1
+    - name: Play_Monster_Emerge
+      guid: 54c359117bbff9468d8a0ba0778a79d5
+      id: 3611802004
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Monster
+        ObjectType: 4
+      - ElementName: Play_Monster_Emerge
+        ObjectType: 3
+      Path: McSpookyJam2020\Monster\Play_Monster_Emerge
+      maxAttenuation: 0
+      maxDuration: 2.676875
+      minDuration: 2.676875
     - name: Play_Monster_Footsteps
       guid: 3e953d98c8b33943b17f38b7f09cef09
       id: 3704879888
@@ -547,8 +561,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: McSpookyJam2020\Monster\Play_Monster_Footsteps
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 1.076167
+      minDuration: 1.049792
     - name: Play_Monster_Hiss
       guid: 8e28ff72e02aab4aa06b8162f5c67218
       id: 2620845016
@@ -609,17 +623,31 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.888062
       minDuration: 0.5855
-    - name: Play_Player_Footsteps
-      guid: c2eae5d3146d7f43811b29ff59ee19ed
-      id: 98439365
+    - name: Play_Player_Footsteps_Gravel
+      guid: d5d56b6336694c4f86180d0c2118bfae
+      id: 2793391981
       PathAndIcons:
       - ElementName: McSpookyJam2020
         ObjectType: 12
       - ElementName: Player
         ObjectType: 4
-      - ElementName: Play_Player_Footsteps
+      - ElementName: Play_Player_Footsteps_Gravel
         ObjectType: 3
-      Path: McSpookyJam2020\Player\Play_Player_Footsteps
+      Path: McSpookyJam2020\Player\Play_Player_Footsteps_Gravel
+      maxAttenuation: 0
+      maxDuration: 1.973605
+      minDuration: 1.787067
+    - name: Play_Player_Footsteps_Wood
+      guid: c2eae5d3146d7f43811b29ff59ee19ed
+      id: 1323502295
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Play_Player_Footsteps_Wood
+        ObjectType: 3
+      Path: McSpookyJam2020\Player\Play_Player_Footsteps_Wood
       maxAttenuation: 0
       maxDuration: 0.662188
       minDuration: 0.419273
@@ -634,9 +662,9 @@ MonoBehaviour:
       - ElementName: Play_Ritual_Circle
         ObjectType: 3
       Path: McSpookyJam2020\AMB\Play_Ritual_Circle
-      maxAttenuation: 50
-      maxDuration: 17
-      minDuration: 17
+      maxAttenuation: 13
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Stinger
       guid: ec8a84b56a132e42994b6e7bf6607dab
       id: 754369548
@@ -974,9 +1002,6 @@ MonoBehaviour:
   - /McSpookyJam2020_WwiseProject
   - /McSpookyJam2020_WwiseProject/Events
   - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020
-  - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020/AMB
-  - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020/Music
-  - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020/Player
-  - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020/UI
+  - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020/Monster
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
