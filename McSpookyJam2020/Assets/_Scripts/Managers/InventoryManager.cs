@@ -89,7 +89,7 @@ public class InventoryManager : SceneSingleton<InventoryManager>
     public void CollectHagueLetter(int letterIndex)
     {
         bool hadLetters = hasLetters;
-        int beforeCount = GetHagueLetterCount();
+        //int beforeCount = GetHagueLetterCount();
         hagueLettersCollectedFlags[letterIndex] = true;
         
         int count = GetHagueLetterCount();
