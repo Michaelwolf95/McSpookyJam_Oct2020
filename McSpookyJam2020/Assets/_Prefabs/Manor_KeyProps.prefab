@@ -326,6 +326,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[Card] The Night Painting'
       objectReference: {fileID: 0}
+    - target: {fileID: 3814397232389109659, guid: 736a6640ea193db4cafd30e9e3ba39a8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3814397232389109660, guid: 736a6640ea193db4cafd30e9e3ba39a8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -759,7 +764,7 @@ PrefabInstance:
     - target: {fileID: 3269805837990872628, guid: 235f0a6643154404098722f3ad5cd6a4,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 235f0a6643154404098722f3ad5cd6a4, type: 3}

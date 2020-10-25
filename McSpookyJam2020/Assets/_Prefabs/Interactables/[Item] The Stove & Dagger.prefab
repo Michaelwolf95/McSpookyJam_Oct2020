@@ -212,6 +212,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5448588628452002717}
+  - component: {fileID: 3360941856448503469}
   m_Layer: 0
   m_Name: '[Item] The Stove & Dagger'
   m_TagString: Untagged
@@ -237,6 +238,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3360941856448503469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6734877720332322674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b9e8db3ebb44ac39f890cefac6a6e27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reticle: {fileID: 8424485319590251305}
+  interactReticleType: 2
+  visibleAngleRange: {x: 180, y: 210}
+  InteractStartAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  InteractEndAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  OnInteractStart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  flowchartPrefab: {fileID: 8786675518878862360, guid: 0bb72c60c0e6e194680bf8c08b2c5a81,
+    type: 3}
+  exitOnEscapeInput: 0
+  daggerObject: {fileID: 6086305142223672697}
 --- !u!1001 &3882164770822804937
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -312,3 +346,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3882164770822804937}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8424485319590251305 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4686541359359090400, guid: 3be365ddfd146d743bfd9261c670d56f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3882164770822804937}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca16afeb68054b9e9084314cfaff661c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

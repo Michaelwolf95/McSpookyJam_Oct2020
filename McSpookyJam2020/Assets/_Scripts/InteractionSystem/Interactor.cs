@@ -18,7 +18,12 @@ public class Interactor : MonoBehaviour
     private bool isInteracting => currentInteractionTarget != null;
     
     private Transform viewOrigin => mainCamera.transform;
-    
+
+    private bool canInteract
+    {
+        get { return GameManager.instance.IsPlayerInMenu == false; }
+    }
+
     public Action onBeginInteractionEvent = delegate {  };
     public Action onFinishInteractionEvent = delegate {  };
     
@@ -29,7 +34,7 @@ public class Interactor : MonoBehaviour
 
     private void Update()
     {
-        if (isInteracting == false)
+        if (isInteracting == false && canInteract)
         {
             if (currentPointerTarget != null)
             {
