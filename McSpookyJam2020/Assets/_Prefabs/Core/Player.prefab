@@ -434,7 +434,8 @@ MonoBehaviour:
   basementFootSteps:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 475e4c33105825c449953ecfbc51bdec,
+      type: 2}
   stairsFloorMaterial: {fileID: 0}
   stairsFootSteps:
     idInternal: 0

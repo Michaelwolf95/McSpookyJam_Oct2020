@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 51eb5fc2f1048ab46b925719e243f403, type: 3}
-  m_Name: D3E5EAC2-6D14-437F-811B-29FF59EE19ED
+  m_Name: 636BD5D5-6936-4F4C-8618-0D0C2118BFAE
   m_EditorClassIdentifier: 
-  objectName: Play_Player_Footsteps_Wood
-  id: 1323502295
-  guid: D3E5EAC2-6D14-437F-811B-29FF59EE19ED
+  objectName: Play_Player_Footsteps_Gravel
+  id: 2793391981
+  guid: 636BD5D5-6936-4F4C-8618-0D0C2118BFAE
