@@ -59,6 +59,7 @@ public class VictoryMenu : MonoBehaviour
 
     private void OnQuitToTitlePressed()
     {
+        ToggleMenuInteractable(false);
         StartCoroutine(MenuTweenEffects.ScalePressEffect((RectTransform)quitButton.transform, () =>
         {
             this.DoTween(lerp =>
@@ -66,8 +67,9 @@ public class VictoryMenu : MonoBehaviour
                 buttonCanvasGroup.alpha = Mathf.Lerp(1f, 0f,lerp);
             }, ()=>
             {
+                ToggleMenuInteractable(true);
                 SceneManager.LoadScene(GameManager.MAIN_MENU_SCENE_INDEX);
-            }, 1f);
+            }, 0.5f);
         }));
     }
 }
