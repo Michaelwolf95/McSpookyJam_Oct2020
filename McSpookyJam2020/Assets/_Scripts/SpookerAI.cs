@@ -37,8 +37,8 @@ public class SpookerAI : LightReactor
 
     //private static float MIN_FLOOR_HEIGHT = 1f;
 
-    private static float MIN_FEAR_TIME = 5f;
-    private static float MAX_FEAR_TIME = 15f;
+    private static float MIN_FEAR_TIME = 8f;
+    private static float MAX_FEAR_TIME = 20f;
 
     private bool readyToUnHide = false;
     
@@ -146,6 +146,14 @@ public class SpookerAI : LightReactor
         ChangeState(SpookerState.Disabled);
     }
 
+    public void EnableController()
+    {
+        if (currentState == SpookerState.Disabled)
+        {
+            ChangeState(SpookerState.Following);
+        }
+    }
+
     private void RunAway()
     {
         Vector3 toTargetVector = (target.position - transform.position);
@@ -241,6 +249,12 @@ public class SpookerAI : LightReactor
                 readyToUnHide = false;
                 visualRoot.SetActive(false);
                 AssignAgentStateParams(fearedStateParams);
+                
+                this.InvokeAction((() =>
+                {
+                    readyToUnHide = true;
+                    //ChangeState(SpookerState.Following);
+                }), Random.Range(MIN_FEAR_TIME, MAX_FEAR_TIME));
                 break;
             default:
                 throw new ArgumentOutOfRangeException();
@@ -310,11 +324,7 @@ public class SpookerAI : LightReactor
         
 
         // ToDo: Stop for a moment first?
-        this.InvokeAction((() =>
-        {
-            readyToUnHide = true;
-            //ChangeState(SpookerState.Following);
-        }), Random.Range(MIN_FEAR_TIME, MAX_FEAR_TIME));
+        
     }
 
     public override void OnExitLight()

@@ -782,6 +782,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="SX_MCJ2020_AMB_BED_DAY_TIME (1)" ID="{CBEDA160-882B-4F80-8867-0946FB2AFA18}" ShortID="264826034">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
@@ -803,17 +810,11 @@
 										<ActiveSource Name="SX_MCJ2020_AMB_BED_DAY_TIME (1)" ID="{15962B07-BDD9-40BF-9BED-B5B455B8835C}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="SX_MCJ2020_AMB_BED_NIGHT_01 (2)" ID="{01141C5C-6EFD-4E21-8373-748AD2615BEE}" ShortID="240557202">
+								<Sound Name="SX_MCJ2020_AMB_BED_NIGHT_2" ID="{62C46205-4F16-4EF7-AD7E-F408CF7EFD2E}" ShortID="101189659">
 									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="IsNonCachable" Type="bool">
+										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="IsStreamingEnabled" Type="bool">
-											<ValueList>
-												<Value>True</Value>
+												<Value>-9</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -826,16 +827,16 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="SX_MCJ2020_AMB_BED_NIGHT_01 (2)" ID="{AA42104D-C284-4635-967E-F801B8BEBDE7}">
+										<AudioFileSource Name="SX_MCJ2020_AMB_BED_NIGHT_2" ID="{93A615BD-2EE7-424C-A9E9-6099A2CFD689}">
 											<Language>SFX</Language>
-											<AudioFile>SX_MCJ2020_AMB_BED_NIGHT_01 (2).wav</AudioFile>
+											<AudioFile>SX_MCJ2020_AMB_BED_NIGHT_2.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="211217863"/>
+												<MediaID ID="367532107"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="SX_MCJ2020_AMB_BED_NIGHT_01 (2)" ID="{AA42104D-C284-4635-967E-F801B8BEBDE7}" Platform="Linked"/>
+										<ActiveSource Name="SX_MCJ2020_AMB_BED_NIGHT_2" ID="{93A615BD-2EE7-424C-A9E9-6099A2CFD689}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -855,14 +856,14 @@
 											<CrossfadingInfo>
 												<LeftEdgePos>0</LeftEdgePos>
 												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>0.909935863874345</RightEdgePos>
+												<RightEdgePos>0.512099644128114</RightEdgePos>
 												<RightFadingMode>Automatic</RightFadingMode>
 											</CrossfadingInfo>
 										</BlendTrackAssoc>
 										<BlendTrackAssoc>
-											<ItemRef Name="SX_MCJ2020_AMB_BED_NIGHT_01 (2)" ID="{01141C5C-6EFD-4E21-8373-748AD2615BEE}"/>
+											<ItemRef Name="SX_MCJ2020_AMB_BED_NIGHT_2" ID="{62C46205-4F16-4EF7-AD7E-F408CF7EFD2E}"/>
 											<CrossfadingInfo>
-												<LeftEdgePos>0.0965850785340314</LeftEdgePos>
+												<LeftEdgePos>0.487188612099644</LeftEdgePos>
 												<LeftFadingMode>Automatic</LeftFadingMode>
 												<RightEdgePos>1</RightEdgePos>
 												<RightFadingMode>Automatic</RightFadingMode>
@@ -2942,42 +2943,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="SFX_UI_Start" ID="{D84AD8F4-C183-4C91-904B-EC17FA203127}" ShortID="248694245">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<SourcePlugin Name="Wwise Silence" ID="{682A6161-7471-4C13-A2C4-15DD45C3C4DB}" ShortID="452917873" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-									<Language>SFX</Language>
-								</SourcePlugin>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Wwise Silence" ID="{682A6161-7471-4C13-A2C4-15DD45C3C4DB}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="SFX_UI_Exit" ID="{D0A07562-7C21-48C2-AB11-8AE7C803401C}" ShortID="914239238">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<SourcePlugin Name="Wwise Silence" ID="{C2982F74-9D69-474C-81F6-42B1F7F1B10F}" ShortID="915949771" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-									<Language>SFX</Language>
-								</SourcePlugin>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Wwise Silence" ID="{C2982F74-9D69-474C-81F6-42B1F7F1B10F}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<RandomSequenceContainer Name="UI_Positive" ID="{E038DEEA-F592-4487-90F0-9779879064FE}" ShortID="183932896">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -3101,94 +3066,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<ActorMixer Name="Spooks" ID="{62349AA6-199C-4807-8D3F-73E66BB6F7FB}" ShortID="784115647">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<RandomSequenceContainer Name="SFX_Footsteps" ID="{77B660C6-9237-43BC-BCB4-C9DE88CF961F}" ShortID="331349470">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
-										</Reference>
-									</ReferenceList>
-								</RandomSequenceContainer>
-								<ActorMixer Name="SFX_Stingers" ID="{7DBCC51B-43CF-4D34-9F5E-8F21C044E4F8}" ShortID="755552950">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="SFX_Stinger" ID="{33F1C692-04E2-45A7-9314-950FAFE4F44A}" ShortID="48874144">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<SourcePlugin Name="Wwise Silence" ID="{33E9E1E8-D653-4576-9781-8930159DA1A4}" ShortID="764598772" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-													<Language>SFX</Language>
-												</SourcePlugin>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Wwise Silence" ID="{33E9E1E8-D653-4576-9781-8930159DA1A4}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</ActorMixer>
-								<Sound Name="SFX_Ghost_Jolt" ID="{E9D18DE2-3BA1-4B63-A5F3-AC821627BD80}" ShortID="709694086">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<SourcePlugin Name="Wwise Silence" ID="{784B42D7-BC51-47AF-B6D9-D9962093042A}" ShortID="747678343" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-											<Language>SFX</Language>
-										</SourcePlugin>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Wwise Silence" ID="{784B42D7-BC51-47AF-B6D9-D9962093042A}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="SFX_Lights_Out" ID="{78584AB4-CEB6-4D59-955A-BDB59174E567}" ShortID="296636313">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<SourcePlugin Name="Wwise Silence" ID="{D0E3C77B-5BDD-405E-8C1A-DFC0C7F69332}" ShortID="1019720133" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-											<Language>SFX</Language>
-										</SourcePlugin>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Wwise Silence" ID="{D0E3C77B-5BDD-405E-8C1A-DFC0C7F69332}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</ActorMixer>
 						<ActorMixer Name="Game_Endings" ID="{631E7982-4C57-4BD2-B2A3-6008765C64D6}" ShortID="91450657">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -3199,28 +3076,6 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="SFX_Game_Start_Light_Switch" ID="{70AF012E-F492-4077-B25D-A696059C5350}" ShortID="765517393">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SFX_Game_Start_Light_Switch" ID="{ECFD6450-FA9A-48E0-BA47-202813C7484F}">
-											<Language>SFX</Language>
-											<AudioFile>SFX_Game_Start_Light_Switch.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="921245797"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SFX_Game_Start_Light_Switch" ID="{ECFD6450-FA9A-48E0-BA47-202813C7484F}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="SFX_Game_End" ID="{BB526512-0B6A-48C3-B887-09B37FA45648}" ShortID="147464056">
 									<PropertyList>
 										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
@@ -3254,28 +3109,6 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="SFX_Game_End" ID="{D6F6ED00-CD16-42B7-9AE0-BA2B11D14D32}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="SFX_Game_Start_Candle" ID="{1134E4A1-4A01-4458-AF29-6B022E57397A}" ShortID="413809010">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SFX_Game_Start_Candle" ID="{60AA4955-5EF9-4046-ADB7-CF9821985537}">
-											<Language>SFX</Language>
-											<AudioFile>SFX_Game_Start_Candle.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="197720328"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SFX_Game_Start_Candle" ID="{60AA4955-5EF9-4046-ADB7-CF9821985537}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="SFX_Game_Start_Candle_Trem" ID="{69E99071-C8BB-4888-9F43-0982F194F4B7}" ShortID="1054831032">
