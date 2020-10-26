@@ -1,4 +1,5 @@
-﻿using MichaelWolfGames;
+﻿using System;
+using MichaelWolfGames;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -6,14 +7,21 @@ using UnityEngine.UI;
 
 public class PauseMenuManager : MonoBehaviour
 {
-    [SerializeField] Button resumeButton;
-    [SerializeField] Button mainMenuButton;
-    [SerializeField] GameObject pauseMenuPanel;
-    [SerializeField] KeyCode _pauseButton;
-    
+    [SerializeField] Button resumeButton = null;
+    [SerializeField] Button mainMenuButton = null;
+    [SerializeField] CanvasGroup pauseMenuPanel = null;
+    [SerializeField] CanvasGroup fadeOutPanel = null;
+    [SerializeField] KeyCode pauseKey = KeyCode.Escape;
+
+    private void Start()
+    {
+        fadeOutPanel.alpha = 0f;
+        fadeOutPanel.gameObject.SetActive(false);
+    }
+
     private void Update()
     {
-        if(Input.GetKey(_pauseButton) && GameManager.instance.IsPlayerInMenu == false)
+        if(Input.GetKey(pauseKey) && GameManager.instance.IsPlayerInMenu == false)
         {
             PauseGame();
         }
@@ -21,7 +29,8 @@ public class PauseMenuManager : MonoBehaviour
 
     void PauseGame()
     {
-        pauseMenuPanel.SetActive(true);
+        pauseMenuPanel.gameObject.SetActive(true);
+        pauseMenuPanel.alpha = 1f;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 0;
@@ -48,7 +57,7 @@ public class PauseMenuManager : MonoBehaviour
         StartCoroutine(MenuTweenEffects.ScalePressEffect((RectTransform)resumeButton.transform, () =>
         {
             ToggleButtonsInteractive(true);
-            pauseMenuPanel.SetActive(false);
+            pauseMenuPanel.gameObject.SetActive(false);
             ReturnCursorState();
             GameManager.instance.IsPlayerInMenu = false;
             Time.timeScale = 1;
@@ -58,11 +67,22 @@ public class PauseMenuManager : MonoBehaviour
     public void ReturnToMainMenu()
     {
         ToggleButtonsInteractive(false);
-        StartCoroutine(MenuTweenEffects.ScalePressEffect((RectTransform)mainMenuButton.transform, () =>
+        StartCoroutine(MenuTweenEffects.ScalePressEffect((RectTransform)mainMenuButton.transform, null, 1.25f, 1f, 0f, true));
+        
+        fadeOutPanel.alpha = 0f;
+        fadeOutPanel.gameObject.SetActive(true);
+        
+        this.DoTween(lerp =>
+        {
+            fadeOutPanel.alpha = Mathf.Lerp(0f, 1f, lerp);
+            pauseMenuPanel.alpha = Mathf.Lerp(1f, 0f, lerp);
+        }, (() =>
         {
             Time.timeScale = 1;
             SceneManager.LoadScene(GameManager.MAIN_MENU_SCENE_INDEX);
-        }, 1.25f, 1f, 0.25f, true));
+            
+        }), 1f, 0.5f, EaseType.linear, true);
+        
         //StartCoroutine(PauseButtonPress(mainMenuButton, 1));
     }
 

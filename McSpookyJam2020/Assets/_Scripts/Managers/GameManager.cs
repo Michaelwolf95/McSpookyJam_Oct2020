@@ -15,6 +15,7 @@ public class GameManager : SceneSingleton<GameManager>
     public SpookerAI monsterController;
 
     public CanvasGroup attackEffectCanvasGroup = null;
+    public CanvasGroup fadeEffectCanvasGroup = null;
 
     public GameOverMenu gameOverMenu = null;
     public VictoryMenu victoryMenu = null;
@@ -117,6 +118,12 @@ public class GameManager : SceneSingleton<GameManager>
         PlayMusic.Post(gameObject);
         Day.SetValue(gameObject);
         // ToDo: Ambiance start
+        
+        this.DoTween(lerp =>
+        {
+            fadeEffectCanvasGroup.alpha = Mathf.Lerp(1f, 0f, lerp);
+        }, null, 1f, 0f, EaseType.linear);
+        
     }
 
     public void OnEnterInvestigationCardScreen()
