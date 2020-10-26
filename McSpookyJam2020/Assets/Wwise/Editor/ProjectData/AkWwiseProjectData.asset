@@ -95,7 +95,7 @@ MonoBehaviour:
     ParentPath: McSpookyJam2020
     guid: 8a512b1a5243214c9bfc30890d9ea72b
     GuidInternal: 
-    m_lastTime: -8585979183839349019
+    m_lastTime: -8585979168874306244
     List:
     - name: AMB
       guid: d0e6c28b7fe1e34d941ccf3250b43293
@@ -475,6 +475,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.654054
       minDuration: 0.5231
+    - name: Play_Main_Menu_Fade
+      guid: 05329f54f3146441a1135fbf25d7cfe4
+      id: 656855882
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Main_Menu_Fade
+        ObjectType: 3
+      Path: McSpookyJam2020\UI\Play_Main_Menu_Fade
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Metal_Door_Close
       guid: c856246e502bfb4aa43a034604fdde98
       id: 2167123887
@@ -667,6 +681,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.973605
       minDuration: 1.787067
+    - name: Play_Player_Footsteps_Stairs
+      guid: 55d78589e4e2e04eb90e23599ffa71d1
+      id: 1934534490
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Play_Player_Footsteps_Stairs
+        ObjectType: 3
+      Path: McSpookyJam2020\Player\Play_Player_Footsteps_Stairs
+      maxAttenuation: 0
+      maxDuration: 0.303906
+      minDuration: 0.246249
     - name: Play_Player_Footsteps_Wood
       guid: c2eae5d3146d7f43811b29ff59ee19ed
       id: 1323502295
@@ -1107,7 +1135,6 @@ MonoBehaviour:
   - /McSpookyJam2020_WwiseProject/Events
   - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020
   - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020/AMB
-  - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020/Monster
   - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020/UI
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

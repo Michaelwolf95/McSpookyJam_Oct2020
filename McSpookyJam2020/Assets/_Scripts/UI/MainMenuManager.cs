@@ -10,6 +10,7 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private AK.Wwise.Event startButtonSound = null;
     [SerializeField] private AK.Wwise.Event creditButtonSoundOpen = null;
     [SerializeField] private AK.Wwise.Event creditButtonSoundClose = null;
+    [SerializeField] private AK.Wwise.Event menuFade = null;
 
     [SerializeField] private Button startButton = null;
     [SerializeField] private Button quitButton = null;
@@ -36,8 +37,10 @@ public class MainMenuManager : MonoBehaviour
         creditsPanel.gameObject.SetActive(false);
 
         ToggleButtonInteraction(false);
+        menuFade.Post(gameObject);
         this.DoTween(lerp => { rootCanvasGroup.alpha = Mathf.Lerp(0f, 1f, lerp); }, (() =>
         {
+            
             this.DoTween(lerp => { buttonsCanvasGroup.alpha = Mathf.Lerp(0f, 1f, lerp); }, (() =>
             {
                 ToggleButtonInteraction(true);

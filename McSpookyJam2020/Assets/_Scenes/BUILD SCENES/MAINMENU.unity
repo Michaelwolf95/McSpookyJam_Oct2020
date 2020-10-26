@@ -1362,6 +1362,11 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: c28732dd76b57c443a610866d075941d,
       type: 2}
+  menuFade:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e1c3a106cc07ef1428d276985ce993c2,
+      type: 2}
   startButton: {fileID: 341065840}
   quitButton: {fileID: 596323196}
   creditsButton: {fileID: 383051782}

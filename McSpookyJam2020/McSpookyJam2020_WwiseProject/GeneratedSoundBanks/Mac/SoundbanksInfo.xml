@@ -9,6 +9,10 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
+		<File Id="33140151" Language="SFX">
+			<ShortName>SFX_Menu_Loop.wav</ShortName>
+			<Path>SFX\SFX_Menu_Loop_D79FB2B7.wem</Path>
+		</File>
 		<File Id="211217863" Language="SFX">
 			<ShortName>SX_MCJ2020_AMB_BED_NIGHT_01 (2).wav</ShortName>
 			<Path>SFX\SX_MCJ2020_AMB_BED_NIGHT_01 (2)_D79FB2B7.wem</Path>
@@ -29,7 +33,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4190601618" Language="SFX" Hash="929098833">
+		<SoundBank Id="4190601618" Language="SFX" Hash="71709327">
 			<ObjectPath>\SoundBanks\McSpookyJam2020\McSpookyJam2020</ObjectPath>
 			<ShortName>McSpookyJam2020</ShortName>
 			<Path>McSpookyJam2020.bnk</Path>
@@ -154,6 +158,14 @@
 							<Path>SFX\SFX_Door_Knob_Locked_Start_01_D1F8106E.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="656855882" Name="Play_Main_Menu_Fade" ObjectPath="\Events\McSpookyJam2020\UI\Play_Main_Menu_Fade" DurationType="Infinite">
+					<ReferencedStreamedFiles>
+						<File Id="33140151" Language="SFX">
+							<ShortName>SFX_Menu_Loop.wav</ShortName>
+							<Path>SFX\SFX_Menu_Loop_D79FB2B7.wem</Path>
+						</File>
+					</ReferencedStreamedFiles>
 				</Event>
 				<Event Id="2167123887" Name="Play_Metal_Door_Close" ObjectPath="\Events\McSpookyJam2020\Interactables\Doors\Play_Metal_Door_Close" DurationType="OneShot" DurationMin="1.731292" DurationMax="1.731292">
 					<IncludedMemoryFiles>
@@ -290,6 +302,34 @@
 						<File Id="1047672898" Language="SFX">
 							<ShortName>SFX_Player_Gravel_Footsteps_03.wav</ShortName>
 							<Path>SFX\SFX_Player_Gravel_Footsteps_03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1934534490" Name="Play_Player_Footsteps_Stairs" ObjectPath="\Events\McSpookyJam2020\Player\Play_Player_Footsteps_Stairs" DurationType="OneShot" DurationMin="0.246249" DurationMax="0.303906">
+					<IncludedMemoryFiles>
+						<File Id="91127603" Language="SFX">
+							<ShortName>SFX_Creaky_Footstep_Light_Run_01.wav</ShortName>
+							<Path>SFX\SFX_Creaky_Footstep_Light_Run_01_10C4C929.wem</Path>
+						</File>
+						<File Id="280693503" Language="SFX">
+							<ShortName>SFX_Creaky_Footstep_Light_Run_03.wav</ShortName>
+							<Path>SFX\SFX_Creaky_Footstep_Light_Run_03_10C4C929.wem</Path>
+						</File>
+						<File Id="367823420" Language="SFX">
+							<ShortName>SFX_Creaky_Footstep_Light_Run_04.wav</ShortName>
+							<Path>SFX\SFX_Creaky_Footstep_Light_Run_04_10C4C929.wem</Path>
+						</File>
+						<File Id="710010088" Language="SFX">
+							<ShortName>SFX_Creaky_Footstep_Light_Run_06.wav</ShortName>
+							<Path>SFX\SFX_Creaky_Footstep_Light_Run_06_10C4C929.wem</Path>
+						</File>
+						<File Id="737542485" Language="SFX">
+							<ShortName>SFX_Creaky_Footstep_Light_Run_05.wav</ShortName>
+							<Path>SFX\SFX_Creaky_Footstep_Light_Run_05_10C4C929.wem</Path>
+						</File>
+						<File Id="979357900" Language="SFX">
+							<ShortName>SFX_Creaky_Footstep_Light_Run_02.wav</ShortName>
+							<Path>SFX\SFX_Creaky_Footstep_Light_Run_02_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
