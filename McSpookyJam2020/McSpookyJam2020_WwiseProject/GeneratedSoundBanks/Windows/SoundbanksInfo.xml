@@ -13,6 +13,10 @@
 			<ShortName>SX_MCJ2020_AMB_BED_NIGHT_01 (2).wav</ShortName>
 			<Path>SFX\SX_MCJ2020_AMB_BED_NIGHT_01 (2)_D79FB2B7.wem</Path>
 		</File>
+		<File Id="415823821" Language="SFX">
+			<ShortName>SFX_Clock-001.wav</ShortName>
+			<Path>SFX\SFX_Clock-001_D79FB2B7.wem</Path>
+		</File>
 		<File Id="621486811" Language="SFX">
 			<ShortName>SFX_Demon_Circle_Loop_01.wav</ShortName>
 			<Path>SFX\SFX_Demon_Circle_Loop_01_A472F907.wem</Path>
@@ -29,7 +33,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4190601618" Language="SFX" Hash="1034171825">
+		<SoundBank Id="4190601618" Language="SFX" Hash="3900498072">
 			<ObjectPath>\SoundBanks\McSpookyJam2020\McSpookyJam2020</ObjectPath>
 			<ShortName>McSpookyJam2020</ShortName>
 			<Path>McSpookyJam2020.bnk</Path>
@@ -53,6 +57,24 @@
 						<File Id="954993177" Language="SFX">
 							<ShortName>SFX_Candle_Loop.wav</ShortName>
 							<Path>SFX\SFX_Candle_Loop_0426DE3A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="154934511" Name="Play_Clock_Emitter" ObjectPath="\Events\McSpookyJam2020\AMB\Play_Clock_Emitter" MaxAttenuation="13.000000" DurationType="Infinite">
+					<ReferencedStreamedFiles>
+						<File Id="415823821" Language="SFX">
+							<ShortName>SFX_Clock-001.wav</ShortName>
+							<Path>SFX\SFX_Clock-001_D79FB2B7.wem</Path>
+						</File>
+					</ReferencedStreamedFiles>
+					<IncludedMemoryFiles>
+						<File Id="399075311" Language="SFX">
+							<ShortName>SFX_Clock-001.wav</ShortName>
+							<Path>SFX\SFX_Clock-001_10C4C929.wem</Path>
+						</File>
+						<File Id="1067417392" Language="SFX">
+							<ShortName>SFX_Clock-002.wav</ShortName>
+							<Path>SFX\SFX_Clock-002_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -237,7 +259,7 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\McSpookyJam2020\Music\Play_Music" DurationType="Infinite"/>
-				<Event Id="1530954351" Name="Play_Piano_Notes" ObjectPath="\Events\McSpookyJam2020\Interactables\Play_Piano_Notes" MaxAttenuation="13.000000" DurationType="OneShot" DurationMin="2.170538" DurationMax="11.530620">
+				<Event Id="1530954351" Name="Play_Piano_Notes" ObjectPath="\Events\McSpookyJam2020\Interactables\Play_Piano_Notes" MaxAttenuation="13.000000" DurationType="OneShot" DurationMin="2.120963" DurationMax="11.800135">
 					<IncludedMemoryFiles>
 						<File Id="18419317" Language="SFX">
 							<ShortName>SFX_Piano_05.wav</ShortName>
@@ -481,7 +503,7 @@
 						</File>
 						<File Id="286675127" Language="SFX">
 							<ShortName>SFX_Creaky_Footstep_Light_03.wav</ShortName>
-							<Path>SFX\SFX_Creaky_Footstep_Light_03_E6E019F1.wem</Path>
+							<Path>SFX\SFX_Creaky_Footstep_Light_03_9BD15B32.wem</Path>
 						</File>
 						<File Id="321291601" Language="SFX">
 							<ShortName>SFX_Creaky_Footstep_Light_04.wav</ShortName>

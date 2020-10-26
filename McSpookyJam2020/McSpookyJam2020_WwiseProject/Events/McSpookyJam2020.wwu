@@ -100,6 +100,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Clock_Emitter" ID="{0930908F-15F5-4963-B413-1DEF7784FF5F}">
+							<ChildrenList>
+								<Action Name="" ID="{7F6C84B0-811D-42F4-AEFE-A266B20316F1}" ShortID="248321521">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Clock_Emitter" ID="{4FDBD735-5047-4E4A-BDFB-4DF6A56AEEF1}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Music" ID="{5F2F1D71-6E6F-468E-B875-F29CFA2ACDBD}" ShortID="1071104331">
