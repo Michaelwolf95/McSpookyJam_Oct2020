@@ -82,6 +82,8 @@ public class FirstPersonAIO : MonoBehaviour
     public PhysicMaterial stairsFloorMaterial;
     public AK.Wwise.Event stairsFootSteps;
 
+    private AK.Wwise.Event lastFootStepEvent = null;
+
     #region Variables
 
     #region Input Settings
@@ -261,6 +263,8 @@ public class FirstPersonAIO : MonoBehaviour
     private void Awake()
     {
         instance = this;
+
+        lastFootStepEvent = groundFloorFootSteps;
         
         #region Look Settings - Awake
         originalRotation = transform.localRotation.eulerAngles;
@@ -695,7 +699,7 @@ public class FirstPersonAIO : MonoBehaviour
                 } else
                 {
 
-                    AK.Wwise.Event footStepEvent = groundFloorFootSteps;
+                    AK.Wwise.Event footStepEvent = lastFootStepEvent;
                     dynamicFootstep.currentClipSet = footStepSounds;
                     if(IsGrounded)
                     {
@@ -1003,7 +1007,8 @@ public class FirstPersonAIO : MonoBehaviour
             EditorGUILayout.PropertyField(basementFootStepsProp);
             EditorGUILayout.PropertyField(stairsFloorMaterialProp);
             EditorGUILayout.PropertyField(stairsFootStepsProp);
-
+            serializedObject.ApplyModifiedProperties();
+            
             SerT.Update();
             EditorGUILayout.Space();
 
