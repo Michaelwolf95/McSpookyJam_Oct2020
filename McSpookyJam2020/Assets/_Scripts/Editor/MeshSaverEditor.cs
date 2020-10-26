@@ -39,8 +39,6 @@ public static class MeshSaverEditor
     
     private static Mesh CreateMeshFromSprite(Sprite sprite)
     {
-        
-        
         List<Vector2> physicsShape = new List<Vector2>();
         sprite.GetPhysicsShape(0, physicsShape);
 
@@ -49,17 +47,12 @@ public static class MeshSaverEditor
  
         // Create the mesh
         Mesh msh = new Mesh();
-        //msh.vertices = vertices;
         msh.vertices = Array.ConvertAll(vertices2D, i => (Vector3)i);
         msh.triangles = tr.Triangulate();
         msh.RecalculateNormals();
         msh.RecalculateBounds();
         return msh;
-        //Mesh mesh = new Mesh();
-//        mesh.vertices = Array.ConvertAll(sprite.vertices, i => (Vector3)i);
-//        mesh.uv = sprite.uv;
-//        mesh.triangles = Array.ConvertAll(sprite.triangles, i => (int)i);
-//        return mesh;
+
     }
 
     public static void SaveMesh (Mesh mesh, string name, bool makeNewInstance, bool optimizeMesh) {
