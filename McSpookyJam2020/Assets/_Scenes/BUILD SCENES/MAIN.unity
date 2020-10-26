@@ -3606,11 +3606,6 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 6df3f821ce419d948a72156b31cb77ac,
       type: 2}
-  GameStart:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: be2958ff5a99f7f4f8bae61a5ac33381,
-      type: 2}
   startWaypoint: {fileID: 261408864}
   studyWaypoint: {fileID: 1241104927}
   ritualWaypoint: {fileID: 620122198}

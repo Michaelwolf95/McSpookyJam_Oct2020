@@ -417,6 +417,206 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Player_Footsteps_Stairs" ID="{39CC373A-18DC-43C4-9A94-95606E4479D1}" ShortID="809596878">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{2E7450D6-5AD0-48F8-960B-615D066B4CFF}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="25"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{3F5A9B9C-FB05-43D7-A513-7D9A84ED094A}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="25"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B8867FD3-ADE5-49FA-916E-0968F4BC3DE9}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="6"/>
+													<Property Name="Min" Type="Real64" Value="-6"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{6779E732-0A1A-4CF8-B2A9-B50B8304D8C5}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="6"/>
+													<Property Name="Min" Type="Real64" Value="-6"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SFX_Creaky_Footstep_Light_Run_01" ID="{7DF45F45-9497-480A-B30C-8EB5E153F582}" ShortID="997765707">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Creaky_Footstep_Light_Run_01" ID="{3B94A5B0-327A-40D1-90D1-967D4C8BDD60}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Creaky_Footstep_Light_Run_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="91127603"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Creaky_Footstep_Light_Run_01" ID="{3B94A5B0-327A-40D1-90D1-967D4C8BDD60}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Creaky_Footstep_Light_Run_02" ID="{DBA9638C-11E8-44A0-B490-9E05E1538C54}" ShortID="264853854">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Creaky_Footstep_Light_Run_02" ID="{BC84A50C-087B-407F-9171-F76665BF0760}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Creaky_Footstep_Light_Run_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="979357900"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Creaky_Footstep_Light_Run_02" ID="{BC84A50C-087B-407F-9171-F76665BF0760}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Creaky_Footstep_Light_Run_03" ID="{284D0818-250B-4377-BD3A-39B4830196DD}" ShortID="724244347">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Creaky_Footstep_Light_Run_03" ID="{3E89A9A9-50F0-4596-84F5-9ABF32C11A32}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Creaky_Footstep_Light_Run_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="280693503"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Creaky_Footstep_Light_Run_03" ID="{3E89A9A9-50F0-4596-84F5-9ABF32C11A32}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Creaky_Footstep_Light_Run_04" ID="{072F9052-CE42-473D-899A-1C888FE27B28}" ShortID="474845394">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Creaky_Footstep_Light_Run_04" ID="{CD826115-A5EA-4D7C-8EBE-D0196785096E}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Creaky_Footstep_Light_Run_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="367823420"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Creaky_Footstep_Light_Run_04" ID="{CD826115-A5EA-4D7C-8EBE-D0196785096E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Creaky_Footstep_Light_Run_05" ID="{E2D48F5E-5962-48D2-88DD-69D452856094}" ShortID="1007899144">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Creaky_Footstep_Light_Run_05" ID="{A727FB81-0AF0-4E81-8C06-F1E3B980FBDF}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Creaky_Footstep_Light_Run_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="737542485"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Creaky_Footstep_Light_Run_05" ID="{A727FB81-0AF0-4E81-8C06-F1E3B980FBDF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Creaky_Footstep_Light_Run_06" ID="{04788C3F-26E1-4B30-91B2-8DEDC396560C}" ShortID="371206715">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Creaky_Footstep_Light_Run_06" ID="{E8489069-079A-432F-93A9-9B129453C28C}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Creaky_Footstep_Light_Run_06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="710010088"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Creaky_Footstep_Light_Run_06" ID="{E8489069-079A-432F-93A9-9B129453C28C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="AMB" ID="{900EA2EA-950F-45C6-B348-FC418965FC5C}" ShortID="459936357">
@@ -895,7 +1095,7 @@
 								<ActiveSource Name="SFX_Candle_Loop" ID="{E2C3D143-B118-4461-B538-A0B88DF13C5D}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="SFX_Demon_Circle_Loop_01" ID="{1414DA0B-C296-43C7-8D96-E088AEAB9AEE}" ShortID="787746200">
+						<Sound Name="SFX_Demon_Circle_Loop" ID="{1414DA0B-C296-43C7-8D96-E088AEAB9AEE}" ShortID="787746200">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
@@ -1866,6 +2066,49 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Sound Name="UI_Menu_Fade" ID="{3F49B057-3577-4752-99F7-852DF6711886}" ShortID="861323507">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="IsNonCachable" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Ritual_Circle" ID="{333E6A25-8BB8-4A64-9078-88511DDEB7FB}" WorkUnitID="{F32252A7-4CE2-401C-8678-610304B95E23}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Demon_Circle_Loop_01" ID="{2DE41277-6025-495E-AB32-9D2F3907B8C9}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="15.9453474874871"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>SFX_Demon_Circle_Loop_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="621486811"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Demon_Circle_Loop_01" ID="{2DE41277-6025-495E-AB32-9D2F3907B8C9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="SFXs" ID="{FBDB3C29-3D46-45D1-BB72-7D9C81B7A2AF}" ShortID="526113402">

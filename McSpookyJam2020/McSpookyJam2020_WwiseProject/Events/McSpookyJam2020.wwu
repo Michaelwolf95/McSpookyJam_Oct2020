@@ -27,6 +27,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Player_Footsteps_Stairs" ID="{8985D755-E2E4-4EE0-B90E-23599FFA71D1}">
+							<ChildrenList>
+								<Action Name="" ID="{28400A73-E59F-4CE9-9573-75F512D49E60}" ShortID="856862822">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Footsteps_Stairs" ID="{39CC373A-18DC-43C4-9A94-95606E4479D1}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="AMB" ID="{8BC2E6D0-E17F-4DE3-941C-CF3250B43293}" ShortID="246715335">
@@ -72,7 +83,7 @@
 								<Action Name="" ID="{0F0B7CDC-7FF4-455F-93A7-4625F64DE326}" ShortID="718081210">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_Demon_Circle_Loop_01" ID="{1414DA0B-C296-43C7-8D96-E088AEAB9AEE}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+											<ObjectRef Name="SFX_Demon_Circle_Loop" ID="{1414DA0B-C296-43C7-8D96-E088AEAB9AEE}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -162,6 +173,20 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="UI_Positive" ID="{E038DEEA-F592-4487-90F0-9779879064FE}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Main_Menu_Fade" ID="{549F3205-14F3-4164-A113-5FBF25D7CFE4}">
+							<ChildrenList>
+								<Action Name="" ID="{DBB055D8-3FF3-465F-9BC2-D8F823367D9A}" ShortID="108265849">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Menu_Fade" ID="{3F49B057-3577-4752-99F7-852DF6711886}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -422,6 +447,17 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{CF5BD20A-32D4-469C-8503-12E712DE4A20}" ShortID="781876803">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMB_Loop" ID="{61DF19DF-23EB-4889-81A8-213FC45730EA}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 										<Action Name="" ID="{10837146-21D2-4EDC-9A9E-F3BE13ECC4BB}" ShortID="439155615">
 											<ReferenceList>
 												<Reference Name="Target">
@@ -565,6 +601,7 @@
 								<Action Name="" ID="{D8EE7366-1C80-4FAA-B0D6-2AAC257A9BA0}" ShortID="796688614">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">

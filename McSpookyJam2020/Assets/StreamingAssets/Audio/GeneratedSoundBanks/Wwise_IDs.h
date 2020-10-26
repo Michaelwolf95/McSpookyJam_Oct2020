@@ -28,6 +28,7 @@ namespace AK
         static const AkUniqueID PLAY_LIGHT_SWITCH_ON = 82250835U;
         static const AkUniqueID PLAY_LIGHTS_OUT = 3933447040U;
         static const AkUniqueID PLAY_LOCKED_DOOR = 281597619U;
+        static const AkUniqueID PLAY_MAIN_MENU_FADE = 656855882U;
         static const AkUniqueID PLAY_METAL_DOOR_CLOSE = 2167123887U;
         static const AkUniqueID PLAY_METAL_DOOR_OPEN = 2617923177U;
         static const AkUniqueID PLAY_MONSTER_ATTACK = 864033359U;
@@ -41,6 +42,7 @@ namespace AK
         static const AkUniqueID PLAY_PICKUP_KEY = 3768549418U;
         static const AkUniqueID PLAY_PICKUP_NOTE = 2216405837U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_GRAVEL = 2793391981U;
+        static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_STAIRS = 1934534490U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_WOOD = 1323502295U;
         static const AkUniqueID PLAY_RITUAL_CIRCLE = 1733092070U;
         static const AkUniqueID PLAY_STINGER = 754369548U;
