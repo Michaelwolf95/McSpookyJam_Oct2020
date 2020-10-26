@@ -21,7 +21,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4190601618" Language="SFX" Hash="3394113630">
+		<SoundBank Id="4190601618" Language="SFX" Hash="1135167076">
 			<ObjectPath>\SoundBanks\McSpookyJam2020\McSpookyJam2020</ObjectPath>
 			<ShortName>McSpookyJam2020</ShortName>
 			<Path>McSpookyJam2020.bnk</Path>
@@ -179,6 +179,14 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="1099225839" Name="Play_Monster_Attack_Complete" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Attack_Complete" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
+				<Event Id="255750022" Name="Play_Monster_Dying" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Dying" DurationType="OneShot" DurationMin="19.703459" DurationMax="19.703459">
+					<IncludedMemoryFiles>
+						<File Id="706906272" Language="SFX">
+							<ShortName>SFX_Monster_Dying_01.wav</ShortName>
+							<Path>SFX\SFX_Monster_Dying_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3611802004" Name="Play_Monster_Emerge" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Emerge" DurationType="OneShot" DurationMin="2.676875" DurationMax="2.676875">
 					<IncludedMemoryFiles>
 						<File Id="730490238" Language="SFX">
@@ -220,6 +228,14 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\McSpookyJam2020\Music\Play_Music" DurationType="Infinite"/>
+				<Event Id="2380307491" Name="Play_Pickup_Dagger" ObjectPath="\Events\McSpookyJam2020\Interactables\Pickups\Play_Pickup_Dagger" DurationType="OneShot" DurationMin="0.701854" DurationMax="0.701854">
+					<IncludedMemoryFiles>
+						<File Id="941419923" Language="SFX">
+							<ShortName>SFX_Pickup_Dagger.wav</ShortName>
+							<Path>SFX\SFX_Pickup_Dagger_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3768549418" Name="Play_Pickup_Key" ObjectPath="\Events\McSpookyJam2020\Interactables\Pickups\Play_Pickup_Key" DurationType="OneShot" DurationMin="0.228188" DurationMax="0.228188">
 					<IncludedMemoryFiles>
 						<File Id="43030366" Language="SFX">
@@ -276,7 +292,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1323502295" Name="Play_Player_Footsteps_Wood" ObjectPath="\Events\McSpookyJam2020\Player\Play_Player_Footsteps_Wood" DurationType="OneShot" DurationMin="0.419273" DurationMax="0.662188">
+				<Event Id="1323502295" Name="Play_Player_Footsteps_Wood" ObjectPath="\Events\McSpookyJam2020\Player\Play_Player_Footsteps_Wood" DurationType="OneShot" DurationMin="0.418547" DurationMax="0.663337">
 					<IncludedMemoryFiles>
 						<File Id="112294917" Language="SFX">
 							<ShortName>SFX_Creaky_Footstep_Light_05.wav</ShortName>
@@ -326,6 +342,7 @@
 				<Event Id="429973476" Name="Plya_Monster_Emerge" ObjectPath="\Events\McSpookyJam2020\Music\Plya_Monster_Emerge" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="435770000" Name="Stop_AMB" ObjectPath="\Events\McSpookyJam2020\AMB\Stop_AMB" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1371679529" Name="Stop_Monster_Attack" ObjectPath="\Events\McSpookyJam2020\Monster\Stop_Monster_Attack" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2844697884" Name="Stop_Monster_Dying" ObjectPath="\Events\McSpookyJam2020\Monster\Stop_Monster_Dying" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\McSpookyJam2020\Music\Stop_Music" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<SwitchGroups>

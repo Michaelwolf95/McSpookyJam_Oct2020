@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51eb5fc2f1048ab46b925719e243f403, type: 3}
+  m_Name: F8F1E2E2-8E61-467A-A6D3-F29F0986C8A2
+  m_EditorClassIdentifier: 
+  objectName: Play_Pickup_Dagger
+  id: 2380307491
+  guid: F8F1E2E2-8E61-467A-A6D3-F29F0986C8A2
