@@ -145,6 +145,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_UI_Negative" ID="{C06D720F-139E-4BE7-BDCE-9F0A0252C811}">
+							<ChildrenList>
+								<Action Name="" ID="{18BB97F3-C569-4252-9D9B-367B49455111}" ShortID="1024622532">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Negative" ID="{B1E66439-02C0-4877-BA3C-5930F1BD5F7F}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_UI_Positive" ID="{678B3407-225D-4108-B9AF-E531A1B80C50}">
+							<ChildrenList>
+								<Action Name="" ID="{D70351E7-0DA3-4861-B3B1-3D544D959711}" ShortID="2144634">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Positive" ID="{E038DEEA-F592-4487-90F0-9779879064FE}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Interactables" ID="{91B705B3-A534-4873-BACD-DF5DDFEBC238}" ShortID="701091090">
@@ -311,7 +333,17 @@
 									<ChildrenList>
 										<Event Name="Play_Flashlight_On" ID="{C043C54D-E84D-426F-B73F-0105D551333F}">
 											<ChildrenList>
+												<Action Name="" ID="{6718C003-A9F4-42A6-8481-0B902AE7EA29}" ShortID="375615047">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="SFX_Flashlight_Pickup (1)" ID="{3FB82C76-6280-4CEF-8132-193D26C058ED}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
 												<Action Name="" ID="{0DAC0696-FBD9-4321-A86C-569DB0F7A089}" ShortID="385755043">
+													<PropertyList>
+														<Property Name="Delay" Type="Real64" Value="0.25"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="SFX_Flashlight_On" ID="{B37EFC75-DE37-4874-B533-BD6D3F5B942F}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
@@ -527,6 +559,16 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SFX_Monster_Dying_01" ID="{F2A04275-68C2-441E-B01B-7607F0DEA6BD}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D8EE7366-1C80-4FAA-B0D6-2AAC257A9BA0}" ShortID="796688614">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AMB_Loop" ID="{61DF19DF-23EB-4889-81A8-213FC45730EA}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

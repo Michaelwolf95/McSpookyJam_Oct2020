@@ -86,7 +86,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 1b4e00244ba2a24097d9495a78791aa7
     GuidInternal: 
-    m_lastTime: -8585979955719122223
+    m_lastTime: -8585979206508002971
     List: []
   - PhysicalPath: Events\McSpookyJam2020.wwu
     PathAndIcons:
@@ -95,7 +95,7 @@ MonoBehaviour:
     ParentPath: McSpookyJam2020
     guid: 8a512b1a5243214c9bfc30890d9ea72b
     GuidInternal: 
-    m_lastTime: -8585979893632891777
+    m_lastTime: -8585979183839349019
     List:
     - name: AMB
       guid: d0e6c28b7fe1e34d941ccf3250b43293
@@ -245,8 +245,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: McSpookyJam2020\AMB\Play_AMB
       maxAttenuation: 0
-      maxDuration: Infinity
-      minDuration: 206.76266
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Candle_Emitter
       guid: c8ac593db6023d40b86348eb063eb663
       id: 3207346046
@@ -309,8 +309,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: McSpookyJam2020\Interactables\Lights\Flashlight\Play_Flashlight_On
       maxAttenuation: 0
-      maxDuration: 0.181
-      minDuration: 0.181
+      maxDuration: 0.431
+      minDuration: 0.431
     - name: Play_Game_End
       guid: e76575b7f00c8446aa2d3d666543c263
       id: 2790351818
@@ -535,6 +535,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1
       minDuration: 1
+    - name: Play_Monster_Dying
+      guid: c211957599287949a698b9ff670c9cce
+      id: 255750022
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Monster
+        ObjectType: 4
+      - ElementName: Play_Monster_Dying
+        ObjectType: 3
+      Path: McSpookyJam2020\Monster\Play_Monster_Dying
+      maxAttenuation: 0
+      maxDuration: 19.703459
+      minDuration: 19.703459
     - name: Play_Monster_Emerge
       guid: 54c359117bbff9468d8a0ba0778a79d5
       id: 3611802004
@@ -591,6 +605,22 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Pickup_Dagger
+      guid: e2e2f1f8618e7a46a6d3f29f0986c8a2
+      id: 2380307491
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Interactables
+        ObjectType: 4
+      - ElementName: Pickups
+        ObjectType: 4
+      - ElementName: Play_Pickup_Dagger
+        ObjectType: 3
+      Path: McSpookyJam2020\Interactables\Pickups\Play_Pickup_Dagger
+      maxAttenuation: 0
+      maxDuration: 0.701854
+      minDuration: 0.701854
     - name: Play_Pickup_Key
       guid: 03de141cbc8caa4d8f4d8d4a512e9d5a
       id: 3768549418
@@ -649,8 +679,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: McSpookyJam2020\Player\Play_Player_Footsteps_Wood
       maxAttenuation: 0
-      maxDuration: 0.662188
-      minDuration: 0.419273
+      maxDuration: 0.663337
+      minDuration: 0.318347
     - name: Play_Ritual_Circle
       guid: 2d3f01c74be7af4b867a89b97c000439
       id: 1733092070
@@ -695,6 +725,34 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1
       minDuration: 1
+    - name: Play_UI_Negative
+      guid: 0f726dc09e13e74bbdce9f0a0252c811
+      id: 2519795238
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_UI_Negative
+        ObjectType: 3
+      Path: McSpookyJam2020\UI\Play_UI_Negative
+      maxAttenuation: 0
+      maxDuration: 0.676146
+      minDuration: 0.676146
+    - name: Play_UI_Positive
+      guid: 07348b675d220841b9afe531a1b80c50
+      id: 1098125654
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_UI_Positive
+        ObjectType: 3
+      Path: McSpookyJam2020\UI\Play_UI_Positive
+      maxAttenuation: 0
+      maxDuration: 0.405208
+      minDuration: 0.405208
     - name: Play_UI_Start
       guid: 75cd7226beaad34797e12f7aa4d91de5
       id: 643450781
@@ -709,6 +767,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1
       minDuration: 1
+    - name: Play_Window_Emitter
+      guid: 6272b332e9667241a9f4a7d2bf1d0ac3
+      id: 47410005
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: AMB
+        ObjectType: 4
+      - ElementName: Play_Window_Emitter
+        ObjectType: 3
+      Path: McSpookyJam2020\AMB\Play_Window_Emitter
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Wood_Door_Close
       guid: e0d8a1fca2e84046a98346f41274f6ba
       id: 801816073
@@ -821,6 +893,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Stop_Monster_Dying
+      guid: 44086a31db199f419de090cb4d4d72c9
+      id: 2844697884
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Monster
+        ObjectType: 4
+      - ElementName: Stop_Monster_Dying
+        ObjectType: 3
+      Path: McSpookyJam2020\Monster\Stop_Monster_Dying
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_Music
       guid: 67c740f73f4bc745b75091e36b6c6647
       id: 2837384057
@@ -864,8 +950,17 @@ MonoBehaviour:
     ParentPath: McSpookyJam2020
     guid: 1a01f52acc75544ab9b94a875440e9ee
     GuidInternal: 
-    m_lastTime: -8585985308700158142
-    List: []
+    m_lastTime: -8585979224408851145
+    List:
+    - name: Time
+      guid: 3de844b88b33ce4889021585a7f85125
+      id: 2654366170
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Time
+        ObjectType: 13
+      Path: McSpookyJam2020\Time
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -996,12 +1091,23 @@ MonoBehaviour:
     ParentPath: McSpookyJam2020
     guid: 5e929fe203aec348a2d5403d5958d0e8
     GuidInternal: 
-    m_lastTime: -8585985308699978141
-    List: []
+    m_lastTime: -8585979224402887103
+    List:
+    - name: Time_Change
+      guid: f977bd7bf10291468fa9dbf672f26cc5
+      id: 4130026045
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Time_Change
+        ObjectType: 14
+      Path: McSpookyJam2020\Time_Change
   ExpandedItems:
   - /McSpookyJam2020_WwiseProject
   - /McSpookyJam2020_WwiseProject/Events
   - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020
+  - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020/AMB
   - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020/Monster
+  - /McSpookyJam2020_WwiseProject/Events/McSpookyJam2020/UI
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

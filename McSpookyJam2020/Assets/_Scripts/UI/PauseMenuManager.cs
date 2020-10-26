@@ -7,6 +7,11 @@ using UnityEngine.UI;
 
 public class PauseMenuManager : MonoBehaviour
 {
+    [SerializeField] private AK.Wwise.Event resumeButtonSound;
+    [SerializeField] private AK.Wwise.Event pauseMenuSound;
+    [SerializeField] private AK.Wwise.Event mainMenuSound;
+
+
     [SerializeField] Button resumeButton = null;
     [SerializeField] Button mainMenuButton = null;
     [SerializeField] CanvasGroup pauseMenuPanel = null;
@@ -29,6 +34,7 @@ public class PauseMenuManager : MonoBehaviour
 
     void PauseGame()
     {
+        pauseMenuSound.Post(gameObject);
         pauseMenuPanel.gameObject.SetActive(true);
         pauseMenuPanel.alpha = 1f;
         Cursor.visible = true;
@@ -53,6 +59,7 @@ public class PauseMenuManager : MonoBehaviour
 
     public void ResumeGame()
     {
+        resumeButtonSound.Post(gameObject);
         ToggleButtonsInteractive(false);
         StartCoroutine(MenuTweenEffects.ScalePressEffect((RectTransform)resumeButton.transform, () =>
         {
@@ -66,6 +73,7 @@ public class PauseMenuManager : MonoBehaviour
 
     public void ReturnToMainMenu()
     {
+        mainMenuSound.Post(gameObject);
         ToggleButtonsInteractive(false);
         StartCoroutine(MenuTweenEffects.ScalePressEffect((RectTransform)mainMenuButton.transform, null, 1.25f, 1f, 0f, true));
         

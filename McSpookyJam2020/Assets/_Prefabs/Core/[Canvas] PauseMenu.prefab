@@ -116,6 +116,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52f3cec8b6276e042a27fa57c4ac1d4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resumeButtonSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c28732dd76b57c443a610866d075941d,
+      type: 2}
+  pauseMenuSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2db637b99557c0a489ecae0d7ce9cf12,
+      type: 2}
+  mainMenuSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5b0eb492e730f0243851230b73940d3b,
+      type: 2}
   resumeButton: {fileID: 2297342170425467711}
   mainMenuButton: {fileID: 2297342171251579779}
   pauseMenuPanel: {fileID: 6870295184637677988}
