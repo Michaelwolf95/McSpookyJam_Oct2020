@@ -23,10 +23,13 @@ public class HagueLetterInvestigatable : InvestigationCardInteractable
         {
             InventoryManager.instance.CollectHagueLetter(collectionIndex);
         });
+        
+        GameManager.instance.ToggleMonster(false);
     }
 
     public override void OnFinishInteraction()
     {
         base.OnFinishInteraction();
+        GameManager.instance.ToggleMonster(true);
     }
 }

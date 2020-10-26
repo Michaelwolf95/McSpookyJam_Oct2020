@@ -166,12 +166,24 @@ public class GameManager : SceneSingleton<GameManager>
     
     public void OnRitualStarted()
     {
-        monsterController.gameObject.SetActive(false);
+        ToggleMonster(false);
     }
     
     public void OnRitualFinished()
     {
         victoryMenu.FadeInMenu();
+    }
+
+    public void ToggleMonster(bool argActive)
+    {
+        if (argActive)
+        {
+            monsterController.EnableController();
+        }
+        else
+        {
+            monsterController.DisableController();
+        }
     }
 
 #if UNITY_EDITOR
