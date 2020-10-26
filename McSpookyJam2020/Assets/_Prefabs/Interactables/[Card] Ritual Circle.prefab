@@ -231,7 +231,7 @@ MonoBehaviour:
   flowchartPrefab: {fileID: 5229615216019433152, guid: 9fb94710b6b075a48945503554a909ba,
     type: 3}
   exitOnEscapeInput: 0
-  lockedSayContent: It's some sort of ritual circle!
+  lockedSayContent: It's some sort of ritual circle?
   lockedSayDelay: 0
   lockedInteractStartAudio:
     idInternal: 0

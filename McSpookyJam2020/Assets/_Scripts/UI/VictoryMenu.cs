@@ -29,7 +29,7 @@ public class VictoryMenu : MonoBehaviour
         }
         if (feedbackButton != null)
         {
-            feedbackButton.onClick.AddListener(OnQuitToTitlePressed);
+            feedbackButton.onClick.AddListener(OnFeedbackButtonPressed);
         }
         
         mainCanvasGroup.gameObject.SetActive(false);
