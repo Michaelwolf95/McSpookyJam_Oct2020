@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{E29F925E-AE03-48C3-A2D5-403D5958D0E8}" SchemaVersion="97">
 	<Triggers>
-		<WorkUnit Name="McSpookyJam2020" ID="{E29F925E-AE03-48C3-A2D5-403D5958D0E8}" PersistMode="Standalone"/>
+		<WorkUnit Name="McSpookyJam2020" ID="{E29F925E-AE03-48C3-A2D5-403D5958D0E8}" PersistMode="Standalone">
+			<ChildrenList>
+				<Trigger Name="Time_Change" ID="{7BBD77F9-02F1-4691-8FA9-DBF672F26CC5}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Triggers>
 </WwiseDocument>

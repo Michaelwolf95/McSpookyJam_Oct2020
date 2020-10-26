@@ -36,7 +36,7 @@
 								<Action Name="" ID="{FE3BC40B-5AD5-4E4F-AACA-97B90BFAD504}" ShortID="521998311">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="AMB_Loops" ID="{2B6BCDAA-FA08-4D4B-A539-0027A7D48768}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+											<ObjectRef Name="AMB_Loop" ID="{61DF19DF-23EB-4889-81A8-213FC45730EA}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -50,7 +50,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="AMB_Loops" ID="{2B6BCDAA-FA08-4D4B-A539-0027A7D48768}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+											<ObjectRef Name="AMB_Loop" ID="{61DF19DF-23EB-4889-81A8-213FC45730EA}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -73,6 +73,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SFX_Demon_Circle_Loop_01" ID="{1414DA0B-C296-43C7-8D96-E088AEAB9AEE}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Window_Emitter" ID="{32B37262-66E9-4172-A9F4-A7D2BF1D0AC3}">
+							<ChildrenList>
+								<Action Name="" ID="{6EB9465F-9794-4A5F-A345-B547F5237DBE}" ShortID="688411367">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Window_Emitter" ID="{17AEFBFE-50FF-4DF9-8720-0F8E3C627273}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -146,6 +157,18 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="SFX_Pickup_Key" ID="{85B0A5AF-E7D8-44A7-A733-F77EC584A556}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{3F5F55A3-0798-46EF-965C-4F839E421372}" ShortID="889664401">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Time" ID="{B844E83D-338B-48CE-8902-1585A7F85125}" WorkUnitID="{2AF5011A-75CC-4A54-B9B9-4A875440E9EE}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

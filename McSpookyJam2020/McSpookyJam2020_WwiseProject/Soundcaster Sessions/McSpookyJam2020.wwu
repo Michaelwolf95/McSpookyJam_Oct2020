@@ -10,7 +10,12 @@
 							<Position X="0" Y="0"/>
 						</Module>
 					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Time" ID="{B844E83D-338B-48CE-8902-1585A7F85125}"/>
+							<Value>1.15688419027073E-311</Value>
+						</RTPCValue>
+					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Night" ID="{F37607B3-A313-4492-94F1-2A4198829578}"/>
 					</CurrentStateList>

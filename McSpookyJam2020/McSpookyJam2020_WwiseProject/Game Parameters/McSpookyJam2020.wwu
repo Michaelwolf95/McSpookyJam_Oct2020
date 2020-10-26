@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{2AF5011A-75CC-4A54-B9B9-4A875440E9EE}" SchemaVersion="97">
 	<GameParameters>
-		<WorkUnit Name="McSpookyJam2020" ID="{2AF5011A-75CC-4A54-B9B9-4A875440E9EE}" PersistMode="Standalone"/>
+		<WorkUnit Name="McSpookyJam2020" ID="{2AF5011A-75CC-4A54-B9B9-4A875440E9EE}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Time" ID="{B844E83D-338B-48CE-8902-1585A7F85125}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="0.9"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="0.9"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

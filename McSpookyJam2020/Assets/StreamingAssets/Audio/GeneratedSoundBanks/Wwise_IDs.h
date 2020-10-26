@@ -46,6 +46,7 @@ namespace AK
         static const AkUniqueID PLAY_STINGER = 754369548U;
         static const AkUniqueID PLAY_UI_EXIT = 1986548623U;
         static const AkUniqueID PLAY_UI_START = 643450781U;
+        static const AkUniqueID PLAY_WINDOW_EMITTER = 47410005U;
         static const AkUniqueID PLAY_WOOD_DOOR_CLOSE = 801816073U;
         static const AkUniqueID PLAY_WOOD_DOOR_OPEN = 781714651U;
         static const AkUniqueID PLYA_MONSTER_EMERGE = 429973476U;
@@ -95,6 +96,16 @@ namespace AK
         } // namespace TIME
 
     } // namespace SWITCHES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID TIME = 2654366170U;
+    } // namespace GAME_PARAMETERS
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID TIME_CHANGE = 4130026045U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {
