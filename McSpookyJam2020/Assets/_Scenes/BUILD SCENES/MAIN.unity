@@ -2022,7 +2022,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 0}
+  selectedFlowchart: {fileID: 8786675518878862360, guid: 7dc81aee7771294439bed55677246bae,
+    type: 3}
 --- !u!4 &813754147
 Transform:
   m_ObjectHideFlags: 1
@@ -7800,9 +7801,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1281650412, guid: d6e9da193eb662e4fa1aca77a38871f2, type: 3}
-      propertyPath: _nightObjects.Array.size
-      value: 1
+    - target: {fileID: 1491438583587771532, guid: d6e9da193eb662e4fa1aca77a38871f2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4936260003106660966, guid: d6e9da193eb662e4fa1aca77a38871f2,
         type: 3}

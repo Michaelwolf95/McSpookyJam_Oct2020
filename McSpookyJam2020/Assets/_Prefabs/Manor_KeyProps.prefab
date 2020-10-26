@@ -89,7 +89,7 @@ Transform:
   - {fileID: 724488472962138766}
   - {fileID: 4166401851277195011}
   - {fileID: 8973344332723214086}
-  - {fileID: 1491438583587771531}
+  - {fileID: 2794983960711689310}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -110,7 +110,7 @@ MonoBehaviour:
   - {fileID: 8973344332723214081}
   - {fileID: 8246424347686685887}
   _nightObjects:
-  - {fileID: 1491438583587771532}
+  - {fileID: 276444120971460235}
 --- !u!1001 &360739368169659743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -341,92 +341,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9044456069558739915, guid: 5bd79c08912502b44921fbd20f1ef1c0,
     type: 3}
   m_PrefabInstance: {fileID: 1149952413484183411}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &2332250459534172951
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 4936260003106660969}
-    m_Modifications:
-    - target: {fileID: 3814397232389109659, guid: 736a6640ea193db4cafd30e9e3ba39a8,
-        type: 3}
-      propertyPath: m_Name
-      value: '[Card] The Night Painting'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3814397232389109659, guid: 736a6640ea193db4cafd30e9e3ba39a8,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3814397232389109660, guid: 736a6640ea193db4cafd30e9e3ba39a8,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.53
-      objectReference: {fileID: 0}
-    - target: {fileID: 3814397232389109660, guid: 736a6640ea193db4cafd30e9e3ba39a8,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.86
-      objectReference: {fileID: 0}
-    - target: {fileID: 3814397232389109660, guid: 736a6640ea193db4cafd30e9e3ba39a8,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -8.002
-      objectReference: {fileID: 0}
-    - target: {fileID: 3814397232389109660, guid: 736a6640ea193db4cafd30e9e3ba39a8,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.03491178
-      objectReference: {fileID: 0}
-    - target: {fileID: 3814397232389109660, guid: 736a6640ea193db4cafd30e9e3ba39a8,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7062444
-      objectReference: {fileID: 0}
-    - target: {fileID: 3814397232389109660, guid: 736a6640ea193db4cafd30e9e3ba39a8,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.03491178
-      objectReference: {fileID: 0}
-    - target: {fileID: 3814397232389109660, guid: 736a6640ea193db4cafd30e9e3ba39a8,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7062444
-      objectReference: {fileID: 0}
-    - target: {fileID: 3814397232389109660, guid: 736a6640ea193db4cafd30e9e3ba39a8,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 3814397232389109660, guid: 736a6640ea193db4cafd30e9e3ba39a8,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -5.66
-      objectReference: {fileID: 0}
-    - target: {fileID: 3814397232389109660, guid: 736a6640ea193db4cafd30e9e3ba39a8,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 3814397232389109660, guid: 736a6640ea193db4cafd30e9e3ba39a8,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 736a6640ea193db4cafd30e9e3ba39a8, type: 3}
---- !u!1 &1491438583587771532 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3814397232389109659, guid: 736a6640ea193db4cafd30e9e3ba39a8,
-    type: 3}
-  m_PrefabInstance: {fileID: 2332250459534172951}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1491438583587771531 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3814397232389109660, guid: 736a6640ea193db4cafd30e9e3ba39a8,
-    type: 3}
-  m_PrefabInstance: {fileID: 2332250459534172951}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2432119174312710862
 PrefabInstance:
@@ -953,6 +867,92 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4913742158614690130}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5560854812992684669
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4936260003106660969}
+    m_Modifications:
+    - target: {fileID: 5690930948612095222, guid: bcea0c143d8b03d4598da758e91b66e7,
+        type: 3}
+      propertyPath: m_Name
+      value: '[Card] The Painting (Night)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5690930948612095222, guid: bcea0c143d8b03d4598da758e91b66e7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774858821810337315, guid: bcea0c143d8b03d4598da758e91b66e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774858821810337315, guid: bcea0c143d8b03d4598da758e91b66e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774858821810337315, guid: bcea0c143d8b03d4598da758e91b66e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774858821810337315, guid: bcea0c143d8b03d4598da758e91b66e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.03491178
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774858821810337315, guid: bcea0c143d8b03d4598da758e91b66e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7062444
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774858821810337315, guid: bcea0c143d8b03d4598da758e91b66e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.03491178
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774858821810337315, guid: bcea0c143d8b03d4598da758e91b66e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7062444
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774858821810337315, guid: bcea0c143d8b03d4598da758e91b66e7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774858821810337315, guid: bcea0c143d8b03d4598da758e91b66e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -5.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774858821810337315, guid: bcea0c143d8b03d4598da758e91b66e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774858821810337315, guid: bcea0c143d8b03d4598da758e91b66e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bcea0c143d8b03d4598da758e91b66e7, type: 3}
+--- !u!1 &276444120971460235 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5690930948612095222, guid: bcea0c143d8b03d4598da758e91b66e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 5560854812992684669}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2794983960711689310 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7774858821810337315, guid: bcea0c143d8b03d4598da758e91b66e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 5560854812992684669}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5901710255037518133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1018,7 +1018,7 @@ PrefabInstance:
     - target: {fileID: 3269805837990872628, guid: 235f0a6643154404098722f3ad5cd6a4,
         type: 3}
       propertyPath: m_Name
-      value: '[Card] The Day Painting'
+      value: '[Card] The Painting (Day)'
       objectReference: {fileID: 0}
     - target: {fileID: 3269805837990872628, guid: 235f0a6643154404098722f3ad5cd6a4,
         type: 3}
