@@ -29,7 +29,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4190601618" Language="SFX" Hash="3682361547">
+		<SoundBank Id="4190601618" Language="SFX" Hash="294294895">
 			<ObjectPath>\SoundBanks\McSpookyJam2020\McSpookyJam2020</ObjectPath>
 			<ShortName>McSpookyJam2020</ShortName>
 			<Path>McSpookyJam2020.bnk</Path>
@@ -188,7 +188,7 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="1099225839" Name="Play_Monster_Attack_Complete" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Attack_Complete" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
-				<Event Id="255750022" Name="Play_Monster_Dying" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Dying" DurationType="OneShot" DurationMin="19.703459" DurationMax="19.703459">
+				<Event Id="255750022" Name="Play_Monster_Dying" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Dying" DurationType="OneShot" DurationMin="7.854813" DurationMax="7.854813">
 					<IncludedMemoryFiles>
 						<File Id="706906272" Language="SFX">
 							<ShortName>SFX_Monster_Dying_01.wav</ShortName>
@@ -345,7 +345,7 @@
 						</File>
 						<File Id="286675127" Language="SFX">
 							<ShortName>SFX_Creaky_Footstep_Light_03.wav</ShortName>
-							<Path>SFX\SFX_Creaky_Footstep_Light_03_9BD15B32.wem</Path>
+							<Path>SFX\SFX_Creaky_Footstep_Light_03_E6E019F1.wem</Path>
 						</File>
 						<File Id="321291601" Language="SFX">
 							<ShortName>SFX_Creaky_Footstep_Light_04.wav</ShortName>
