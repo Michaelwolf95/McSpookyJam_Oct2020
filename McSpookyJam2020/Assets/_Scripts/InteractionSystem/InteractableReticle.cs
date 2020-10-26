@@ -18,8 +18,8 @@ public class InteractableReticle : MonoBehaviour
     [SerializeField] private GameObject handReticle = null;
 
     private InteractReticleType currentInteractType = InteractReticleType.Look;
-    
-    public bool disableActivatedReticle { get; set; }
+
+    public bool disableActivatedReticle = false;
     
     private void Awake()
     {

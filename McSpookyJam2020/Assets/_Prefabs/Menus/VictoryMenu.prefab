@@ -510,6 +510,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3f4dbe6a01f488fac267c013474262e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  exitButtonSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5b0eb492e730f0243851230b73940d3b,
+      type: 2}
   mainCanvasGroup: {fileID: 5034267510704527689}
   buttonCanvasGroup: {fileID: 2349064868617886140}
   creditsPanel: {fileID: 0}
@@ -854,8 +859,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 288, y: -47.596603}
-  m_SizeDelta: {x: 576, y: 95.19321}
+  m_AnchoredPosition: {x: 179.84999, y: -47.596603}
+  m_SizeDelta: {x: 359.69998, y: 95.19321}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6125500740264651453
 CanvasRenderer:
