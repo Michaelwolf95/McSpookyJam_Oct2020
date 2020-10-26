@@ -120,11 +120,8 @@ public class InteractableBase : MonoBehaviour
     }
 
     protected virtual void HideReticle()
-    {
-        if (isInteractable)
-        {
-            reticle.gameObject.SetActive(false);
-        }
+    { 
+        reticle.gameObject.SetActive(false);
     }
     
     protected virtual void UnhideReticle()
