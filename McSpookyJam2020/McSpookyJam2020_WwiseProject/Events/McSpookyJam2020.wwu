@@ -162,6 +162,17 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Play_Pickup_Dagger" ID="{F8F1E2E2-8E61-467A-A6D3-F29F0986C8A2}">
+									<ChildrenList>
+										<Action Name="" ID="{FF4C07D8-62C0-4A83-B20F-F7138AB82DD5}" ShortID="750874973">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Pickup_Dagger" ID="{9BBD1829-FAEF-4D2B-A7CC-327FECEB8E89}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Doors" ID="{136BC58B-7F16-408A-B18E-BD42A7AFA0BD}" ShortID="392608519">
@@ -451,8 +462,53 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Monster_Footsteps" ID="{983D953E-B3C8-4339-B17F-38B7F09CEF09}"/>
-						<Event Name="Play_Monster_Emerge" ID="{1159C354-BF7B-46F9-8D8A-0BA0778A79D5}"/>
+						<Event Name="Play_Monster_Footsteps" ID="{983D953E-B3C8-4339-B17F-38B7F09CEF09}">
+							<ChildrenList>
+								<Action Name="" ID="{45908EFA-600A-4787-8103-6D8CBC01ADCC}" ShortID="299840982">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Monster_Footsteps" ID="{6967827C-C69D-4EF4-84CA-136478EE296E}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Monster_Emerge" ID="{1159C354-BF7B-46F9-8D8A-0BA0778A79D5}">
+							<ChildrenList>
+								<Action Name="" ID="{B01F5D6C-3C13-4368-B7BC-3F3610876108}" ShortID="699297628">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Game_Start_Candle_Trem" ID="{69E99071-C8BB-4888-9F43-0982F194F4B7}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Monster_Dying" ID="{759511C2-2899-4979-A698-B9FF670C9CCE}">
+							<ChildrenList>
+								<Action Name="" ID="{2E3DC4C7-3E5D-47BC-9349-7FE57D27921F}" ShortID="589932772">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Monster_Dying_01" ID="{F2A04275-68C2-441E-B01B-7607F0DEA6BD}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Monster_Dying" ID="{316A0844-19DB-419F-9DE0-90CB4D4D72C9}">
+							<ChildrenList>
+								<Action Name="" ID="{A58287EB-13CC-4946-AEE0-70BBE38D26BE}" ShortID="343252891">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Monster_Dying_01" ID="{F2A04275-68C2-441E-B01B-7607F0DEA6BD}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

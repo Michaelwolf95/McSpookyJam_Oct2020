@@ -32,10 +32,12 @@ namespace AK
         static const AkUniqueID PLAY_METAL_DOOR_OPEN = 2617923177U;
         static const AkUniqueID PLAY_MONSTER_ATTACK = 864033359U;
         static const AkUniqueID PLAY_MONSTER_ATTACK_COMPLETE = 1099225839U;
+        static const AkUniqueID PLAY_MONSTER_DYING = 255750022U;
         static const AkUniqueID PLAY_MONSTER_EMERGE = 3611802004U;
         static const AkUniqueID PLAY_MONSTER_FOOTSTEPS = 3704879888U;
         static const AkUniqueID PLAY_MONSTER_HISS = 2620845016U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
+        static const AkUniqueID PLAY_PICKUP_DAGGER = 2380307491U;
         static const AkUniqueID PLAY_PICKUP_KEY = 3768549418U;
         static const AkUniqueID PLAY_PICKUP_NOTE = 2216405837U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_GRAVEL = 2793391981U;
@@ -49,6 +51,7 @@ namespace AK
         static const AkUniqueID PLYA_MONSTER_EMERGE = 429973476U;
         static const AkUniqueID STOP_AMB = 435770000U;
         static const AkUniqueID STOP_MONSTER_ATTACK = 1371679529U;
+        static const AkUniqueID STOP_MONSTER_DYING = 2844697884U;
         static const AkUniqueID STOP_MUSIC = 2837384057U;
     } // namespace EVENTS
 
