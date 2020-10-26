@@ -29,7 +29,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4190601618" Language="SFX" Hash="294294895">
+		<SoundBank Id="4190601618" Language="SFX" Hash="1034171825">
 			<ObjectPath>\SoundBanks\McSpookyJam2020\McSpookyJam2020</ObjectPath>
 			<ShortName>McSpookyJam2020</ShortName>
 			<Path>McSpookyJam2020.bnk</Path>
@@ -237,6 +237,142 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\McSpookyJam2020\Music\Play_Music" DurationType="Infinite"/>
+				<Event Id="1530954351" Name="Play_Piano_Notes" ObjectPath="\Events\McSpookyJam2020\Interactables\Play_Piano_Notes" MaxAttenuation="13.000000" DurationType="OneShot" DurationMin="2.170538" DurationMax="11.530620">
+					<IncludedMemoryFiles>
+						<File Id="18419317" Language="SFX">
+							<ShortName>SFX_Piano_05.wav</ShortName>
+							<Path>SFX\SFX_Piano_05_10C4C929.wem</Path>
+						</File>
+						<File Id="40510926" Language="SFX">
+							<ShortName>SFX_Piano_10.wav</ShortName>
+							<Path>SFX\SFX_Piano_10_10C4C929.wem</Path>
+						</File>
+						<File Id="55624644" Language="SFX">
+							<ShortName>SFX_Piano_31.wav</ShortName>
+							<Path>SFX\SFX_Piano_31_10C4C929.wem</Path>
+						</File>
+						<File Id="115061783" Language="SFX">
+							<ShortName>SFX_Piano_09.wav</ShortName>
+							<Path>SFX\SFX_Piano_09_10C4C929.wem</Path>
+						</File>
+						<File Id="126214581" Language="SFX">
+							<ShortName>SFX_Piano_21.wav</ShortName>
+							<Path>SFX\SFX_Piano_21_10C4C929.wem</Path>
+						</File>
+						<File Id="133873693" Language="SFX">
+							<ShortName>SFX_Piano_17.wav</ShortName>
+							<Path>SFX\SFX_Piano_17_10C4C929.wem</Path>
+						</File>
+						<File Id="205677186" Language="SFX">
+							<ShortName>SFX_Piano_33.wav</ShortName>
+							<Path>SFX\SFX_Piano_33_10C4C929.wem</Path>
+						</File>
+						<File Id="206413593" Language="SFX">
+							<ShortName>SFX_Piano_12.wav</ShortName>
+							<Path>SFX\SFX_Piano_12_10C4C929.wem</Path>
+						</File>
+						<File Id="207091993" Language="SFX">
+							<ShortName>SFX_Piano_13.wav</ShortName>
+							<Path>SFX\SFX_Piano_13_10C4C929.wem</Path>
+						</File>
+						<File Id="220262403" Language="SFX">
+							<ShortName>SFX_Piano_11.wav</ShortName>
+							<Path>SFX\SFX_Piano_11_10C4C929.wem</Path>
+						</File>
+						<File Id="238929806" Language="SFX">
+							<ShortName>SFX_Piano_27.wav</ShortName>
+							<Path>SFX\SFX_Piano_27_10C4C929.wem</Path>
+						</File>
+						<File Id="246065983" Language="SFX">
+							<ShortName>SFX_Piano_14.wav</ShortName>
+							<Path>SFX\SFX_Piano_14_10C4C929.wem</Path>
+						</File>
+						<File Id="246169638" Language="SFX">
+							<ShortName>SFX_Piano_01.wav</ShortName>
+							<Path>SFX\SFX_Piano_01_10C4C929.wem</Path>
+						</File>
+						<File Id="311835917" Language="SFX">
+							<ShortName>SFX_Piano_06.wav</ShortName>
+							<Path>SFX\SFX_Piano_06_10C4C929.wem</Path>
+						</File>
+						<File Id="329712708" Language="SFX">
+							<ShortName>SFX_Piano_19.wav</ShortName>
+							<Path>SFX\SFX_Piano_19_10C4C929.wem</Path>
+						</File>
+						<File Id="340554768" Language="SFX">
+							<ShortName>SFX_Piano_20.wav</ShortName>
+							<Path>SFX\SFX_Piano_20_10C4C929.wem</Path>
+						</File>
+						<File Id="405984963" Language="SFX">
+							<ShortName>SFX_Piano_04.wav</ShortName>
+							<Path>SFX\SFX_Piano_04_10C4C929.wem</Path>
+						</File>
+						<File Id="434715235" Language="SFX">
+							<ShortName>SFX_Piano_25.wav</ShortName>
+							<Path>SFX\SFX_Piano_25_10C4C929.wem</Path>
+						</File>
+						<File Id="436087904" Language="SFX">
+							<ShortName>SFX_Piano_15.wav</ShortName>
+							<Path>SFX\SFX_Piano_15_10C4C929.wem</Path>
+						</File>
+						<File Id="480711875" Language="SFX">
+							<ShortName>SFX_Piano_03.wav</ShortName>
+							<Path>SFX\SFX_Piano_03_10C4C929.wem</Path>
+						</File>
+						<File Id="522951690" Language="SFX">
+							<ShortName>SFX_Piano_32.wav</ShortName>
+							<Path>SFX\SFX_Piano_32_10C4C929.wem</Path>
+						</File>
+						<File Id="565409415" Language="SFX">
+							<ShortName>SFX_Piano_08.wav</ShortName>
+							<Path>SFX\SFX_Piano_08_10C4C929.wem</Path>
+						</File>
+						<File Id="570597251" Language="SFX">
+							<ShortName>SFX_Piano_24.wav</ShortName>
+							<Path>SFX\SFX_Piano_24_10C4C929.wem</Path>
+						</File>
+						<File Id="572436546" Language="SFX">
+							<ShortName>SFX_Piano_16.wav</ShortName>
+							<Path>SFX\SFX_Piano_16_10C4C929.wem</Path>
+						</File>
+						<File Id="631183542" Language="SFX">
+							<ShortName>SFX_Piano_22.wav</ShortName>
+							<Path>SFX\SFX_Piano_22_10C4C929.wem</Path>
+						</File>
+						<File Id="666517486" Language="SFX">
+							<ShortName>SFX_Piano_30.wav</ShortName>
+							<Path>SFX\SFX_Piano_30_10C4C929.wem</Path>
+						</File>
+						<File Id="670728688" Language="SFX">
+							<ShortName>SFX_Piano_29.wav</ShortName>
+							<Path>SFX\SFX_Piano_29_10C4C929.wem</Path>
+						</File>
+						<File Id="770251664" Language="SFX">
+							<ShortName>SFX_Piano_07.wav</ShortName>
+							<Path>SFX\SFX_Piano_07_10C4C929.wem</Path>
+						</File>
+						<File Id="816618173" Language="SFX">
+							<ShortName>SFX_Piano_28.wav</ShortName>
+							<Path>SFX\SFX_Piano_28_10C4C929.wem</Path>
+						</File>
+						<File Id="828540892" Language="SFX">
+							<ShortName>SFX_Piano_18.wav</ShortName>
+							<Path>SFX\SFX_Piano_18_10C4C929.wem</Path>
+						</File>
+						<File Id="1045638834" Language="SFX">
+							<ShortName>SFX_Piano_23.wav</ShortName>
+							<Path>SFX\SFX_Piano_23_10C4C929.wem</Path>
+						</File>
+						<File Id="1053559927" Language="SFX">
+							<ShortName>SFX_Piano_02.wav</ShortName>
+							<Path>SFX\SFX_Piano_02_10C4C929.wem</Path>
+						</File>
+						<File Id="1060018563" Language="SFX">
+							<ShortName>SFX_Piano_26.wav</ShortName>
+							<Path>SFX\SFX_Piano_26_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2380307491" Name="Play_Pickup_Dagger" ObjectPath="\Events\McSpookyJam2020\Interactables\Pickups\Play_Pickup_Dagger" DurationType="OneShot" DurationMin="0.701854" DurationMax="0.701854">
 					<IncludedMemoryFiles>
 						<File Id="941419923" Language="SFX">
@@ -414,6 +550,7 @@
 				</Event>
 				<Event Id="429973476" Name="Plya_Monster_Emerge" ObjectPath="\Events\McSpookyJam2020\Music\Plya_Monster_Emerge" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="435770000" Name="Stop_AMB" ObjectPath="\Events\McSpookyJam2020\AMB\Stop_AMB" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4095429044" Name="Stop_Main_Menu_Fade" ObjectPath="\Events\McSpookyJam2020\UI\Stop_Main_Menu_Fade" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1371679529" Name="Stop_Monster_Attack" ObjectPath="\Events\McSpookyJam2020\Monster\Stop_Monster_Attack" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2844697884" Name="Stop_Monster_Dying" ObjectPath="\Events\McSpookyJam2020\Monster\Stop_Monster_Dying" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\McSpookyJam2020\Music\Stop_Music" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>

@@ -38,6 +38,7 @@ namespace AK
         static const AkUniqueID PLAY_MONSTER_FOOTSTEPS = 3704879888U;
         static const AkUniqueID PLAY_MONSTER_HISS = 2620845016U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
+        static const AkUniqueID PLAY_PIANO_NOTES = 1530954351U;
         static const AkUniqueID PLAY_PICKUP_DAGGER = 2380307491U;
         static const AkUniqueID PLAY_PICKUP_KEY = 3768549418U;
         static const AkUniqueID PLAY_PICKUP_NOTE = 2216405837U;
@@ -55,6 +56,7 @@ namespace AK
         static const AkUniqueID PLAY_WOOD_DOOR_OPEN = 781714651U;
         static const AkUniqueID PLYA_MONSTER_EMERGE = 429973476U;
         static const AkUniqueID STOP_AMB = 435770000U;
+        static const AkUniqueID STOP_MAIN_MENU_FADE = 4095429044U;
         static const AkUniqueID STOP_MONSTER_ATTACK = 1371679529U;
         static const AkUniqueID STOP_MONSTER_DYING = 2844697884U;
         static const AkUniqueID STOP_MUSIC = 2837384057U;
