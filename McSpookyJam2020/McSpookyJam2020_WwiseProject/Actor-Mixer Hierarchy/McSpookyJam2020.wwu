@@ -782,6 +782,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="SX_MCJ2020_AMB_BED_DAY_TIME (1)" ID="{CBEDA160-882B-4F80-8867-0946FB2AFA18}" ShortID="264826034">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
@@ -803,17 +810,11 @@
 										<ActiveSource Name="SX_MCJ2020_AMB_BED_DAY_TIME (1)" ID="{15962B07-BDD9-40BF-9BED-B5B455B8835C}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="SX_MCJ2020_AMB_BED_NIGHT_01 (2)" ID="{01141C5C-6EFD-4E21-8373-748AD2615BEE}" ShortID="240557202">
+								<Sound Name="SX_MCJ2020_AMB_BED_NIGHT_2" ID="{62C46205-4F16-4EF7-AD7E-F408CF7EFD2E}" ShortID="101189659">
 									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="IsNonCachable" Type="bool">
+										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="IsStreamingEnabled" Type="bool">
-											<ValueList>
-												<Value>True</Value>
+												<Value>-9</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -826,16 +827,16 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="SX_MCJ2020_AMB_BED_NIGHT_01 (2)" ID="{AA42104D-C284-4635-967E-F801B8BEBDE7}">
+										<AudioFileSource Name="SX_MCJ2020_AMB_BED_NIGHT_2" ID="{93A615BD-2EE7-424C-A9E9-6099A2CFD689}">
 											<Language>SFX</Language>
-											<AudioFile>SX_MCJ2020_AMB_BED_NIGHT_01 (2).wav</AudioFile>
+											<AudioFile>SX_MCJ2020_AMB_BED_NIGHT_2.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="211217863"/>
+												<MediaID ID="367532107"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="SX_MCJ2020_AMB_BED_NIGHT_01 (2)" ID="{AA42104D-C284-4635-967E-F801B8BEBDE7}" Platform="Linked"/>
+										<ActiveSource Name="SX_MCJ2020_AMB_BED_NIGHT_2" ID="{93A615BD-2EE7-424C-A9E9-6099A2CFD689}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -855,14 +856,14 @@
 											<CrossfadingInfo>
 												<LeftEdgePos>0</LeftEdgePos>
 												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>0.909935863874345</RightEdgePos>
+												<RightEdgePos>0.512099644128114</RightEdgePos>
 												<RightFadingMode>Automatic</RightFadingMode>
 											</CrossfadingInfo>
 										</BlendTrackAssoc>
 										<BlendTrackAssoc>
-											<ItemRef Name="SX_MCJ2020_AMB_BED_NIGHT_01 (2)" ID="{01141C5C-6EFD-4E21-8373-748AD2615BEE}"/>
+											<ItemRef Name="SX_MCJ2020_AMB_BED_NIGHT_2" ID="{62C46205-4F16-4EF7-AD7E-F408CF7EFD2E}"/>
 											<CrossfadingInfo>
-												<LeftEdgePos>0.0965850785340314</LeftEdgePos>
+												<LeftEdgePos>0.487188612099644</LeftEdgePos>
 												<LeftFadingMode>Automatic</LeftFadingMode>
 												<RightEdgePos>1</RightEdgePos>
 												<RightFadingMode>Automatic</RightFadingMode>
