@@ -45,6 +45,8 @@ namespace AK
         static const AkUniqueID PLAY_RITUAL_CIRCLE = 1733092070U;
         static const AkUniqueID PLAY_STINGER = 754369548U;
         static const AkUniqueID PLAY_UI_EXIT = 1986548623U;
+        static const AkUniqueID PLAY_UI_NEGATIVE = 2519795238U;
+        static const AkUniqueID PLAY_UI_POSITIVE = 1098125654U;
         static const AkUniqueID PLAY_UI_START = 643450781U;
         static const AkUniqueID PLAY_WINDOW_EMITTER = 47410005U;
         static const AkUniqueID PLAY_WOOD_DOOR_CLOSE = 801816073U;

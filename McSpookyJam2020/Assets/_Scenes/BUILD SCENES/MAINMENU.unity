@@ -547,7 +547,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1982754054}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &341065841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -821,7 +832,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 125
+  m_fontSize: 77.1
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1230,6 +1241,7 @@ GameObject:
   - component: {fileID: 1126265236}
   - component: {fileID: 1126265235}
   - component: {fileID: 1126265234}
+  - component: {fileID: 1126265239}
   m_Layer: 5
   m_Name: Canvas_MainMenu
   m_TagString: Untagged
@@ -1330,6 +1342,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b858bf4b4436d5648b0807f46aa38dfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  exitButtonSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5b0eb492e730f0243851230b73940d3b,
+      type: 2}
+  startButtonSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: be2958ff5a99f7f4f8bae61a5ac33381,
+      type: 2}
+  creditButtonSoundOpen:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2db637b99557c0a489ecae0d7ce9cf12,
+      type: 2}
+  creditButtonSoundClose:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c28732dd76b57c443a610866d075941d,
+      type: 2}
   startButton: {fileID: 341065840}
   quitButton: {fileID: 596323196}
   creditsButton: {fileID: 383051782}
@@ -1340,6 +1372,31 @@ MonoBehaviour:
   sigilFadeDuration: 1
   buttonsFadeDelay: 0.5
   buttonFadeDuration: 0.5
+--- !u!114 &1126265239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126265233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b00fa4148ab9ce40a833ef90c9a5671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: ae8d9d44
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 35e8555534426a9408fdacd14de3034f,
+      type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &1354214377
 GameObject:
   m_ObjectHideFlags: 0
@@ -1424,7 +1481,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 125
+  m_fontSize: 77.1
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1883,7 +1940,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 150
+  m_fontSize: 115.65
   m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 1

@@ -6,6 +6,11 @@ using UnityEngine.UI;
 
 public class MainMenuManager : MonoBehaviour
 {
+    [SerializeField] private AK.Wwise.Event exitButtonSound = null;
+    [SerializeField] private AK.Wwise.Event startButtonSound = null;
+    [SerializeField] private AK.Wwise.Event creditButtonSoundOpen = null;
+    [SerializeField] private AK.Wwise.Event creditButtonSoundClose = null;
+
     [SerializeField] private Button startButton = null;
     [SerializeField] private Button quitButton = null;
     [SerializeField] private Button creditsButton = null;
@@ -49,6 +54,7 @@ public class MainMenuManager : MonoBehaviour
     
     private void OnStartButtonPressed()
     {
+        startButtonSound.Post(gameObject);
         ToggleButtonInteraction(false);
         StartCoroutine(MenuTweenEffects.ScalePressEffect((RectTransform) startButton.transform, () => { }));
         
@@ -64,6 +70,7 @@ public class MainMenuManager : MonoBehaviour
 
     private void OnQuitButtonPressed()
     {
+        exitButtonSound.Post(gameObject);
         StartCoroutine(MenuTweenEffects.ScalePressEffect((RectTransform)startButton.transform, () =>
         {
             
@@ -74,6 +81,7 @@ public class MainMenuManager : MonoBehaviour
     
     private void OnCreditsButtonPressed()
     {
+        creditButtonSoundOpen.Post(gameObject);
         OpenCredits();
     }
 
@@ -84,6 +92,7 @@ public class MainMenuManager : MonoBehaviour
 
     public void CloseCredits()
     {
+        creditButtonSoundClose.Post(gameObject);
         creditsPanel.gameObject.SetActive(false);
     }
     
