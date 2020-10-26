@@ -83,6 +83,7 @@ public class FirstPersonAIO : MonoBehaviour
     public AK.Wwise.Event stairsFootSteps;
 
     private AK.Wwise.Event lastFootStepEvent = null;
+    private AK.Wwise.Event deafultStepEvent => groundFloorFootSteps;
 
     #region Variables
 
@@ -631,15 +632,15 @@ public class FirstPersonAIO : MonoBehaviour
                     {
                         footStepEvent = groundFloorFootSteps;
                     }
-                    else if (hit.collider.sharedMaterial == upstairsMaterial)
+                    else if (hit.collider.sharedMaterial == upstairsMaterial && upstairsFootSteps.IsValid())
                     {
                         footStepEvent = upstairsFootSteps;
                     }
-                    else if (hit.collider.sharedMaterial == basementMaterial)
+                    else if (hit.collider.sharedMaterial == basementMaterial && basementFootSteps.IsValid())
                     {
                         footStepEvent = basementFootSteps;
                     }
-                    else if (hit.collider.sharedMaterial == stairsFloorMaterial)
+                    else if (hit.collider.sharedMaterial == stairsFloorMaterial && stairsFootSteps.IsValid())
                     {
                         footStepEvent = stairsFootSteps;
                     }
