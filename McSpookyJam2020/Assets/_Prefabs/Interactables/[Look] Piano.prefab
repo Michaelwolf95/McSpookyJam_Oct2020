@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reticle: {fileID: 6793131939558463345}
-  interactReticleType: 0
+  interactReticleType: 2
   visibleAngleRange: {x: 180, y: 180}
   InteractStartAudio:
     idInternal: 0
@@ -241,6 +241,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3458088210228760462}
     m_Modifications:
+    - target: {fileID: 4686541359359090400, guid: 3be365ddfd146d743bfd9261c670d56f,
+        type: 3}
+      propertyPath: disableActivatedReticle
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8354546125084861874, guid: 3be365ddfd146d743bfd9261c670d56f,
         type: 3}
       propertyPath: m_LocalPosition.x

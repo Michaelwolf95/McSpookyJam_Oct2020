@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DynamicItemsMover : DayNightChangeListener
+public class DayNightItemSwapper : DayNightChangeListener
 {
     [SerializeField] private GameObject[] _dayObjects;
     [SerializeField] private GameObject[] _nightObjects;
