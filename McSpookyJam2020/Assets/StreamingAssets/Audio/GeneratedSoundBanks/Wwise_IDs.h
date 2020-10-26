@@ -20,14 +20,9 @@ namespace AK
         static const AkUniqueID PLAY_DRAWER_OPEN = 1958703520U;
         static const AkUniqueID PLAY_FLASHLIGHT_ON = 3471928368U;
         static const AkUniqueID PLAY_GAME_END = 2790351818U;
-        static const AkUniqueID PLAY_GAME_START_CANDLE = 2901631795U;
         static const AkUniqueID PLAY_GAME_START_CANDLE_TREM = 2892862498U;
-        static const AkUniqueID PLAY_GAME_START_LIGHT_SWITCH = 3727723795U;
-        static const AkUniqueID PLAY_GHOST_FOOTSTEPS = 3781480055U;
-        static const AkUniqueID PLAY_GHOST_JOLT = 2957503395U;
         static const AkUniqueID PLAY_LIGHT_SWITCH_OFF = 314077991U;
         static const AkUniqueID PLAY_LIGHT_SWITCH_ON = 82250835U;
-        static const AkUniqueID PLAY_LIGHTS_OUT = 3933447040U;
         static const AkUniqueID PLAY_LOCKED_DOOR = 281597619U;
         static const AkUniqueID PLAY_MAIN_MENU_FADE = 656855882U;
         static const AkUniqueID PLAY_METAL_DOOR_CLOSE = 2167123887U;
@@ -47,7 +42,6 @@ namespace AK
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_STAIRS = 1934534490U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_WOOD = 1323502295U;
         static const AkUniqueID PLAY_RITUAL_CIRCLE = 1733092070U;
-        static const AkUniqueID PLAY_STINGER = 754369548U;
         static const AkUniqueID PLAY_UI_EXIT = 1986548623U;
         static const AkUniqueID PLAY_UI_NEGATIVE = 2519795238U;
         static const AkUniqueID PLAY_UI_POSITIVE = 1098125654U;

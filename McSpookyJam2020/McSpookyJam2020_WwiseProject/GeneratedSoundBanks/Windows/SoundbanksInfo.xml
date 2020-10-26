@@ -11,15 +11,15 @@
 	<StreamedFiles>
 		<File Id="415823821" Language="SFX">
 			<ShortName>SFX_Clock-001.wav</ShortName>
-			<Path>SFX\SFX_Clock-001_D79FB2B7.wem</Path>
+			<Path>SFX\SFX_Clock-001_9EDFC787.wem</Path>
 		</File>
 		<File Id="621486811" Language="SFX">
 			<ShortName>SFX_Demon_Circle_Loop_01.wav</ShortName>
-			<Path>SFX\SFX_Demon_Circle_Loop_01_A472F907.wem</Path>
+			<Path>SFX\SFX_Demon_Circle_Loop_01_64DFEF17.wem</Path>
 		</File>
 		<File Id="962750646" Language="SFX">
 			<ShortName>McJam2020_window_closed_night.wav</ShortName>
-			<Path>SFX\McJam2020_window_closed_night_D79FB2B7.wem</Path>
+			<Path>SFX\McJam2020_window_closed_night_9EDFC787.wem</Path>
 		</File>
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
@@ -29,7 +29,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4190601618" Language="SFX" Hash="813574574">
+		<SoundBank Id="4190601618" Language="SFX" Hash="843417770">
 			<ObjectPath>\SoundBanks\McSpookyJam2020\McSpookyJam2020</ObjectPath>
 			<ShortName>McSpookyJam2020</ShortName>
 			<Path>McSpookyJam2020.bnk</Path>
@@ -38,11 +38,11 @@
 					<IncludedMemoryFiles>
 						<File Id="367532107" Language="SFX">
 							<ShortName>SX_MCJ2020_AMB_BED_NIGHT_2.wav</ShortName>
-							<Path>SFX\SX_MCJ2020_AMB_BED_NIGHT_2_10C4C929.wem</Path>
+							<Path>SFX\SX_MCJ2020_AMB_BED_NIGHT_2_3F75BDB9.wem</Path>
 						</File>
 						<File Id="988327657" Language="SFX">
 							<ShortName>SX_MCJ2020_AMB_BED_DAY_TIME (1).wav</ShortName>
-							<Path>SFX\SX_MCJ2020_AMB_BED_DAY_TIME (1)_10C4C929.wem</Path>
+							<Path>SFX\SX_MCJ2020_AMB_BED_DAY_TIME (1)_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -50,7 +50,7 @@
 					<IncludedMemoryFiles>
 						<File Id="954993177" Language="SFX">
 							<ShortName>SFX_Candle_Loop.wav</ShortName>
-							<Path>SFX\SFX_Candle_Loop_0426DE3A.wem</Path>
+							<Path>SFX\SFX_Candle_Loop_728D42AA.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -58,17 +58,17 @@
 					<ReferencedStreamedFiles>
 						<File Id="415823821" Language="SFX">
 							<ShortName>SFX_Clock-001.wav</ShortName>
-							<Path>SFX\SFX_Clock-001_D79FB2B7.wem</Path>
+							<Path>SFX\SFX_Clock-001_9EDFC787.wem</Path>
 						</File>
 					</ReferencedStreamedFiles>
 					<IncludedMemoryFiles>
 						<File Id="399075311" Language="SFX">
 							<ShortName>SFX_Clock-001.wav</ShortName>
-							<Path>SFX\SFX_Clock-001_10C4C929.wem</Path>
+							<Path>SFX\SFX_Clock-001_3F75BDB9.wem</Path>
 						</File>
 						<File Id="1067417392" Language="SFX">
 							<ShortName>SFX_Clock-002.wav</ShortName>
-							<Path>SFX\SFX_Clock-002_10C4C929.wem</Path>
+							<Path>SFX\SFX_Clock-002_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -76,7 +76,7 @@
 					<IncludedMemoryFiles>
 						<File Id="527450663" Language="SFX">
 							<ShortName>SFX_Drawer_Close.wav</ShortName>
-							<Path>SFX\SFX_Drawer_Close_10C4C929.wem</Path>
+							<Path>SFX\SFX_Drawer_Close_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -84,7 +84,7 @@
 					<IncludedMemoryFiles>
 						<File Id="1062360790" Language="SFX">
 							<ShortName>SFX_Drawer_Open.wav</ShortName>
-							<Path>SFX\SFX_Drawer_Open_92236C6B.wem</Path>
+							<Path>SFX\SFX_Drawer_Open_2A6BC8DB.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -92,11 +92,11 @@
 					<IncludedMemoryFiles>
 						<File Id="124252642" Language="SFX">
 							<ShortName>SFX_Flashlight_On (1).wav</ShortName>
-							<Path>SFX\SFX_Flashlight_On (1)_10C4C929.wem</Path>
+							<Path>SFX\SFX_Flashlight_On (1)_3F75BDB9.wem</Path>
 						</File>
 						<File Id="978397171" Language="SFX">
 							<ShortName>SFX_Flashlight_Pickup (1).wav</ShortName>
-							<Path>SFX\SFX_Flashlight_Pickup (1)_10C4C929.wem</Path>
+							<Path>SFX\SFX_Flashlight_Pickup (1)_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -104,15 +104,7 @@
 					<IncludedMemoryFiles>
 						<File Id="454786560" Language="SFX">
 							<ShortName>SFX_Game_End.wav</ShortName>
-							<Path>SFX\SFX_Game_End_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2901631795" Name="Play_Game_Start_Candle" ObjectPath="\Events\McSpookyJam2020\SFXs\Endings\Play_Game_Start_Candle" DurationType="OneShot" DurationMin="2.676875" DurationMax="2.676875">
-					<IncludedMemoryFiles>
-						<File Id="197720328" Language="SFX">
-							<ShortName>SFX_Game_Start_Candle.wav</ShortName>
-							<Path>SFX\SFX_Game_Start_Candle_10C4C929.wem</Path>
+							<Path>SFX\SFX_Game_End_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -120,25 +112,15 @@
 					<IncludedMemoryFiles>
 						<File Id="730490238" Language="SFX">
 							<ShortName>SFX_Game_Start_Candle_Trem.wav</ShortName>
-							<Path>SFX\SFX_Game_Start_Candle_Trem_10C4C929.wem</Path>
+							<Path>SFX\SFX_Game_Start_Candle_Trem_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3727723795" Name="Play_Game_Start_Light_Switch" ObjectPath="\Events\McSpookyJam2020\SFXs\Endings\Play_Game_Start_Light_Switch" DurationType="OneShot" DurationMin="2.676875" DurationMax="2.676875">
-					<IncludedMemoryFiles>
-						<File Id="921245797" Language="SFX">
-							<ShortName>SFX_Game_Start_Light_Switch.wav</ShortName>
-							<Path>SFX\SFX_Game_Start_Light_Switch_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="3781480055" Name="Play_Ghost_Footsteps" ObjectPath="\Events\McSpookyJam2020\SFXs\Spooks\Play_Ghost_Footsteps" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2957503395" Name="Play_Ghost_Jolt" ObjectPath="\Events\McSpookyJam2020\SFXs\Spooks\Play_Ghost_Jolt" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
 				<Event Id="314077991" Name="Play_Light_Switch_Off" ObjectPath="\Events\McSpookyJam2020\Interactables\Lights\Light_Switch\Play_Light_Switch_Off" DurationType="OneShot" DurationMin="0.109312" DurationMax="0.109312">
 					<IncludedMemoryFiles>
 						<File Id="18940520" Language="SFX">
 							<ShortName>SFX_Light_Switch_Off.wav</ShortName>
-							<Path>SFX\SFX_Light_Switch_Off_10C4C929.wem</Path>
+							<Path>SFX\SFX_Light_Switch_Off_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -146,28 +128,27 @@
 					<IncludedMemoryFiles>
 						<File Id="749257360" Language="SFX">
 							<ShortName>SFX_Light_Switch_On.wav</ShortName>
-							<Path>SFX\SFX_Light_Switch_On_10C4C929.wem</Path>
+							<Path>SFX\SFX_Light_Switch_On_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3933447040" Name="Play_Lights_Out" ObjectPath="\Events\McSpookyJam2020\SFXs\Spooks\Play_Lights_Out" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
 				<Event Id="281597619" Name="Play_Locked_Door" ObjectPath="\Events\McSpookyJam2020\Interactables\Doors\Play_Locked_Door" DurationType="OneShot" DurationMin="0.523100" DurationMax="0.654054">
 					<IncludedMemoryFiles>
 						<File Id="528498600" Language="SFX">
 							<ShortName>SFX_Door_Knob_Locked_End_03.wav</ShortName>
-							<Path>SFX\SFX_Door_Knob_Locked_End_03_A900E52D.wem</Path>
+							<Path>SFX\SFX_Door_Knob_Locked_End_03_E1B83D1D.wem</Path>
 						</File>
 						<File Id="592735717" Language="SFX">
 							<ShortName>SFX_Door_Knob_Locked_Start_02.wav</ShortName>
-							<Path>SFX\SFX_Door_Knob_Locked_Start_02_3B764F67.wem</Path>
+							<Path>SFX\SFX_Door_Knob_Locked_Start_02_BE4D8E97.wem</Path>
 						</File>
 						<File Id="721069643" Language="SFX">
 							<ShortName>SFX_Door_Knob_Locked_End_02.wav</ShortName>
-							<Path>SFX\SFX_Door_Knob_Locked_End_02_89189D27.wem</Path>
+							<Path>SFX\SFX_Door_Knob_Locked_End_02_D7329657.wem</Path>
 						</File>
 						<File Id="857015964" Language="SFX">
 							<ShortName>SFX_Door_Knob_Locked_Start_01.wav</ShortName>
-							<Path>SFX\SFX_Door_Knob_Locked_Start_01_D1F8106E.wem</Path>
+							<Path>SFX\SFX_Door_Knob_Locked_Start_01_A235685E.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -175,7 +156,7 @@
 					<ReferencedStreamedFiles>
 						<File Id="621486811" Language="SFX">
 							<ShortName>SFX_Demon_Circle_Loop_01.wav</ShortName>
-							<Path>SFX\SFX_Demon_Circle_Loop_01_A472F907.wem</Path>
+							<Path>SFX\SFX_Demon_Circle_Loop_01_64DFEF17.wem</Path>
 						</File>
 					</ReferencedStreamedFiles>
 				</Event>
@@ -183,7 +164,7 @@
 					<IncludedMemoryFiles>
 						<File Id="901584945" Language="SFX">
 							<ShortName>SFX_Metal_Door_Close.wav</ShortName>
-							<Path>SFX\SFX_Metal_Door_Close_10C4C929.wem</Path>
+							<Path>SFX\SFX_Metal_Door_Close_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -191,7 +172,7 @@
 					<IncludedMemoryFiles>
 						<File Id="111880704" Language="SFX">
 							<ShortName>SFX_Metal_Door_Open.wav</ShortName>
-							<Path>SFX\SFX_Metal_Door_Open_10C4C929.wem</Path>
+							<Path>SFX\SFX_Metal_Door_Open_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -199,7 +180,7 @@
 					<IncludedMemoryFiles>
 						<File Id="873599575" Language="SFX">
 							<ShortName>SFX_Monster_Attack_Start_02.wav</ShortName>
-							<Path>SFX\SFX_Monster_Attack_Start_02_10C4C929.wem</Path>
+							<Path>SFX\SFX_Monster_Attack_Start_02_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -208,7 +189,7 @@
 					<IncludedMemoryFiles>
 						<File Id="706906272" Language="SFX">
 							<ShortName>SFX_Monster_Dying_01.wav</ShortName>
-							<Path>SFX\SFX_Monster_Dying_01_10C4C929.wem</Path>
+							<Path>SFX\SFX_Monster_Dying_01_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -216,7 +197,7 @@
 					<IncludedMemoryFiles>
 						<File Id="730490238" Language="SFX">
 							<ShortName>SFX_Game_Start_Candle_Trem.wav</ShortName>
-							<Path>SFX\SFX_Game_Start_Candle_Trem_10C4C929.wem</Path>
+							<Path>SFX\SFX_Game_Start_Candle_Trem_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -224,23 +205,23 @@
 					<IncludedMemoryFiles>
 						<File Id="124871761" Language="SFX">
 							<ShortName>SFX_Monster_Footsteps_03.wav</ShortName>
-							<Path>SFX\SFX_Monster_Footsteps_03_10C4C929.wem</Path>
+							<Path>SFX\SFX_Monster_Footsteps_03_3F75BDB9.wem</Path>
 						</File>
 						<File Id="463893973" Language="SFX">
 							<ShortName>SFX_Monster_Footsteps_05.wav</ShortName>
-							<Path>SFX\SFX_Monster_Footsteps_05_10C4C929.wem</Path>
+							<Path>SFX\SFX_Monster_Footsteps_05_3F75BDB9.wem</Path>
 						</File>
 						<File Id="551553071" Language="SFX">
 							<ShortName>SFX_Monster_Footsteps_02.wav</ShortName>
-							<Path>SFX\SFX_Monster_Footsteps_02_10C4C929.wem</Path>
+							<Path>SFX\SFX_Monster_Footsteps_02_3F75BDB9.wem</Path>
 						</File>
 						<File Id="734625085" Language="SFX">
 							<ShortName>SFX_Monster_Footsteps_04.wav</ShortName>
-							<Path>SFX\SFX_Monster_Footsteps_04_10C4C929.wem</Path>
+							<Path>SFX\SFX_Monster_Footsteps_04_3F75BDB9.wem</Path>
 						</File>
 						<File Id="735217198" Language="SFX">
 							<ShortName>SFX_Monster_Footsteps_01.wav</ShortName>
-							<Path>SFX\SFX_Monster_Footsteps_01_10C4C929.wem</Path>
+							<Path>SFX\SFX_Monster_Footsteps_01_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -248,7 +229,7 @@
 					<IncludedMemoryFiles>
 						<File Id="774958717" Language="SFX">
 							<ShortName>SFX_Monster_Hiss_02.wav</ShortName>
-							<Path>SFX\SFX_Monster_Hiss_02_10C4C929.wem</Path>
+							<Path>SFX\SFX_Monster_Hiss_02_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -257,135 +238,135 @@
 					<IncludedMemoryFiles>
 						<File Id="18419317" Language="SFX">
 							<ShortName>SFX_Piano_05.wav</ShortName>
-							<Path>SFX\SFX_Piano_05_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_05_3F75BDB9.wem</Path>
 						</File>
 						<File Id="40510926" Language="SFX">
 							<ShortName>SFX_Piano_10.wav</ShortName>
-							<Path>SFX\SFX_Piano_10_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_10_3F75BDB9.wem</Path>
 						</File>
 						<File Id="55624644" Language="SFX">
 							<ShortName>SFX_Piano_31.wav</ShortName>
-							<Path>SFX\SFX_Piano_31_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_31_3F75BDB9.wem</Path>
 						</File>
 						<File Id="115061783" Language="SFX">
 							<ShortName>SFX_Piano_09.wav</ShortName>
-							<Path>SFX\SFX_Piano_09_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_09_3F75BDB9.wem</Path>
 						</File>
 						<File Id="126214581" Language="SFX">
 							<ShortName>SFX_Piano_21.wav</ShortName>
-							<Path>SFX\SFX_Piano_21_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_21_3F75BDB9.wem</Path>
 						</File>
 						<File Id="133873693" Language="SFX">
 							<ShortName>SFX_Piano_17.wav</ShortName>
-							<Path>SFX\SFX_Piano_17_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_17_3F75BDB9.wem</Path>
 						</File>
 						<File Id="205677186" Language="SFX">
 							<ShortName>SFX_Piano_33.wav</ShortName>
-							<Path>SFX\SFX_Piano_33_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_33_3F75BDB9.wem</Path>
 						</File>
 						<File Id="206413593" Language="SFX">
 							<ShortName>SFX_Piano_12.wav</ShortName>
-							<Path>SFX\SFX_Piano_12_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_12_3F75BDB9.wem</Path>
 						</File>
 						<File Id="207091993" Language="SFX">
 							<ShortName>SFX_Piano_13.wav</ShortName>
-							<Path>SFX\SFX_Piano_13_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_13_3F75BDB9.wem</Path>
 						</File>
 						<File Id="220262403" Language="SFX">
 							<ShortName>SFX_Piano_11.wav</ShortName>
-							<Path>SFX\SFX_Piano_11_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_11_3F75BDB9.wem</Path>
 						</File>
 						<File Id="238929806" Language="SFX">
 							<ShortName>SFX_Piano_27.wav</ShortName>
-							<Path>SFX\SFX_Piano_27_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_27_3F75BDB9.wem</Path>
 						</File>
 						<File Id="246065983" Language="SFX">
 							<ShortName>SFX_Piano_14.wav</ShortName>
-							<Path>SFX\SFX_Piano_14_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_14_3F75BDB9.wem</Path>
 						</File>
 						<File Id="246169638" Language="SFX">
 							<ShortName>SFX_Piano_01.wav</ShortName>
-							<Path>SFX\SFX_Piano_01_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_01_3F75BDB9.wem</Path>
 						</File>
 						<File Id="311835917" Language="SFX">
 							<ShortName>SFX_Piano_06.wav</ShortName>
-							<Path>SFX\SFX_Piano_06_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_06_3F75BDB9.wem</Path>
 						</File>
 						<File Id="329712708" Language="SFX">
 							<ShortName>SFX_Piano_19.wav</ShortName>
-							<Path>SFX\SFX_Piano_19_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_19_3F75BDB9.wem</Path>
 						</File>
 						<File Id="340554768" Language="SFX">
 							<ShortName>SFX_Piano_20.wav</ShortName>
-							<Path>SFX\SFX_Piano_20_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_20_3F75BDB9.wem</Path>
 						</File>
 						<File Id="405984963" Language="SFX">
 							<ShortName>SFX_Piano_04.wav</ShortName>
-							<Path>SFX\SFX_Piano_04_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_04_3F75BDB9.wem</Path>
 						</File>
 						<File Id="434715235" Language="SFX">
 							<ShortName>SFX_Piano_25.wav</ShortName>
-							<Path>SFX\SFX_Piano_25_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_25_3F75BDB9.wem</Path>
 						</File>
 						<File Id="436087904" Language="SFX">
 							<ShortName>SFX_Piano_15.wav</ShortName>
-							<Path>SFX\SFX_Piano_15_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_15_3F75BDB9.wem</Path>
 						</File>
 						<File Id="480711875" Language="SFX">
 							<ShortName>SFX_Piano_03.wav</ShortName>
-							<Path>SFX\SFX_Piano_03_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_03_3F75BDB9.wem</Path>
 						</File>
 						<File Id="522951690" Language="SFX">
 							<ShortName>SFX_Piano_32.wav</ShortName>
-							<Path>SFX\SFX_Piano_32_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_32_3F75BDB9.wem</Path>
 						</File>
 						<File Id="565409415" Language="SFX">
 							<ShortName>SFX_Piano_08.wav</ShortName>
-							<Path>SFX\SFX_Piano_08_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_08_3F75BDB9.wem</Path>
 						</File>
 						<File Id="570597251" Language="SFX">
 							<ShortName>SFX_Piano_24.wav</ShortName>
-							<Path>SFX\SFX_Piano_24_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_24_3F75BDB9.wem</Path>
 						</File>
 						<File Id="572436546" Language="SFX">
 							<ShortName>SFX_Piano_16.wav</ShortName>
-							<Path>SFX\SFX_Piano_16_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_16_3F75BDB9.wem</Path>
 						</File>
 						<File Id="631183542" Language="SFX">
 							<ShortName>SFX_Piano_22.wav</ShortName>
-							<Path>SFX\SFX_Piano_22_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_22_3F75BDB9.wem</Path>
 						</File>
 						<File Id="666517486" Language="SFX">
 							<ShortName>SFX_Piano_30.wav</ShortName>
-							<Path>SFX\SFX_Piano_30_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_30_3F75BDB9.wem</Path>
 						</File>
 						<File Id="670728688" Language="SFX">
 							<ShortName>SFX_Piano_29.wav</ShortName>
-							<Path>SFX\SFX_Piano_29_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_29_3F75BDB9.wem</Path>
 						</File>
 						<File Id="770251664" Language="SFX">
 							<ShortName>SFX_Piano_07.wav</ShortName>
-							<Path>SFX\SFX_Piano_07_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_07_3F75BDB9.wem</Path>
 						</File>
 						<File Id="816618173" Language="SFX">
 							<ShortName>SFX_Piano_28.wav</ShortName>
-							<Path>SFX\SFX_Piano_28_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_28_3F75BDB9.wem</Path>
 						</File>
 						<File Id="828540892" Language="SFX">
 							<ShortName>SFX_Piano_18.wav</ShortName>
-							<Path>SFX\SFX_Piano_18_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_18_3F75BDB9.wem</Path>
 						</File>
 						<File Id="1045638834" Language="SFX">
 							<ShortName>SFX_Piano_23.wav</ShortName>
-							<Path>SFX\SFX_Piano_23_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_23_3F75BDB9.wem</Path>
 						</File>
 						<File Id="1053559927" Language="SFX">
 							<ShortName>SFX_Piano_02.wav</ShortName>
-							<Path>SFX\SFX_Piano_02_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_02_3F75BDB9.wem</Path>
 						</File>
 						<File Id="1060018563" Language="SFX">
 							<ShortName>SFX_Piano_26.wav</ShortName>
-							<Path>SFX\SFX_Piano_26_10C4C929.wem</Path>
+							<Path>SFX\SFX_Piano_26_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -393,7 +374,7 @@
 					<IncludedMemoryFiles>
 						<File Id="941419923" Language="SFX">
 							<ShortName>SFX_Pickup_Dagger.wav</ShortName>
-							<Path>SFX\SFX_Pickup_Dagger_10C4C929.wem</Path>
+							<Path>SFX\SFX_Pickup_Dagger_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -401,7 +382,7 @@
 					<IncludedMemoryFiles>
 						<File Id="43030366" Language="SFX">
 							<ShortName>SFX_Pickup_Key.wav</ShortName>
-							<Path>SFX\SFX_Pickup_Key_10C4C929.wem</Path>
+							<Path>SFX\SFX_Pickup_Key_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -409,23 +390,23 @@
 					<IncludedMemoryFiles>
 						<File Id="47420332" Language="SFX">
 							<ShortName>SFX_Pickup_Note_01.wav</ShortName>
-							<Path>SFX\SFX_Pickup_Note_01_10C4C929.wem</Path>
+							<Path>SFX\SFX_Pickup_Note_01_3F75BDB9.wem</Path>
 						</File>
 						<File Id="112985724" Language="SFX">
 							<ShortName>SFX_Pickup_Note_03.wav</ShortName>
-							<Path>SFX\SFX_Pickup_Note_03_10C4C929.wem</Path>
+							<Path>SFX\SFX_Pickup_Note_03_3F75BDB9.wem</Path>
 						</File>
 						<File Id="727336084" Language="SFX">
 							<ShortName>SFX_Pickup_Note_05.wav</ShortName>
-							<Path>SFX\SFX_Pickup_Note_05_10C4C929.wem</Path>
+							<Path>SFX\SFX_Pickup_Note_05_3F75BDB9.wem</Path>
 						</File>
 						<File Id="1032202223" Language="SFX">
 							<ShortName>SFX_Pickup_Note_02.wav</ShortName>
-							<Path>SFX\SFX_Pickup_Note_02_10C4C929.wem</Path>
+							<Path>SFX\SFX_Pickup_Note_02_3F75BDB9.wem</Path>
 						</File>
 						<File Id="1064103587" Language="SFX">
 							<ShortName>SFX_Pickup_Note_04.wav</ShortName>
-							<Path>SFX\SFX_Pickup_Note_04_10C4C929.wem</Path>
+							<Path>SFX\SFX_Pickup_Note_04_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -433,23 +414,23 @@
 					<IncludedMemoryFiles>
 						<File Id="160417959" Language="SFX">
 							<ShortName>SFX_Player_Gravel_Footsteps_02.wav</ShortName>
-							<Path>SFX\SFX_Player_Gravel_Footsteps_02_10C4C929.wem</Path>
+							<Path>SFX\SFX_Player_Gravel_Footsteps_02_3F75BDB9.wem</Path>
 						</File>
 						<File Id="858689308" Language="SFX">
 							<ShortName>SFX_Player_Gravel_Footsteps_04.wav</ShortName>
-							<Path>SFX\SFX_Player_Gravel_Footsteps_04_10C4C929.wem</Path>
+							<Path>SFX\SFX_Player_Gravel_Footsteps_04_3F75BDB9.wem</Path>
 						</File>
 						<File Id="964453219" Language="SFX">
 							<ShortName>SFX_Player_Gravel_Footsteps_05.wav</ShortName>
-							<Path>SFX\SFX_Player_Gravel_Footsteps_05_10C4C929.wem</Path>
+							<Path>SFX\SFX_Player_Gravel_Footsteps_05_3F75BDB9.wem</Path>
 						</File>
 						<File Id="986477594" Language="SFX">
 							<ShortName>SFX_Player_Gravel_Footsteps_01.wav</ShortName>
-							<Path>SFX\SFX_Player_Gravel_Footsteps_01_10C4C929.wem</Path>
+							<Path>SFX\SFX_Player_Gravel_Footsteps_01_3F75BDB9.wem</Path>
 						</File>
 						<File Id="1047672898" Language="SFX">
 							<ShortName>SFX_Player_Gravel_Footsteps_03.wav</ShortName>
-							<Path>SFX\SFX_Player_Gravel_Footsteps_03_10C4C929.wem</Path>
+							<Path>SFX\SFX_Player_Gravel_Footsteps_03_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -457,27 +438,27 @@
 					<IncludedMemoryFiles>
 						<File Id="91127603" Language="SFX">
 							<ShortName>SFX_Creaky_Footstep_Light_Run_01.wav</ShortName>
-							<Path>SFX\SFX_Creaky_Footstep_Light_Run_01_10C4C929.wem</Path>
+							<Path>SFX\SFX_Creaky_Footstep_Light_Run_01_3F75BDB9.wem</Path>
 						</File>
 						<File Id="280693503" Language="SFX">
 							<ShortName>SFX_Creaky_Footstep_Light_Run_03.wav</ShortName>
-							<Path>SFX\SFX_Creaky_Footstep_Light_Run_03_10C4C929.wem</Path>
+							<Path>SFX\SFX_Creaky_Footstep_Light_Run_03_3F75BDB9.wem</Path>
 						</File>
 						<File Id="367823420" Language="SFX">
 							<ShortName>SFX_Creaky_Footstep_Light_Run_04.wav</ShortName>
-							<Path>SFX\SFX_Creaky_Footstep_Light_Run_04_10C4C929.wem</Path>
+							<Path>SFX\SFX_Creaky_Footstep_Light_Run_04_3F75BDB9.wem</Path>
 						</File>
 						<File Id="710010088" Language="SFX">
 							<ShortName>SFX_Creaky_Footstep_Light_Run_06.wav</ShortName>
-							<Path>SFX\SFX_Creaky_Footstep_Light_Run_06_10C4C929.wem</Path>
+							<Path>SFX\SFX_Creaky_Footstep_Light_Run_06_3F75BDB9.wem</Path>
 						</File>
 						<File Id="737542485" Language="SFX">
 							<ShortName>SFX_Creaky_Footstep_Light_Run_05.wav</ShortName>
-							<Path>SFX\SFX_Creaky_Footstep_Light_Run_05_10C4C929.wem</Path>
+							<Path>SFX\SFX_Creaky_Footstep_Light_Run_05_3F75BDB9.wem</Path>
 						</File>
 						<File Id="979357900" Language="SFX">
 							<ShortName>SFX_Creaky_Footstep_Light_Run_02.wav</ShortName>
-							<Path>SFX\SFX_Creaky_Footstep_Light_Run_02_10C4C929.wem</Path>
+							<Path>SFX\SFX_Creaky_Footstep_Light_Run_02_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -485,31 +466,31 @@
 					<IncludedMemoryFiles>
 						<File Id="112294917" Language="SFX">
 							<ShortName>SFX_Creaky_Footstep_Light_05.wav</ShortName>
-							<Path>SFX\SFX_Creaky_Footstep_Light_05_10C4C929.wem</Path>
+							<Path>SFX\SFX_Creaky_Footstep_Light_05_3F75BDB9.wem</Path>
 						</File>
 						<File Id="183087932" Language="SFX">
 							<ShortName>SFX_Creaky_Footstep_Light_07.wav</ShortName>
-							<Path>SFX\SFX_Creaky_Footstep_Light_07_10C4C929.wem</Path>
+							<Path>SFX\SFX_Creaky_Footstep_Light_07_3F75BDB9.wem</Path>
 						</File>
 						<File Id="274231778" Language="SFX">
 							<ShortName>SFX_Creaky_Footstep_Light_06.wav</ShortName>
-							<Path>SFX\SFX_Creaky_Footstep_Light_06_10C4C929.wem</Path>
+							<Path>SFX\SFX_Creaky_Footstep_Light_06_3F75BDB9.wem</Path>
 						</File>
 						<File Id="286675127" Language="SFX">
 							<ShortName>SFX_Creaky_Footstep_Light_03.wav</ShortName>
-							<Path>SFX\SFX_Creaky_Footstep_Light_03_E6E019F1.wem</Path>
+							<Path>SFX\SFX_Creaky_Footstep_Light_03_1B6B9E41.wem</Path>
 						</File>
 						<File Id="321291601" Language="SFX">
 							<ShortName>SFX_Creaky_Footstep_Light_04.wav</ShortName>
-							<Path>SFX\SFX_Creaky_Footstep_Light_04_10C4C929.wem</Path>
+							<Path>SFX\SFX_Creaky_Footstep_Light_04_3F75BDB9.wem</Path>
 						</File>
 						<File Id="475776318" Language="SFX">
 							<ShortName>SFX_Creaky_Footstep_Light_01.wav</ShortName>
-							<Path>SFX\SFX_Creaky_Footstep_Light_01_10C4C929.wem</Path>
+							<Path>SFX\SFX_Creaky_Footstep_Light_01_3F75BDB9.wem</Path>
 						</File>
 						<File Id="714979815" Language="SFX">
 							<ShortName>SFX_Creaky_Footstep_Light_02.wav</ShortName>
-							<Path>SFX\SFX_Creaky_Footstep_Light_02_10C4C929.wem</Path>
+							<Path>SFX\SFX_Creaky_Footstep_Light_02_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -517,17 +498,16 @@
 					<ReferencedStreamedFiles>
 						<File Id="621486811" Language="SFX">
 							<ShortName>SFX_Demon_Circle_Loop_01.wav</ShortName>
-							<Path>SFX\SFX_Demon_Circle_Loop_01_A472F907.wem</Path>
+							<Path>SFX\SFX_Demon_Circle_Loop_01_64DFEF17.wem</Path>
 						</File>
 					</ReferencedStreamedFiles>
 				</Event>
-				<Event Id="754369548" Name="Play_Stinger" ObjectPath="\Events\McSpookyJam2020\SFXs\Spooks\Play_Stinger" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
 				<Event Id="1986548623" Name="Play_UI_Exit" ObjectPath="\Events\McSpookyJam2020\UI\Play_UI_Exit" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
 				<Event Id="2519795238" Name="Play_UI_Negative" ObjectPath="\Events\McSpookyJam2020\UI\Play_UI_Negative" DurationType="OneShot" DurationMin="0.676146" DurationMax="0.676146">
 					<IncludedMemoryFiles>
 						<File Id="384484756" Language="SFX">
 							<ShortName>SFX_UI_Negative_01.wav</ShortName>
-							<Path>SFX\SFX_UI_Negative_01_10C4C929.wem</Path>
+							<Path>SFX\SFX_UI_Negative_01_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -535,7 +515,7 @@
 					<IncludedMemoryFiles>
 						<File Id="891757075" Language="SFX">
 							<ShortName>SFX_UI_Positive_01.wav</ShortName>
-							<Path>SFX\SFX_UI_Positive_01_10C4C929.wem</Path>
+							<Path>SFX\SFX_UI_Positive_01_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -544,7 +524,7 @@
 					<ReferencedStreamedFiles>
 						<File Id="962750646" Language="SFX">
 							<ShortName>McJam2020_window_closed_night.wav</ShortName>
-							<Path>SFX\McJam2020_window_closed_night_D79FB2B7.wem</Path>
+							<Path>SFX\McJam2020_window_closed_night_9EDFC787.wem</Path>
 						</File>
 					</ReferencedStreamedFiles>
 				</Event>
@@ -552,7 +532,7 @@
 					<IncludedMemoryFiles>
 						<File Id="263069633" Language="SFX">
 							<ShortName>SFX_Wood_Door_Close.wav</ShortName>
-							<Path>SFX\SFX_Wood_Door_Close_10C4C929.wem</Path>
+							<Path>SFX\SFX_Wood_Door_Close_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -560,7 +540,7 @@
 					<IncludedMemoryFiles>
 						<File Id="990572818" Language="SFX">
 							<ShortName>SFX_Wood_Door_Open.wav</ShortName>
-							<Path>SFX\SFX_Wood_Door_Open_10C4C929.wem</Path>
+							<Path>SFX\SFX_Wood_Door_Open_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
