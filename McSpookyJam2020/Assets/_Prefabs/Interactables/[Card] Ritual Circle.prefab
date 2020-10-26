@@ -236,11 +236,18 @@ MonoBehaviour:
   lockedInteractStartAudio:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: c74c35b29dd0be0489ee79a6a401d181,
+      type: 2}
   lockedInteractEndAudio:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: c74c35b29dd0be0489ee79a6a401d181,
+      type: 2}
+  stopMonsterDying:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c74c35b29dd0be0489ee79a6a401d181,
+      type: 2}
 --- !u!54 &5393420277499612186
 Rigidbody:
   m_ObjectHideFlags: 0

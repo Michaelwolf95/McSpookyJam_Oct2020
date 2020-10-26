@@ -12,6 +12,7 @@ public class RitualCircle : InvestigationCardInteractable
 
     public AK.Wwise.Event lockedInteractStartAudio;
     public AK.Wwise.Event lockedInteractEndAudio;
+    [SerializeField] AK.Wwise.Event stopMonsterDying;
 
     public bool isOpen { get; private set; }
 
@@ -25,6 +26,7 @@ public class RitualCircle : InvestigationCardInteractable
 
     private void OnRitualPerformed()
     {
+        stopMonsterDying.Post(gameObject);
         SetOpenState(true);
         
         GameManager.instance.OnRitualFinished();
