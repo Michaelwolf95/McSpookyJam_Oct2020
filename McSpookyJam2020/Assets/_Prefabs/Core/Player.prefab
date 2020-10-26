@@ -121,7 +121,7 @@ MonoBehaviour:
   spotLight: {fileID: 956126460}
   layerMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 513
   isEnabled: 0
 --- !u!108 &956126460
 Light:

@@ -2251,8 +2251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 8786675518878862360, guid: 36facb61d3f84b341b89b7decea2841b,
-    type: 3}
+  selectedFlowchart: {fileID: 0}
 --- !u!4 &813754147
 Transform:
   m_ObjectHideFlags: 1
@@ -9018,6 +9017,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1109488257}
     m_Modifications:
+    - target: {fileID: 858396532104985354, guid: 895bec309d3eb9042b0ee7961649c25a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -47.596558
+      objectReference: {fileID: 0}
     - target: {fileID: 4796692945634730371, guid: 895bec309d3eb9042b0ee7961649c25a,
         type: 3}
       propertyPath: m_AnchorMin.y
