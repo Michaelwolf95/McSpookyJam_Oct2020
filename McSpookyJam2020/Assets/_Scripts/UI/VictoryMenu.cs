@@ -7,7 +7,9 @@ using UnityEngine.UI;
 public class VictoryMenu : MonoBehaviour
 {
     private static string FEEDBACK_FORM_URL = "https://forms.gle/b9NmfxsbFo1gvGkE8";
-    
+
+    [SerializeField] private AK.Wwise.Event exitButtonSound;
+
     public CanvasGroup mainCanvasGroup = null;
     public CanvasGroup buttonCanvasGroup = null;
     public CanvasGroup creditsPanel = null;
@@ -27,7 +29,7 @@ public class VictoryMenu : MonoBehaviour
         }
         if (feedbackButton != null)
         {
-            feedbackButton.onClick.AddListener(OnQuitToTitlePressed);
+            feedbackButton.onClick.AddListener(OnFeedbackButtonPressed);
         }
         
         mainCanvasGroup.gameObject.SetActive(false);
@@ -86,6 +88,7 @@ public class VictoryMenu : MonoBehaviour
     
     private void OnQuitToTitlePressed()
     {
+        exitButtonSound.Post(gameObject);
         ToggleMenuInteractable(false);
         StartCoroutine(MenuTweenEffects.ScalePressEffect((RectTransform)quitButton.transform, () =>
         {

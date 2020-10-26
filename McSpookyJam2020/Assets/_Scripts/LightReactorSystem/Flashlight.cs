@@ -81,9 +81,7 @@ public class Flashlight : SceneSingleton<Flashlight>
     private RaycastHit[] ConeCastAll(Vector3 origin, Vector3 direction, float maxDistance, float coneAngle, LayerMask layerMask)
     {
         float maxRadius = maxDistance * Mathf.Abs(Mathf.Tan(coneAngle / 2f));
-        Debug.Log(maxRadius);
         RaycastHit[] sphereCastHits = Physics.SphereCastAll(origin - (direction*maxRadius), maxRadius, direction, maxDistance, layerMask.value, QueryTriggerInteraction.Collide);
-        //RaycastHit[] sphereCastHits = Physics.SphereCastAll(origin, maxRadius, direction, maxDistance, layerMask.value, QueryTriggerInteraction.Collide);
         List<RaycastHit> coneCastHitList = new List<RaycastHit>();
         
         if (sphereCastHits.Length > 0)

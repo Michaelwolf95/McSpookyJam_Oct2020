@@ -86,7 +86,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 1b4e00244ba2a24097d9495a78791aa7
     GuidInternal: 
-    m_lastTime: -8585979206508002971
+    m_lastTime: -8585979144781110028
     List: []
   - PhysicalPath: Events\McSpookyJam2020.wwu
     PathAndIcons:
@@ -95,7 +95,7 @@ MonoBehaviour:
     ParentPath: McSpookyJam2020
     guid: 8a512b1a5243214c9bfc30890d9ea72b
     GuidInternal: 
-    m_lastTime: -8585979168874306244
+    m_lastTime: -8585979144781060162
     List:
     - name: AMB
       guid: d0e6c28b7fe1e34d941ccf3250b43293
@@ -561,8 +561,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: McSpookyJam2020\Monster\Play_Monster_Dying
       maxAttenuation: 0
-      maxDuration: 19.703459
-      minDuration: 19.703459
+      maxDuration: 7.854813
+      minDuration: 7.854813
     - name: Play_Monster_Emerge
       guid: 54c359117bbff9468d8a0ba0778a79d5
       id: 3611802004
@@ -619,6 +619,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Piano_Notes
+      guid: 17caeea86cfdee4a8e98e16916855762
+      id: 1530954351
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: Interactables
+        ObjectType: 4
+      - ElementName: Play_Piano_Notes
+        ObjectType: 3
+      Path: McSpookyJam2020\Interactables\Play_Piano_Notes
+      maxAttenuation: 13
+      maxDuration: 11.53062
+      minDuration: 2.170538
     - name: Play_Pickup_Dagger
       guid: e2e2f1f8618e7a46a6d3f29f0986c8a2
       id: 2380307491
@@ -904,6 +918,20 @@ MonoBehaviour:
       - ElementName: Stop_AMB
         ObjectType: 3
       Path: McSpookyJam2020\AMB\Stop_AMB
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Main_Menu_Fade
+      guid: 41d77f60ab564e4da45fbc49836ad6c2
+      id: 4095429044
+      PathAndIcons:
+      - ElementName: McSpookyJam2020
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Stop_Main_Menu_Fade
+        ObjectType: 3
+      Path: McSpookyJam2020\UI\Stop_Main_Menu_Fade
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0

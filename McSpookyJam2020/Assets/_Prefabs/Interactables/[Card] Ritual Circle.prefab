@@ -231,16 +231,23 @@ MonoBehaviour:
   flowchartPrefab: {fileID: 5229615216019433152, guid: 9fb94710b6b075a48945503554a909ba,
     type: 3}
   exitOnEscapeInput: 0
-  lockedSayContent: It's some sort of ritual circle!
+  lockedSayContent: It's some sort of ritual circle?
   lockedSayDelay: 0
   lockedInteractStartAudio:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: c74c35b29dd0be0489ee79a6a401d181,
+      type: 2}
   lockedInteractEndAudio:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: c74c35b29dd0be0489ee79a6a401d181,
+      type: 2}
+  stopMonsterDying:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c74c35b29dd0be0489ee79a6a401d181,
+      type: 2}
 --- !u!54 &5393420277499612186
 Rigidbody:
   m_ObjectHideFlags: 0
