@@ -33,6 +33,11 @@ public class GameManager : SceneSingleton<GameManager>
     public AK.Wwise.Event StopMusic;
     public AK.Wwise.Event PlayMusic;
     public AK.Wwise.Event GameStart;
+
+    [Header("Debug Waypoints")] 
+    [SerializeField] private Transform startWaypoint = null;
+    [SerializeField] private Transform studyWaypoint = null;
+    [SerializeField] private Transform ritualWaypoint = null;
     
     public bool isNight { get; private set; }
 
@@ -86,6 +91,20 @@ public class GameManager : SceneSingleton<GameManager>
         {
             FindObjectOfType<BasementDoorInteractable>().OpenDoor();
         }
+        
+        if (Input.GetKeyDown(KeyCode.Keypad0))
+        {
+            DebugTeleportPlayer(startWaypoint);
+        }
+        else if (Input.GetKeyDown(KeyCode.Keypad1))
+        {
+            DebugTeleportPlayer(studyWaypoint);
+        }
+        else if (Input.GetKeyDown(KeyCode.Keypad2))
+        {
+            DebugTeleportPlayer(ritualWaypoint);
+        }
+        
 #endif
     }
 
@@ -148,8 +167,21 @@ public class GameManager : SceneSingleton<GameManager>
     {
         victoryMenu.FadeInMenu();
     }
-    
-    
+
+#if UNITY_EDITOR
+
+    private void DebugTeleportPlayer(Transform waypoint)
+    {
+        FirstPersonAIO.instance.SetControllerPause(true);
+        FirstPersonAIO.instance.transform.position = waypoint.position;
+        FirstPersonAIO.instance.transform.rotation = waypoint.rotation;
+        FirstPersonAIO.instance.SetControllerPause(false);
+    }
+#endif
+
+
+    #region Camera Effects
+
     
     // ToDo: Move these effects somewhere else.
 
@@ -282,8 +314,6 @@ public class GameManager : SceneSingleton<GameManager>
     }
 
 
-    #region Menu Button Functions
-
     #endregion
-    
+
 }

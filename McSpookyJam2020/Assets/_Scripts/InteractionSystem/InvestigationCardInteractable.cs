@@ -56,11 +56,17 @@ public class InvestigationCardInteractable : InteractableBase
     {
         base.OnFinishInteraction();
         
-        GameManager.instance.OnExitInvestigationCardScreen();
-        
         if (flowchartInstance != null)
         {
-            flowchartInstance.ExecuteBlock("QUIT");
+            flowchartInstance.ExecuteBlock(flowchartInstance.FindBlock("QUIT"), 0, () =>
+            {
+                GameManager.instance.OnExitInvestigationCardScreen();
+            });
+        }
+        else
+        {
+            // Quit early if no flowchart.
+            GameManager.instance.OnExitInvestigationCardScreen();
         }
     }
 }

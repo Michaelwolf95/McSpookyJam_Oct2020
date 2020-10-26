@@ -21,7 +21,7 @@ public class Interactor : MonoBehaviour
 
     private bool canInteract
     {
-        get { return GameManager.instance.IsPlayerInMenu == false; }
+        get { return GameManager.instance.IsPlayerInMenu == false && GameManager.instance.IsPlayerOnCardScreen == false; }
     }
 
     public Action onBeginInteractionEvent = delegate {  };
