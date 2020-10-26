@@ -15,6 +15,7 @@ public class GameManager : SceneSingleton<GameManager>
     public SpookerAI monsterController;
 
     public CanvasGroup attackEffectCanvasGroup = null;
+    public CanvasGroup fadeEffectCanvasGroup = null;
 
     public GameOverMenu gameOverMenu = null;
     public VictoryMenu victoryMenu = null;
@@ -32,7 +33,12 @@ public class GameManager : SceneSingleton<GameManager>
     public AK.Wwise.Event PlayAMB;
     public AK.Wwise.Event StopMusic;
     public AK.Wwise.Event PlayMusic;
-    public AK.Wwise.Event GameStart;
+    
+
+    [Header("Debug Waypoints")] 
+    [SerializeField] private Transform startWaypoint = null;
+    [SerializeField] private Transform studyWaypoint = null;
+    [SerializeField] private Transform ritualWaypoint = null;
     
     public bool isNight { get; private set; }
 
@@ -60,6 +66,11 @@ public class GameManager : SceneSingleton<GameManager>
         {
             CancelAttackEffect();
         }
+
+        if (Input.GetKeyDown(KeyCode.BackQuote))
+        {
+            TransitionToNight();
+        }
         
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
@@ -77,6 +88,24 @@ public class GameManager : SceneSingleton<GameManager>
         {
             InventoryManager.instance.CollectHagueLetter(1);
         }
+        else if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            FindObjectOfType<BasementDoorInteractable>().OpenDoor();
+        }
+        
+        if (Input.GetKeyDown(KeyCode.Keypad0))
+        {
+            DebugTeleportPlayer(startWaypoint);
+        }
+        else if (Input.GetKeyDown(KeyCode.Keypad1))
+        {
+            DebugTeleportPlayer(studyWaypoint);
+        }
+        else if (Input.GetKeyDown(KeyCode.Keypad2))
+        {
+            DebugTeleportPlayer(ritualWaypoint);
+        }
+        
 #endif
     }
 
@@ -84,17 +113,23 @@ public class GameManager : SceneSingleton<GameManager>
     {
         dayNightController.MakeDay();
         monsterController.gameObject.SetActive(false);
-        GameStart.Post(gameObject);
         PlayAMB.Post(gameObject);
         PlayMusic.Post(gameObject);
         Day.SetValue(gameObject);
         // ToDo: Ambiance start
+        
+        this.DoTween(lerp =>
+        {
+            fadeEffectCanvasGroup.alpha = Mathf.Lerp(1f, 0f, lerp);
+        }, null, 1f, 0f, EaseType.linear);
+        
     }
 
     public void OnEnterInvestigationCardScreen()
     {
         // Lock player movement
         FirstPersonAIO.instance.SetControllerPause(true);
+        Flashlight.instance.Toggle(false);
         IsPlayerOnCardScreen = true;
     }
 
@@ -102,6 +137,7 @@ public class GameManager : SceneSingleton<GameManager>
     {
         // Free player movement.
         FirstPersonAIO.instance.SetControllerPause(false);
+        Flashlight.instance.Toggle(InventoryManager.instance.hasFlashlight);
         IsPlayerOnCardScreen = false;
     }
 
@@ -127,13 +163,31 @@ public class GameManager : SceneSingleton<GameManager>
     {
         
     }
-
-    public void OnRitualPerformed()
+    
+    public void OnRitualStarted()
+    {
+        monsterController.gameObject.SetActive(false);
+    }
+    
+    public void OnRitualFinished()
     {
         victoryMenu.FadeInMenu();
     }
-    
-    
+
+#if UNITY_EDITOR
+
+    private void DebugTeleportPlayer(Transform waypoint)
+    {
+        FirstPersonAIO.instance.SetControllerPause(true);
+        FirstPersonAIO.instance.transform.position = waypoint.position;
+        FirstPersonAIO.instance.transform.rotation = waypoint.rotation;
+        FirstPersonAIO.instance.SetControllerPause(false);
+    }
+#endif
+
+
+    #region Camera Effects
+
     
     // ToDo: Move these effects somewhere else.
 
@@ -260,14 +314,12 @@ public class GameManager : SceneSingleton<GameManager>
         Debug.Log("PLAYER FUCKING DIED");
         
         FirstPersonAIO.instance.SetControllerPause(true);
-        monsterController.Disable();
+        monsterController.DisableController();
         
         gameOverMenu.FadeInMenu();
     }
 
 
-    #region Menu Button Functions
-
     #endregion
-    
+
 }

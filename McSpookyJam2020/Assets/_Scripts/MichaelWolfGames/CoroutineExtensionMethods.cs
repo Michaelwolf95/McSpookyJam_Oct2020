@@ -134,7 +134,7 @@ namespace MichaelWolfGames
             float timer = 0f;
             while (timer < duration)
             {
-                timer += (useUnscaledTime)? Time.unscaledTime :Time.deltaTime;
+                timer += (useUnscaledTime)? Time.unscaledDeltaTime :Time.deltaTime;
                 switch (easeType)
                 {
                     case EaseType.punch:

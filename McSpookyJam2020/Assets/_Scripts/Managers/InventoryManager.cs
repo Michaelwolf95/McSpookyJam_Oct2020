@@ -15,14 +15,19 @@ public class InventoryManager : SceneSingleton<InventoryManager>
     [SerializeField] private GameObject lettersIcon = null;
     [SerializeField] private TextMeshProUGUI letterCountText = null;
     [SerializeField] private TextMeshProUGUI letterTotalText = null;
+
+    [SerializeField] private Flowchart[] hagueLetterCardPrefabs = null;
     
     public bool hasFlashlight { get; private set; }
     public bool hasBasementKey { get; private set; }
     public bool hasRitualDagger { get; private set; }
     public bool hasLetters => GetHagueLetterCount() > 0;
-    
+
+
+    private Flowchart[] hagueLetterCardInstances = null;
     private HagueLetterInvestigatable[] hagueLetters = null;
     private bool[] hagueLettersCollectedFlags = null;
+    
     
     private void Start()
     {
@@ -63,6 +68,12 @@ public class InventoryManager : SceneSingleton<InventoryManager>
     
     private void InitHagueLetterCollection()
     {
+        hagueLetterCardInstances = new Flowchart[hagueLetterCardPrefabs.Length];
+        for (int i = 0; i < hagueLetterCardPrefabs.Length; i++)
+        {
+            hagueLetterCardInstances[i] = InvestigationCardCanvas.instance.InstantiateCard(hagueLetterCardPrefabs[i]);
+        }
+
         hagueLetters = FindObjectsOfType<HagueLetterInvestigatable>();
         hagueLettersCollectedFlags = new bool[hagueLetters.Length];
 
@@ -84,6 +95,11 @@ public class InventoryManager : SceneSingleton<InventoryManager>
             letterCountText.gameObject.SetActive(false);
         }
 
+    }
+
+    public Flowchart GetHagueLetterCardInstance(int collectionIndex)
+    {
+        return hagueLetterCardInstances[collectionIndex];
     }
     
     public void CollectHagueLetter(int letterIndex)
@@ -108,7 +124,7 @@ public class InventoryManager : SceneSingleton<InventoryManager>
         }
     }
 
-    private int GetHagueLetterCount()
+    public int GetHagueLetterCount()
     {
         if (hagueLettersCollectedFlags == null)
             return 0;

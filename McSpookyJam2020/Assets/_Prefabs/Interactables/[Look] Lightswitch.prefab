@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 3156312975734034496}
   - component: {fileID: 3156312975734034525}
   - component: {fileID: 3156312975734034499}
+  - component: {fileID: 929960449556119121}
   m_Layer: 8
   m_Name: '[Look] Lightswitch'
   m_TagString: Untagged
@@ -145,7 +146,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   sayContent: ...
-  sayDelay: 1
+  sayDelay: 0.25
 --- !u!54 &3156312975734034499
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -162,6 +163,69 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &929960449556119121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3156312975734034498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 193cc9978d1f4304a87ba905ee51f8d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SubscribableObject: {fileID: 0}
+  onBecomeDay:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1166877350929187818}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3156312975734034525}
+        m_MethodName: SetInteractable
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onBecomeNight:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1166877350929187818}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 3156312975734034525}
+        m_MethodName: SetInteractable
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &4719918485492971654
 GameObject:
   m_ObjectHideFlags: 0

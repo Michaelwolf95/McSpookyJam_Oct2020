@@ -121,7 +121,7 @@ MonoBehaviour:
   spotLight: {fileID: 956126460}
   layerMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 513
   isEnabled: 0
 --- !u!108 &956126460
 Light:
@@ -246,7 +246,8 @@ GameObject:
   - component: {fileID: 5689815126616618168}
   - component: {fileID: 5752120035486450002}
   - component: {fileID: 5738315348794181774}
-  m_Layer: 0
+  - component: {fileID: 7148789273859435945}
+  m_Layer: 11
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -403,7 +404,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.3
+  m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -419,24 +420,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf1a5ad4f9ffb154ca7813fdad11017a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundFloorMaterial: {fileID: 0}
+  groundFloorMaterial: {fileID: 13400000, guid: 74ea77593c490f246aee1763419a03f3,
+    type: 2}
   groundFloorFootSteps:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: d34ecee06d842784e941f022218c46a3,
       type: 2}
-  upstairsMaterial: {fileID: 0}
+  upstairsMaterial: {fileID: 13400000, guid: 1fcfb96d539c44045896ca14da7daedf, type: 2}
   upstairsFootSteps:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
-  basementMaterial: {fileID: 0}
+  basementMaterial: {fileID: 13400000, guid: fb9d4c33cddeb6d488de85f1422b5fb0, type: 2}
   basementFootSteps:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 475e4c33105825c449953ecfbc51bdec,
       type: 2}
-  stairsFloorMaterial: {fileID: 0}
+  stairsFloorMaterial: {fileID: 13400000, guid: 9526437583e74584ba81e57d2ec9de50,
+    type: 2}
   stairsFootSteps:
     idInternal: 0
     valueGuidInternal: 
@@ -566,6 +569,47 @@ MonoBehaviour:
     - {fileID: 8300000, guid: fef61cddf814a2c49bf7a6c33791c766, type: 3}
     - {fileID: 8300000, guid: 73f938638097f8042ad7842aa5b04ac5, type: 3}
     - {fileID: 8300000, guid: e06c6ae1948cafd45a952ab85ebe4fa7, type: 3}
+--- !u!114 &7148789273859435945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5634449000992531528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 193cc9978d1f4304a87ba905ee51f8d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SubscribableObject: {fileID: 0}
+  onBecomeDay:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5636157702095102678}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onBecomeNight:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5636157702095102678}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &5635028101338865976
 GameObject:
   m_ObjectHideFlags: 0

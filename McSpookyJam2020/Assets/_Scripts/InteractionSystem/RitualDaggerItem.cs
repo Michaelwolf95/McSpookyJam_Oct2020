@@ -5,6 +5,11 @@ public class RitualDaggerItem : InvestigationCardInteractable
 {
     [SerializeField] private GameObject daggerObject = null;
 
+    private void Awake()
+    {
+        reticle.disableActivatedReticle = true;
+    }
+
     protected override void PerformInteraction()
     {
         base.PerformInteraction();

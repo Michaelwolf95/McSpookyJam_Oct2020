@@ -5,7 +5,7 @@ using UnityEngine;
 
 public static class MenuTweenEffects
 {
-    public static IEnumerator ScalePressEffect(RectTransform button, Action onClickAction, float scaleFactor = 1.25f, float duration = 1f, float finishDelay = 0.5f, bool useRealTime = false)
+    public static IEnumerator ScalePressEffect(RectTransform button, Action onClickAction, float scaleFactor = 1.25f, float duration = 1f, float finishDelay = 0.1f, bool useRealTime = false)
     {
         Vector3 startScale = button.localScale;
         Vector3 endScale = startScale * scaleFactor;

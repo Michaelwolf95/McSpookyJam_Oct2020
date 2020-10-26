@@ -24,7 +24,7 @@ public class BasementDoorInteractable : InvestigationCardInteractable
         SetOpenState(false);
     }
 
-    private void OpenDoor()
+    public void OpenDoor()
     {
         SetOpenState(true);
         GameManager.instance.OnBasementDoorOpened();

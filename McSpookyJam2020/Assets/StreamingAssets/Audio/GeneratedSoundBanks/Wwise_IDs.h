@@ -28,27 +28,35 @@ namespace AK
         static const AkUniqueID PLAY_LIGHT_SWITCH_ON = 82250835U;
         static const AkUniqueID PLAY_LIGHTS_OUT = 3933447040U;
         static const AkUniqueID PLAY_LOCKED_DOOR = 281597619U;
+        static const AkUniqueID PLAY_MAIN_MENU_FADE = 656855882U;
         static const AkUniqueID PLAY_METAL_DOOR_CLOSE = 2167123887U;
         static const AkUniqueID PLAY_METAL_DOOR_OPEN = 2617923177U;
         static const AkUniqueID PLAY_MONSTER_ATTACK = 864033359U;
         static const AkUniqueID PLAY_MONSTER_ATTACK_COMPLETE = 1099225839U;
+        static const AkUniqueID PLAY_MONSTER_DYING = 255750022U;
         static const AkUniqueID PLAY_MONSTER_EMERGE = 3611802004U;
         static const AkUniqueID PLAY_MONSTER_FOOTSTEPS = 3704879888U;
         static const AkUniqueID PLAY_MONSTER_HISS = 2620845016U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
+        static const AkUniqueID PLAY_PICKUP_DAGGER = 2380307491U;
         static const AkUniqueID PLAY_PICKUP_KEY = 3768549418U;
         static const AkUniqueID PLAY_PICKUP_NOTE = 2216405837U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_GRAVEL = 2793391981U;
+        static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_STAIRS = 1934534490U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_WOOD = 1323502295U;
         static const AkUniqueID PLAY_RITUAL_CIRCLE = 1733092070U;
         static const AkUniqueID PLAY_STINGER = 754369548U;
         static const AkUniqueID PLAY_UI_EXIT = 1986548623U;
+        static const AkUniqueID PLAY_UI_NEGATIVE = 2519795238U;
+        static const AkUniqueID PLAY_UI_POSITIVE = 1098125654U;
         static const AkUniqueID PLAY_UI_START = 643450781U;
+        static const AkUniqueID PLAY_WINDOW_EMITTER = 47410005U;
         static const AkUniqueID PLAY_WOOD_DOOR_CLOSE = 801816073U;
         static const AkUniqueID PLAY_WOOD_DOOR_OPEN = 781714651U;
         static const AkUniqueID PLYA_MONSTER_EMERGE = 429973476U;
         static const AkUniqueID STOP_AMB = 435770000U;
         static const AkUniqueID STOP_MONSTER_ATTACK = 1371679529U;
+        static const AkUniqueID STOP_MONSTER_DYING = 2844697884U;
         static const AkUniqueID STOP_MUSIC = 2837384057U;
     } // namespace EVENTS
 
@@ -92,6 +100,16 @@ namespace AK
         } // namespace TIME
 
     } // namespace SWITCHES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID TIME = 2654366170U;
+    } // namespace GAME_PARAMETERS
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID TIME_CHANGE = 4130026045U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {

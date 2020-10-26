@@ -190,8 +190,7 @@ MonoBehaviour:
   OnInteractEnd:
     m_PersistentCalls:
       m_Calls: []
-  flowchartPrefab: {fileID: 8786675518878862360, guid: 6964833ca0a941e45a84309fc37a6118,
-    type: 3}
+  flowchartPrefab: {fileID: 0}
   exitOnEscapeInput: 0
   letterObject: {fileID: 329894163187489574}
 --- !u!54 &9026313893614335881

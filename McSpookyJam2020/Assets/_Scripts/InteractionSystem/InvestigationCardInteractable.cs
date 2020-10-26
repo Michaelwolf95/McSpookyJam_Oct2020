@@ -13,12 +13,15 @@ public class InvestigationCardInteractable : InteractableBase
     [SerializeField] 
     private bool exitOnEscapeInput = false;
 
-    protected Flowchart flowchartInstance = null;
+    public Flowchart flowchartInstance {get; set;}
 
     protected override void Start()
     {
         base.Start();
-        flowchartInstance = InvestigationCardCanvas.instance.InstantiateCard(flowchartPrefab);
+        if (flowchartPrefab)
+        {
+            flowchartInstance = InvestigationCardCanvas.instance.InstantiateCard(flowchartPrefab);
+        }
     }
 
     protected override void Update()
@@ -53,11 +56,17 @@ public class InvestigationCardInteractable : InteractableBase
     {
         base.OnFinishInteraction();
         
-        GameManager.instance.OnExitInvestigationCardScreen();
-        
         if (flowchartInstance != null)
         {
-            flowchartInstance.ExecuteBlock("QUIT");
+            flowchartInstance.ExecuteBlock(flowchartInstance.FindBlock("QUIT"), 0, () =>
+            {
+                GameManager.instance.OnExitInvestigationCardScreen();
+            });
+        }
+        else
+        {
+            // Quit early if no flowchart.
+            GameManager.instance.OnExitInvestigationCardScreen();
         }
     }
 }

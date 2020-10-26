@@ -453,6 +453,11 @@ MonoBehaviour:
   lettersIcon: {fileID: 3528822868641768742}
   letterCountText: {fileID: 3528822868263061482}
   letterTotalText: {fileID: 3528822868717432128}
+  hagueLetterCardPrefabs:
+  - {fileID: 8786675518878862360, guid: 6964833ca0a941e45a84309fc37a6118, type: 3}
+  - {fileID: 8786675518878862360, guid: c440f87798290d64eacd17925f37fbde, type: 3}
+  - {fileID: 8786675518878862360, guid: 46dd7fdc4765f5a4f89f6719815fd6c3, type: 3}
+  - {fileID: 8786675518878862360, guid: 36facb61d3f84b341b89b7decea2841b, type: 3}
 --- !u!223 &3528822868512281088
 Canvas:
   m_ObjectHideFlags: 0
@@ -472,7 +477,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!114 &3528822868512281089
 MonoBehaviour:

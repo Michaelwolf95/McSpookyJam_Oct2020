@@ -378,8 +378,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 288, y: -47.596603}
-  m_SizeDelta: {x: 576, y: 95.19321}
+  m_AnchoredPosition: {x: 179.84999, y: -47.596603}
+  m_SizeDelta: {x: 359.69998, y: 95.19321}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4848267019016614816
 CanvasRenderer:
@@ -512,7 +512,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCanvasGroup: {fileID: 5034267510704527689}
   buttonCanvasGroup: {fileID: 2349064868617886140}
+  creditsPanel: {fileID: 0}
   quitButton: {fileID: 523412547113570100}
+  creditsButton: {fileID: 0}
+  feedbackButton: {fileID: 0}
 --- !u!1 &4848267019839241076
 GameObject:
   m_ObjectHideFlags: 0
@@ -825,6 +828,8 @@ GameObject:
   - component: {fileID: 6125500740264651453}
   - component: {fileID: 523412547113570100}
   - component: {fileID: 8744335844903717515}
+  - component: {fileID: 1146098042171252275}
+  - component: {fileID: 4411119029393839334}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -923,3 +928,59 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &1146098042171252275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8429628787315010231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc4e706cc78d5f041886e2d1febf796d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!114 &4411119029393839334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8429628787315010231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1196561d804e2604da76e4118285a046, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: 9864aaa1
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c28732dd76b57c443a610866d075941d,
+      type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+  MultiPositionType: 1
+  multiPositionTypeLabel: 0
+  LargeModePositions: []
+  multiPositionArray: []

@@ -27,6 +27,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Player_Footsteps_Stairs" ID="{8985D755-E2E4-4EE0-B90E-23599FFA71D1}">
+							<ChildrenList>
+								<Action Name="" ID="{28400A73-E59F-4CE9-9573-75F512D49E60}" ShortID="856862822">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Footsteps_Stairs" ID="{39CC373A-18DC-43C4-9A94-95606E4479D1}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="AMB" ID="{8BC2E6D0-E17F-4DE3-941C-CF3250B43293}" ShortID="246715335">
@@ -36,7 +47,7 @@
 								<Action Name="" ID="{FE3BC40B-5AD5-4E4F-AACA-97B90BFAD504}" ShortID="521998311">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="AMB_Loops" ID="{2B6BCDAA-FA08-4D4B-A539-0027A7D48768}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+											<ObjectRef Name="AMB_Loop" ID="{61DF19DF-23EB-4889-81A8-213FC45730EA}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -50,7 +61,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="AMB_Loops" ID="{2B6BCDAA-FA08-4D4B-A539-0027A7D48768}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+											<ObjectRef Name="AMB_Loop" ID="{61DF19DF-23EB-4889-81A8-213FC45730EA}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -72,7 +83,18 @@
 								<Action Name="" ID="{0F0B7CDC-7FF4-455F-93A7-4625F64DE326}" ShortID="718081210">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_Demon_Circle_Loop_01" ID="{1414DA0B-C296-43C7-8D96-E088AEAB9AEE}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+											<ObjectRef Name="SFX_Demon_Circle_Loop" ID="{1414DA0B-C296-43C7-8D96-E088AEAB9AEE}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Window_Emitter" ID="{32B37262-66E9-4172-A9F4-A7D2BF1D0AC3}">
+							<ChildrenList>
+								<Action Name="" ID="{6EB9465F-9794-4A5F-A345-B547F5237DBE}" ShortID="688411367">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Window_Emitter" ID="{17AEFBFE-50FF-4DF9-8720-0F8E3C627273}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -134,6 +156,42 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_UI_Negative" ID="{C06D720F-139E-4BE7-BDCE-9F0A0252C811}">
+							<ChildrenList>
+								<Action Name="" ID="{18BB97F3-C569-4252-9D9B-367B49455111}" ShortID="1024622532">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Negative" ID="{B1E66439-02C0-4877-BA3C-5930F1BD5F7F}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_UI_Positive" ID="{678B3407-225D-4108-B9AF-E531A1B80C50}">
+							<ChildrenList>
+								<Action Name="" ID="{D70351E7-0DA3-4861-B3B1-3D544D959711}" ShortID="2144634">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Positive" ID="{E038DEEA-F592-4487-90F0-9779879064FE}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Main_Menu_Fade" ID="{549F3205-14F3-4164-A113-5FBF25D7CFE4}">
+							<ChildrenList>
+								<Action Name="" ID="{DBB055D8-3FF3-465F-9BC2-D8F823367D9A}" ShortID="108265849">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Menu_Fade" ID="{3F49B057-3577-4752-99F7-852DF6711886}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Interactables" ID="{91B705B3-A534-4873-BACD-DF5DDFEBC238}" ShortID="701091090">
@@ -149,6 +207,18 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{3F5F55A3-0798-46EF-965C-4F839E421372}" ShortID="889664401">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Time" ID="{B844E83D-338B-48CE-8902-1585A7F85125}" WorkUnitID="{2AF5011A-75CC-4A54-B9B9-4A875440E9EE}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
 								<Event Name="Play_Pickup_Note" ID="{2EDBB8EB-78C8-4253-A56A-FA5F3DBA1186}">
@@ -157,6 +227,17 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="SFX_Pickup_Note" ID="{11F9ADEA-3482-417B-AEC7-373B3A806E9E}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Pickup_Dagger" ID="{F8F1E2E2-8E61-467A-A6D3-F29F0986C8A2}">
+									<ChildrenList>
+										<Action Name="" ID="{FF4C07D8-62C0-4A83-B20F-F7138AB82DD5}" ShortID="750874973">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Pickup_Dagger" ID="{9BBD1829-FAEF-4D2B-A7CC-327FECEB8E89}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -277,7 +358,17 @@
 									<ChildrenList>
 										<Event Name="Play_Flashlight_On" ID="{C043C54D-E84D-426F-B73F-0105D551333F}">
 											<ChildrenList>
+												<Action Name="" ID="{6718C003-A9F4-42A6-8481-0B902AE7EA29}" ShortID="375615047">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="SFX_Flashlight_Pickup (1)" ID="{3FB82C76-6280-4CEF-8132-193D26C058ED}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
 												<Action Name="" ID="{0DAC0696-FBD9-4321-A86C-569DB0F7A089}" ShortID="385755043">
+													<PropertyList>
+														<Property Name="Delay" Type="Real64" Value="0.25"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Target">
 															<ObjectRef Name="SFX_Flashlight_On" ID="{B37EFC75-DE37-4874-B533-BD6D3F5B942F}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
@@ -353,6 +444,17 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="SFX_Monster_Attack_Start_02" ID="{A5026008-996C-40B4-8603-EEE0CEA528B6}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{CF5BD20A-32D4-469C-8503-12E712DE4A20}" ShortID="781876803">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="AMB_Loop" ID="{61DF19DF-23EB-4889-81A8-213FC45730EA}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -451,8 +553,63 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Monster_Footsteps" ID="{983D953E-B3C8-4339-B17F-38B7F09CEF09}"/>
-						<Event Name="Play_Monster_Emerge" ID="{1159C354-BF7B-46F9-8D8A-0BA0778A79D5}"/>
+						<Event Name="Play_Monster_Footsteps" ID="{983D953E-B3C8-4339-B17F-38B7F09CEF09}">
+							<ChildrenList>
+								<Action Name="" ID="{45908EFA-600A-4787-8103-6D8CBC01ADCC}" ShortID="299840982">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Monster_Footsteps" ID="{6967827C-C69D-4EF4-84CA-136478EE296E}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Monster_Emerge" ID="{1159C354-BF7B-46F9-8D8A-0BA0778A79D5}">
+							<ChildrenList>
+								<Action Name="" ID="{B01F5D6C-3C13-4368-B7BC-3F3610876108}" ShortID="699297628">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Game_Start_Candle_Trem" ID="{69E99071-C8BB-4888-9F43-0982F194F4B7}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Monster_Dying" ID="{759511C2-2899-4979-A698-B9FF670C9CCE}">
+							<ChildrenList>
+								<Action Name="" ID="{2E3DC4C7-3E5D-47BC-9349-7FE57D27921F}" ShortID="589932772">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Monster_Dying_01" ID="{F2A04275-68C2-441E-B01B-7607F0DEA6BD}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Monster_Dying" ID="{316A0844-19DB-419F-9DE0-90CB4D4D72C9}">
+							<ChildrenList>
+								<Action Name="" ID="{A58287EB-13CC-4946-AEE0-70BBE38D26BE}" ShortID="343252891">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Monster_Dying_01" ID="{F2A04275-68C2-441E-B01B-7607F0DEA6BD}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D8EE7366-1C80-4FAA-B0D6-2AAC257A9BA0}" ShortID="796688614">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AMB_Loop" ID="{61DF19DF-23EB-4889-81A8-213FC45730EA}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

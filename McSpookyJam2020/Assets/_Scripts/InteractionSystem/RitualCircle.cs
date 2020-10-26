@@ -27,7 +27,7 @@ public class RitualCircle : InvestigationCardInteractable
     {
         SetOpenState(true);
         
-        GameManager.instance.OnRitualPerformed();
+        GameManager.instance.OnRitualFinished();
     }
 
     private void SetOpenState(bool argIsOpen)
@@ -71,6 +71,7 @@ public class RitualCircle : InvestigationCardInteractable
         }
         else
         {
+            GameManager.instance.OnRitualStarted();
             // Show Card.
             base.PerformInteraction();
         }

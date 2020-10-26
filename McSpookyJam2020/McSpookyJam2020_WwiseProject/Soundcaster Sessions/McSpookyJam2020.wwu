@@ -9,8 +9,17 @@
 							<ObjectRef Name="Play_AMB" ID="{187BC0C9-4FB5-4C23-9674-9B4DD8FD9A6C}" WorkUnitID="{1A2B518A-4352-4C21-9BFC-30890D9EA72B}"/>
 							<Position X="0" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_Game_End" ID="{B77565E7-0CF0-4684-AA2D-3D666543C263}" WorkUnitID="{1A2B518A-4352-4C21-9BFC-30890D9EA72B}"/>
+							<Position X="1" Y="0"/>
+						</Module>
 					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Time" ID="{B844E83D-338B-48CE-8902-1585A7F85125}"/>
+							<Value>1.15688419027073E-311</Value>
+						</RTPCValue>
+					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Night" ID="{F37607B3-A313-4492-94F1-2A4198829578}"/>
 					</CurrentStateList>
