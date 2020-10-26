@@ -145,28 +145,6 @@
 				</Folder>
 				<Folder Name="UI" ID="{ABFDD802-1480-49E0-B142-E473C625D1CF}" ShortID="209379588">
 					<ChildrenList>
-						<Event Name="Play_UI_Start" ID="{2672CD75-AABE-47D3-97E1-2F7AA4D91DE5}">
-							<ChildrenList>
-								<Action Name="" ID="{D6C0E699-3358-4F25-AFB0-7282E885E473}" ShortID="550294332">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SFX_UI_Start" ID="{D84AD8F4-C183-4C91-904B-EC17FA203127}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_UI_Exit" ID="{D0EC7BD0-C6F9-4095-82A7-A1DF4A3D3863}">
-							<ChildrenList>
-								<Action Name="" ID="{9594C005-E58D-41D8-B844-722545600BDB}" ShortID="47677764">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SFX_UI_Exit" ID="{D0A07562-7C21-48C2-AB11-8AE7C803401C}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play_UI_Negative" ID="{C06D720F-139E-4BE7-BDCE-9F0A0252C811}">
 							<ChildrenList>
 								<Action Name="" ID="{18BB97F3-C569-4252-9D9B-367B49455111}" ShortID="1024622532">

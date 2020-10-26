@@ -29,7 +29,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4190601618" Language="SFX" Hash="843417770">
+		<SoundBank Id="4190601618" Language="SFX" Hash="2426171944">
 			<ObjectPath>\SoundBanks\McSpookyJam2020\McSpookyJam2020</ObjectPath>
 			<ShortName>McSpookyJam2020</ShortName>
 			<Path>McSpookyJam2020.bnk</Path>
@@ -502,7 +502,6 @@
 						</File>
 					</ReferencedStreamedFiles>
 				</Event>
-				<Event Id="1986548623" Name="Play_UI_Exit" ObjectPath="\Events\McSpookyJam2020\UI\Play_UI_Exit" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
 				<Event Id="2519795238" Name="Play_UI_Negative" ObjectPath="\Events\McSpookyJam2020\UI\Play_UI_Negative" DurationType="OneShot" DurationMin="0.676146" DurationMax="0.676146">
 					<IncludedMemoryFiles>
 						<File Id="384484756" Language="SFX">
@@ -519,7 +518,6 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="643450781" Name="Play_UI_Start" ObjectPath="\Events\McSpookyJam2020\UI\Play_UI_Start" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
 				<Event Id="47410005" Name="Play_Window_Emitter" ObjectPath="\Events\McSpookyJam2020\AMB\Play_Window_Emitter" DurationType="Infinite">
 					<ReferencedStreamedFiles>
 						<File Id="962750646" Language="SFX">

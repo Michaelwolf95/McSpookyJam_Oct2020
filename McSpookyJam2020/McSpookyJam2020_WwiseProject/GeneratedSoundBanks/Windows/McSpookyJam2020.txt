@@ -7,7 +7,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	314077991	Play_Light_Switch_Off			\McSpookyJam2020\Interactables\Lights\Light_Switch\Play_Light_Switch_Off	
 	429973476	Plya_Monster_Emerge			\McSpookyJam2020\Music\Plya_Monster_Emerge	
 	435770000	Stop_AMB			\McSpookyJam2020\AMB\Stop_AMB	
-	643450781	Play_UI_Start			\McSpookyJam2020\UI\Play_UI_Start	
 	656855882	Play_Main_Menu_Fade			\McSpookyJam2020\UI\Play_Main_Menu_Fade	
 	781714651	Play_Wood_Door_Open			\McSpookyJam2020\Interactables\Doors\Play_Wood_Door_Open	
 	801816073	Play_Wood_Door_Close			\McSpookyJam2020\Interactables\Doors\Play_Wood_Door_Close	
@@ -20,7 +19,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	1733092070	Play_Ritual_Circle			\McSpookyJam2020\AMB\Play_Ritual_Circle	
 	1934534490	Play_Player_Footsteps_Stairs			\McSpookyJam2020\Player\Play_Player_Footsteps_Stairs	
 	1958703520	Play_Drawer_Open			\McSpookyJam2020\Interactables\Doors\Play_Drawer_Open	
-	1986548623	Play_UI_Exit			\McSpookyJam2020\UI\Play_UI_Exit	
 	2167123887	Play_Metal_Door_Close			\McSpookyJam2020\Interactables\Doors\Play_Metal_Door_Close	
 	2216405837	Play_Pickup_Note			\McSpookyJam2020\Interactables\Pickups\Play_Pickup_Note	
 	2315829540	Play_Drawer_Close			\McSpookyJam2020\Interactables\Doors\Play_Drawer_Close	
@@ -48,8 +46,6 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	75585889	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\Monster\SFX_Monster_Attack_Complete\Wwise Silence	
 	249931172	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\AMB\Window_Emitter\New Sound SFX\Wwise Silence	
-	452917873	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\UI\SFX_UI_Start\Wwise Silence	
-	915949771	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\UI\SFX_UI_Exit\Wwise Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	18419317	SFX_Piano_05	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Piano_05_3F75BDB9.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Piano\Piano_Notes\SFX_Piano_05		64098
