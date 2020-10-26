@@ -7220,6 +7220,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Bookshelf_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1768426297550048, guid: 92fcb0ebbf4219244b7217942592e986, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4127365943078262, guid: 92fcb0ebbf4219244b7217942592e986, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.851
@@ -8593,7 +8597,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4678315698128760, guid: 9b067ffd8944f8b49bfcbaa66d4b13b0, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 1.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678315698128760, guid: 9b067ffd8944f8b49bfcbaa66d4b13b0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b067ffd8944f8b49bfcbaa66d4b13b0, type: 3}

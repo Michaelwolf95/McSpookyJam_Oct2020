@@ -22688,7 +22688,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4414546830854550751}
   - component: {fileID: 4414546830854550750}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WallCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53835,7 +53835,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4414546832585785449}
   - component: {fileID: 4414546832585785448}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WallCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
