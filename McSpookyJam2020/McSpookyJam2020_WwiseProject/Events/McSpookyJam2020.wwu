@@ -515,7 +515,7 @@
 								<Action Name="" ID="{45908EFA-600A-4787-8103-6D8CBC01ADCC}" ShortID="299840982">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Monster_Footsteps" ID="{6967827C-C69D-4EF4-84CA-136478EE296E}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+											<ObjectRef Name="Monster_Footsteps_Wood" ID="{6967827C-C69D-4EF4-84CA-136478EE296E}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
