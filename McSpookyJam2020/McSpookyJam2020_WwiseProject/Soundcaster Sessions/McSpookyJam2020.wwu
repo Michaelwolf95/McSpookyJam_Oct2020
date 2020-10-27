@@ -17,15 +17,14 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Time" ID="{B844E83D-338B-48CE-8902-1585A7F85125}"/>
-							<Value>1.15688419027073E-311</Value>
+							<Value>1</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Night" ID="{F37607B3-A313-4492-94F1-2A4198829578}"/>
+						<CurrentStateRef Name="Paused" ID="{91ED826E-9E91-40CC-9661-50F189230949}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Day" ID="{5CBF7A41-3FC9-410D-B023-E4E2C35DC2FE}"/>
-						<CurrentSwitchRef Name="Walking" ID="{8E231F5C-915B-4C82-8791-31A745B60E68}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

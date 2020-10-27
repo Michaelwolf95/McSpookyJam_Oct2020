@@ -7,13 +7,13 @@ namespace MichaelWolfGames
         [HideInInspector] public bool isInLight = false;
         public virtual void OnEnterLight()
         {
-            Debug.Log("ENTER LIGHT");
+            //Debug.Log("ENTER LIGHT");
             isInLight = true;
         }
         
         public virtual void OnExitLight()
         {
-            Debug.Log("EXIT LIGHT");
+            //Debug.Log("EXIT LIGHT");
             isInLight = false;
         }
     }

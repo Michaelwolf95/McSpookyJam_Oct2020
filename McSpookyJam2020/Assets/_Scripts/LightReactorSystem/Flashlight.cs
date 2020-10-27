@@ -12,6 +12,9 @@ public class Flashlight : SceneSingleton<Flashlight>
 
     [SerializeField] 
     private LayerMask layerMask = new LayerMask();
+
+    [SerializeField] private float triggerRangeOffset = -1f;
+    
     private List<LightReactor> currentCollisions = null;
 
     [SerializeField] 
@@ -41,7 +44,7 @@ public class Flashlight : SceneSingleton<Flashlight>
         {
             return;
         }
-        RaycastHit[] coneHits = ConeCastAll(transform.position, transform.forward, spotLight.range, spotLight.spotAngle, layerMask);
+        RaycastHit[] coneHits = ConeCastAll(transform.position, transform.forward, spotLight.range - triggerRangeOffset, spotLight.spotAngle, layerMask);
         
         // Remove all currentCollisions unless they're hit by the cast.
         List<LightReactor> currentCollisionsToRemove = new List<LightReactor>(currentCollisions);

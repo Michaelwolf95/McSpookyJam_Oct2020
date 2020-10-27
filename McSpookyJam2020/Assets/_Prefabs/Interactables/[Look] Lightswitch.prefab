@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reticle: {fileID: 6518657594885507263}
-  interactReticleType: 0
+  interactReticleType: 2
   visibleAngleRange: {x: 180, y: 180}
   InteractStartAudio:
     idInternal: 0
@@ -145,7 +145,7 @@ MonoBehaviour:
   OnInteractEnd:
     m_PersistentCalls:
       m_Calls: []
-  sayContent: ...
+  sayContent: The power's out.
   sayDelay: 0.25
 --- !u!54 &3156312975734034499
 Rigidbody:

@@ -18,7 +18,10 @@ public class SpookerAI : LightReactor
     [SerializeField] private float unHideMinDistance = 8f;
 
     [Space(5)] 
-
+    [SerializeField] private Animator animator = null;
+    [SerializeField] private float velocityToAnimSpeedRatio = 1f;
+    [SerializeField] private float fadeOutDuration = 1f;
+    
     [Space(5)] 
     [SerializeField] private AgentStateParams disabledStateParams = new AgentStateParams();
     [SerializeField] private AgentStateParams wanderingStateParams = new AgentStateParams();
@@ -33,14 +36,16 @@ public class SpookerAI : LightReactor
     [SerializeField] private AK.Wwise.Event onCancelAttack = null; // ToDo: Maybe a unique one for canceling due to fear, vs distance?
     // ToDo: Can wwise do something with the monster's state?
     
-    private Transform target;
+    private Transform target = null;
 
     //private static float MIN_FLOOR_HEIGHT = 1f;
 
-    private static float MIN_FEAR_TIME = 5f;
-    private static float MAX_FEAR_TIME = 15f;
+    private static float MIN_FEAR_TIME = 8f;
+    private static float MAX_FEAR_TIME = 20f;
 
     private bool readyToUnHide = false;
+
+    public bool isDisabled => currentState == SpookerState.Disabled;
     
 
     [System.Serializable]
@@ -83,6 +88,8 @@ public class SpookerAI : LightReactor
         {
             return;
         }
+
+        animator.speed = velocityToAnimSpeedRatio * agent.velocity.magnitude;
 
         Vector3 toTargetVector = (target.position - transform.position);
         switch (currentState)
@@ -146,6 +153,26 @@ public class SpookerAI : LightReactor
         ChangeState(SpookerState.Disabled);
     }
 
+    public void EnableController()
+    {
+        if (currentState == SpookerState.Disabled)
+        {
+            ChangeState(SpookerState.Following);
+        }
+    }
+
+    public void ToggleController()
+    {
+        if (isDisabled)
+        {
+            EnableController();
+        }
+        else
+        {
+            DisableController();
+        }
+    }
+
     private void RunAway()
     {
         Vector3 toTargetVector = (target.position - transform.position);
@@ -189,6 +216,7 @@ public class SpookerAI : LightReactor
         switch (currentState) // EXITING STATE
         {
             case SpookerState.Disabled:
+                agent.isStopped = false;
                 break;
             case SpookerState.Wandering:
                 break;
@@ -204,6 +232,7 @@ public class SpookerAI : LightReactor
                 readyToUnHide = true;
                 spriteRenderer.color = defaultColor;
                 visualRoot.SetActive(true);
+                agent.isStopped = false;
                 break;
             default:
                 throw new ArgumentOutOfRangeException();
@@ -211,10 +240,13 @@ public class SpookerAI : LightReactor
         
         // STATE ENTER:
         currentState = argState;
+        Debug.Log("STATE: " + currentState);
         switch (currentState) // ENTERING STATE
         {
             case SpookerState.Disabled:
                 AssignAgentStateParams(disabledStateParams);
+                agent.isStopped = true;
+                agent.velocity = Vector3.zero;
                 break;
             case SpookerState.Wandering:
                 AssignAgentStateParams(wanderingStateParams);
@@ -241,6 +273,14 @@ public class SpookerAI : LightReactor
                 readyToUnHide = false;
                 visualRoot.SetActive(false);
                 AssignAgentStateParams(fearedStateParams);
+                agent.isStopped = true;
+                agent.velocity = Vector3.zero;
+                
+                this.InvokeAction((() =>
+                {
+                    readyToUnHide = true;
+                    //ChangeState(SpookerState.Following);
+                }), Random.Range(MIN_FEAR_TIME, MAX_FEAR_TIME));
                 break;
             default:
                 throw new ArgumentOutOfRangeException();
@@ -270,7 +310,7 @@ public class SpookerAI : LightReactor
 
     private void CancelAttack()
     {
-        Debug.Log("Cancel Attack");
+        //Debug.Log("Cancel Attack");
         GameManager.instance.CancelAttackEffect();
         
         onCancelAttack.Post(gameObject);
@@ -293,28 +333,23 @@ public class SpookerAI : LightReactor
     {
         base.OnEnterLight();
 
+        if (currentState == SpookerState.Disabled)
+        {
+            return;
+        }
+        
         ChangeState(SpookerState.Feared);
         
-//        Vector3 awayFromPlayer = -Vector3.ProjectOnPlane((target.position - transform.position).normalized, Vector3.up).normalized;
-//        NavMeshHit hit;
-//        NavMesh.SamplePosition(transform.position + awayFromPlayer * 100f, out hit, 500f, 1 << NavMesh.GetNavMeshLayerFromName("Default"));
-//        agent.SetDestination(hit.position);
-
         this.DoTween((lerp) =>
         {
             spriteRenderer.color = Color.Lerp(defaultColor, Color.clear, lerp);
         },  () =>
         {
             ChangeState(SpookerState.Hiding);
-        }, 1f);
+        }, fadeOutDuration);
         
-
         // ToDo: Stop for a moment first?
-        this.InvokeAction((() =>
-        {
-            readyToUnHide = true;
-            //ChangeState(SpookerState.Following);
-        }), Random.Range(MIN_FEAR_TIME, MAX_FEAR_TIME));
+        
     }
 
     public override void OnExitLight()

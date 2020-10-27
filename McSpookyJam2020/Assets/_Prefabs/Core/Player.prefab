@@ -122,6 +122,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 513
+  triggerRangeOffset: -1
   isEnabled: 0
 --- !u!108 &956126460
 Light:
@@ -431,8 +432,7 @@ MonoBehaviour:
   upstairsFootSteps:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 6090c5c45598603438c84bdc737f7ac0,
-      type: 2}
+    WwiseObjectReference: {fileID: 0}
   basementMaterial: {fileID: 13400000, guid: fb9d4c33cddeb6d488de85f1422b5fb0, type: 2}
   basementFootSteps:
     idInternal: 0
@@ -444,7 +444,8 @@ MonoBehaviour:
   stairsFootSteps:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 6090c5c45598603438c84bdc737f7ac0,
+      type: 2}
   controllerPauseState: 0
   enableCameraMovement: 1
   mouseInputInversion: 0

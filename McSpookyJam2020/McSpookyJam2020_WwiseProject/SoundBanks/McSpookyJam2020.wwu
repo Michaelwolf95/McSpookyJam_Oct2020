@@ -3,7 +3,7 @@
 	<SoundBanks>
 		<WorkUnit Name="McSpookyJam2020" ID="{7125992F-E42D-4F03-9E27-C1A8C5E056C6}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="McSpookyJam2020" ID="{56981E6F-8FC3-4C93-A821-41BDDDCE26A0}">
+				<SoundBank Name="Husk" ID="{56981E6F-8FC3-4C93-A821-41BDDDCE26A0}">
 					<ObjectInclusionList>
 						<ObjectRef Name="McSpookyJam2020" ID="{1A2B518A-4352-4C21-9BFC-30890D9EA72B}" WorkUnitID="{1A2B518A-4352-4C21-9BFC-30890D9EA72B}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

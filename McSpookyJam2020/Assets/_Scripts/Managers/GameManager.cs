@@ -19,6 +19,8 @@ public class GameManager : SceneSingleton<GameManager>
 
     public GameOverMenu gameOverMenu = null;
     public VictoryMenu victoryMenu = null;
+    [Space(5)] 
+    [SerializeField] private Camera uiCamera = null;
 
     public bool IsPlayerOnCardScreen { get; private set; }
     public bool IsPlayerInMenu { get; set; }
@@ -39,6 +41,9 @@ public class GameManager : SceneSingleton<GameManager>
     [SerializeField] private Transform startWaypoint = null;
     [SerializeField] private Transform studyWaypoint = null;
     [SerializeField] private Transform ritualWaypoint = null;
+    [Space(5)]
+    [SerializeField] private GameObject debugCamera = null;
+    
     
     public bool isNight { get; private set; }
 
@@ -50,7 +55,7 @@ public class GameManager : SceneSingleton<GameManager>
     private void Update()
     {
         // DEBUG BUTTONS
-#if UNITY_EDITOR
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
         if (Input.GetMouseButtonDown(0))
         {
             bool visible = IsPlayerInMenu || IsPlayerOnCardScreen;
@@ -92,6 +97,24 @@ public class GameManager : SceneSingleton<GameManager>
         {
             FindObjectOfType<BasementDoorInteractable>().OpenDoor();
         }
+        else if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            //ToggleMonster(false);
+            monsterController.ToggleController();
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            // Toggle FreeCam
+            bool debugCameraOn = debugCamera.activeSelf;
+            debugCamera.gameObject.SetActive(!debugCameraOn);
+            FirstPersonAIO.instance.SetControllerPause(!debugCameraOn);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            bool uiOn = InventoryManager.instance.gameObject.activeSelf;
+            uiCamera.gameObject.SetActive(!uiOn);
+            InventoryManager.instance.gameObject.SetActive(!uiOn);
+        }
         
         if (Input.GetKeyDown(KeyCode.Keypad0))
         {
@@ -106,8 +129,13 @@ public class GameManager : SceneSingleton<GameManager>
             DebugTeleportPlayer(ritualWaypoint);
         }
         
+        
+        
 #endif
     }
+    
+    
+    
 
     private void OnGameStart()
     {
@@ -166,7 +194,7 @@ public class GameManager : SceneSingleton<GameManager>
     
     public void OnRitualStarted()
     {
-        monsterController.gameObject.SetActive(false);
+        ToggleMonster(false);
     }
     
     public void OnRitualFinished()
@@ -174,7 +202,19 @@ public class GameManager : SceneSingleton<GameManager>
         victoryMenu.FadeInMenu();
     }
 
-#if UNITY_EDITOR
+    public void ToggleMonster(bool argActive)
+    {
+        if (argActive)
+        {
+            monsterController.EnableController();
+        }
+        else
+        {
+            monsterController.DisableController();
+        }
+    }
+
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
 
     private void DebugTeleportPlayer(Transform waypoint)
     {
