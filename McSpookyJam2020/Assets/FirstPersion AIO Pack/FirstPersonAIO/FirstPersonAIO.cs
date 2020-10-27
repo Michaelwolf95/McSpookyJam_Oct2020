@@ -807,7 +807,7 @@ public class FirstPersonAIO : MonoBehaviour
     
     public void SetControllerPause(bool argPauseSate)
     {
-        //Debug.Log("Pause CC: " +argPauseSate);
+        Debug.Log("Pause CC: " +argPauseSate);
         controllerPauseState = argPauseSate;
         if (lockAndHideCursor)
         {

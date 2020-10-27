@@ -44,6 +44,8 @@ public class SpookerAI : LightReactor
     private static float MAX_FEAR_TIME = 20f;
 
     private bool readyToUnHide = false;
+
+    public bool isDisabled => currentState == SpookerState.Disabled;
     
 
     [System.Serializable]
@@ -156,6 +158,18 @@ public class SpookerAI : LightReactor
         if (currentState == SpookerState.Disabled)
         {
             ChangeState(SpookerState.Following);
+        }
+    }
+
+    public void ToggleController()
+    {
+        if (isDisabled)
+        {
+            EnableController();
+        }
+        else
+        {
+            DisableController();
         }
     }
 

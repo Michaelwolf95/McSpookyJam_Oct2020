@@ -1450,7 +1450,7 @@ MonoBehaviour:
   groundFloorFootSteps:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3e9f21dd48294a7438c576743bd8f0eb,
+    WwiseObjectReference: {fileID: 11400000, guid: 6cdcfcfc5b64f324aa5318bbdae2ef1e,
       type: 2}
   groundFloorMaterial: {fileID: 13400000, guid: 74ea77593c490f246aee1763419a03f3,
     type: 2}
@@ -1462,7 +1462,8 @@ MonoBehaviour:
   basementFootSteps:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 08d0b6fa3a594df4db66f559e5a57cce,
+      type: 2}
   basementMaterial: {fileID: 13400000, guid: fb9d4c33cddeb6d488de85f1422b5fb0, type: 2}
   stairsFootSteps:
     idInternal: 0

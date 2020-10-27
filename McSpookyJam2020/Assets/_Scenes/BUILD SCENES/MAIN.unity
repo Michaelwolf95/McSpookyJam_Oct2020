@@ -8250,6 +8250,7 @@ Transform:
   - {fileID: 1869559530}
   - {fileID: 3842603538155251540}
   - {fileID: 568893704}
+  - {fileID: 1463720684}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8271,6 +8272,7 @@ MonoBehaviour:
   fadeEffectCanvasGroup: {fileID: 1976861293}
   gameOverMenu: {fileID: 4848267018757742701}
   victoryMenu: {fileID: 6617263469686412565}
+  uiCamera: {fileID: 1148051791}
   Day:
     idInternal: 0
     valueGuidInternal: 
@@ -8313,6 +8315,7 @@ MonoBehaviour:
   startWaypoint: {fileID: 261408864}
   studyWaypoint: {fileID: 1241104927}
   ritualWaypoint: {fileID: 620122198}
+  debugCamera: {fileID: 1463720683}
 --- !u!114 &1109488259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8664,6 +8667,12 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!20 &1148051791 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 130092790, guid: fd6557fb088d3d646a456437aefc04fb,
+    type: 3}
+  m_PrefabInstance: {fileID: 376679987}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1152007879 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7290275466475615408, guid: 6f0004581f45aa7488b3a6ebea7f0b29,
@@ -10243,6 +10252,98 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1463720683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1463720684}
+  - component: {fileID: 1463720685}
+  - component: {fileID: 1463720686}
+  m_Layer: 0
+  m_Name: '[Debug] FreeCam'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1463720684
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463720683}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -9.25, y: -1, z: 0.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1109488257}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!20 &1463720685
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463720683}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.01
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 10
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 55
+  m_RenderingPath: 3
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 1
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!114 &1463720686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463720683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f99a0f4ba4c7c4895d7db03f3b0eba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 10
+  fastMovementSpeed: 100
+  freeLookSensitivity: 3
+  zoomSensitivity: 10
+  fastZoomSensitivity: 50
 --- !u!43 &1470881588
 Mesh:
   m_ObjectHideFlags: 0
