@@ -216,6 +216,7 @@ public class SpookerAI : LightReactor
         switch (currentState) // EXITING STATE
         {
             case SpookerState.Disabled:
+                agent.isStopped = false;
                 break;
             case SpookerState.Wandering:
                 break;
@@ -231,6 +232,7 @@ public class SpookerAI : LightReactor
                 readyToUnHide = true;
                 spriteRenderer.color = defaultColor;
                 visualRoot.SetActive(true);
+                agent.isStopped = false;
                 break;
             default:
                 throw new ArgumentOutOfRangeException();
@@ -238,10 +240,13 @@ public class SpookerAI : LightReactor
         
         // STATE ENTER:
         currentState = argState;
+        Debug.Log("STATE: " + currentState);
         switch (currentState) // ENTERING STATE
         {
             case SpookerState.Disabled:
                 AssignAgentStateParams(disabledStateParams);
+                agent.isStopped = true;
+                agent.velocity = Vector3.zero;
                 break;
             case SpookerState.Wandering:
                 AssignAgentStateParams(wanderingStateParams);
@@ -268,6 +273,8 @@ public class SpookerAI : LightReactor
                 readyToUnHide = false;
                 visualRoot.SetActive(false);
                 AssignAgentStateParams(fearedStateParams);
+                agent.isStopped = true;
+                agent.velocity = Vector3.zero;
                 
                 this.InvokeAction((() =>
                 {
@@ -326,6 +333,11 @@ public class SpookerAI : LightReactor
     {
         base.OnEnterLight();
 
+        if (currentState == SpookerState.Disabled)
+        {
+            return;
+        }
+        
         ChangeState(SpookerState.Feared);
         
         this.DoTween((lerp) =>

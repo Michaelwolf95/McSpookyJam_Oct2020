@@ -48,11 +48,57 @@ public class FreeCam : MonoBehaviour
     /// Set to true when free looking (on right mouse button).
     /// </summary>
     private bool looking = false;
+    
+    
+    private float debugMoveMult = 1f;
+    private float debugZoomMult = 1f;
+    private float debugMultDelta = 0.1f;
 
     void Update()
     {
         var fastMode = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
-        var movementSpeed = fastMode ? this.fastMovementSpeed : this.movementSpeed;
+
+        if (fastMode == false)
+        {
+            if (Input.GetKey(KeyCode.KeypadPlus))
+            {
+                debugMoveMult += debugMultDelta;
+                Debug.LogWarning("FREECAM MOVE MULT: " + debugMoveMult);
+            }
+            else if (Input.GetKey(KeyCode.KeypadMinus))
+            {
+                debugMoveMult -= debugMultDelta;
+                Debug.LogWarning("FREECAM MOVE MULT: " + debugMoveMult);
+            }
+        
+            if (Input.GetKeyDown(KeyCode.KeypadMultiply))
+            {
+                debugMoveMult = 1f;
+                Debug.LogWarning("FREECAM MOVE MULT: " + debugMoveMult);
+            }
+        }
+        else
+        {
+            if (Input.GetKey(KeyCode.KeypadPlus))
+            {
+                debugZoomMult += debugMultDelta;
+                Debug.LogWarning("FREECAM ZOOM MULT: " + debugZoomMult);
+            }
+            else if (Input.GetKey(KeyCode.KeypadMinus))
+            {
+                debugZoomMult -= debugMultDelta;
+                Debug.LogWarning("FREECAM ZOOM MULT: " + debugZoomMult);
+            }
+        
+            if (Input.GetKeyDown(KeyCode.KeypadMultiply))
+            {
+                debugZoomMult = 1f;
+                Debug.LogWarning("FREECAM ZOOM MULT: " + debugZoomMult);
+            }
+        }
+
+
+        var movementSpeed = (fastMode ? this.fastMovementSpeed : this.movementSpeed) * debugMoveMult;
 
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
@@ -104,7 +150,7 @@ public class FreeCam : MonoBehaviour
         float axis = Input.GetAxis("Mouse ScrollWheel");
         if (axis != 0)
         {
-            var zoomSensitivity = fastMode ? this.fastZoomSensitivity : this.zoomSensitivity;
+            var zoomSensitivity = (fastMode ? this.fastZoomSensitivity : this.zoomSensitivity) * debugZoomMult;
             transform.position = transform.position + transform.forward * axis * zoomSensitivity;
         }
 

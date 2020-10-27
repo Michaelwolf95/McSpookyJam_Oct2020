@@ -99,6 +99,7 @@ public class GameManager : SceneSingleton<GameManager>
         }
         else if (Input.GetKeyDown(KeyCode.Alpha6))
         {
+            //ToggleMonster(false);
             monsterController.ToggleController();
         }
         else if (Input.GetKeyDown(KeyCode.Alpha7))
