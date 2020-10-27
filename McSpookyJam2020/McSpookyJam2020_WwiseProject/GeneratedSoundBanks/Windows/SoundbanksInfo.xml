@@ -41,7 +41,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3210724738" Language="SFX" Hash="4246549568">
+		<SoundBank Id="3210724738" Language="SFX" Hash="2977800155">
 			<ObjectPath>\SoundBanks\McSpookyJam2020\Husk</ObjectPath>
 			<ShortName>Husk</ShortName>
 			<Path>Husk.bnk</Path>
@@ -128,7 +128,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1962302600" Name="Play_hover" ObjectPath="\Events\McSpookyJam2020\UI\Play_hover" DurationType="OneShot" DurationMin="1.882766" DurationMax="1.882766">
+				<Event Id="1962302600" Name="Play_hover" ObjectPath="\Events\McSpookyJam2020\UI\Play_hover" DurationType="OneShot" DurationMin="2.678058" DurationMax="2.678058">
 					<IncludedMemoryFiles>
 						<File Id="1047592891" Language="SFX">
 							<ShortName>hover.wav</ShortName>

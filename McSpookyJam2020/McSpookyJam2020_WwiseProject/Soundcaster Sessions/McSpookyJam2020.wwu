@@ -21,7 +21,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{4A590836-6083-476D-9DAB-10CBE2B1292F}"/>
+						<CurrentStateRef Name="Paused" ID="{91ED826E-9E91-40CC-9661-50F189230949}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Day" ID="{5CBF7A41-3FC9-410D-B023-E4E2C35DC2FE}"/>
