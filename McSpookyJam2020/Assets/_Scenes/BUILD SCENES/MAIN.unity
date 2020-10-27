@@ -17530,32 +17530,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1668234953027693322, guid: bb64e8f3da86ee646bdc0926f09bc6fd,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.5566038
-      objectReference: {fileID: 0}
-    - target: {fileID: 1668234953027693322, guid: bb64e8f3da86ee646bdc0926f09bc6fd,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.5566038
-      objectReference: {fileID: 0}
-    - target: {fileID: 1668234953027693322, guid: bb64e8f3da86ee646bdc0926f09bc6fd,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.5566038
-      objectReference: {fileID: 0}
-    - target: {fileID: 3639297723754565102, guid: bb64e8f3da86ee646bdc0926f09bc6fd,
-        type: 3}
-      propertyPath: groundFloorFootSteps.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 3e9f21dd48294a7438c576743bd8f0eb,
-        type: 2}
-    - target: {fileID: 6880460698409470515, guid: bb64e8f3da86ee646bdc0926f09bc6fd,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8141053062342249904, guid: bb64e8f3da86ee646bdc0926f09bc6fd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17615,11 +17589,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Spooky Boi
-      objectReference: {fileID: 0}
-    - target: {fileID: 8141053063868135337, guid: bb64e8f3da86ee646bdc0926f09bc6fd,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb64e8f3da86ee646bdc0926f09bc6fd, type: 3}
