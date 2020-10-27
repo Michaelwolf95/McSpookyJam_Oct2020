@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
+		<File Id="68280186" Language="SFX">
+			<ShortName>McJam2020_Window_Closed_Day_loop.wav</ShortName>
+			<Path>SFX\McJam2020_Window_Closed_Day_loop_9EDFC787.wem</Path>
+		</File>
 		<File Id="188256614" Language="SFX">
 			<ShortName>SX_MCJ2020_AMB_BED_NIGHT_LOOP_LOOP.wav</ShortName>
 			<Path>SFX\SX_MCJ2020_AMB_BED_NIGHT_LOOP_LOOP_9EDFC787.wem</Path>
@@ -37,7 +41,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4190601618" Language="SFX" Hash="3424452635">
+		<SoundBank Id="4190601618" Language="SFX" Hash="1181815578">
 			<ObjectPath>\SoundBanks\McSpookyJam2020\McSpookyJam2020</ObjectPath>
 			<ShortName>McSpookyJam2020</ShortName>
 			<Path>McSpookyJam2020.bnk</Path>
@@ -209,8 +213,51 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1353343606" Name="Play_Monster_Footsteps_Gravel" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Footsteps_Gravel" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3457550880" Name="Play_Monster_Footsteps_Wood" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Footsteps_Wood" MaxAttenuation="13.000000" DurationType="OneShot" DurationMin="0.124167" DurationMax="0.195792">
+				<Event Id="1353343606" Name="Play_Monster_Footsteps_Gravel" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Footsteps_Gravel" MaxAttenuation="13.000000" DurationType="OneShot" DurationMin="1.122220" DurationMax="1.197866">
+					<IncludedMemoryFiles>
+						<File Id="433067743" Language="SFX">
+							<ShortName>SFX_Monster_Footstep_Gravel_07.wav</ShortName>
+							<Path>SFX\SFX_Monster_Footstep_Gravel_07_3F75BDB9.wem</Path>
+						</File>
+						<File Id="577331579" Language="SFX">
+							<ShortName>SFX_Monster_Footstep_Gravel_02.wav</ShortName>
+							<Path>SFX\SFX_Monster_Footstep_Gravel_02_3F75BDB9.wem</Path>
+						</File>
+						<File Id="617459131" Language="SFX">
+							<ShortName>SFX_Monster_Footstep_Gravel_09.wav</ShortName>
+							<Path>SFX\SFX_Monster_Footstep_Gravel_09_3F75BDB9.wem</Path>
+						</File>
+						<File Id="697689426" Language="SFX">
+							<ShortName>SFX_Monster_Footstep_Gravel_08.wav</ShortName>
+							<Path>SFX\SFX_Monster_Footstep_Gravel_08_3F75BDB9.wem</Path>
+						</File>
+						<File Id="739953383" Language="SFX">
+							<ShortName>SFX_Monster_Footstep_Gravel_01.wav</ShortName>
+							<Path>SFX\SFX_Monster_Footstep_Gravel_01_3F75BDB9.wem</Path>
+						</File>
+						<File Id="745284249" Language="SFX">
+							<ShortName>SFX_Monster_Footstep_Gravel_03.wav</ShortName>
+							<Path>SFX\SFX_Monster_Footstep_Gravel_03_3F75BDB9.wem</Path>
+						</File>
+						<File Id="773186723" Language="SFX">
+							<ShortName>SFX_Monster_Footstep_Gravel_04.wav</ShortName>
+							<Path>SFX\SFX_Monster_Footstep_Gravel_04_3F75BDB9.wem</Path>
+						</File>
+						<File Id="824409136" Language="SFX">
+							<ShortName>SFX_Monster_Footstep_Gravel_10.wav</ShortName>
+							<Path>SFX\SFX_Monster_Footstep_Gravel_10_3F75BDB9.wem</Path>
+						</File>
+						<File Id="939502542" Language="SFX">
+							<ShortName>SFX_Monster_Footstep_Gravel_05.wav</ShortName>
+							<Path>SFX\SFX_Monster_Footstep_Gravel_05_3F75BDB9.wem</Path>
+						</File>
+						<File Id="1072993837" Language="SFX">
+							<ShortName>SFX_Monster_Footstep_Gravel_06.wav</ShortName>
+							<Path>SFX\SFX_Monster_Footstep_Gravel_06_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3457550880" Name="Play_Monster_Footsteps_Wood" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Footsteps_Wood" MaxAttenuation="13.000000" DurationType="OneShot" DurationMin="0.123952" DurationMax="0.196131">
 					<IncludedMemoryFiles>
 						<File Id="105044923" Language="SFX">
 							<ShortName>SFX_Monster_Footstep_Wood_02.wav</ShortName>
@@ -575,19 +622,17 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="47410005" Name="Play_Window_Emitter" ObjectPath="\Events\McSpookyJam2020\AMB\Play_Window_Emitter" DurationType="Infinite">
+				<Event Id="47410005" Name="Play_Window_Emitter" ObjectPath="\Events\McSpookyJam2020\AMB\Play_Window_Emitter" MaxAttenuation="13.000000" DurationType="Infinite">
 					<ReferencedStreamedFiles>
+						<File Id="68280186" Language="SFX">
+							<ShortName>McJam2020_Window_Closed_Day_loop.wav</ShortName>
+							<Path>SFX\McJam2020_Window_Closed_Day_loop_9EDFC787.wem</Path>
+						</File>
 						<File Id="480480925" Language="SFX">
 							<ShortName>McJam2020_window_closed_night_loop.wav</ShortName>
 							<Path>SFX\McJam2020_window_closed_night_loop_9EDFC787.wem</Path>
 						</File>
 					</ReferencedStreamedFiles>
-					<IncludedMemoryFiles>
-						<File Id="68280186" Language="SFX">
-							<ShortName>McJam2020_Window_Closed_Day_loop.wav</ShortName>
-							<Path>SFX\McJam2020_Window_Closed_Day_loop_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="801816073" Name="Play_Wood_Door_Close" ObjectPath="\Events\McSpookyJam2020\Interactables\Doors\Play_Wood_Door_Close" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.860000" DurationMax="0.860000">
 					<IncludedMemoryFiles>

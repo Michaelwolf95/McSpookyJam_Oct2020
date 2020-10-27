@@ -570,7 +570,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Monster_Footsteps_Gravel" ID="{892C09EA-9FE9-429D-82FF-37ED01EC9BD6}"/>
+						<Event Name="Play_Monster_Footsteps_Gravel" ID="{892C09EA-9FE9-429D-82FF-37ED01EC9BD6}">
+							<ChildrenList>
+								<Action Name="" ID="{C084E28D-B23A-4398-8143-42CFAA60477C}" ShortID="661158343">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Monster_Footsteps_Gravel" ID="{02753DA3-64AF-47A7-8BC3-DBEFD03DE651}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="Play_Monster_Growl" ID="{43158A12-F866-4C12-B0A2-AD149DFB6C3F}">
 							<ChildrenList>
 								<Action Name="" ID="{04B03601-2508-40CD-A18D-1130D4728CB6}" ShortID="164290250">
