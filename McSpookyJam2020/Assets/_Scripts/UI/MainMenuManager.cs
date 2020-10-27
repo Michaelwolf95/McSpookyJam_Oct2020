@@ -75,7 +75,7 @@ public class MainMenuManager : MonoBehaviour
     private void OnQuitButtonPressed()
     {
         exitButtonSound.Post(gameObject);
-        StartCoroutine(MenuTweenEffects.ScalePressEffect((RectTransform)startButton.transform, () =>
+        StartCoroutine(MenuTweenEffects.ScalePressEffect((RectTransform)quitButton.transform, () =>
         {
             
             Application.Quit();
