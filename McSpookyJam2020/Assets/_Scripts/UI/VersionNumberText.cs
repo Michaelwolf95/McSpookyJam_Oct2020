@@ -8,6 +8,10 @@ public class VersionNumberText : MonoBehaviour
     [SerializeField] private TextMeshProUGUI tmpText = null;
     void Start()
     {
-        tmpText.text = Application.version;
+        string versionNumber = Application.version;
+#if DEVELOPMENT_BUILD
+        versionNumber += "-DEBUG";
+#endif
+        tmpText.text = versionNumber;
     }
 }

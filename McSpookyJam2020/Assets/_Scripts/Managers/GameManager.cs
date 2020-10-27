@@ -213,7 +213,7 @@ public class GameManager : SceneSingleton<GameManager>
         }
     }
 
-#if UNITY_EDITOR
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
 
     private void DebugTeleportPlayer(Transform waypoint)
     {
