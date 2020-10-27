@@ -73,14 +73,14 @@ public class FirstPersonAIO : MonoBehaviour
     public static FirstPersonAIO instance = null;
 
     // DONT CHANGE THESE PLS
-    public PhysicMaterial groundFloorMaterial;
     public AK.Wwise.Event groundFloorFootSteps;
-    public PhysicMaterial upstairsMaterial;
+    public PhysicMaterial groundFloorMaterial;
     public AK.Wwise.Event upstairsFootSteps;
-    public PhysicMaterial basementMaterial;
+    public PhysicMaterial upstairsMaterial;
     public AK.Wwise.Event basementFootSteps;
-    public PhysicMaterial stairsFloorMaterial;
+    public PhysicMaterial basementMaterial;
     public AK.Wwise.Event stairsFootSteps;
+    public PhysicMaterial stairsFloorMaterial;
 
     private AK.Wwise.Event lastFootStepEvent = null;
     private AK.Wwise.Event deafultStepEvent => groundFloorFootSteps;

@@ -1265,6 +1265,7 @@ GameObject:
   - component: {fileID: 1668234953027693322}
   - component: {fileID: 5001563438001375938}
   - component: {fileID: 452609174653305682}
+  - component: {fileID: 3639297723754565102}
   m_Layer: 0
   m_Name: monster puppet
   m_TagString: Untagged
@@ -1410,8 +1411,8 @@ MonoBehaviour:
   - {fileID: 2509398899478273213}
   - {fileID: 7630302154508792031}
   m_Bounds:
-    m_Center: {x: 0.6791496, y: -0.86824656, z: 0}
-    m_Extent: {x: 8.303224, y: 7.330068, z: 0}
+    m_Center: {x: 0.6791506, y: -0.8682437, z: 0}
+    m_Extent: {x: 8.303225, y: 7.330067, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!95 &452609174653305682
@@ -1433,6 +1434,45 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3639297723754565102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6880460698409470515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67f0c152b2d3bbe4d93d2d4ef26f3089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycastOrigin: {fileID: 1169053038879885768}
+  groundFloorFootSteps:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3e9f21dd48294a7438c576743bd8f0eb,
+      type: 2}
+  groundFloorMaterial: {fileID: 13400000, guid: 74ea77593c490f246aee1763419a03f3,
+    type: 2}
+  upstairsFootSteps:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  upstairsMaterial: {fileID: 13400000, guid: 1fcfb96d539c44045896ca14da7daedf, type: 2}
+  basementFootSteps:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  basementMaterial: {fileID: 13400000, guid: fb9d4c33cddeb6d488de85f1422b5fb0, type: 2}
+  stairsFootSteps:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  stairsFloorMaterial: {fileID: 13400000, guid: 9526437583e74584ba81e57d2ec9de50,
+    type: 2}
+  floorLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!1 &6911919866419504667
 GameObject:
   m_ObjectHideFlags: 0
@@ -1848,6 +1888,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4595159227610356545}
+  - {fileID: 1169053038879885768}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1871,6 +1912,9 @@ MonoBehaviour:
   attackStopDistance: 1.8
   attackDuration: 1.5
   unHideMinDistance: 8
+  animator: {fileID: 452609174653305682}
+  velocityToAnimSpeedRatio: 2
+  fadeOutDuration: 1
   disabledStateParams:
     speed: 0
     angularSpeed: 0
@@ -2125,6 +2169,36 @@ Transform:
   - {fileID: 7114761937513541324}
   m_Father: {fileID: 6655603680385063603}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8829583759592432495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1169053038879885768}
+  m_Layer: 0
+  m_Name: Footstep Raycast Origin
+  m_TagString: Untagged
+  m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1169053038879885768
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8829583759592432495}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8141053062342249904}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8944239124545241911
 GameObject:

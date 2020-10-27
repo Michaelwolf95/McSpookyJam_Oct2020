@@ -11115,6 +11115,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 246365746660163118, guid: 7bbf4c3865dbeac4ca91a782732f7320,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0518
+      objectReference: {fileID: 0}
     - target: {fileID: 782957749969479014, guid: 7bbf4c3865dbeac4ca91a782732f7320,
         type: 3}
       propertyPath: m_Mesh
@@ -11340,6 +11345,16 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1754104339}
+    - target: {fileID: 8417057494084084641, guid: 7bbf4c3865dbeac4ca91a782732f7320,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0518
+      objectReference: {fileID: 0}
+    - target: {fileID: 8721253227589451459, guid: 7bbf4c3865dbeac4ca91a782732f7320,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0518
+      objectReference: {fileID: 0}
     - target: {fileID: 8721253227589451460, guid: 7bbf4c3865dbeac4ca91a782732f7320,
         type: 3}
       propertyPath: m_Mesh
@@ -17530,6 +17545,12 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.5566038
       objectReference: {fileID: 0}
+    - target: {fileID: 3639297723754565102, guid: bb64e8f3da86ee646bdc0926f09bc6fd,
+        type: 3}
+      propertyPath: groundFloorFootSteps.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 3e9f21dd48294a7438c576743bd8f0eb,
+        type: 2}
     - target: {fileID: 6880460698409470515, guid: bb64e8f3da86ee646bdc0926f09bc6fd,
         type: 3}
       propertyPath: m_IsActive

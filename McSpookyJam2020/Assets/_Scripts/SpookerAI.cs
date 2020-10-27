@@ -18,7 +18,10 @@ public class SpookerAI : LightReactor
     [SerializeField] private float unHideMinDistance = 8f;
 
     [Space(5)] 
-
+    [SerializeField] private Animator animator = null;
+    [SerializeField] private float velocityToAnimSpeedRatio = 1f;
+    [SerializeField] private float fadeOutDuration = 1f;
+    
     [Space(5)] 
     [SerializeField] private AgentStateParams disabledStateParams = new AgentStateParams();
     [SerializeField] private AgentStateParams wanderingStateParams = new AgentStateParams();
@@ -33,7 +36,7 @@ public class SpookerAI : LightReactor
     [SerializeField] private AK.Wwise.Event onCancelAttack = null; // ToDo: Maybe a unique one for canceling due to fear, vs distance?
     // ToDo: Can wwise do something with the monster's state?
     
-    private Transform target;
+    private Transform target = null;
 
     //private static float MIN_FLOOR_HEIGHT = 1f;
 
@@ -83,6 +86,8 @@ public class SpookerAI : LightReactor
         {
             return;
         }
+
+        animator.speed = velocityToAnimSpeedRatio * agent.velocity.magnitude;
 
         Vector3 toTargetVector = (target.position - transform.position);
         switch (currentState)
@@ -284,7 +289,7 @@ public class SpookerAI : LightReactor
 
     private void CancelAttack()
     {
-        Debug.Log("Cancel Attack");
+        //Debug.Log("Cancel Attack");
         GameManager.instance.CancelAttackEffect();
         
         onCancelAttack.Post(gameObject);
@@ -309,20 +314,14 @@ public class SpookerAI : LightReactor
 
         ChangeState(SpookerState.Feared);
         
-//        Vector3 awayFromPlayer = -Vector3.ProjectOnPlane((target.position - transform.position).normalized, Vector3.up).normalized;
-//        NavMeshHit hit;
-//        NavMesh.SamplePosition(transform.position + awayFromPlayer * 100f, out hit, 500f, 1 << NavMesh.GetNavMeshLayerFromName("Default"));
-//        agent.SetDestination(hit.position);
-
         this.DoTween((lerp) =>
         {
             spriteRenderer.color = Color.Lerp(defaultColor, Color.clear, lerp);
         },  () =>
         {
             ChangeState(SpookerState.Hiding);
-        }, 1f);
+        }, fadeOutDuration);
         
-
         // ToDo: Stop for a moment first?
         
     }
