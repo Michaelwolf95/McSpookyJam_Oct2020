@@ -55,7 +55,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-9</Value>
+										<Value>-12</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -281,7 +281,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-4</Value>
+										<Value>-9</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -459,7 +459,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-9</Value>
+										<Value>-12</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -783,9 +783,20 @@
 							<ChildrenList>
 								<Sound Name="SX_MCJ2020_AMB_BED_DAY_TIME (1)" ID="{CBEDA160-882B-4F80-8867-0946FB2AFA18}" ShortID="264826034">
 									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsNonCachable" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-8</Value>
+												<Value>-18</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -812,9 +823,20 @@
 								</Sound>
 								<Sound Name="SX_MCJ2020_AMB_BED_NIGHT_2" ID="{62C46205-4F16-4EF7-AD7E-F408CF7EFD2E}" ShortID="101189659">
 									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsNonCachable" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-21</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -828,6 +850,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="SX_MCJ2020_AMB_BED_NIGHT_2" ID="{93A615BD-2EE7-424C-A9E9-6099A2CFD689}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="196.311885844749"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SX_MCJ2020_AMB_BED_NIGHT_2.wav</AudioFile>
 											<MediaIDList>
@@ -1160,6 +1187,7 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="Night_Clock" ID="{751AC1F0-57AA-4F44-9142-BDF1A4BF273B}" ShortID="547397894">
 									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
@@ -1180,7 +1208,7 @@
 											<PropertyList>
 												<Property Name="Weight" Type="Real64">
 													<ValueList>
-														<Value>40</Value>
+														<Value>70</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1209,7 +1237,7 @@
 											<PropertyList>
 												<Property Name="Weight" Type="Real64">
 													<ValueList>
-														<Value>20</Value>
+														<Value>10</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1238,7 +1266,7 @@
 											<PropertyList>
 												<Property Name="Weight" Type="Real64">
 													<ValueList>
-														<Value>40</Value>
+														<Value>70</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
