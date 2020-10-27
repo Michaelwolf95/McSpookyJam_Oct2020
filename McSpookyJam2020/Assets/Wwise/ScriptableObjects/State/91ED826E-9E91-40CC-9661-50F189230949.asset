@@ -15,4 +15,5 @@ MonoBehaviour:
   objectName: Paused
   id: 319258907
   guid: 91ED826E-9E91-40CC-9661-50F189230949
-  WwiseStateGroupReference: {fileID: 0}
+  WwiseStateGroupReference: {fileID: 11400000, guid: 39538fbbfd6b15e4f80d436efe3e583b,
+    type: 2}

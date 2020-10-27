@@ -145,23 +145,23 @@
 				</Folder>
 				<Folder Name="UI" ID="{ABFDD802-1480-49E0-B142-E473C625D1CF}" ShortID="209379588">
 					<ChildrenList>
-						<Event Name="Play_UI_Negative" ID="{C06D720F-139E-4BE7-BDCE-9F0A0252C811}">
+						<Event Name="Play_UI_Return" ID="{C06D720F-139E-4BE7-BDCE-9F0A0252C811}">
 							<ChildrenList>
 								<Action Name="" ID="{18BB97F3-C569-4252-9D9B-367B49455111}" ShortID="1024622532">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="UI_Negative" ID="{B1E66439-02C0-4877-BA3C-5930F1BD5F7F}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+											<ObjectRef Name="return to game" ID="{BECBB309-1B3A-49D5-A63D-4C7E5C499C47}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_UI_Positive" ID="{678B3407-225D-4108-B9AF-E531A1B80C50}">
+						<Event Name="Play_UI_Select" ID="{678B3407-225D-4108-B9AF-E531A1B80C50}">
 							<ChildrenList>
 								<Action Name="" ID="{D70351E7-0DA3-4861-B3B1-3D544D959711}" ShortID="2144634">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="UI_Positive" ID="{E038DEEA-F592-4487-90F0-9779879064FE}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+											<ObjectRef Name="Select" ID="{640C0F4F-4FF1-4F58-89F3-571B61FB8540}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -193,6 +193,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="UI_Menu_Fade" ID="{3F49B057-3577-4752-99F7-852DF6711886}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_hover" ID="{CCAED17B-A77E-4D57-B8B1-E4327B694C0B}">
+							<ChildrenList>
+								<Action Name="" ID="{2913A365-9B57-4637-9BAD-4E4062837B2B}" ShortID="497274242">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="hover" ID="{D20BBF22-A6B1-41C8-8FBA-D461F423822A}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -400,7 +411,7 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="SFXs" ID="{C57EF97A-41CB-4E47-B7C6-252D1F52831B}" ShortID="674282969">
+				<Folder Name="Endings" ID="{C57EF97A-41CB-4E47-B7C6-252D1F52831B}" ShortID="674282969">
 					<ChildrenList>
 						<Folder Name="Endings" ID="{739C81F0-76F1-4D14-B37B-0C4AE77EA153}" ShortID="838838922">
 							<ChildrenList>
@@ -436,12 +447,12 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="Play_Game_Start_Candle_Trem" ID="{ADED502F-DBF6-432E-B014-A3E21627E972}">
+								<Event Name="Play_Game_Start" ID="{ADED502F-DBF6-432E-B014-A3E21627E972}">
 									<ChildrenList>
 										<Action Name="" ID="{27D0DDDB-A129-4D3C-9ADC-575A15CA50A7}" ShortID="738000965">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="SFX_Game_Start_Candle_Trem" ID="{69E99071-C8BB-4888-9F43-0982F194F4B7}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+													<ObjectRef Name="SFX_Game_Start" ID="{69E99071-C8BB-4888-9F43-0982F194F4B7}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -526,7 +537,7 @@
 								<Action Name="" ID="{B01F5D6C-3C13-4368-B7BC-3F3610876108}" ShortID="699297628">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_Game_Start_Candle_Trem" ID="{69E99071-C8BB-4888-9F43-0982F194F4B7}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+											<ObjectRef Name="SFX_Game_Start" ID="{69E99071-C8BB-4888-9F43-0982F194F4B7}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

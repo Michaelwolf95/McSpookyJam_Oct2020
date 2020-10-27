@@ -20,7 +20,8 @@ namespace AK
         static const AkUniqueID PLAY_DRAWER_OPEN = 1958703520U;
         static const AkUniqueID PLAY_FLASHLIGHT_ON = 3471928368U;
         static const AkUniqueID PLAY_GAME_END = 2790351818U;
-        static const AkUniqueID PLAY_GAME_START_CANDLE_TREM = 2892862498U;
+        static const AkUniqueID PLAY_GAME_START = 4109843897U;
+        static const AkUniqueID PLAY_HOVER = 1962302600U;
         static const AkUniqueID PLAY_LIGHT_SWITCH_OFF = 314077991U;
         static const AkUniqueID PLAY_LIGHT_SWITCH_ON = 82250835U;
         static const AkUniqueID PLAY_LOCKED_DOOR = 281597619U;
@@ -44,8 +45,8 @@ namespace AK
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_STAIRS = 1934534490U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_WOOD = 1323502295U;
         static const AkUniqueID PLAY_RITUAL_CIRCLE = 1733092070U;
-        static const AkUniqueID PLAY_UI_NEGATIVE = 2519795238U;
-        static const AkUniqueID PLAY_UI_POSITIVE = 1098125654U;
+        static const AkUniqueID PLAY_UI_RETURN = 3194421821U;
+        static const AkUniqueID PLAY_UI_SELECT = 3308548503U;
         static const AkUniqueID PLAY_WINDOW_EMITTER = 47410005U;
         static const AkUniqueID PLAY_WOOD_DOOR_CLOSE = 801816073U;
         static const AkUniqueID PLAY_WOOD_DOOR_OPEN = 781714651U;
@@ -75,16 +76,6 @@ namespace AK
 
     namespace SWITCHES
     {
-        namespace FOOTSTEPS
-        {
-            static const AkUniqueID GROUP = 2385628198U;
-
-            namespace SWITCH
-            {
-                static const AkUniqueID WALKING = 340271938U;
-            } // namespace SWITCH
-        } // namespace FOOTSTEPS
-
         namespace TIME
         {
             static const AkUniqueID GROUP = 2654366170U;
@@ -103,20 +94,17 @@ namespace AK
         static const AkUniqueID TIME = 2654366170U;
     } // namespace GAME_PARAMETERS
 
-    namespace TRIGGERS
-    {
-        static const AkUniqueID TIME_CHANGE = 4130026045U;
-    } // namespace TRIGGERS
-
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
-        static const AkUniqueID MCSPOOKYJAM2020 = 4190601618U;
+        static const AkUniqueID HUSK = 3210724738U;
     } // namespace BANKS
 
     namespace BUSSES
     {
+        static const AkUniqueID AMB_MASTER = 3073528060U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID SFX_MASTER = 3205032327U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES
