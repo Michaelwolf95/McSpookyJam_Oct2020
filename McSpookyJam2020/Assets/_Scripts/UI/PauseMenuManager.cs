@@ -13,16 +13,22 @@ public class PauseMenuManager : MonoBehaviour
     [SerializeField] private AK.Wwise.State GameStatePaused;
     [SerializeField] private AK.Wwise.State GameStateInGame;
 
-    [SerializeField] Button resumeButton = null;
-    [SerializeField] Button mainMenuButton = null;
-    [SerializeField] CanvasGroup pauseMenuPanel = null;
-    [SerializeField] CanvasGroup fadeOutPanel = null;
+    [SerializeField] private Button resumeButton = null;
+    [SerializeField] private Button inventoryButton = null;
+    [SerializeField] private Button mainMenuButton = null;
+    [SerializeField] private CanvasGroup pauseMenuPanel = null;
+    [SerializeField] private CanvasGroup fadeOutPanel = null;
+    [SerializeField] private InventoryMenu inventoryMenu = null;
     [SerializeField] KeyCode pauseKey = KeyCode.Escape;
 
     private void Start()
     {
         fadeOutPanel.alpha = 0f;
         fadeOutPanel.gameObject.SetActive(false);
+        
+        resumeButton.onClick.AddListener(ResumeGame);
+        inventoryButton.onClick.AddListener(OpenInventory);
+        mainMenuButton.onClick.AddListener(ReturnToMainMenu);
     }
 
     private void Update()
@@ -56,6 +62,7 @@ public class PauseMenuManager : MonoBehaviour
     private void ToggleButtonsInteractive(bool argInteractable)
     {
         resumeButton.interactable = argInteractable;
+        inventoryButton.interactable = argInteractable;
         mainMenuButton.interactable = argInteractable;
     }
 
@@ -72,6 +79,11 @@ public class PauseMenuManager : MonoBehaviour
             GameManager.instance.IsPlayerInMenu = false;
             Time.timeScale = 1;
         }, 1.25f, 1f, 0f, true));
+    }
+
+    public void OpenInventory()
+    {
+        inventoryMenu.OpenInventory();
     }
 
     public void ReturnToMainMenu()
