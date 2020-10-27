@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
@@ -37,7 +37,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4190601618" Language="SFX" Hash="3007659133">
+		<SoundBank Id="4190601618" Language="SFX" Hash="2467790980">
 			<ObjectPath>\SoundBanks\McSpookyJam2020\McSpookyJam2020</ObjectPath>
 			<ShortName>McSpookyJam2020</ShortName>
 			<Path>McSpookyJam2020.bnk</Path>
@@ -210,27 +210,47 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="1353343606" Name="Play_Monster_Footsteps_Gravel" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Footsteps_Gravel" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3457550880" Name="Play_Monster_Footsteps_Wood" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Footsteps_Wood" MaxAttenuation="13.000000" DurationType="OneShot" DurationMin="1.049792" DurationMax="1.076167">
+				<Event Id="3457550880" Name="Play_Monster_Footsteps_Wood" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Footsteps_Wood" MaxAttenuation="13.000000" DurationType="OneShot" DurationMin="0.124167" DurationMax="0.195792">
 					<IncludedMemoryFiles>
-						<File Id="124871761" Language="SFX">
-							<ShortName>SFX_Monster_Footsteps_03.wav</ShortName>
-							<Path>SFX\SFX_Monster_Footsteps_03_3F75BDB9.wem</Path>
+						<File Id="105044923" Language="SFX">
+							<ShortName>SFX_Monster_Footstep_Wood_02.wav</ShortName>
+							<Path>SFX\SFX_Monster_Footstep_Wood_02_3F75BDB9.wem</Path>
 						</File>
-						<File Id="463893973" Language="SFX">
-							<ShortName>SFX_Monster_Footsteps_05.wav</ShortName>
-							<Path>SFX\SFX_Monster_Footsteps_05_3F75BDB9.wem</Path>
+						<File Id="135112481" Language="SFX">
+							<ShortName>SFX_Monster_Footstep_Wood_03.wav</ShortName>
+							<Path>SFX\SFX_Monster_Footstep_Wood_03_3F75BDB9.wem</Path>
 						</File>
-						<File Id="551553071" Language="SFX">
-							<ShortName>SFX_Monster_Footsteps_02.wav</ShortName>
-							<Path>SFX\SFX_Monster_Footsteps_02_3F75BDB9.wem</Path>
+						<File Id="250913261" Language="SFX">
+							<ShortName>SFX_Monster_Footstep_Wood_06.wav</ShortName>
+							<Path>SFX\SFX_Monster_Footstep_Wood_06_3F75BDB9.wem</Path>
 						</File>
-						<File Id="734625085" Language="SFX">
-							<ShortName>SFX_Monster_Footsteps_04.wav</ShortName>
-							<Path>SFX\SFX_Monster_Footsteps_04_3F75BDB9.wem</Path>
+						<File Id="481387673" Language="SFX">
+							<ShortName>SFX_Monster_Footstep_Wood_05.wav</ShortName>
+							<Path>SFX\SFX_Monster_Footstep_Wood_05_3F75BDB9.wem</Path>
 						</File>
-						<File Id="735217198" Language="SFX">
-							<ShortName>SFX_Monster_Footsteps_01.wav</ShortName>
-							<Path>SFX\SFX_Monster_Footsteps_01_3F75BDB9.wem</Path>
+						<File Id="491812854" Language="SFX">
+							<ShortName>SFX_Monster_Footstep_Wood_10.wav</ShortName>
+							<Path>SFX\SFX_Monster_Footstep_Wood_10_3F75BDB9.wem</Path>
+						</File>
+						<File Id="541627182" Language="SFX">
+							<ShortName>SFX_Monster_Footstep_Wood_04.wav</ShortName>
+							<Path>SFX\SFX_Monster_Footstep_Wood_04_3F75BDB9.wem</Path>
+						</File>
+						<File Id="604352102" Language="SFX">
+							<ShortName>SFX_Monster_Footstep_Wood_01.wav</ShortName>
+							<Path>SFX\SFX_Monster_Footstep_Wood_01_3F75BDB9.wem</Path>
+						</File>
+						<File Id="752000848" Language="SFX">
+							<ShortName>SFX_Monster_Footstep_Wood_08.wav</ShortName>
+							<Path>SFX\SFX_Monster_Footstep_Wood_08_3F75BDB9.wem</Path>
+						</File>
+						<File Id="810243314" Language="SFX">
+							<ShortName>SFX_Monster_Footstep_Wood_07.wav</ShortName>
+							<Path>SFX\SFX_Monster_Footstep_Wood_07_3F75BDB9.wem</Path>
+						</File>
+						<File Id="1017013998" Language="SFX">
+							<ShortName>SFX_Monster_Footstep_Wood_09.wav</ShortName>
+							<Path>SFX\SFX_Monster_Footstep_Wood_09_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
