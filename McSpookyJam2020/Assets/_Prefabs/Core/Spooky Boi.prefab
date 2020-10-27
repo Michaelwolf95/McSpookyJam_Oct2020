@@ -1327,7 +1327,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2acfc6f53a23c7540834342dd64bbc2d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3882353, g: 0.3882353, b: 0.3882353, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1410,8 +1410,8 @@ MonoBehaviour:
   - {fileID: 2509398899478273213}
   - {fileID: 7630302154508792031}
   m_Bounds:
-    m_Center: {x: 0.6791506, y: -0.8682437, z: 0}
-    m_Extent: {x: 8.303225, y: 7.330067, z: 0}
+    m_Center: {x: 0.6791496, y: -0.86824656, z: 0}
+    m_Extent: {x: 8.303224, y: 7.330068, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!95 &452609174653305682
@@ -1865,7 +1865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isInLight: 0
   agent: {fileID: 8141053062342249905}
-  spriteRenderer: {fileID: 8141053063868135339}
+  spriteRenderer: {fileID: 1668234953027693322}
   visualRoot: {fileID: 3658173259168782373}
   attackStartDistance: 1.6
   attackStopDistance: 1.8
