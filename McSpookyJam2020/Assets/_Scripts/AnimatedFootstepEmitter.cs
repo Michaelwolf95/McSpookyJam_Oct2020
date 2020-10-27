@@ -29,7 +29,7 @@ public class AnimatedFootstepEmitter : UnityEngine.MonoBehaviour
     private void FixedUpdate()
     {
         RaycastHit hit = new RaycastHit();
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, floorLayerMask.value))
+        if (Physics.Raycast(raycastOrigin.position, Vector3.down, out hit, floorLayerMask.value))
         {
             if (hit.collider.sharedMaterial == groundFloorMaterial)
             {

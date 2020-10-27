@@ -59,17 +59,17 @@ namespace AK
 
     namespace STATES
     {
-        namespace TIME
+        namespace GAMESTATE
         {
-            static const AkUniqueID GROUP = 2654366170U;
+            static const AkUniqueID GROUP = 4091656514U;
 
             namespace STATE
             {
-                static const AkUniqueID DAY = 311764537U;
-                static const AkUniqueID NIGHT = 1011622525U;
+                static const AkUniqueID INGAME = 984691642U;
                 static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID PAUSED = 319258907U;
             } // namespace STATE
-        } // namespace TIME
+        } // namespace GAMESTATE
 
     } // namespace STATES
 

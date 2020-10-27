@@ -3,11 +3,11 @@
 	<States>
 		<WorkUnit Name="McSpookyJam2020" ID="{7A702C11-9E36-4900-8EE6-6009DB69176B}" PersistMode="Standalone">
 			<ChildrenList>
-				<StateGroup Name="Time" ID="{261C0952-B1A4-406A-801B-D51771A3A040}">
+				<StateGroup Name="GameState" ID="{3980E38B-8D37-4386-A7B8-03A05E4A887B}">
 					<ChildrenList>
-						<State Name="None" ID="{4DB90312-5992-45E4-841B-71FFDD3DD7F7}"/>
-						<State Name="Day" ID="{113887E0-91B2-4EF5-8604-9CB124568B20}"/>
-						<State Name="Night" ID="{F37607B3-A313-4492-94F1-2A4198829578}"/>
+						<State Name="None" ID="{4A590836-6083-476D-9DAB-10CBE2B1292F}"/>
+						<State Name="InGame" ID="{2170A9F2-99A6-442E-8C83-F7D782ABF544}"/>
+						<State Name="Paused" ID="{91ED826E-9E91-40CC-9661-50F189230949}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

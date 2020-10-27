@@ -10,7 +10,8 @@ public class PauseMenuManager : MonoBehaviour
     [SerializeField] private AK.Wwise.Event resumeButtonSound;
     [SerializeField] private AK.Wwise.Event pauseMenuSound;
     [SerializeField] private AK.Wwise.Event mainMenuSound;
-
+    [SerializeField] private AK.Wwise.State GameStatePaused;
+    [SerializeField] private AK.Wwise.State GameStateInGame;
 
     [SerializeField] Button resumeButton = null;
     [SerializeField] Button mainMenuButton = null;
@@ -34,6 +35,7 @@ public class PauseMenuManager : MonoBehaviour
 
     void PauseGame()
     {
+        GameStatePaused.SetValue();
         pauseMenuSound.Post(gameObject);
         pauseMenuPanel.gameObject.SetActive(true);
         pauseMenuPanel.alpha = 1f;
@@ -59,6 +61,7 @@ public class PauseMenuManager : MonoBehaviour
 
     public void ResumeGame()
     {
+        GameStateInGame.SetValue();
         resumeButtonSound.Post(gameObject);
         ToggleButtonsInteractive(false);
         StartCoroutine(MenuTweenEffects.ScalePressEffect((RectTransform)resumeButton.transform, () =>

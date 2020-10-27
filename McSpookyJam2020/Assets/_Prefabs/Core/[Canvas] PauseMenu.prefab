@@ -131,6 +131,20 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 5b0eb492e730f0243851230b73940d3b,
       type: 2}
+  GameStatePaused:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: deb00d30b6ea3ae4abe111f1d1561391,
+      type: 2}
+  GameStateInGame:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 29ea80176755d744db4fbed71b232ccb,
+      type: 2}
   resumeButton: {fileID: 2297342170425467711}
   mainMenuButton: {fileID: 2297342171251579779}
   pauseMenuPanel: {fileID: 6870295184637677988}

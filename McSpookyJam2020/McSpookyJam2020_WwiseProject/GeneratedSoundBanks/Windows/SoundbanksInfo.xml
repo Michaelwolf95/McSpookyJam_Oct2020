@@ -36,12 +36,12 @@
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3487305299">
+		<SoundBank Id="1355168291" Language="SFX" Hash="4126062817">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4190601618" Language="SFX" Hash="3171223730">
+		<SoundBank Id="4190601618" Language="SFX" Hash="1721080905">
 			<ObjectPath>\SoundBanks\McSpookyJam2020\McSpookyJam2020</ObjectPath>
 			<ShortName>McSpookyJam2020</ShortName>
 			<Path>McSpookyJam2020.bnk</Path>
@@ -325,7 +325,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2620845016" Name="Play_Monster_Hiss" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Hiss" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="2.716708" DurationMax="2.959896">
+				<Event Id="2620845016" Name="Play_Monster_Hiss" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Hiss" MaxAttenuation="12.000000" DurationType="OneShot" DurationMin="2.716708" DurationMax="2.959896">
 					<IncludedMemoryFiles>
 						<File Id="21503164" Language="SFX">
 							<ShortName>SFX_Monster_Hiss_01.wav</ShortName>

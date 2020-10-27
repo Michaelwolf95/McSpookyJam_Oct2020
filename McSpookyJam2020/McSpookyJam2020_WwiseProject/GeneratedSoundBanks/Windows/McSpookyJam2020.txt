@@ -42,6 +42,17 @@ Event	ID	Name			Wwise Object Path	Notes
 	3768549418	Play_Pickup_Key			\McSpookyJam2020\Interactables\Pickups\Play_Pickup_Key	
 	4095429044	Stop_Main_Menu_Fade			\McSpookyJam2020\UI\Stop_Main_Menu_Fade	
 
+State Group	ID	Name			Wwise Object Path	Notes
+	4091656514	GameState			\McSpookyJam2020\GameState	
+
+State	ID	Name	State Group			Notes
+	319258907	Paused	GameState			
+	748895195	None	GameState			
+	984691642	InGame	GameState			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	636110005	Paused	GameState	\Actor-Mixer Hierarchy\McSpookyJam2020\AMB		
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	2654366170	Time			\McSpookyJam2020\Time	
 
