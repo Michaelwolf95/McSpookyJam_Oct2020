@@ -3341,6 +3341,12 @@
 						<RandomSequenceContainer Name="Monster_Footsteps_Wood" ID="{6967827C-C69D-4EF4-84CA-136478EE296E}" ShortID="162852851">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>42</Value>
+									</ValueList>
+								</Property>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -3355,7 +3361,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="SFX_Monster_Footsteps_04" ID="{BD6A1B52-2285-4178-9831-8D6F37E3E534}" ShortID="465491108">
+								<Sound Name="SFX_Monster_Footstep_Wood_01" ID="{7C18E019-FEF9-41EF-B572-76EFAAC0EA73}" ShortID="1042675100">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
@@ -3365,19 +3371,19 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="SFX_Monster_Footsteps_04" ID="{C6157A4B-6084-4FF5-B36D-62E51B1211C7}">
+										<AudioFileSource Name="SFX_Monster_Footstep_Wood_01" ID="{DC37BBA5-41BA-452B-A455-5BBF27AABAE8}">
 											<Language>SFX</Language>
-											<AudioFile>SFX_Monster_Footsteps_04.wav</AudioFile>
+											<AudioFile>SFX_Monster_Footstep_Wood_01.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="734625085"/>
+												<MediaID ID="604352102"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="SFX_Monster_Footsteps_04" ID="{C6157A4B-6084-4FF5-B36D-62E51B1211C7}" Platform="Linked"/>
+										<ActiveSource Name="SFX_Monster_Footstep_Wood_01" ID="{DC37BBA5-41BA-452B-A455-5BBF27AABAE8}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="SFX_Monster_Footsteps_02" ID="{8C0E02A8-D8AE-4E88-B64B-50B381607998}" ShortID="785602720">
+								<Sound Name="SFX_Monster_Footstep_Wood_02" ID="{B56F86CE-03AD-4FEB-AC41-FD4C9C18132B}" ShortID="822526870">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
@@ -3387,19 +3393,19 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="SFX_Monster_Footsteps_02" ID="{5AAF0ED0-58F4-4785-A9F5-70DA2F55D6F6}">
+										<AudioFileSource Name="SFX_Monster_Footstep_Wood_02" ID="{629114DC-3601-4BD2-A283-EFD9AF977C8A}">
 											<Language>SFX</Language>
-											<AudioFile>SFX_Monster_Footsteps_02.wav</AudioFile>
+											<AudioFile>SFX_Monster_Footstep_Wood_02.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="551553071"/>
+												<MediaID ID="105044923"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="SFX_Monster_Footsteps_02" ID="{5AAF0ED0-58F4-4785-A9F5-70DA2F55D6F6}" Platform="Linked"/>
+										<ActiveSource Name="SFX_Monster_Footstep_Wood_02" ID="{629114DC-3601-4BD2-A283-EFD9AF977C8A}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="SFX_Monster_Footsteps_03" ID="{8F7D2239-68E0-4847-A4E2-8BACCC515F57}" ShortID="1063349282">
+								<Sound Name="SFX_Monster_Footstep_Wood_03" ID="{D58022CA-6007-49DD-8A1F-6732B6BFC5B1}" ShortID="511485606">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
@@ -3409,19 +3415,19 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="SFX_Monster_Footsteps_03" ID="{40AD5D7F-3B34-4279-BDB3-936980957F68}">
+										<AudioFileSource Name="SFX_Monster_Footstep_Wood_03" ID="{DDE4EAEE-F758-4AA0-9CC0-5C8600DB2CFC}">
 											<Language>SFX</Language>
-											<AudioFile>SFX_Monster_Footsteps_03.wav</AudioFile>
+											<AudioFile>SFX_Monster_Footstep_Wood_03.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="124871761"/>
+												<MediaID ID="135112481"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="SFX_Monster_Footsteps_03" ID="{40AD5D7F-3B34-4279-BDB3-936980957F68}" Platform="Linked"/>
+										<ActiveSource Name="SFX_Monster_Footstep_Wood_03" ID="{DDE4EAEE-F758-4AA0-9CC0-5C8600DB2CFC}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="SFX_Monster_Footsteps_01" ID="{61271630-EEF7-433E-8484-C3F535B897DB}" ShortID="922453120">
+								<Sound Name="SFX_Monster_Footstep_Wood_04" ID="{5DDAD88E-A5E7-4D30-B93C-C47C689CE2CE}" ShortID="91237157">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
@@ -3431,19 +3437,19 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="SFX_Monster_Footsteps_01" ID="{18D5E722-B6C4-460E-9E95-C1A850EC995F}">
+										<AudioFileSource Name="SFX_Monster_Footstep_Wood_04" ID="{77744426-A821-4BC8-83BC-15E4A7024238}">
 											<Language>SFX</Language>
-											<AudioFile>SFX_Monster_Footsteps_01.wav</AudioFile>
+											<AudioFile>SFX_Monster_Footstep_Wood_04.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="735217198"/>
+												<MediaID ID="541627182"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="SFX_Monster_Footsteps_01" ID="{18D5E722-B6C4-460E-9E95-C1A850EC995F}" Platform="Linked"/>
+										<ActiveSource Name="SFX_Monster_Footstep_Wood_04" ID="{77744426-A821-4BC8-83BC-15E4A7024238}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="SFX_Monster_Footsteps_05" ID="{60ECBECE-9916-4868-811C-C2F3DA197300}" ShortID="1025879270">
+								<Sound Name="SFX_Monster_Footstep_Wood_05" ID="{2AD6B8F2-EA75-4EE0-86EA-7712EBEB6202}" ShortID="828385714">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
@@ -3453,16 +3459,126 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="SFX_Monster_Footsteps_05" ID="{055934A1-EE68-4D5F-9E25-9C741D89ACD8}">
+										<AudioFileSource Name="SFX_Monster_Footstep_Wood_05" ID="{F9C6E2AA-AEBB-4686-90CC-F38010170564}">
 											<Language>SFX</Language>
-											<AudioFile>SFX_Monster_Footsteps_05.wav</AudioFile>
+											<AudioFile>SFX_Monster_Footstep_Wood_05.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="463893973"/>
+												<MediaID ID="481387673"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="SFX_Monster_Footsteps_05" ID="{055934A1-EE68-4D5F-9E25-9C741D89ACD8}" Platform="Linked"/>
+										<ActiveSource Name="SFX_Monster_Footstep_Wood_05" ID="{F9C6E2AA-AEBB-4686-90CC-F38010170564}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Monster_Footstep_Wood_06" ID="{F41531D3-ABA6-4BE0-8626-7FCE63D05E14}" ShortID="387391503">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Monster_Footstep_Wood_06" ID="{D8068C7B-D3F5-42A7-8D43-D6DA444F56F0}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Monster_Footstep_Wood_06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="250913261"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Monster_Footstep_Wood_06" ID="{D8068C7B-D3F5-42A7-8D43-D6DA444F56F0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Monster_Footstep_Wood_07" ID="{AE59818C-C4DB-4778-9865-3B022209C048}" ShortID="551741454">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Monster_Footstep_Wood_07" ID="{D0A737E3-208C-42CB-96EE-64DA592C21D8}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Monster_Footstep_Wood_07.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="810243314"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Monster_Footstep_Wood_07" ID="{D0A737E3-208C-42CB-96EE-64DA592C21D8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Monster_Footstep_Wood_08" ID="{508766F6-69B2-46C3-80E9-546CEAB843EF}" ShortID="90526806">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Monster_Footstep_Wood_08" ID="{ECB31F30-8324-4D1F-82F2-2C490DC6DE78}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Monster_Footstep_Wood_08.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="752000848"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Monster_Footstep_Wood_08" ID="{ECB31F30-8324-4D1F-82F2-2C490DC6DE78}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Monster_Footstep_Wood_09" ID="{BF024C5C-C42D-4986-9E3D-302BD8E7E150}" ShortID="819795175">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Monster_Footstep_Wood_09" ID="{B9D2F695-A7C8-45DE-9C00-6F76DADF1241}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Monster_Footstep_Wood_09.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1017013998"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Monster_Footstep_Wood_09" ID="{B9D2F695-A7C8-45DE-9C00-6F76DADF1241}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Monster_Footstep_Wood_10" ID="{A7770475-C3B9-4010-A57D-D76E8EC4A5A7}" ShortID="616080018">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Monster_Footstep_Wood_10" ID="{7C79A276-1324-4BC6-9435-E4FDF8AA4479}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Monster_Footstep_Wood_10.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="491812854"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Monster_Footstep_Wood_10" ID="{7C79A276-1324-4BC6-9435-E4FDF8AA4479}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
