@@ -150,7 +150,7 @@
 								<Action Name="" ID="{18BB97F3-C569-4252-9D9B-367B49455111}" ShortID="1024622532">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="return to game" ID="{BECBB309-1B3A-49D5-A63D-4C7E5C499C47}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+											<ObjectRef Name="SFX_UI_Negative_01" ID="{B3E82A03-7A4B-431E-BD8A-36B7CBD5DD11}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -161,7 +161,7 @@
 								<Action Name="" ID="{D70351E7-0DA3-4861-B3B1-3D544D959711}" ShortID="2144634">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Select" ID="{640C0F4F-4FF1-4F58-89F3-571B61FB8540}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+											<ObjectRef Name="SFX_UI_Positive_01" ID="{1E2F9F71-96F7-4746-BF63-0E6DDB5CD2A2}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

@@ -41,7 +41,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3210724738" Language="SFX" Hash="2977800155">
+		<SoundBank Id="3210724738" Language="SFX" Hash="3471437258">
 			<ObjectPath>\SoundBanks\McSpookyJam2020\Husk</ObjectPath>
 			<ShortName>Husk</ShortName>
 			<Path>Husk.bnk</Path>
@@ -614,19 +614,19 @@
 						</File>
 					</ReferencedStreamedFiles>
 				</Event>
-				<Event Id="3194421821" Name="Play_UI_Return" ObjectPath="\Events\McSpookyJam2020\UI\Play_UI_Return" DurationType="OneShot" DurationMin="3.836054" DurationMax="3.836054">
+				<Event Id="3194421821" Name="Play_UI_Return" ObjectPath="\Events\McSpookyJam2020\UI\Play_UI_Return" DurationType="OneShot" DurationMin="0.676146" DurationMax="0.676146">
 					<IncludedMemoryFiles>
-						<File Id="358434865" Language="SFX">
-							<ShortName>return to game.wav</ShortName>
-							<Path>SFX\return to game_3F75BDB9.wem</Path>
+						<File Id="692417209" Language="SFX">
+							<ShortName>SFX_UI_Negative_01.wav</ShortName>
+							<Path>SFX\SFX_UI_Negative_01_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3308548503" Name="Play_UI_Select" ObjectPath="\Events\McSpookyJam2020\UI\Play_UI_Select" DurationType="OneShot" DurationMin="2.346667" DurationMax="2.346667">
+				<Event Id="3308548503" Name="Play_UI_Select" ObjectPath="\Events\McSpookyJam2020\UI\Play_UI_Select" DurationType="OneShot" DurationMin="0.405208" DurationMax="0.405208">
 					<IncludedMemoryFiles>
-						<File Id="187548849" Language="SFX">
-							<ShortName>Select.wav</ShortName>
-							<Path>SFX\Select_3F75BDB9.wem</Path>
+						<File Id="623490223" Language="SFX">
+							<ShortName>SFX_UI_Positive_01.wav</ShortName>
+							<Path>SFX\SFX_UI_Positive_01_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
