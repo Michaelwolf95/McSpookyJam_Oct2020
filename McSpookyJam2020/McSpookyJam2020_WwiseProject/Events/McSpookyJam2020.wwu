@@ -120,7 +120,7 @@
 								<Action Name="" ID="{2ED940BF-209B-4BD1-BD4A-AB552B7E034A}" ShortID="944292951">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Game_Music" ID="{283C8364-7EF3-46E7-8145-181DB0778712}" WorkUnitID="{DD54507F-EEED-49A7-B912-CEFE1321FA1F}"/>
+											<ObjectRef Name="Temp" ID="{E9E8B0B6-1820-4F5A-8DAF-6F52215B9264}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -134,13 +134,23 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Game_Music" ID="{283C8364-7EF3-46E7-8145-181DB0778712}" WorkUnitID="{DD54507F-EEED-49A7-B912-CEFE1321FA1F}"/>
+											<ObjectRef Name="Temp" ID="{E9E8B0B6-1820-4F5A-8DAF-6F52215B9264}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Plya_Monster_Emerge" ID="{FE43368F-36B8-419E-83B4-5F145BB35F28}"/>
+						<Event Name="Plya_Monster_Emerge" ID="{FE43368F-36B8-419E-83B4-5F145BB35F28}">
+							<ChildrenList>
+								<Action Name="" ID="{BF47A23C-E367-4EB4-9A82-2A340484A9F2}" ShortID="314095484">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Temp" ID="{E9E8B0B6-1820-4F5A-8DAF-6F52215B9264}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI" ID="{ABFDD802-1480-49E0-B142-E473C625D1CF}" ShortID="209379588">

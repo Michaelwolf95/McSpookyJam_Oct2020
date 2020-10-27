@@ -60,6 +60,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	75585889	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\Monster\SFX_Monster_Attack_Complete\Wwise Silence	
 	249931172	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\AMB\Window_Emitter\New Sound SFX\Wwise Silence	
+	454826221	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\McSpookyJam2020\Temp\Temp\Wwise Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	18419317	SFX_Piano_05	C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Mac\SFX\SFX_Piano_05_3F75BDB9.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Piano\Piano_Notes\SFX_Piano_05		64098
