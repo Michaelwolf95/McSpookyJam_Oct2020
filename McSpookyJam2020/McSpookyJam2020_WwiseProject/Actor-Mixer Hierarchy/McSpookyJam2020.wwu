@@ -642,7 +642,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="McJam2020_window_closed_night" ID="{6AB350FB-C0F7-4B17-88CE-C940DBB7413E}" ShortID="541003358">
+								<Sound Name="McJam2020_window_closed_night_loop" ID="{6AB350FB-C0F7-4B17-88CE-C940DBB7413E}" ShortID="541003358">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="InitialDelay" Type="Real64">
@@ -693,16 +693,16 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="McJam2020_window_closed_night" ID="{4E812CBD-C2A7-4B86-BCA0-955FBFE4F3E4}">
+										<AudioFileSource Name="McJam2020_window_closed_night_loop" ID="{14D33253-801F-4FF4-9092-A28AECFE281B}">
 											<Language>SFX</Language>
-											<AudioFile>McJam2020_window_closed_night.wav</AudioFile>
+											<AudioFile>McJam2020_window_closed_night_loop.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="962750646"/>
+												<MediaID ID="480480925"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="McJam2020_window_closed_night" ID="{4E812CBD-C2A7-4B86-BCA0-955FBFE4F3E4}" Platform="Linked"/>
+										<ActiveSource Name="McJam2020_window_closed_night_loop" ID="{14D33253-801F-4FF4-9092-A28AECFE281B}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="New Sound SFX" ID="{72F77AEE-0E82-49A8-A72D-FE703F028F9B}" ShortID="136164547">
@@ -721,6 +721,28 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="Wwise Silence" ID="{535B47D4-F382-4966-B230-B53CF522E617}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="McJam2020_Window_Closed_Day_loop" ID="{318A0776-391F-4E04-9A9C-3DEE64053239}" ShortID="744091383">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="McJam2020_Window_Closed_Day_loop" ID="{B00203A9-D75C-4FBA-8955-29F1ED5F221C}">
+											<Language>SFX</Language>
+											<AudioFile>McJam2020_Window_Closed_Day_loop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="68280186"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="McJam2020_Window_Closed_Day_loop" ID="{B00203A9-D75C-4FBA-8955-29F1ED5F221C}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -745,7 +767,7 @@
 											</CrossfadingInfo>
 										</BlendTrackAssoc>
 										<BlendTrackAssoc>
-											<ItemRef Name="McJam2020_window_closed_night" ID="{6AB350FB-C0F7-4B17-88CE-C940DBB7413E}"/>
+											<ItemRef Name="McJam2020_window_closed_night_loop" ID="{6AB350FB-C0F7-4B17-88CE-C940DBB7413E}"/>
 											<CrossfadingInfo>
 												<LeftEdgePos>0.40025</LeftEdgePos>
 												<LeftFadingMode>Automatic</LeftFadingMode>
@@ -781,7 +803,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="SX_MCJ2020_AMB_BED_DAY_TIME (1)" ID="{CBEDA160-882B-4F80-8867-0946FB2AFA18}" ShortID="264826034">
+								<Sound Name="McJam2020_DayAmb_loop" ID="{CBEDA160-882B-4F80-8867-0946FB2AFA18}" ShortID="264826034">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="IsNonCachable" Type="bool">
@@ -809,19 +831,19 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="SX_MCJ2020_AMB_BED_DAY_TIME (1)" ID="{15962B07-BDD9-40BF-9BED-B5B455B8835C}">
+										<AudioFileSource Name="McJam2020_DayAmb_loop" ID="{FBCBC1EF-933B-42F9-BEC9-C317B2FE4C07}">
 											<Language>SFX</Language>
-											<AudioFile>SX_MCJ2020_AMB_BED_DAY_TIME (1).wav</AudioFile>
+											<AudioFile>McJam2020_DayAmb_loop.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="988327657"/>
+												<MediaID ID="973272974"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="SX_MCJ2020_AMB_BED_DAY_TIME (1)" ID="{15962B07-BDD9-40BF-9BED-B5B455B8835C}" Platform="Linked"/>
+										<ActiveSource Name="McJam2020_DayAmb_loop" ID="{FBCBC1EF-933B-42F9-BEC9-C317B2FE4C07}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="SX_MCJ2020_AMB_BED_NIGHT_2" ID="{62C46205-4F16-4EF7-AD7E-F408CF7EFD2E}" ShortID="101189659">
+								<Sound Name="SX_MCJ2020_AMB_BED_NIGHT_Loop" ID="{62C46205-4F16-4EF7-AD7E-F408CF7EFD2E}" ShortID="101189659">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="IsNonCachable" Type="bool">
@@ -849,21 +871,16 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="SX_MCJ2020_AMB_BED_NIGHT_2" ID="{93A615BD-2EE7-424C-A9E9-6099A2CFD689}">
-											<PropertyList>
-												<Property Name="LoopBegin" Type="Real64" Value="0"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="196.311885844749"/>
-											</PropertyList>
+										<AudioFileSource Name="SX_MCJ2020_AMB_BED_NIGHT_LOOP_LOOP" ID="{5429D32F-407C-45F8-8CA5-C1C345F66EEC}">
 											<Language>SFX</Language>
-											<AudioFile>SX_MCJ2020_AMB_BED_NIGHT_2.wav</AudioFile>
+											<AudioFile>SX_MCJ2020_AMB_BED_NIGHT_LOOP_LOOP.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="367532107"/>
+												<MediaID ID="188256614"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="SX_MCJ2020_AMB_BED_NIGHT_2" ID="{93A615BD-2EE7-424C-A9E9-6099A2CFD689}" Platform="Linked"/>
+										<ActiveSource Name="SX_MCJ2020_AMB_BED_NIGHT_LOOP_LOOP" ID="{5429D32F-407C-45F8-8CA5-C1C345F66EEC}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -879,7 +896,7 @@
 									</ReferenceList>
 									<BlendTrackAssocList>
 										<BlendTrackAssoc>
-											<ItemRef Name="SX_MCJ2020_AMB_BED_DAY_TIME (1)" ID="{CBEDA160-882B-4F80-8867-0946FB2AFA18}"/>
+											<ItemRef Name="McJam2020_DayAmb_loop" ID="{CBEDA160-882B-4F80-8867-0946FB2AFA18}"/>
 											<CrossfadingInfo>
 												<LeftEdgePos>0</LeftEdgePos>
 												<LeftFadingMode>Automatic</LeftFadingMode>
@@ -888,7 +905,7 @@
 											</CrossfadingInfo>
 										</BlendTrackAssoc>
 										<BlendTrackAssoc>
-											<ItemRef Name="SX_MCJ2020_AMB_BED_NIGHT_2" ID="{62C46205-4F16-4EF7-AD7E-F408CF7EFD2E}"/>
+											<ItemRef Name="SX_MCJ2020_AMB_BED_NIGHT_Loop" ID="{62C46205-4F16-4EF7-AD7E-F408CF7EFD2E}"/>
 											<CrossfadingInfo>
 												<LeftEdgePos>0.487188612099644</LeftEdgePos>
 												<LeftFadingMode>Automatic</LeftFadingMode>
@@ -3270,6 +3287,28 @@
 										<ActiveSource Name="SFX_Monster_Hiss_02" ID="{3636B5A7-79E4-4599-A9EA-92BD3741D9F7}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="SFX_Monster_Hiss_01" ID="{538C1AEF-1711-41FC-8446-A32C7DAE9048}" ShortID="176814113">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Monster_Hiss_01" ID="{D8552B3B-A10E-47FA-9F56-957B7FDEC5E8}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Monster_Hiss_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="21503164"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Monster_Hiss_01" ID="{D8552B3B-A10E-47FA-9F56-957B7FDEC5E8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Monster_Start_Attack" ID="{FD81BB9B-EAB9-437C-AC59-7C7744889D1C}" ShortID="320299126">
@@ -3639,6 +3678,131 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
 								</Reference>
 							</ReferenceList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Monster_Growls" ID="{2A50C3BA-2804-4D0C-A6B6-8EFF406EE0D4}" ShortID="488499600">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SFX_Monster_Scream_01" ID="{F90AB24E-8EEC-4B90-A4DB-417C50B36275}" ShortID="48434289">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Monster_Scream_01" ID="{C5E7BA56-0BA9-4186-85B5-4AAB1E32CF71}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Monster_Scream_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="882764354"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Monster_Scream_01" ID="{C5E7BA56-0BA9-4186-85B5-4AAB1E32CF71}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Monster_Scream_02" ID="{7375DAF3-0EF1-4C41-84DB-FF07DC83EA65}" ShortID="793717254">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Monster_Scream_02" ID="{C474FBF5-C220-4655-8FB8-D92CDDFE46A9}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Monster_Scream_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="680491127"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Monster_Scream_02" ID="{C474FBF5-C220-4655-8FB8-D92CDDFE46A9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Monster_Scream_03" ID="{662509FF-0DFF-40C0-8D69-DB7079BCDFC8}" ShortID="691320926">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Monster_Scream_03" ID="{D7A6C1B1-5D74-4F0E-9B7E-F7D8DBA2DD31}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Monster_Scream_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="448027105"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Monster_Scream_03" ID="{D7A6C1B1-5D74-4F0E-9B7E-F7D8DBA2DD31}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Monster_Scream_04" ID="{581C3B8C-DDB2-4240-B4E6-E85318A528CF}" ShortID="498904294">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Monster_Scream_04" ID="{7DE7AFB3-CA5D-4F66-99E0-16DB28C8C1B8}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Monster_Scream_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="546838649"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Monster_Scream_04" ID="{7DE7AFB3-CA5D-4F66-99E0-16DB28C8C1B8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Monster_Scream_05" ID="{2AD7AE0A-6613-4856-A62C-D9CD82E5E4FF}" ShortID="877368326">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Monster_Scream_05" ID="{C357298E-26DE-4E13-9337-75089495397C}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Monster_Scream_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="534312542"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Monster_Scream_05" ID="{C357298E-26DE-4E13-9337-75089495397C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>

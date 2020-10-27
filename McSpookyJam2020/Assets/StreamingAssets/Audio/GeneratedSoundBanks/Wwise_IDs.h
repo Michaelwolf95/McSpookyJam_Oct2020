@@ -33,6 +33,7 @@ namespace AK
         static const AkUniqueID PLAY_MONSTER_EMERGE = 3611802004U;
         static const AkUniqueID PLAY_MONSTER_FOOTSTEPS_GRAVEL = 1353343606U;
         static const AkUniqueID PLAY_MONSTER_FOOTSTEPS_WOOD = 3457550880U;
+        static const AkUniqueID PLAY_MONSTER_GROWL = 1301735254U;
         static const AkUniqueID PLAY_MONSTER_HISS = 2620845016U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_PIANO_NOTES = 1530954351U;

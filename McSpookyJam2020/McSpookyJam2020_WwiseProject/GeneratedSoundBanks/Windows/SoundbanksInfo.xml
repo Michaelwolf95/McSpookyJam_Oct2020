@@ -9,25 +9,25 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
-		<File Id="367532107" Language="SFX">
-			<ShortName>SX_MCJ2020_AMB_BED_NIGHT_2.wav</ShortName>
-			<Path>SFX\SX_MCJ2020_AMB_BED_NIGHT_2_31D173B9.wem</Path>
+		<File Id="188256614" Language="SFX">
+			<ShortName>SX_MCJ2020_AMB_BED_NIGHT_LOOP_LOOP.wav</ShortName>
+			<Path>SFX\SX_MCJ2020_AMB_BED_NIGHT_LOOP_LOOP_9EDFC787.wem</Path>
 		</File>
 		<File Id="415823821" Language="SFX">
 			<ShortName>SFX_Clock-001.wav</ShortName>
 			<Path>SFX\SFX_Clock-001_9EDFC787.wem</Path>
 		</File>
+		<File Id="480480925" Language="SFX">
+			<ShortName>McJam2020_window_closed_night_loop.wav</ShortName>
+			<Path>SFX\McJam2020_window_closed_night_loop_9EDFC787.wem</Path>
+		</File>
 		<File Id="621486811" Language="SFX">
 			<ShortName>SFX_Demon_Circle_Loop_01.wav</ShortName>
 			<Path>SFX\SFX_Demon_Circle_Loop_01_64DFEF17.wem</Path>
 		</File>
-		<File Id="962750646" Language="SFX">
-			<ShortName>McJam2020_window_closed_night.wav</ShortName>
-			<Path>SFX\McJam2020_window_closed_night_9EDFC787.wem</Path>
-		</File>
-		<File Id="988327657" Language="SFX">
-			<ShortName>SX_MCJ2020_AMB_BED_DAY_TIME (1).wav</ShortName>
-			<Path>SFX\SX_MCJ2020_AMB_BED_DAY_TIME (1)_9EDFC787.wem</Path>
+		<File Id="973272974" Language="SFX">
+			<ShortName>McJam2020_DayAmb_loop.wav</ShortName>
+			<Path>SFX\McJam2020_DayAmb_loop_9EDFC787.wem</Path>
 		</File>
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
@@ -37,20 +37,20 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4190601618" Language="SFX" Hash="2467790980">
+		<SoundBank Id="4190601618" Language="SFX" Hash="3424452635">
 			<ObjectPath>\SoundBanks\McSpookyJam2020\McSpookyJam2020</ObjectPath>
 			<ShortName>McSpookyJam2020</ShortName>
 			<Path>McSpookyJam2020.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2959533290" Name="Play_AMB" ObjectPath="\Events\McSpookyJam2020\AMB\Play_AMB" DurationType="Infinite">
 					<ReferencedStreamedFiles>
-						<File Id="367532107" Language="SFX">
-							<ShortName>SX_MCJ2020_AMB_BED_NIGHT_2.wav</ShortName>
-							<Path>SFX\SX_MCJ2020_AMB_BED_NIGHT_2_31D173B9.wem</Path>
+						<File Id="188256614" Language="SFX">
+							<ShortName>SX_MCJ2020_AMB_BED_NIGHT_LOOP_LOOP.wav</ShortName>
+							<Path>SFX\SX_MCJ2020_AMB_BED_NIGHT_LOOP_LOOP_9EDFC787.wem</Path>
 						</File>
-						<File Id="988327657" Language="SFX">
-							<ShortName>SX_MCJ2020_AMB_BED_DAY_TIME (1).wav</ShortName>
-							<Path>SFX\SX_MCJ2020_AMB_BED_DAY_TIME (1)_9EDFC787.wem</Path>
+						<File Id="973272974" Language="SFX">
+							<ShortName>McJam2020_DayAmb_loop.wav</ShortName>
+							<Path>SFX\McJam2020_DayAmb_loop_9EDFC787.wem</Path>
 						</File>
 					</ReferencedStreamedFiles>
 				</Event>
@@ -254,8 +254,36 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2620845016" Name="Play_Monster_Hiss" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Hiss" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="2.959896" DurationMax="2.959896">
+				<Event Id="1301735254" Name="Play_Monster_Growl" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Growl" DurationType="OneShot" DurationMin="1.362813" DurationMax="3.449063">
 					<IncludedMemoryFiles>
+						<File Id="448027105" Language="SFX">
+							<ShortName>SFX_Monster_Scream_03.wav</ShortName>
+							<Path>SFX\SFX_Monster_Scream_03_3F75BDB9.wem</Path>
+						</File>
+						<File Id="534312542" Language="SFX">
+							<ShortName>SFX_Monster_Scream_05.wav</ShortName>
+							<Path>SFX\SFX_Monster_Scream_05_3F75BDB9.wem</Path>
+						</File>
+						<File Id="546838649" Language="SFX">
+							<ShortName>SFX_Monster_Scream_04.wav</ShortName>
+							<Path>SFX\SFX_Monster_Scream_04_3F75BDB9.wem</Path>
+						</File>
+						<File Id="680491127" Language="SFX">
+							<ShortName>SFX_Monster_Scream_02.wav</ShortName>
+							<Path>SFX\SFX_Monster_Scream_02_3F75BDB9.wem</Path>
+						</File>
+						<File Id="882764354" Language="SFX">
+							<ShortName>SFX_Monster_Scream_01.wav</ShortName>
+							<Path>SFX\SFX_Monster_Scream_01_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2620845016" Name="Play_Monster_Hiss" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Hiss" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="2.716708" DurationMax="2.959896">
+					<IncludedMemoryFiles>
+						<File Id="21503164" Language="SFX">
+							<ShortName>SFX_Monster_Hiss_01.wav</ShortName>
+							<Path>SFX\SFX_Monster_Hiss_01_3F75BDB9.wem</Path>
+						</File>
 						<File Id="774958717" Language="SFX">
 							<ShortName>SFX_Monster_Hiss_02.wav</ShortName>
 							<Path>SFX\SFX_Monster_Hiss_02_3F75BDB9.wem</Path>
@@ -549,11 +577,17 @@
 				</Event>
 				<Event Id="47410005" Name="Play_Window_Emitter" ObjectPath="\Events\McSpookyJam2020\AMB\Play_Window_Emitter" DurationType="Infinite">
 					<ReferencedStreamedFiles>
-						<File Id="962750646" Language="SFX">
-							<ShortName>McJam2020_window_closed_night.wav</ShortName>
-							<Path>SFX\McJam2020_window_closed_night_9EDFC787.wem</Path>
+						<File Id="480480925" Language="SFX">
+							<ShortName>McJam2020_window_closed_night_loop.wav</ShortName>
+							<Path>SFX\McJam2020_window_closed_night_loop_9EDFC787.wem</Path>
 						</File>
 					</ReferencedStreamedFiles>
+					<IncludedMemoryFiles>
+						<File Id="68280186" Language="SFX">
+							<ShortName>McJam2020_Window_Closed_Day_loop.wav</ShortName>
+							<Path>SFX\McJam2020_Window_Closed_Day_loop_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="801816073" Name="Play_Wood_Door_Close" ObjectPath="\Events\McSpookyJam2020\Interactables\Doors\Play_Wood_Door_Close" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.860000" DurationMax="0.860000">
 					<IncludedMemoryFiles>
