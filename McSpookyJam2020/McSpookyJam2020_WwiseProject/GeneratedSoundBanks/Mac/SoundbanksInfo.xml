@@ -41,15 +41,10 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2007402074" Language="SFX" Hash="943686288">
-			<ObjectPath>\SoundBanks\McSpookyJam2020\Mac_Husk</ObjectPath>
-			<ShortName>Mac_Husk</ShortName>
-			<Path>Mac_Husk.bnk</Path>
-		</SoundBank>
-		<SoundBank Id="3144958087" Language="SFX">
-			<ObjectPath>\SoundBanks\McSpookyJam2020\Window_Husk</ObjectPath>
-			<ShortName>Window_Husk</ShortName>
-			<Path>Window_Husk.bnk</Path>
+		<SoundBank Id="3210724738" Language="SFX" Hash="665121114">
+			<ObjectPath>\SoundBanks\McSpookyJam2020\Husk</ObjectPath>
+			<ShortName>Husk</ShortName>
+			<Path>Husk.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2959533290" Name="Play_AMB" ObjectPath="\Events\McSpookyJam2020\AMB\Play_AMB" DurationType="Infinite">
 					<ReferencedStreamedFiles>
@@ -350,7 +345,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\McSpookyJam2020\Music\Play_Music" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\McSpookyJam2020\Music\Play_Music" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1530954351" Name="Play_Piano_Notes" ObjectPath="\Events\McSpookyJam2020\Interactables\Play_Piano_Notes" MaxAttenuation="13.000000" DurationType="OneShot" DurationMin="2.120963" DurationMax="11.800135">
 					<IncludedMemoryFiles>
 						<File Id="18419317" Language="SFX">
@@ -663,7 +658,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="429973476" Name="Plya_Monster_Emerge" ObjectPath="\Events\McSpookyJam2020\Music\Plya_Monster_Emerge" DurationType="OneShot" DurationMin="1.000000" DurationMax="1.000000"/>
+				<Event Id="429973476" Name="Plya_Monster_Emerge" ObjectPath="\Events\McSpookyJam2020\Music\Plya_Monster_Emerge" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="435770000" Name="Stop_AMB" ObjectPath="\Events\McSpookyJam2020\AMB\Stop_AMB" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4095429044" Name="Stop_Main_Menu_Fade" ObjectPath="\Events\McSpookyJam2020\UI\Stop_Main_Menu_Fade" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1371679529" Name="Stop_Monster_Attack" ObjectPath="\Events\McSpookyJam2020\Monster\Stop_Monster_Attack" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
