@@ -510,7 +510,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Monster_Footsteps" ID="{983D953E-B3C8-4339-B17F-38B7F09CEF09}">
+						<Event Name="Play_Monster_Footsteps_Wood" ID="{983D953E-B3C8-4339-B17F-38B7F09CEF09}">
 							<ChildrenList>
 								<Action Name="" ID="{45908EFA-600A-4787-8103-6D8CBC01ADCC}" ShortID="299840982">
 									<ReferenceList>
@@ -570,6 +570,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Monster_Footsteps_Gravel" ID="{892C09EA-9FE9-429D-82FF-37ED01EC9BD6}"/>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

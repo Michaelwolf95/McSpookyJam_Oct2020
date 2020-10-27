@@ -9,6 +9,10 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
+		<File Id="367532107" Language="SFX">
+			<ShortName>SX_MCJ2020_AMB_BED_NIGHT_2.wav</ShortName>
+			<Path>SFX\SX_MCJ2020_AMB_BED_NIGHT_2_31D173B9.wem</Path>
+		</File>
 		<File Id="415823821" Language="SFX">
 			<ShortName>SFX_Clock-001.wav</ShortName>
 			<Path>SFX\SFX_Clock-001_9EDFC787.wem</Path>
@@ -21,6 +25,10 @@
 			<ShortName>McJam2020_window_closed_night.wav</ShortName>
 			<Path>SFX\McJam2020_window_closed_night_9EDFC787.wem</Path>
 		</File>
+		<File Id="988327657" Language="SFX">
+			<ShortName>SX_MCJ2020_AMB_BED_DAY_TIME (1).wav</ShortName>
+			<Path>SFX\SX_MCJ2020_AMB_BED_DAY_TIME (1)_9EDFC787.wem</Path>
+		</File>
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
@@ -29,22 +37,22 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="4190601618" Language="SFX" Hash="2426171944">
+		<SoundBank Id="4190601618" Language="SFX" Hash="3007659133">
 			<ObjectPath>\SoundBanks\McSpookyJam2020\McSpookyJam2020</ObjectPath>
 			<ShortName>McSpookyJam2020</ShortName>
 			<Path>McSpookyJam2020.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2959533290" Name="Play_AMB" ObjectPath="\Events\McSpookyJam2020\AMB\Play_AMB" DurationType="OneShot" DurationMin="206.762665" DurationMax="206.762665">
-					<IncludedMemoryFiles>
+				<Event Id="2959533290" Name="Play_AMB" ObjectPath="\Events\McSpookyJam2020\AMB\Play_AMB" DurationType="Infinite">
+					<ReferencedStreamedFiles>
 						<File Id="367532107" Language="SFX">
 							<ShortName>SX_MCJ2020_AMB_BED_NIGHT_2.wav</ShortName>
-							<Path>SFX\SX_MCJ2020_AMB_BED_NIGHT_2_3F75BDB9.wem</Path>
+							<Path>SFX\SX_MCJ2020_AMB_BED_NIGHT_2_31D173B9.wem</Path>
 						</File>
 						<File Id="988327657" Language="SFX">
 							<ShortName>SX_MCJ2020_AMB_BED_DAY_TIME (1).wav</ShortName>
-							<Path>SFX\SX_MCJ2020_AMB_BED_DAY_TIME (1)_3F75BDB9.wem</Path>
+							<Path>SFX\SX_MCJ2020_AMB_BED_DAY_TIME (1)_9EDFC787.wem</Path>
 						</File>
-					</IncludedMemoryFiles>
+					</ReferencedStreamedFiles>
 				</Event>
 				<Event Id="3207346046" Name="Play_Candle_Emitter" ObjectPath="\Events\McSpookyJam2020\AMB\Play_Candle_Emitter" MaxAttenuation="13.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -201,7 +209,8 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3704879888" Name="Play_Monster_Footsteps" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Footsteps" DurationType="OneShot" DurationMin="1.049792" DurationMax="1.076167">
+				<Event Id="1353343606" Name="Play_Monster_Footsteps_Gravel" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Footsteps_Gravel" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3457550880" Name="Play_Monster_Footsteps_Wood" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Footsteps_Wood" MaxAttenuation="13.000000" DurationType="OneShot" DurationMin="1.049792" DurationMax="1.076167">
 					<IncludedMemoryFiles>
 						<File Id="124871761" Language="SFX">
 							<ShortName>SFX_Monster_Footsteps_03.wav</ShortName>
