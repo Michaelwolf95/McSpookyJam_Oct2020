@@ -122,6 +122,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 513
+  triggerRangeOffset: -1
   isEnabled: 0
 --- !u!108 &956126460
 Light:
