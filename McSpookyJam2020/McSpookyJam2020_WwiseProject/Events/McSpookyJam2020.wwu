@@ -176,23 +176,29 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="UI_Menu_Fade" ID="{3F49B057-3577-4752-99F7-852DF6711886}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+											<ObjectRef Name="SFX_Main_Menu_Wind_Loop" ID="{E15738DB-506D-43C8-B856-8A61DA0803B7}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Stop_Main_Menu_Fade" ID="{607FD741-56AB-4D4E-A45F-BC49836AD6C2}">
-							<ChildrenList>
-								<Action Name="" ID="{2EA2B0E2-26E9-4951-8500-29D0C24B4FF2}" ShortID="351440198">
+								<Action Name="" ID="{5C7E7CA3-E135-4059-8D84-AE4D0E3644A8}" ShortID="949761420">
 									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeInCurve" Type="int16" Value="6"/>
-										<Property Name="Scope" Type="int16" Value="1"/>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="SeekPercent" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{962749E6-0B40-4455-97D9-6647C1D7B84E}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="UI_Menu_Fade" ID="{3F49B057-3577-4752-99F7-852DF6711886}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+											<ObjectRef Name="SFX_Main_Menu_Wind_Loop" ID="{E15738DB-506D-43C8-B856-8A61DA0803B7}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -204,6 +210,65 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="hover" ID="{D20BBF22-A6B1-41C8-8FBA-D461F423822A}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Sigil_Fade_In" ID="{11E8AF92-43C4-4177-9F58-2AE913F160C4}">
+							<ChildrenList>
+								<Action Name="" ID="{ED68DCB3-CE00-4FCB-BA58-63DCC9F4D2EC}" ShortID="67826438">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Sigil_Fade_In" ID="{4F924C5B-4FFF-4C64-85B0-20E2C5082CCF}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Title_Fade_In" ID="{8B2214AE-0B67-4049-93CA-BC0DF1555C86}">
+							<ChildrenList>
+								<Action Name="" ID="{AA524896-3E49-450A-8310-CB91B1966BD9}" ShortID="80901898">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Title_Fade_In" ID="{8A348195-A4D3-48CD-A7A8-0956142DECDB}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{3F815FA9-30E2-453A-B8DF-45E28DFFEB5B}" ShortID="483937736">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.5"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Menu_Fade" ID="{3F49B057-3577-4752-99F7-852DF6711886}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{EB2609A0-F8DD-45EB-9E34-0120BE8FC0CD}" ShortID="664745061">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="Delay" Type="Real64" Value="0.5"/>
+										<Property Name="SeekPercent" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{BA5D2722-35E6-4036-A730-9E81F10F3733}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Menu_Fade" ID="{3F49B057-3577-4752-99F7-852DF6711886}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -459,10 +524,33 @@
 										<Action Name="" ID="{E26C817E-A658-4175-8A2C-42D080E9054D}" ShortID="362629656">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="UI_Menu_Fade" ID="{3F49B057-3577-4752-99F7-852DF6711886}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{E1E01AE0-C5A8-4E77-BC20-A586A05FA587}" ShortID="98909402">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Main_Menu_Wind_Loop" ID="{E15738DB-506D-43C8-B856-8A61DA0803B7}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Quit_Game" ID="{3FEE3CD7-80E4-43D7-BF43-0ADA023DCFA1}">
+									<ChildrenList>
+										<Action Name="" ID="{3959A8E8-6F28-4140-B805-1E482F84D610}" ShortID="975701019">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_UI_Positive_01" ID="{1E2F9F71-96F7-4746-BF63-0E6DDB5CD2A2}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

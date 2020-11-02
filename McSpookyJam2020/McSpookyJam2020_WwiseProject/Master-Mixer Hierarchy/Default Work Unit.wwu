@@ -10,8 +10,24 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="AMB_Master" ID="{B9836518-553A-466A-B023-D811A3777AA7}"/>
-						<Bus Name="SFX_Master" ID="{999D1049-4815-4F8D-B4FE-9DFE23EAF8E1}"/>
+						<Bus Name="AMB_Master" ID="{B9836518-553A-466A-B023-D811A3777AA7}">
+							<PropertyList>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
+						<Bus Name="SFX_Master" ID="{999D1049-4815-4F8D-B4FE-9DFE23EAF8E1}">
+							<PropertyList>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

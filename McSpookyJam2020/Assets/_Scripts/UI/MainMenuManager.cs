@@ -12,6 +12,8 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private AK.Wwise.Event creditButtonSoundOpen = null;
     [SerializeField] private AK.Wwise.Event creditButtonSoundClose = null;
     [SerializeField] private AK.Wwise.Event menuFade = null;
+    [SerializeField] private AK.Wwise.Event sigilFadeIn = null;
+    [SerializeField] private AK.Wwise.Event titleFadeIn = null;
 
     [SerializeField] private Button startButton = null;
     [SerializeField] private Button quitButton = null;
@@ -19,6 +21,8 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private CanvasGroup rootCanvasGroup = null;
     [SerializeField] private CanvasGroup buttonsCanvasGroup = null;
     [SerializeField] private CanvasGroup creditsPanel = null;
+    [SerializeField] private GameObject sigil = null;
+    [SerializeField] private GameObject title = null;
 
     [Header("Intro Animation")] 
     [SerializeField] private float startDelay = 0.5f;
@@ -46,7 +50,9 @@ public class MainMenuManager : MonoBehaviour
             {
                 ToggleButtonInteraction(true);
             }), buttonFadeDuration, buttonsFadeDelay);
+                titleFadeIn.Post(gameObject);
         }), sigilFadeDuration, startDelay);
+        sigilFadeIn.Post(gameObject);
     }
 
     private void ToggleButtonInteraction(bool isInteractable)

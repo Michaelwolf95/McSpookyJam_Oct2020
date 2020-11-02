@@ -603,7 +603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1196561d804e2604da76e4118285a046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: f2d9e0ec
+  triggerList: 
   useOtherObject: 0
   actionOnEventType: 0
   curveInterpolation: 4
@@ -624,6 +624,8 @@ MonoBehaviour:
   MultiPositionType: 1
   multiPositionTypeLabel: 0
   LargeModePositions:
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   multiPositionArray: []
 --- !u!114 &341065844
@@ -801,7 +803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1196561d804e2604da76e4118285a046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: f2d9e0ec
+  triggerList: 
   useOtherObject: 0
   actionOnEventType: 0
   curveInterpolation: 4
@@ -1721,7 +1723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1196561d804e2604da76e4118285a046, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: f7e1664c
+  triggerList: 
   useOtherObject: 0
   actionOnEventType: 0
   curveInterpolation: 4
@@ -1909,7 +1911,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 75, y: -182.20018}
+  m_AnchoredPosition: {x: 75, y: -182.20016}
   m_SizeDelta: {x: -150, y: -364.47748}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &850304087
@@ -2120,7 +2122,7 @@ MonoBehaviour:
   exitButtonSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 5b0eb492e730f0243851230b73940d3b,
+    WwiseObjectReference: {fileID: 11400000, guid: 17932f30babaa574ca1300d071286e38,
       type: 2}
   startButtonSound:
     idInternal: 0
@@ -2142,12 +2144,24 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: e1c3a106cc07ef1428d276985ce993c2,
       type: 2}
+  sigilFadeIn:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 80b77a88491e7fa4791540c252cccf59,
+      type: 2}
+  titleFadeIn:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7c65dbf24339eba47b1e72a9c58406a0,
+      type: 2}
   startButton: {fileID: 341065840}
   quitButton: {fileID: 596323196}
   creditsButton: {fileID: 383051782}
   rootCanvasGroup: {fileID: 232512662}
   buttonsCanvasGroup: {fileID: 735394501}
   creditsPanel: {fileID: 1546117508}
+  sigil: {fileID: 238465582}
+  title: {fileID: 735394499}
   startDelay: 0.5
   sigilFadeDuration: 1
   buttonsFadeDelay: 0.5

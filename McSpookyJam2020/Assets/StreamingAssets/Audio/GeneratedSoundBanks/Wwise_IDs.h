@@ -45,14 +45,16 @@ namespace AK
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_STAIRS = 1934534490U;
         static const AkUniqueID PLAY_PLAYER_FOOTSTEPS_WOOD = 1323502295U;
         static const AkUniqueID PLAY_RITUAL_CIRCLE = 1733092070U;
+        static const AkUniqueID PLAY_SIGIL_FADE_IN = 1668107735U;
+        static const AkUniqueID PLAY_TITLE_FADE_IN = 12405969U;
         static const AkUniqueID PLAY_UI_RETURN = 3194421821U;
         static const AkUniqueID PLAY_UI_SELECT = 3308548503U;
         static const AkUniqueID PLAY_WINDOW_EMITTER = 47410005U;
         static const AkUniqueID PLAY_WOOD_DOOR_CLOSE = 801816073U;
         static const AkUniqueID PLAY_WOOD_DOOR_OPEN = 781714651U;
         static const AkUniqueID PLYA_MONSTER_EMERGE = 429973476U;
+        static const AkUniqueID QUIT_GAME = 327960653U;
         static const AkUniqueID STOP_AMB = 435770000U;
-        static const AkUniqueID STOP_MAIN_MENU_FADE = 4095429044U;
         static const AkUniqueID STOP_MONSTER_ATTACK = 1371679529U;
         static const AkUniqueID STOP_MONSTER_DYING = 2844697884U;
         static const AkUniqueID STOP_MUSIC = 2837384057U;
