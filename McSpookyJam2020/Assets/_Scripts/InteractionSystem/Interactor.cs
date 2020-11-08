@@ -38,7 +38,7 @@ public class Interactor : MonoBehaviour
         {
             if (currentPointerTarget != null)
             {
-                if (Input.GetKeyDown(KeyCode.E))
+                if (Input.GetButtonDown("Use"))
                 {
                     BeginInteraction(currentPointerTarget);
                 }
