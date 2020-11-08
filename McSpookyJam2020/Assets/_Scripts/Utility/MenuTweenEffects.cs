@@ -13,13 +13,16 @@ public static class MenuTweenEffects
         {
             button.localScale = Vector3.LerpUnclamped(startScale, endScale, lerp);
         }, null, duration, 0f, EaseType.punch, useRealTime);
-        if (useRealTime)
+        if (finishDelay > 0f)
         {
-            yield return new WaitForSecondsRealtime(finishDelay);
-        }
-        else
-        {
-            yield return new WaitForSeconds(finishDelay);
+            if (useRealTime)
+            {
+                yield return new WaitForSecondsRealtime(finishDelay);
+            }
+            else
+            {
+                yield return new WaitForSeconds(finishDelay);
+            }
         }
         if (onClickAction != null)
         {

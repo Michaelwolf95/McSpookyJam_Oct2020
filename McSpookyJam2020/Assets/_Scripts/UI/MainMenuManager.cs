@@ -1,5 +1,6 @@
 ﻿using System;
 using MichaelWolfGames;
+using UB.Simple2dWeatherEffects.Standard;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -21,15 +22,17 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private CanvasGroup rootCanvasGroup = null;
     [SerializeField] private CanvasGroup buttonsCanvasGroup = null;
     [SerializeField] private CanvasGroup creditsPanel = null;
-    [SerializeField] private GameObject sigil = null;
-    [SerializeField] private GameObject title = null;
+//    [SerializeField] private GameObject sigil = null;
+//    [SerializeField] private GameObject title = null;
+    [SerializeField] private D2FogsPE fogController = null;
 
     [Header("Intro Animation")] 
     [SerializeField] private float startDelay = 0.5f;
     [SerializeField] private float sigilFadeDuration = 1f;
     [SerializeField] private float buttonsFadeDelay = 0.5f;
     [SerializeField] private float buttonFadeDuration = 0.5f;
-    
+    [SerializeField] private float fogFadeDelay = 0.5f;
+    [SerializeField] private float fogFadeDuration = 0.5f;
     
     private void Start()
     {
@@ -40,19 +43,24 @@ public class MainMenuManager : MonoBehaviour
         rootCanvasGroup.alpha = 0f;
         buttonsCanvasGroup.alpha = 0f;
         creditsPanel.gameObject.SetActive(false);
-
+        
         ToggleButtonInteraction(false);
         menuFade.Post(gameObject);
         this.DoTween(lerp => { rootCanvasGroup.alpha = Mathf.Lerp(0f, 1f, lerp); }, (() =>
         {
-            
             this.DoTween(lerp => { buttonsCanvasGroup.alpha = Mathf.Lerp(0f, 1f, lerp); }, (() =>
             {
                 ToggleButtonInteraction(true);
             }), buttonFadeDuration, buttonsFadeDelay);
-                titleFadeIn.Post(gameObject);
+            titleFadeIn.Post(gameObject);
         }), sigilFadeDuration, startDelay);
         sigilFadeIn.Post(gameObject);
+        
+        // Fog fade in
+        Color fogColor = fogController.Color;
+        fogController.Color = Color.black;
+        this.DoTween(lerp => { fogController.Color = Color.Lerp(Color.black, fogColor, lerp); }, null, 
+            fogFadeDuration, fogFadeDelay);
     }
 
     private void ToggleButtonInteraction(bool isInteractable)

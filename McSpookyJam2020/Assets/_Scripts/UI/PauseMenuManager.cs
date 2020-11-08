@@ -78,7 +78,7 @@ public class PauseMenuManager : MonoBehaviour
             ReturnCursorState();
             GameManager.instance.IsPlayerInMenu = false;
             Time.timeScale = 1;
-        }, 1.25f, 1f, 0f, true));
+        }, 1.25f, 0.5f, 0f, true));
     }
 
     public void OpenInventory()
