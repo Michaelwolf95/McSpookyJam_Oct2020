@@ -155,7 +155,7 @@ public class SpookerAI : LightReactor
 
     public void EnableController()
     {
-        if (currentState == SpookerState.Disabled)
+        if (currentState == SpookerState.Disabled && gameObject.activeInHierarchy)
         {
             ChangeState(SpookerState.Following);
         }
@@ -216,7 +216,10 @@ public class SpookerAI : LightReactor
         switch (currentState) // EXITING STATE
         {
             case SpookerState.Disabled:
-                agent.isStopped = false;
+                if (gameObject.activeInHierarchy)
+                {
+                    agent.isStopped = false;
+                }
                 break;
             case SpookerState.Wandering:
                 break;
