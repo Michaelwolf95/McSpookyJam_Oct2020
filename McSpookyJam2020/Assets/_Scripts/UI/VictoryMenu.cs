@@ -8,7 +8,7 @@ public class VictoryMenu : MonoBehaviour
 {
     private static string FEEDBACK_FORM_URL = "https://forms.gle/wtj819pA7EzFLACo6";
 
-    [SerializeField] private AK.Wwise.Event exitButtonSound;
+    [SerializeField] private AK.Wwise.Event exitButtonSound = null;
 
     public CanvasGroup mainCanvasGroup = null;
     public CanvasGroup buttonCanvasGroup = null;

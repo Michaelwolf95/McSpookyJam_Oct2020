@@ -473,7 +473,7 @@ public class FirstPersonAIO : MonoBehaviour
                         transform.position += new Vector3(0,advanced.maxStepHeight*1.2f,0);
                     }
                 }
-                Debug.DrawRay(transform.position, MoveDirection,Color.red,0,false);
+                //Debug.DrawRay(transform.position, MoveDirection,Color.red,0,false);
             #endregion
             
         float horizontalInput = Input.GetAxis("Horizontal");
