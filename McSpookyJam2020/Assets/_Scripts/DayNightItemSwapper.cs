@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class DayNightItemSwapper : DayNightChangeListener
 {
-    [SerializeField] private GameObject[] _dayObjects;
-    [SerializeField] private GameObject[] _nightObjects;
+    [SerializeField] private GameObject[] _dayObjects = null;
+    [SerializeField] private GameObject[] _nightObjects = null;
 
     protected override void Start()
     {

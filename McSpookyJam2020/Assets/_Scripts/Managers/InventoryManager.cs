@@ -136,7 +136,7 @@ public class InventoryManager : SceneSingleton<InventoryManager>
         float popDuration = 1f;
         float popFactor = 2f;
         Vector3 startScale = Vector3.one;
-        Vector3 endScale = Vector3.one * 2f;
+        Vector3 endScale = Vector3.one * popFactor;
         this.DoTween(lerp =>
         {
             target.localScale = Vector3.LerpUnclamped(startScale, endScale, lerp);

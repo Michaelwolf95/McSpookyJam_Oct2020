@@ -12,6 +12,8 @@ public class SpookerAI : LightReactor
     [SerializeField] private SpriteRenderer spriteRenderer = null;
     [SerializeField] private GameObject visualRoot = null;
     [Space(5)]
+    [SerializeField] private float fearDuration = 0.2f;
+    [Space(5)]
     [SerializeField] private float attackStartDistance = 1.6f;
     [SerializeField] private float attackStopDistance = 1.8f;
     [SerializeField] private float attackDuration = 2f;
@@ -99,7 +101,8 @@ public class SpookerAI : LightReactor
             case SpookerState.Wandering:
                 break;
             case SpookerState.Following:
-            {
+            { 
+                // ToDo: Make sure this doesn't navigate to the wrong floor.
                 agent.SetDestination(target.position);
                 if (Vector3.Distance(this.transform.position, target.position) <= attackStartDistance)
                 {
@@ -331,34 +334,46 @@ public class SpookerAI : LightReactor
 //        ChangeState(SpookerState.Following);
 //    }
 
+    private Coroutine fearTimerCoroutine = null;
 
     public override void OnEnterLight()
     {
         base.OnEnterLight();
 
-        if (currentState == SpookerState.Disabled)
+        if (fearTimerCoroutine != null)
         {
-            return;
+            StopCoroutine(fearTimerCoroutine);
         }
         
-        ChangeState(SpookerState.Feared);
-        
-        this.DoTween((lerp) =>
+        fearTimerCoroutine = this.StartTimer(fearDuration, () =>
         {
-            spriteRenderer.color = Color.Lerp(defaultColor, Color.clear, lerp);
-        },  () =>
-        {
-            ChangeState(SpookerState.Hiding);
-        }, fadeOutDuration);
-        
-        // ToDo: Stop for a moment first?
-        
+            if (isInLight && currentState != SpookerState.Disabled)
+            {
+                ChangeState(SpookerState.Feared);
+            
+                this.DoTween((lerp) =>
+                {
+                    spriteRenderer.color = Color.Lerp(defaultColor, Color.clear, lerp);
+                },  () =>
+                {
+                    ChangeState(SpookerState.Hiding);
+                }, fadeOutDuration);
+            
+                // ToDo: Stop for a moment first?
+            }
+
+            fearTimerCoroutine = null;
+        });
     }
 
     public override void OnExitLight()
     {
         base.OnExitLight();
-        
+        if (fearTimerCoroutine != null)
+        {
+            StopCoroutine(fearTimerCoroutine);
+            fearTimerCoroutine = null;
+        }
     }
 
 //    private Vector3 FindFurthestAwayPoint()
