@@ -201,7 +201,7 @@ namespace Fungus
             if (GetWriter().IsWriting)
             {
                 targetAlpha = 1f;
-                fadeCoolDownTimer = 0.1f;
+                fadeCoolDownTimer = 0.3f; //0.1f;
             }
             else if (fadeWhenDone && Mathf.Approximately(fadeCoolDownTimer, 0f))
             {

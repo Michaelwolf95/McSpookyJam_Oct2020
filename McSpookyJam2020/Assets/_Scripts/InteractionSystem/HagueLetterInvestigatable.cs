@@ -7,7 +7,9 @@ public class HagueLetterInvestigatable : InvestigationCardInteractable
     public int collectionIndex { get; set; }
     
     [SerializeField] private GameObject letterObject = null;
-    
+
+    //[SerializeField] private int objectID = 0;
+
     protected override void PerformInteraction()
     {
         if (flowchartInstance == null)

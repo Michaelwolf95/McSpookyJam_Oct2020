@@ -15,6 +15,8 @@ public class DeskCardController : MonoBehaviour
         deskClosed.SetActive(true);
         deskOpenedKey.SetActive(false);
         deskOpenedNoKey.SetActive(false);
+        
+        // ToDo: Offset the cursor position at the start
     }
 
     public void OpenDesk()
