@@ -7,11 +7,11 @@ using UnityEngine.UI;
 
 public class PauseMenuManager : MonoBehaviour
 {
-    [SerializeField] private AK.Wwise.Event resumeButtonSound;
-    [SerializeField] private AK.Wwise.Event pauseMenuSound;
-    [SerializeField] private AK.Wwise.Event mainMenuSound;
-    [SerializeField] private AK.Wwise.State GameStatePaused;
-    [SerializeField] private AK.Wwise.State GameStateInGame;
+    [SerializeField] private AK.Wwise.Event resumeButtonSound = null;
+    [SerializeField] private AK.Wwise.Event pauseMenuSound = null;
+    [SerializeField] private AK.Wwise.Event mainMenuSound = null;
+    [SerializeField] private AK.Wwise.State GameStatePaused = null;
+    [SerializeField] private AK.Wwise.State GameStateInGame = null;
 
     [SerializeField] private Button resumeButton = null;
     [SerializeField] private Button inventoryButton = null;

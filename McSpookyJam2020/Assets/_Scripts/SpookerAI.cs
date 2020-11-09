@@ -103,7 +103,21 @@ public class SpookerAI : LightReactor
             case SpookerState.Following:
             { 
                 // ToDo: Make sure this doesn't navigate to the wrong floor.
-                agent.SetDestination(target.position);
+                Vector3 targetPos = target.position;
+                NavMeshHit navHit;
+                if (NavMesh.SamplePosition(targetPos, out navHit, 3f, NavMesh.AllAreas))
+                {
+                    targetPos = navHit.position;
+                }
+                else
+                {
+                    if (NavMesh.FindClosestEdge(targetPos, out navHit, NavMesh.AllAreas))
+                    {
+                        targetPos = navHit.position;
+                    }
+                }
+                agent.SetDestination(targetPos);
+                
                 if (Vector3.Distance(this.transform.position, target.position) <= attackStartDistance)
                 {
                     //Debug.Log("KILLED PLAYER");
@@ -347,7 +361,8 @@ public class SpookerAI : LightReactor
         
         fearTimerCoroutine = this.StartTimer(fearDuration, () =>
         {
-            if (isInLight && currentState != SpookerState.Disabled)
+            bool canBeFeared = (currentState == SpookerState.Following) || (currentState == SpookerState.Attacking);
+            if (isInLight && canBeFeared)
             {
                 ChangeState(SpookerState.Feared);
             

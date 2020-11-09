@@ -12,7 +12,7 @@ public class RitualCircle : InvestigationCardInteractable
 
     public AK.Wwise.Event lockedInteractStartAudio;
     public AK.Wwise.Event lockedInteractEndAudio;
-    [SerializeField] AK.Wwise.Event stopMonsterDying;
+    [SerializeField] AK.Wwise.Event stopMonsterDying = null;
 
     public bool isOpen { get; private set; }
 

@@ -52,7 +52,6 @@ public class InventoryMenu : MonoBehaviour
 
     public void UpdateButtons()
     {
-        Debug.Log("Letter Count: " +InventoryManager.instance.GetHagueLetterCount());
         for (int i = 0; i < hagueButtons.Length; i++)
         {
             bool collected = i < InventoryManager.instance.GetHagueLetterCount();

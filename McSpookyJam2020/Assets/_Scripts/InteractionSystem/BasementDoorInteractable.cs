@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class BasementDoorInteractable : InvestigationCardInteractable
 {
-    [SerializeField] private GameObject closedDoor;
-    [SerializeField] private GameObject openDoor;
+    [SerializeField] private GameObject closedDoor = null;
+    [SerializeField] private GameObject openDoor = null;
     
     [Space(5)]
     [SerializeField] [TextArea] 
