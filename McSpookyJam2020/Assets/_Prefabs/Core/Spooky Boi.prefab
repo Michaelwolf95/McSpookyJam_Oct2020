@@ -1411,8 +1411,8 @@ MonoBehaviour:
   - {fileID: 2509398899478273213}
   - {fileID: 7630302154508792031}
   m_Bounds:
-    m_Center: {x: 0.6791496, y: -0.86824656, z: 0}
-    m_Extent: {x: 8.303224, y: 7.330068, z: 0}
+    m_Center: {x: 0.67914677, y: -0.86824656, z: 0}
+    m_Extent: {x: 8.303225, y: 7.330068, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!95 &452609174653305682
@@ -1457,7 +1457,8 @@ MonoBehaviour:
   upstairsFootSteps:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 6cdcfcfc5b64f324aa5318bbdae2ef1e,
+      type: 2}
   upstairsMaterial: {fileID: 13400000, guid: 1fcfb96d539c44045896ca14da7daedf, type: 2}
   basementFootSteps:
     idInternal: 0
@@ -1468,7 +1469,8 @@ MonoBehaviour:
   stairsFootSteps:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 6cdcfcfc5b64f324aa5318bbdae2ef1e,
+      type: 2}
   stairsFloorMaterial: {fileID: 13400000, guid: 9526437583e74584ba81e57d2ec9de50,
     type: 2}
   floorLayerMask:
@@ -1909,6 +1911,7 @@ MonoBehaviour:
   agent: {fileID: 8141053062342249905}
   spriteRenderer: {fileID: 1668234953027693322}
   visualRoot: {fileID: 3658173259168782373}
+  fearDuration: 0.2
   attackStartDistance: 1.6
   attackStopDistance: 1.8
   attackDuration: 1.5
