@@ -30,6 +30,7 @@ public class GameManager : SceneSingleton<GameManager>
     [Header("Wwise Events")]
     public AK.Wwise.Switch Day;
     public AK.Wwise.Switch Night;
+    public AK.Wwise.Event OnNightTransition;
     public AK.Wwise.Event DeathSound;
     public AK.Wwise.Event StopAMB;
     public AK.Wwise.Event PlayAMB;
@@ -177,6 +178,7 @@ public class GameManager : SceneSingleton<GameManager>
             dayNightController.MakeNight();
             monsterController.gameObject.SetActive(true); // Goes right in front of the door
             Night.SetValue(gameObject);
+            OnNightTransition.Post(gameObject);
             StopAMB.Post(gameObject);
             PlayAMB.Post(gameObject);
 

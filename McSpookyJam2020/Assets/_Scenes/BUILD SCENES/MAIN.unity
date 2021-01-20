@@ -8434,6 +8434,11 @@ MonoBehaviour:
     groupGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 79ec622501aebb14c853eff2fddbd3c4,
       type: 2}
+  OnNightTransition:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 45eb86c56fc527649a02c7bdf712b649,
+      type: 2}
   DeathSound:
     idInternal: 0
     valueGuidInternal: 
@@ -14342,7 +14347,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4166401851935721324}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &2106429414
+--- !u!65 &2106429416
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
