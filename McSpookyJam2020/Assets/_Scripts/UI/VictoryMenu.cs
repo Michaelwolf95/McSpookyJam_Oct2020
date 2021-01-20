@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class VictoryMenu : MonoBehaviour
 {
-    private static string FEEDBACK_FORM_URL = "https://forms.gle/wtj819pA7EzFLACo6";
+    private static string FEEDBACK_FORM_URL = "https://forms.gle/6vCiTUnRPwgJroSf6";
 
     [SerializeField] private AK.Wwise.Event exitButtonSound = null;
 
