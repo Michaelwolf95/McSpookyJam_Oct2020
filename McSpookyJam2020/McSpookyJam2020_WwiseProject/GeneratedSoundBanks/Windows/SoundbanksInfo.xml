@@ -45,7 +45,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3210724738" Language="SFX" Hash="2604430046">
+		<SoundBank Id="3210724738" Language="SFX" Hash="4263283439">
 			<ObjectPath>\SoundBanks\McSpookyJam2020\Husk</ObjectPath>
 			<ShortName>Husk</ShortName>
 			<Path>Husk.bnk</Path>
@@ -133,7 +133,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1962302600" Name="Play_hover" ObjectPath="\Events\McSpookyJam2020\UI\Play_hover" DurationType="OneShot" DurationMin="1.264354" DurationMax="1.722417">
+				<Event Id="1962302600" Name="Play_hover" ObjectPath="\Events\McSpookyJam2020\UI\Play_hover" DurationType="OneShot" DurationMin="1.159418" DurationMax="1.878309">
 					<IncludedMemoryFiles>
 						<File Id="88016757" Language="SFX">
 							<ShortName>SFX_UI_Hover_02.wav</ShortName>
@@ -642,7 +642,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3194421821" Name="Play_UI_Return" ObjectPath="\Events\McSpookyJam2020\UI\Play_UI_Return" DurationType="OneShot" DurationMin="1.271708" DurationMax="1.271708">
+				<Event Id="3194421821" Name="Play_UI_Return" ObjectPath="\Events\McSpookyJam2020\UI\Play_UI_Return" DurationType="OneShot" DurationMin="1.166162" DurationMax="1.386808">
 					<IncludedMemoryFiles>
 						<File Id="692417209" Language="SFX">
 							<ShortName>SFX_UI_Negative_01.wav</ShortName>
@@ -650,7 +650,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3308548503" Name="Play_UI_Select" ObjectPath="\Events\McSpookyJam2020\UI\Play_UI_Select" DurationType="OneShot" DurationMin="1.166667" DurationMax="1.166667">
+				<Event Id="3308548503" Name="Play_UI_Select" ObjectPath="\Events\McSpookyJam2020\UI\Play_UI_Select" DurationType="OneShot" DurationMin="1.069838" DurationMax="1.272259">
 					<IncludedMemoryFiles>
 						<File Id="623490223" Language="SFX">
 							<ShortName>SFX_UI_Positive_01.wav</ShortName>
@@ -687,7 +687,7 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="429973476" Name="Plya_Monster_Emerge" ObjectPath="\Events\McSpookyJam2020\Music\Plya_Monster_Emerge" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="327960653" Name="Quit_Game" ObjectPath="\Events\McSpookyJam2020\Endings\Endings\Quit_Game" DurationType="OneShot" DurationMin="1.166667" DurationMax="1.166667">
+				<Event Id="327960653" Name="Quit_Game" ObjectPath="\Events\McSpookyJam2020\Endings\Endings\Quit_Game" DurationType="OneShot" DurationMin="1.069838" DurationMax="1.272259">
 					<IncludedMemoryFiles>
 						<File Id="623490223" Language="SFX">
 							<ShortName>SFX_UI_Positive_01.wav</ShortName>
