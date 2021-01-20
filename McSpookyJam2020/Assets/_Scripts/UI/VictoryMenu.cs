@@ -10,6 +10,9 @@ public class VictoryMenu : MonoBehaviour
 
     [SerializeField] private AK.Wwise.Event exitButtonSound = null;
 
+    public Animator epilogueAnimator = null;
+    public CanvasGroup epilogueCanvasGroup = null;
+    public CanvasGroup backgroundCanvasGroup = null;
     public CanvasGroup mainCanvasGroup = null;
     public CanvasGroup buttonCanvasGroup = null;
     public CanvasGroup creditsPanel = null;
@@ -35,19 +38,37 @@ public class VictoryMenu : MonoBehaviour
         mainCanvasGroup.gameObject.SetActive(false);
     }
 
+    public void FadeInEpilogue()
+    {
+        epilogueCanvasGroup.gameObject.SetActive(true);
+        this.DoTween(lerp =>
+        {
+            epilogueCanvasGroup.alpha = lerp;
+            backgroundCanvasGroup.alpha = lerp;
+        }, () =>
+        {
+           this.InvokeAction(()=>{epilogueAnimator.SetTrigger("START");}, 0.5f);
+           
+        }, 0.5f, 0f);
+    }
+
     public void FadeInMenu()
     {
         mainCanvasGroup.gameObject.SetActive(true);
         buttonCanvasGroup.alpha = 0f;
         mainCanvasGroup.alpha = 0f;
         ToggleMenuInteractable(false);
-        this.DoTween(lerp => { mainCanvasGroup.alpha = lerp; }, () =>
+        backgroundCanvasGroup.alpha = 1f;
+        this.DoTween(lerp => { epilogueCanvasGroup.alpha = 1-lerp; }, () =>
         {
-            this.DoTween(lerp => { buttonCanvasGroup.alpha = lerp; }, (() =>
-                {
-                    ToggleMenuInteractable(true);
-                }),
-                0.5f);
+            this.DoTween(lerp => { mainCanvasGroup.alpha = lerp; }, () =>
+            {
+                this.DoTween(lerp => { buttonCanvasGroup.alpha = lerp; }, (() =>
+                    {
+                        ToggleMenuInteractable(true);
+                    }),
+                    0.5f);
+            }, 0.5f, 1f);
         }, 0.5f, 1f);
     }
 

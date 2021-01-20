@@ -201,7 +201,8 @@ public class GameManager : SceneSingleton<GameManager>
     
     public void OnRitualFinished()
     {
-        victoryMenu.FadeInMenu();
+        //victoryMenu.FadeInMenu();
+        victoryMenu.FadeInEpilogue();
     }
 
     public void ToggleMonster(bool argActive)

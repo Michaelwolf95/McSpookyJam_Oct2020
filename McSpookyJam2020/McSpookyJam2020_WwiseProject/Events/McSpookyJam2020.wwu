@@ -675,7 +675,7 @@
 								<Action Name="" ID="{2E3DC4C7-3E5D-47BC-9349-7FE57D27921F}" ShortID="589932772">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_Monster_Dying_01" ID="{F2A04275-68C2-441E-B01B-7607F0DEA6BD}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+											<ObjectRef Name="End" ID="{ADFA92A1-EBE3-4154-80C6-6A479059FE01}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -690,7 +690,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_Monster_Dying_01" ID="{F2A04275-68C2-441E-B01B-7607F0DEA6BD}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+											<ObjectRef Name="End" ID="{ADFA92A1-EBE3-4154-80C6-6A479059FE01}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
