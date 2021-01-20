@@ -125,6 +125,13 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{6BC49993-CB38-4916-8A40-5D7CD1B558B2}" ShortID="64915708">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Dark_Wind_Swell" ID="{1297EE1D-11B5-401A-81DA-32BB50CF8F43}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 					</ChildrenList>
