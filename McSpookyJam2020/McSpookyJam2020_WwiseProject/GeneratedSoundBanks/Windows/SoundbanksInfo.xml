@@ -45,7 +45,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3210724738" Language="SFX" Hash="929500911">
+		<SoundBank Id="3210724738" Language="SFX" Hash="1257820490">
 			<ObjectPath>\SoundBanks\McSpookyJam2020\Husk</ObjectPath>
 			<ShortName>Husk</ShortName>
 			<Path>Husk.bnk</Path>
