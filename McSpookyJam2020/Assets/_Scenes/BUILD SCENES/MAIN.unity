@@ -2468,6 +2468,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 956126460, guid: fd6557fb088d3d646a456437aefc04fb, type: 3}
+      propertyPath: m_Cookie
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5634449000992531528, guid: fd6557fb088d3d646a456437aefc04fb,
         type: 3}
       propertyPath: m_Name
@@ -14332,6 +14336,25 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.91800004, z: -0.31300002}
   m_TimeToStationary: 0.5
+--- !u!1 &2106429413 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7142706665843078187, guid: d6e9da193eb662e4fa1aca77a38871f2,
+    type: 3}
+  m_PrefabInstance: {fileID: 4166401851935721324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2106429414
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106429413}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.1279426, y: 0.48750544, z: 0.31196904}
+  m_Center: {x: -0.010546923, y: 0.12598825, z: 0.34401548}
 --- !u!1 &2120200348
 GameObject:
   m_ObjectHideFlags: 0

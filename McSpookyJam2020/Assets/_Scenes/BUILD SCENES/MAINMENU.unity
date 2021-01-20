@@ -1548,15 +1548,17 @@ MonoBehaviour:
 
     Daniel Ramos\t\tSound Design (Ambience)
 
-    Mathew
-    Miller\t\tWriting
+    Seth
+    Leue\t\tSound Design (Music)
+
+    Mathew Miller\t\tWriting
 
     Josh Balthazar\t\tWriting
 
-    Sarah Cho\t\tArt
+    Sarah
+    Cho\t\tLead Illustrator
 
-    Jamie
-    Custodio\t\tArt
+    Jamie Custodio\t\tArt
 
     Chi Ngo\t\t\tArt'
   m_isRightToLeft: 0
@@ -1586,7 +1588,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70.55
+  m_fontSize: 64.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
