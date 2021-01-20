@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID PLAY_AMB = 2959533290U;
         static const AkUniqueID PLAY_CANDLE_EMITTER = 3207346046U;
         static const AkUniqueID PLAY_CLOCK_EMITTER = 154934511U;
+        static const AkUniqueID PLAY_DAY_TO_NIGHT = 2355384435U;
         static const AkUniqueID PLAY_DRAWER_CLOSE = 2315829540U;
         static const AkUniqueID PLAY_DRAWER_OPEN = 1958703520U;
         static const AkUniqueID PLAY_FLASHLIGHT_ON = 3471928368U;

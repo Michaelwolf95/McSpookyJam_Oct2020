@@ -45,7 +45,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3210724738" Language="SFX" Hash="1536828283">
+		<SoundBank Id="3210724738" Language="SFX" Hash="2604430046">
 			<ObjectPath>\SoundBanks\McSpookyJam2020\Husk</ObjectPath>
 			<ShortName>Husk</ShortName>
 			<Path>Husk.bnk</Path>
@@ -88,6 +88,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2355384435" Name="Play_Day_To_Night" ObjectPath="\Events\McSpookyJam2020\AMB\Play_Day_To_Night" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2315829540" Name="Play_Drawer_Close" ObjectPath="\Events\McSpookyJam2020\Interactables\Doors\Play_Drawer_Close" DurationType="OneShot" DurationMin="0.782375" DurationMax="0.782375">
 					<IncludedMemoryFiles>
 						<File Id="527450663" Language="SFX">

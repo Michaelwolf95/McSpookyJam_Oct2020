@@ -27,6 +27,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2167123887	Play_Metal_Door_Close			\McSpookyJam2020\Interactables\Doors\Play_Metal_Door_Close	
 	2216405837	Play_Pickup_Note			\McSpookyJam2020\Interactables\Pickups\Play_Pickup_Note	
 	2315829540	Play_Drawer_Close			\McSpookyJam2020\Interactables\Doors\Play_Drawer_Close	
+	2355384435	Play_Day_To_Night			\McSpookyJam2020\AMB\Play_Day_To_Night	
 	2380307491	Play_Pickup_Dagger			\McSpookyJam2020\Interactables\Pickups\Play_Pickup_Dagger	
 	2617923177	Play_Metal_Door_Open			\McSpookyJam2020\Interactables\Doors\Play_Metal_Door_Open	
 	2620845016	Play_Monster_Hiss			\McSpookyJam2020\Monster\Play_Monster_Hiss	
