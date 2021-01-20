@@ -447,6 +447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93f8a98539dd4d99acd8d3f2920cf313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 974008817778183255}
   flashlightIcon: {fileID: 3528822867481515045}
   basementKeyIcon: {fileID: 3528822867255120328}
   ritualDaggerIcon: {fileID: 3528822869292237214}
@@ -904,6 +905,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3528822869149303879}
   - component: {fileID: 3528822869149303878}
+  - component: {fileID: 974008817778183255}
   m_Layer: 0
   m_Name: Key Items
   m_TagString: Untagged
@@ -959,6 +961,18 @@ MonoBehaviour:
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+--- !u!225 &974008817778183255
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3528822869149303872}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &3528822869292237214
 GameObject:
   m_ObjectHideFlags: 0

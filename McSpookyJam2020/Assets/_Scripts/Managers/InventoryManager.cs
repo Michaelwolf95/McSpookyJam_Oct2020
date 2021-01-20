@@ -8,6 +8,7 @@ using UnityEngine;
 
 public class InventoryManager : SceneSingleton<InventoryManager>
 {
+    [SerializeField] private CanvasGroup canvasGroup = null;
     [SerializeField] private GameObject flashlightIcon = null;
     [SerializeField] private GameObject basementKeyIcon = null;
     [SerializeField] private GameObject ritualDaggerIcon = null;
@@ -141,6 +142,14 @@ public class InventoryManager : SceneSingleton<InventoryManager>
         {
             target.localScale = Vector3.LerpUnclamped(startScale, endScale, lerp);
         }, null, popDuration, 0f, EaseType.punch);
+    }
+
+    public void HideInventoryUI()
+    {
+        this.DoTween((lerp =>
+        {
+            canvasGroup.alpha = 1 - lerp;
+        }), null, 0.25f, 0f);
     }
     
 }

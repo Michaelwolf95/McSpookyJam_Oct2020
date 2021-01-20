@@ -140,6 +140,7 @@ public class GameManager : SceneSingleton<GameManager>
 
     private void OnGameStart()
     {
+        IsPlayerInMenu = false;
         dayNightController.MakeDay();
         monsterController.gameObject.SetActive(false);
         PlayAMB.Post(gameObject);
@@ -197,6 +198,8 @@ public class GameManager : SceneSingleton<GameManager>
     public void OnRitualStarted()
     {
         ToggleMonster(false);
+        IsPlayerInMenu = true;
+        InventoryManager.instance.HideInventoryUI();
     }
     
     public void OnRitualFinished()
