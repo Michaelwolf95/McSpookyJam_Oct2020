@@ -1599,6 +1599,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="SFX_Dark_Wind_Swell" ID="{E9AF7198-4355-47F4-9E9F-760B31FBDB85}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.87424793433355"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="3.41164946572236"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>SFX_Dark_Wind_Swell.wav</AudioFile>
 									<MediaIDList>
@@ -1608,6 +1613,31 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="SFX_Dark_Wind_Swell" ID="{E9AF7198-4355-47F4-9E9F-760B31FBDB85}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_Window_Smash" ID="{1B893FA9-E58F-43A9-A00B-2906BE839961}" ShortID="5420022">
+							<PropertyList>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Window_Smash" ID="{1508B5AB-DCEF-4534-9A01-81E72B80C605}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Window_Smash.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="147502877"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Window_Smash" ID="{1508B5AB-DCEF-4534-9A01-81E72B80C605}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -1845,6 +1875,28 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="SFX_Flashlight_Pickup (1)" ID="{0E5835F7-4707-4160-8F70-9DF55BA1C42C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_DaggerGlow" ID="{E7AAF326-9223-44A8-A3BA-71345CDFE5BF}" ShortID="126933116">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27CF1BD4-1D2F-47B1-98C3-A6542F2AE003}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A92B8205-FABD-4D59-9466-461AED89E0E8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_DaggerGlow" ID="{B2DA787B-2D05-47ED-A292-B2DB0488F9B0}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_DaggerGlow.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="73113784"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_DaggerGlow" ID="{B2DA787B-2D05-47ED-A292-B2DB0488F9B0}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

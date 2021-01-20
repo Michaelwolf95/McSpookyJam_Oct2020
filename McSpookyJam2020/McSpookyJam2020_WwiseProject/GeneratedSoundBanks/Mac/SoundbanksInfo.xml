@@ -45,7 +45,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3210724738" Language="SFX" Hash="1257820490">
+		<SoundBank Id="3210724738" Language="SFX" Hash="175723413">
 			<ObjectPath>\SoundBanks\McSpookyJam2020\Husk</ObjectPath>
 			<ShortName>Husk</ShortName>
 			<Path>Husk.bnk</Path>
@@ -88,11 +88,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2355384435" Name="Play_Day_To_Night" ObjectPath="\Events\McSpookyJam2020\AMB\Play_Day_To_Night" DurationType="OneShot" DurationMin="5.044059" DurationMax="5.044059">
+				<Event Id="618436428" Name="Play_Dagger_Glow" ObjectPath="\Events\McSpookyJam2020\Interactables\Pickups\Play_Dagger_Glow" DurationType="OneShot" DurationMin="1.654172" DurationMax="1.654172">
+					<IncludedMemoryFiles>
+						<File Id="73113784" Language="SFX">
+							<ShortName>SFX_DaggerGlow.wav</ShortName>
+							<Path>SFX\SFX_DaggerGlow_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2355384435" Name="Play_Day_To_Night" ObjectPath="\Events\McSpookyJam2020\AMB\Play_Day_To_Night" DurationType="OneShot" DurationMin="4.411650" DurationMax="4.411650">
 					<IncludedMemoryFiles>
 						<File Id="30799540" Language="SFX">
 							<ShortName>SFX_Dark_Wind_Swell.wav</ShortName>
-							<Path>SFX\SFX_Dark_Wind_Swell_3F75BDB9.wem</Path>
+							<Path>SFX\SFX_Dark_Wind_Swell_F2166D1A.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -676,6 +684,14 @@
 							<Path>SFX\McJam2020_window_closed_night_loop_9EDFC787.wem</Path>
 						</File>
 					</ReferencedStreamedFiles>
+				</Event>
+				<Event Id="3352654671" Name="Play_Window_Smash" ObjectPath="\Events\McSpookyJam2020\AMB\Play_Window_Smash" DurationType="OneShot" DurationMin="7.018209" DurationMax="7.018209">
+					<IncludedMemoryFiles>
+						<File Id="147502877" Language="SFX">
+							<ShortName>SFX_Window_Smash.wav</ShortName>
+							<Path>SFX\SFX_Window_Smash_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="801816073" Name="Play_Wood_Door_Close" ObjectPath="\Events\McSpookyJam2020\Interactables\Doors\Play_Wood_Door_Close" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.860000" DurationMax="0.860000">
 					<IncludedMemoryFiles>

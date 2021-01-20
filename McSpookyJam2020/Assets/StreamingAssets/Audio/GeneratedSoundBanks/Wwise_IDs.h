@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID PLAY_AMB = 2959533290U;
         static const AkUniqueID PLAY_CANDLE_EMITTER = 3207346046U;
         static const AkUniqueID PLAY_CLOCK_EMITTER = 154934511U;
+        static const AkUniqueID PLAY_DAGGER_GLOW = 618436428U;
         static const AkUniqueID PLAY_DAY_TO_NIGHT = 2355384435U;
         static const AkUniqueID PLAY_DRAWER_CLOSE = 2315829540U;
         static const AkUniqueID PLAY_DRAWER_OPEN = 1958703520U;
@@ -51,6 +52,7 @@ namespace AK
         static const AkUniqueID PLAY_UI_RETURN = 3194421821U;
         static const AkUniqueID PLAY_UI_SELECT = 3308548503U;
         static const AkUniqueID PLAY_WINDOW_EMITTER = 47410005U;
+        static const AkUniqueID PLAY_WINDOW_SMASH = 3352654671U;
         static const AkUniqueID PLAY_WOOD_DOOR_CLOSE = 801816073U;
         static const AkUniqueID PLAY_WOOD_DOOR_OPEN = 781714651U;
         static const AkUniqueID PLYA_MONSTER_EMERGE = 429973476U;

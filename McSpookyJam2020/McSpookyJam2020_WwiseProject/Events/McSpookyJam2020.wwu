@@ -126,9 +126,26 @@
 									</ReferenceList>
 								</Action>
 								<Action Name="" ID="{6BC49993-CB38-4916-8A40-5D7CD1B558B2}" ShortID="64915708">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="1"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SFX_Dark_Wind_Swell" ID="{1297EE1D-11B5-401A-81DA-32BB50CF8F43}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Window_Smash" ID="{87A88FE6-959B-421D-9ECA-C9E25D77072A}">
+							<ChildrenList>
+								<Action Name="" ID="{39190912-20F9-491B-9AA4-400B398A1392}" ShortID="438737832">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="4.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Window_Smash" ID="{1B893FA9-E58F-43A9-A00B-2906BE839961}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -331,6 +348,17 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="SFX_Pickup_Dagger" ID="{9BBD1829-FAEF-4D2B-A7CC-327FECEB8E89}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Dagger_Glow" ID="{DEA71A62-3DAD-4548-957C-F3301A516BEC}">
+									<ChildrenList>
+										<Action Name="" ID="{2905AE06-CD36-4482-B87B-8D631F35A7D8}" ShortID="174489402">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_DaggerGlow" ID="{E7AAF326-9223-44A8-A3BA-71345CDFE5BF}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

@@ -9,6 +9,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	327960653	Quit_Game			\McSpookyJam2020\Endings\Endings\Quit_Game	
 	429973476	Plya_Monster_Emerge			\McSpookyJam2020\Music\Plya_Monster_Emerge	
 	435770000	Stop_AMB			\McSpookyJam2020\AMB\Stop_AMB	
+	618436428	Play_Dagger_Glow			\McSpookyJam2020\Interactables\Pickups\Play_Dagger_Glow	
 	656855882	Play_Main_Menu_Fade			\McSpookyJam2020\UI\Play_Main_Menu_Fade	
 	781714651	Play_Wood_Door_Open			\McSpookyJam2020\Interactables\Doors\Play_Wood_Door_Open	
 	801816073	Play_Wood_Door_Close			\McSpookyJam2020\Interactables\Doors\Play_Wood_Door_Close	
@@ -40,6 +41,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3194421821	Play_UI_Return			\McSpookyJam2020\UI\Play_UI_Return	
 	3207346046	Play_Candle_Emitter			\McSpookyJam2020\AMB\Play_Candle_Emitter	
 	3308548503	Play_UI_Select			\McSpookyJam2020\UI\Play_UI_Select	
+	3352654671	Play_Window_Smash			\McSpookyJam2020\AMB\Play_Window_Smash	
 	3457550880	Play_Monster_Footsteps_Wood			\McSpookyJam2020\Monster\Play_Monster_Footsteps_Wood	
 	3471928368	Play_Flashlight_On			\McSpookyJam2020\Interactables\Lights\Flashlight\Play_Flashlight_On	
 	3611802004	Play_Monster_Emerge			\McSpookyJam2020\Monster\Play_Monster_Emerge	
@@ -68,11 +70,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	18419317	SFX_Piano_05	D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Piano_05_3F75BDB9.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Piano\Piano_Notes\SFX_Piano_05		64098
 	18940520	SFX_Light_Switch_Off	D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Light_Switch_Off_3F75BDB9.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Lights\Light_Switch\SFX_Light_Switch_Off		2040
 	21503164	SFX_Monster_Hiss_01	D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Monster_Hiss_01_3F75BDB9.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Monster\Monster_Hiss\SFX_Monster_Hiss_01		38060
-	30799540	SFX_Dark_Wind_Swell	D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Dark_Wind_Swell_3F75BDB9.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\AMB\SFX_Dark_Wind_Swell		68324
+	30799540	SFX_Dark_Wind_Swell	D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Dark_Wind_Swell_F2166D1A.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\AMB\SFX_Dark_Wind_Swell		46236
 	40510926	SFX_Piano_10	D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Piano_10_3F75BDB9.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Piano\Piano_Notes\SFX_Piano_10		40321
 	43030366	SFX_Pickup_Key	D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Pickup_Key_3F75BDB9.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Pickups\SFX_Pickup_Key		5050
 	47420332	SFX_Pickup_Note_01	D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Pickup_Note_01_3F75BDB9.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Pickups\SFX_Pickup_Note\SFX_Pickup_Note_01		12228
 	55624644	SFX_Piano_31	D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Piano_31_3F75BDB9.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Piano\Piano_Notes\SFX_Piano_31		23102
+	73113784	SFX_DaggerGlow	D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_DaggerGlow_3F75BDB9.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Pickups\SFX_DaggerGlow		23436
 	88016757	SFX_UI_Hover_02	D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_UI_Hover_02_3F75BDB9.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\UI\SFX_UI_Hover\SFX_UI_Hover_02		19145
 	91127603	SFX_Creaky_Footstep_Light_Run_01	D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Creaky_Footstep_Light_Run_01_3F75BDB9.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Player\Player_Footsteps_Stairs\SFX_Creaky_Footstep_Light_Run_01		4653
 	105044923	SFX_Monster_Footstep_Wood_02	D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Monster_Footstep_Wood_02_3F75BDB9.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Monster\Monster_Footsteps_Wood\SFX_Monster_Footstep_Wood_02		2745
@@ -84,6 +87,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	126214581	SFX_Piano_21	D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Piano_21_3F75BDB9.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Piano\Piano_Notes\SFX_Piano_21		42582
 	133873693	SFX_Piano_17	D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Piano_17_3F75BDB9.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Piano\Piano_Notes\SFX_Piano_17		42888
 	135112481	SFX_Monster_Footstep_Wood_03	D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Monster_Footstep_Wood_03_3F75BDB9.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Monster\Monster_Footsteps_Wood\SFX_Monster_Footstep_Wood_03		3133
+	147502877	SFX_Window_Smash	D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Window_Smash_3F75BDB9.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\AMB\SFX_Window_Smash		30361
 	160417959	SFX_Player_Gravel_Footsteps_02	D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Player_Gravel_Footsteps_02_3F75BDB9.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Player\Player_Footsteps_Gravel\SFX_Player_Gravel_Footsteps_02		8948
 	183087932	SFX_Creaky_Footstep_Light_07	D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Creaky_Footstep_Light_07_3F75BDB9.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Player\Player_Footsteps_Wood\SFX_Creaky_Footstep_Light_07		8417
 	205677186	SFX_Piano_33	D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Windows\SFX\SFX_Piano_33_3F75BDB9.wem		\Actor-Mixer Hierarchy\McSpookyJam2020\Interactables\Piano\Piano_Notes\SFX_Piano_33		51367
