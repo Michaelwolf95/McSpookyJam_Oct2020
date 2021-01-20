@@ -28,6 +28,15 @@
 								</Property>
 							</PropertyList>
 						</Bus>
+						<Bus Name="UI_Master" ID="{08934051-FC63-455A-9310-E48811D5715A}">
+							<PropertyList>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

@@ -111,6 +111,22 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Day_To_Night" ID="{23207BF1-2A52-4E9D-87DC-5D9C6C1F4BD5}">
+							<ChildrenList>
+								<Action Name="" ID="{3F5F55A3-0798-46EF-965C-4F839E421372}" ShortID="889664401">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Time" ID="{B844E83D-338B-48CE-8902-1585A7F85125}" WorkUnitID="{2AF5011A-75CC-4A54-B9B9-4A875440E9EE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Music" ID="{5F2F1D71-6E6F-468E-B875-F29CFA2ACDBD}" ShortID="1071104331">
@@ -209,7 +225,7 @@
 								<Action Name="" ID="{2913A365-9B57-4637-9BAD-4E4062837B2B}" ShortID="497274242">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="hover" ID="{D20BBF22-A6B1-41C8-8FBA-D461F423822A}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+											<ObjectRef Name="SFX_UI_Hover" ID="{C0678BDC-5930-42A3-9731-4CCAAD7CBCFA}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -286,18 +302,6 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="SFX_Pickup_Key" ID="{85B0A5AF-E7D8-44A7-A733-F77EC584A556}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{3F5F55A3-0798-46EF-965C-4F839E421372}" ShortID="889664401">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="38"/>
-												<Property Name="GameParameterValue" Type="Real64" Value="1"/>
-												<Property Name="Scope" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Time" ID="{B844E83D-338B-48CE-8902-1585A7F85125}" WorkUnitID="{2AF5011A-75CC-4A54-B9B9-4A875440E9EE}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -517,7 +521,7 @@
 										<Action Name="" ID="{27D0DDDB-A129-4D3C-9ADC-575A15CA50A7}" ShortID="738000965">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="SFX_Game_Start" ID="{69E99071-C8BB-4888-9F43-0982F194F4B7}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
+													<ObjectRef Name="SFX_Game_Start" ID="{0512666C-6D7C-4B65-938C-E970A84702DC}" WorkUnitID="{65ECEFBB-37C5-44F4-9756-1F753D2C69B0}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\ywjos\Documents\GitHub\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Documents\GitHub\McSpooky\McSpookyJam_Oct2020\McSpookyJam2020\McSpookyJam2020_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
@@ -40,12 +40,12 @@
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="160992290">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3208239423">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3210724738" Language="SFX" Hash="342122052">
+		<SoundBank Id="3210724738" Language="SFX" Hash="1536828283">
 			<ObjectPath>\SoundBanks\McSpookyJam2020\Husk</ObjectPath>
 			<ShortName>Husk</ShortName>
 			<Path>Husk.bnk</Path>
@@ -126,17 +126,25 @@
 				</Event>
 				<Event Id="4109843897" Name="Play_Game_Start" ObjectPath="\Events\McSpookyJam2020\Endings\Endings\Play_Game_Start" DurationType="OneShot" DurationMin="2.676875" DurationMax="2.676875">
 					<IncludedMemoryFiles>
-						<File Id="730490238" Language="SFX">
-							<ShortName>SFX_Game_Start_Candle_Trem.wav</ShortName>
-							<Path>SFX\SFX_Game_Start_Candle_Trem_3F75BDB9.wem</Path>
+						<File Id="474822790" Language="SFX">
+							<ShortName>SFX_Game_Start_Candle.wav</ShortName>
+							<Path>SFX\SFX_Game_Start_Candle_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1962302600" Name="Play_hover" ObjectPath="\Events\McSpookyJam2020\UI\Play_hover" DurationType="OneShot" DurationMin="1.264354" DurationMax="1.264354">
+				<Event Id="1962302600" Name="Play_hover" ObjectPath="\Events\McSpookyJam2020\UI\Play_hover" DurationType="OneShot" DurationMin="1.264354" DurationMax="1.722417">
 					<IncludedMemoryFiles>
+						<File Id="88016757" Language="SFX">
+							<ShortName>SFX_UI_Hover_02.wav</ShortName>
+							<Path>SFX\SFX_UI_Hover_02_3F75BDB9.wem</Path>
+						</File>
 						<File Id="300429217" Language="SFX">
 							<ShortName>SFX_UI_Hover_01.wav</ShortName>
 							<Path>SFX\SFX_UI_Hover_01_3F75BDB9.wem</Path>
+						</File>
+						<File Id="492908102" Language="SFX">
+							<ShortName>SFX_UI_Hover_03.wav</ShortName>
+							<Path>SFX\SFX_UI_Hover_03_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -217,14 +225,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3611802004" Name="Play_Monster_Emerge" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Emerge" DurationType="OneShot" DurationMin="2.676875" DurationMax="2.676875">
-					<IncludedMemoryFiles>
-						<File Id="730490238" Language="SFX">
-							<ShortName>SFX_Game_Start_Candle_Trem.wav</ShortName>
-							<Path>SFX\SFX_Game_Start_Candle_Trem_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
+				<Event Id="3611802004" Name="Play_Monster_Emerge" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Emerge" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1353343606" Name="Play_Monster_Footsteps_Gravel" ObjectPath="\Events\McSpookyJam2020\Monster\Play_Monster_Footsteps_Gravel" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="1.122220" DurationMax="1.197866">
 					<IncludedMemoryFiles>
 						<File Id="433067743" Language="SFX">
