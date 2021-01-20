@@ -58,9 +58,7 @@ using UnityEngine.UI;
 using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
-
-
-
+using MichaelWolfGames;
 #if UNITY_EDITOR
     using UnityEditor;
     using System.Net;
@@ -368,11 +366,13 @@ public class FirstPersonAIO : MonoBehaviour
             float mouseXInput = 0;
             float camFOV = playerCamera.fieldOfView;
             if (cameraInputMethod == CameraInputMethod.Traditional || cameraInputMethod == CameraInputMethod.TraditionalWithConstraints){
-                    mouseYInput = mouseInputInversion == InvertMouseInput.None || mouseInputInversion == InvertMouseInput.X ? Input.GetAxis("Mouse Y") : -Input.GetAxis("Mouse Y");
-                    mouseXInput = mouseInputInversion == InvertMouseInput.None || mouseInputInversion == InvertMouseInput.Y ? Input.GetAxis("Mouse X") : -Input.GetAxis("Mouse X");
+                    mouseYInput = mouseInputInversion == InvertMouseInput.None || mouseInputInversion == InvertMouseInput.X ? InputManager.GetAxis(InputManager.InputAxis.MouseY) : -InputManager.GetAxis(InputManager.InputAxis.MouseY);
+                    mouseXInput = mouseInputInversion == InvertMouseInput.None || mouseInputInversion == InvertMouseInput.Y ? InputManager.GetAxis(InputManager.InputAxis.MouseX) : -InputManager.GetAxis(InputManager.InputAxis.MouseX);
+                    // mouseYInput = mouseInputInversion == InvertMouseInput.None || mouseInputInversion == InvertMouseInput.X ? Input.GetAxis("Mouse Y") : -Input.GetAxis("Mouse Y");
+                    // mouseXInput = mouseInputInversion == InvertMouseInput.None || mouseInputInversion == InvertMouseInput.Y ? Input.GetAxis("Mouse X") : -Input.GetAxis("Mouse X");
             }
             else{
-                mouseXInput= Input.GetAxis("Horizontal") * (mouseInputInversion == InvertMouseInput.None || mouseInputInversion == InvertMouseInput.Y ? 1 : -1);
+                mouseXInput= InputManager.GetAxis(InputManager.InputAxis.Horizontal) * (mouseInputInversion == InvertMouseInput.None || mouseInputInversion == InvertMouseInput.Y ? 1 : -1);
             }            if(targetAngles.y > 180) { targetAngles.y -= 360; followAngles.y -= 360; } else if(targetAngles.y < -180) { targetAngles.y += 360; followAngles.y += 360; }
             if(targetAngles.x > 180) { targetAngles.x -= 360; followAngles.x -= 360; } else if(targetAngles.x < -180) { targetAngles.x += 360; followAngles.x += 360; }
             targetAngles.y += mouseXInput * (mouseSensitivity - ((baseCamFOV-camFOV)*fOVToMouseSensitivity)/6f);
@@ -476,8 +476,10 @@ public class FirstPersonAIO : MonoBehaviour
                 //Debug.DrawRay(transform.position, MoveDirection,Color.red,0,false);
             #endregion
             
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
+        //float horizontalInput = Input.GetAxis("Horizontal");
+        //float verticalInput = Input.GetAxis("Vertical");
+        float horizontalInput = InputManager.GetAxis(InputManager.InputAxis.Horizontal);
+        float verticalInput = InputManager.GetAxis(InputManager.InputAxis.Vertical);
         inputXY = new Vector2(horizontalInput, verticalInput);
         if(inputXY.magnitude > 1) { inputXY.Normalize(); }
 

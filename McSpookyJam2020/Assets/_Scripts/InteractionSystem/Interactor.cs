@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using MichaelWolfGames;
 using UnityEngine;
 
 public class Interactor : MonoBehaviour
@@ -38,7 +39,7 @@ public class Interactor : MonoBehaviour
         {
             if (currentPointerTarget != null)
             {
-                if (Input.GetButtonDown("Use"))
+                if (InputManager.GetButtonDown(InputManager.InputButton.Use))
                 {
                     BeginInteraction(currentPointerTarget);
                 }
